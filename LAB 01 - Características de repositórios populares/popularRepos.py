@@ -4,9 +4,13 @@ import time
 from datetime import datetime
 from typing import Dict, List, Optional
 from collections import defaultdict
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+TOKEN = os.getenv("GITHUB_TOKEN")
 
-class GitHubAnalyzer:1
+class GitHubAnalyzer:
     def __init__(self, token: str):
         """
         Inicializa o analisador do GitHub
@@ -436,12 +440,9 @@ def main():
         - User
         - Project
     """
-    TOKEN = "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"
+    with open("token.txt") as f:
+        TOKEN = f.read().strip()
 
-    if TOKEN == "ESCREVA_QUE_NAO_SOU_ADIVINHA":
-        print("ERRO: Você precisa configurar seu token do GitHub!")
-        print("Visite: https://github.com/settings/tokens")
-        return
 
     analyzer = GitHubAnalyzer(TOKEN)
 
