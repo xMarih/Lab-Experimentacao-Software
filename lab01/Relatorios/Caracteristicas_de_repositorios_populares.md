@@ -35,5 +35,5 @@ Métrica: linguagem primária de cada um desses repositórios
 
 Métrica: razão entre número de issues fechadas pelo total de issues Relatório Final:
 
-RQ 07: Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?
+### RQ 07: Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?
 
