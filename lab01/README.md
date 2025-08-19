@@ -34,17 +34,94 @@ Investigar características de sistemas populares open-source, com base nos 1.00
 
 ---
 
-## 🛠️ Como Executar
+# 🚀 Guia de Execução do Projeto Python
 
-### 🔐 Configuração do Token
-
-
+Este documento descreve como configurar e executar os **laboratórios** deste projeto.
 
 ---
 
-### ▶️ Etapas de Execução
+## 📦 1. Criar e Ativar Ambiente Virtual (venv)
 
+Antes de rodar qualquer laboratório, é recomendado criar um ambiente virtual.
 
+### Criar venv
+```bash
+python -m venv venv 
+```
+#### Ativar venv
+
+-  Linux / MacOS
+```bash
+source venv/bin/activate
+```
+-  Windows (PowerShell)
+
+```bash
+.\venv\Scripts\Activate
+```
+
+#### Desativar venv
+```bash
+deactivate
+```
+
+---
+
+## 📚 2. Instalar Dependências
+
+Com o **venv ativo**, instale as dependências do projeto:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔄 3. Atualizar o arquivo requirements.txt
+
+Se você instalar novos pacotes durante o desenvolvimento, atualize o requirements.txt automaticamente:
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+## 🧪 4. Estrutura dos Laboratórios
+
+No diretório raiz do projeto existem várias pastas, uma para cada laboratório.
+
+Exemplo de estrutura:
+ ```bash
+.
+├── services/    # Serviços em comum
+├── lab01/
+│   ├── main.py
+│   └── files/   # Contém saídas em formato .csv
+├── lab02/
+│   ├── main.py
+│   └── files/
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## ▶️ 5. Executar um Laboratório
+
+Para rodar um laboratório específico, utilize o comando:
+```bash
+python -m nome_da_pasta_do_lab.main
+```
+*Exemplo:*
+```bash
+python -m lab01.main
+```
+
+---
+
+## 📂 6. Saídas dos Laboratórios
+
+Cada pasta de laboratório contém uma subpasta chamada files/, onde ficam os arquivos de saída em formato .csv.
 
 ---
 ## ❓ Questões de Pesquisa (RQs)
