@@ -53,44 +53,12 @@ Cada pasta contém:
 
 ---
 
-## 🚀 Como Executar
-
-Para qualquer laboratório, siga estes passos:
-
----
-
-## 📂 Saídas Esperadas
-
-
-
----
-
 ## 🛠️ Tecnologias e Ferramentas
 
 * **Linguagens:** Python (3.8+), Java (Lab 2)
 * **API:** GitHub REST & GraphQL
 * **Análise Java:** `ck.jar` para métricas de código
 
-## 📚 Bibliotecas Python Utilizadas
-
-A seguir, todas as bibliotecas Python necessárias, agrupadas por laboratório:
-
-**Em todos os laboratórios:**
-
-* `requests`
-* `pandas`
-* `matplotlib`
-* `seaborn`
-* `python-dotenv`
-* `scipy`
-* `statsmodels`
-* `GitPython`
-* `jupyter`
-
-**Lab 1 – `Lab1_RepoPop`:**
-
-* `PyGithub` (para interagir com GraphQL/REST)
-* `tqdm` (barra de progresso opcional)
 
 ---
 
@@ -117,5 +85,6 @@ Lab_Experimentacao_Software_1.2025
 ---
 
 *Disciplina: Laboratório de Experimentação de Software — PUC Minas*
+
 
 
