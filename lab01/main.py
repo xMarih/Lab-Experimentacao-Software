@@ -1,4 +1,8 @@
 import csv
+import os
+import requests
+import matplotlib.pyplot as plt
+import pandas as pd
 from typing import Dict, List
 from collections import defaultdict
 from datetime import datetime
@@ -120,6 +124,11 @@ class MetricsAnalyzer:
             repositories: Lista de repositórios
             filename: Nome do arquivo CSV
         """
+        # Verifica se o diretório existe e cria se não existir
+        dir_name = os.path.dirname(filename)
+        if not os.path.exists(dir_name):
+            os.makedirs(dir_name)
+        
         if not repositories:
             print("Nenhum dado para salvar.")
             return
@@ -133,116 +142,315 @@ class MetricsAnalyzer:
 
         print(f"Dados salvos em {filename}")
 
-    def print_summary(self, repositories: List[Dict]):
+    def print_summary(self, repositories: List[Dict], output_md_filename: str = None):
         """
-        Imprime um resumo dos dados coletados
+        Imprime um resumo dos dados coletados e salva em um arquivo .md
 
         Args:
             repositories: Lista de repositórios
+            output_md_filename: Nome do arquivo .md para salvar o resumo (opcional)
         """
         if not repositories:
             print("Nenhum dado para resumir.")
             return
 
-        print("\n" + "=" * 50)
-        print("RESUMO DOS DADOS COLETADOS")
-        print("=" * 50)
+        output_lines = []
+
+        def add_line(line: str):
+            print(line)
+            output_lines.append(line + "\n")
+
+        add_line("\n" + "=" * 50)
+        add_line("RESUMO DOS DADOS COLETADOS")
+        add_line("=" * 50)
 
         total_repos = len(repositories)
-        print(f"Total de repositórios: {total_repos}")
+        add_line(f"Total de repositórios: {total_repos}")
 
         ages = [repo['age_days'] for repo in repositories]
         merged_prs = [repo['merged_pull_requests'] for repo in repositories]
         releases = [repo['total_releases'] for repo in repositories]
         days_since_updates = [repo['days_since_update'] for repo in repositories]
+        closed_ratios = [repo['closed_issues_ratio'] for repo in repositories if repo['total_issues'] > 0]
 
-        print(f"\nIdade (RQ01):")
-        print(f"  Mediana: {sorted(ages)[len(ages) // 2]} dias")
-        print(f"  Mín: {min(ages)} dias, Máx: {max(ages)} dias")
+        # Define o diretório base para os arquivos
+        base_dir = './lab01/files'
 
-        print(f"\nPull Requests Aceitas (RQ02):")
-        print(f"  Mediana: {sorted(merged_prs)[len(merged_prs) // 2]}")
-        print(f"  Mín: {min(merged_prs)}, Máx: {max(merged_prs)}")
+        # Cria o diretório base se ele não existir
+        if not os.path.exists(base_dir):
+            os.makedirs(base_dir)
 
-        print(f"\nReleases (RQ03):")
-        print(f"  Mediana: {sorted(releases)[len(releases) // 2]}")
-        print(f"  Mín: {min(releases)}, Máx: {max(releases)}")
+        # RQ01: Idade dos repositórios
+        add_line(f"\nIdade (RQ01):")
+        median_age = sorted(ages)[len(ages) // 2]
+        add_line(f"  Mediana: {median_age} dias")
+        add_line(f"  Mín: {min(ages)} dias, Máx: {max(ages)} dias")
 
-        print(f"\nDias desde última atualização (RQ04):")
-        print(f"  Mediana: {sorted(days_since_updates)[len(days_since_updates) // 2]} dias")
-        print(f"  Mín: {min(days_since_updates)} dias, Máx: {max(days_since_updates)} dias")
+        # Gerar histograma para RQ01
+        plt.figure(figsize=(8, 6))
+        plt.hist(ages, bins=20, color='skyblue', edgecolor='black')
+        plt.axvline(median_age, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_age:.0f}')
+        plt.title('RQ01 - Distribuição da Idade dos Repositórios (Histograma)')
+        plt.xlabel('Idade (dias)')
+        plt.ylabel('Frequência')
+        plt.legend()
+        rq01_hist_path = os.path.join(base_dir, 'rq01_idade_hist.png')
+        plt.savefig(rq01_hist_path)
+        plt.close()
+
+        # Gerar box plot para RQ01
+        plt.figure(figsize=(8, 6))
+        plt.boxplot(ages, vert=False, patch_artist=True, showfliers=False)
+        plt.title('RQ01 - Idade dos Repositórios (Box Plot)')
+        plt.xlabel('Idade (dias)')
+        rq01_box_path = os.path.join(base_dir, 'rq01_idade_box.png')
+        plt.savefig(rq01_box_path)
+        plt.close()
+
+        # RQ02: Pull Requests Aceitas
+        add_line(f"\nPull Requests Aceitas (RQ02):")
+        median_prs = sorted(merged_prs)[len(merged_prs) // 2]
+        add_line(f"  Mediana: {median_prs}")
+        add_line(f"  Mín: {min(merged_prs)}, Máx: {max(merged_prs)}")
+
+        # Gerar histograma para RQ02
+        plt.figure(figsize=(8, 6))
+        plt.hist(merged_prs, bins=20, color='lightgreen', edgecolor='black')
+        plt.axvline(median_prs, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_prs:.0f}')
+        plt.title('RQ02 - Distribuição de Pull Requests Aceitas (Histograma)')
+        plt.xlabel('Número de Pull Requests')
+        plt.ylabel('Frequência')
+        plt.legend()
+        rq02_hist_path = os.path.join(base_dir, 'rq02_prs_hist.png')
+        plt.savefig(rq02_hist_path)
+        plt.close()
+
+        # Gerar box plot para RQ02
+        plt.figure(figsize=(8, 6))
+        plt.boxplot(merged_prs, vert=False, patch_artist=True, showfliers=False)
+        plt.title('RQ02 - Pull Requests Aceitas (Box Plot)')
+        plt.xlabel('Número de Pull Requests')
+        rq02_box_path = os.path.join(base_dir, 'rq02_prs_box.png')
+        plt.savefig(rq02_box_path)
+        plt.close()
+
+        # RQ03: Releases
+        add_line(f"\nReleases (RQ03):")
+        median_releases = sorted(releases)[len(releases) // 2]
+        add_line(f"  Mediana: {median_releases}")
+        add_line(f"  Mín: {min(releases)}, Máx: {max(releases)}")
+
+        # Gerar histograma para RQ03
+        plt.figure(figsize=(8, 6))
+        plt.hist(releases, bins=20, color='lightcoral', edgecolor='black')
+        plt.axvline(median_releases, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_releases:.0f}')
+        plt.title('RQ03 - Distribuição de Releases (Histograma)')
+        plt.xlabel('Número de Releases')
+        plt.ylabel('Frequência')
+        plt.legend()
+        rq03_hist_path = os.path.join(base_dir, 'rq03_releases_hist.png')
+        plt.savefig(rq03_hist_path)
+        plt.close()
+
+        # Gerar box plot para RQ03
+        plt.figure(figsize=(8, 6))
+        plt.boxplot(releases, vert=False, patch_artist=True, showfliers=False)
+        plt.title('RQ03 - Releases (Box Plot)')
+        plt.xlabel('Número de Releases')
+        rq03_box_path = os.path.join(base_dir, 'rq03_releases_box.png')
+        plt.savefig(rq03_box_path)
+        plt.close()
+
+        # RQ04: Dias desde a última atualização
+        add_line(f"\nDias desde última atualização (RQ04):")
+        median_days_since_updates = sorted(days_since_updates)[len(days_since_updates) // 2]
+        add_line(f"  Mediana: {median_days_since_updates} dias")
+        add_line(f"  Mín: {min(days_since_updates)} dias, Máx: {max(days_since_updates)} dias")
+
+        # Gerar histograma para RQ04
+        plt.figure(figsize=(8, 6))
+        plt.hist(days_since_updates, bins=20, color='lightyellow', edgecolor='black')
+        plt.axvline(median_days_since_updates, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_days_since_updates:.0f}')
+        plt.title('RQ04 - Distribuição de Dias Desde a Última Atualização (Histograma)')
+        plt.xlabel('Dias Desde a Última Atualização')
+        plt.ylabel('Frequência')
+        plt.legend()
+        rq04_hist_path = os.path.join(base_dir, 'rq04_dias_hist.png')
+        plt.savefig(rq04_hist_path)
+        plt.close()
+
+        # Gerar box plot para RQ04
+        plt.figure(figsize=(8, 6))
+        plt.boxplot(days_since_updates, vert=False, patch_artist=True, showfliers=False)
+        plt.title('RQ04 - Dias Desde a Última Atualização (Box Plot)')
+        plt.xlabel('Dias Desde a Última Atualização')
+        rq04_box_path = os.path.join(base_dir, 'rq04_dias_box.png')
+        plt.savefig(rq04_box_path)
+        plt.close()
 
         languages = {}
         for repo in repositories:
             lang = repo['primary_language']
             languages[lang] = languages.get(lang, 0) + 1
 
-        print(f"\nLinguagens mais populares (RQ05):")
+        # RQ05: Linguagens mais populares
+        add_line(f"\nLinguagens mais populares (RQ05):")
         sorted_languages = sorted(languages.items(), key=lambda x: x[1], reverse=True)
-        for lang, count in sorted_languages[:10]:
-            print(f"  {lang}: {count} repositórios")
+        top_languages = sorted_languages[:10]
+        for lang, count in top_languages:
+            add_line(f"  {lang}: {count} repositórios")
 
-        closed_ratios = [repo['closed_issues_ratio'] for repo in repositories if repo['total_issues'] > 0]
+        # Gerar gráfico de barras para RQ05
+        plt.figure(figsize=(10, 6))
+        langs, counts = zip(*top_languages)
+        plt.bar(langs, counts, color='skyblue')
+        plt.title('RQ05 - Linguagens Mais Populares (Barras)')
+        plt.xlabel('Linguagens')
+        plt.ylabel('Número de Repositórios')
+        plt.xticks(rotation=45, ha='right')
+        plt.tight_layout()
+        rq05_bar_path = os.path.join(base_dir, 'rq05_linguagens_bar.png')
+        plt.savefig(rq05_bar_path)
+        plt.close()
+
+        # Gerar gráfico de pizza para RQ05
+        plt.figure(figsize=(8, 6))
+        plt.pie(counts, labels=langs, autopct='%1.1f%%', startangle=140)
+        plt.title('RQ05 - Linguagens Mais Populares (Pizza)')
+        plt.tight_layout()
+        rq05_pie_path = os.path.join(base_dir, 'rq05_linguagens_pie.png')
+        plt.savefig(rq05_pie_path)
+        plt.close()
+
         if closed_ratios:
-            print(f"\nPercentual de issues fechadas (RQ06):")
-            print(f"  Mediana: {sorted(closed_ratios)[len(closed_ratios) // 2]:.2f}%")
+            # RQ06: Percentual de issues fechadas
+            add_line(f"\nPercentual de issues fechadas (RQ06):")
+            median_closed_ratios = sorted(closed_ratios)[len(closed_ratios) // 2]
+            add_line(f"  Mediana: {median_closed_ratios:.2f}%")
 
-        print(f"\n" + "=" * 50)
-        print("RQ07 - ANÁLISE POR LINGUAGEM (BÔNUS)")
-        print("=" * 50)
+            # Gerar histograma para RQ06
+            plt.figure(figsize=(8, 6))
+            plt.hist(closed_ratios, bins=20, color='lightcoral', edgecolor='black')
+            plt.axvline(median_closed_ratios, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_closed_ratios:.2f}%')
+            plt.title('RQ06 - Distribuição do Percentual de Issues Fechadas (Histograma)')
+            plt.xlabel('Percentual de Issues Fechadas')
+            plt.ylabel('Frequência')
+            plt.legend()
+            rq06_hist_path = os.path.join(base_dir, 'rq06_issues_hist.png')
+            plt.savefig(rq06_hist_path)
+            plt.close()
+
+            # Gerar box plot para RQ06
+            plt.figure(figsize=(8, 6))
+            plt.boxplot(closed_ratios, vert=False, patch_artist=True, showfliers=False)
+            plt.title('RQ06 - Percentual de Issues Fechadas (Box Plot)')
+            plt.xlabel('Percentual de Issues Fechadas')
+            rq06_box_path = os.path.join(base_dir, 'rq06_issues_box.png')
+            plt.savefig(rq06_box_path)
+            plt.close()
+
+        add_line("\n" + "=" * 50)
+        add_line("RQ07 - ANÁLISE POR LINGUAGEM (BÔNUS)")
+        add_line("=" * 50)
 
         rq07_analysis = self.analyze_rq07(repositories)
 
-        print(f"\nLinguagens mais populares:")
+        add_line(f"\nLinguagens mais populares:")
         for lang in rq07_analysis['popular_languages']:
-            print(f"  - {lang}")
+            add_line(f"  - {lang}")
 
         popular_stats = rq07_analysis['popular_stats']
         other_stats = rq07_analysis['other_stats']
 
-        print(f"\nComparação: Linguagens Populares vs Outras")
-        print(f"┌─────────────────────────────┬─────────────┬─────────────┐")
-        print(f"│ Métrica                     │ Populares   │ Outras      │")
-        print(f"├─────────────────────────────┼─────────────┼─────────────┤")
-        print(f"│ Repositórios                │ {popular_stats['count']:11d} │ {other_stats['count']:11d} │")
-        print(f"│ Mediana PRs Aceitas (RQ02)  │ {popular_stats['median_prs']:11d} │ {other_stats['median_prs']:11d} │")
-        print(
+        add_line(f"\nComparação: Linguagens Populares vs Outras")
+        add_line(f"┌─────────────────────────────┬─────────────┬─────────────┐")
+        add_line(f"│ Métrica                     │ Populares   │ Outras      │")
+        add_line(f"├─────────────────────────────┼─────────────┼─────────────┤")
+        add_line(f"│ Repositórios                │ {popular_stats['count']:11d} │ {other_stats['count']:11d} │")
+        add_line(f"│ Mediana PRs Aceitas (RQ02)  │ {popular_stats['median_prs']:11d} │ {other_stats['median_prs']:11d} │")
+        add_line(
             f"│ Mediana Releases (RQ03)     │ {popular_stats['median_releases']:11d} │ {other_stats['median_releases']:11d} │")
-        print(
+        add_line(
             f"│ Mediana Dias Update (RQ04)  │ {popular_stats['median_days_update']:11d} │ {other_stats['median_days_update']:11d} │")
-        print(f"└─────────────────────────────┴─────────────┴─────────────┘")
+        add_line(f"└─────────────────────────────┴─────────────┴─────────────┘")
 
-        print(f"\nDetalhamento por linguagem (Top 10):")
+        add_line(f"\nDetalhamento por linguagem (Top 10):")
         by_language = rq07_analysis['by_language']
 
         sorted_langs = sorted(by_language.items(), key=lambda x: x[1]['count'], reverse=True)
 
-        print(f"┌─────────────┬─────┬─────────┬──────────┬──────────────┐")
-        print(f"│ Linguagem   │ Qty │ Med PRs │ Med Rels │ Med Days Upd │")
-        print(f"├─────────────┼─────┼─────────┼──────────┼──────────────┤")
+        add_line(f"┌─────────────┬─────┬─────────┬──────────┬──────────────┐")
+        add_line(f"│ Linguagem   │ Qty │ Med PRs │ Med Rels │ Med Days Upd │")
+        add_line(f"├─────────────┼─────┼─────────┼──────────┼──────────────┤")
 
         for lang, stats in sorted_langs[:10]:
             lang_short = lang[:11] if len(lang) <= 11 else lang[:8] + "..."
-            print(
+            add_line(
                 f"│ {lang_short:<11} │ {stats['count']:3d} │ {stats['median_merged_prs']:7d} │ {stats['median_releases']:8d} │ {stats['median_days_since_update']:12d} │")
 
-        print(f"└─────────────┴─────┴─────────┴──────────┴──────────────┘")
+        add_line(f"└─────────────┴─────┴─────────┴──────────┴──────────────┘")
 
-        print(f"\nConclusão RQ07:")
+        add_line(f"\nConclusão RQ07:")
         if popular_stats['median_prs'] > other_stats['median_prs']:
-            print("✓ Linguagens populares recebem MAIS contribuições externas")
+            add_line("✓ Linguagens populares recebem MAIS contribuições externas")
         else:
-            print("✗ Linguagens populares recebem MENOS contribuições externas")
+            add_line("✗ Linguagens populares recebem MENOS contribuições externas")
 
         if popular_stats['median_releases'] > other_stats['median_releases']:
-            print("✓ Linguagens populares lançam MAIS releases")
+            add_line("✓ Linguagens populares lançam MAIS releases")
         else:
-            print("✗ Linguagens populares lançam MENOS releases")
+            add_line("✗ Linguagens populares lançam MENOS releases")
 
         if popular_stats['median_days_update'] < other_stats['median_days_update']:
-            print("✓ Linguagens populares são atualizadas com MAIS frequência")
+            add_line("✓ Linguagens populares são atualizadas com MAIS frequência")
         else:
-            print("✗ Linguagens populares são atualizadas com MENOS frequência")
+            add_line("✗ Linguagens populares são atualizadas com MENOS frequência")
+
+        if output_md_filename:
+            # Salvar o conteúdo em um arquivo .md
+            with open(output_md_filename, "w", encoding="utf-8") as md_file:
+                md_file.writelines(output_lines)
+            print(f"\nResumo salvo em {output_md_filename}")
+
+            # Adicionar as imagens dos gráficos no arquivo .md
+            with open(output_md_filename, "a", encoding="utf-8") as md_file:
+                md_file.write("\n## Gráficos:\n")
+
+                # RQ01
+                md_file.write("### RQ01 - Idade dos Repositórios (Histograma)\n")
+                md_file.write(f"![RQ01 Hist]({rq01_hist_path})\n")
+                md_file.write("### RQ01 - Idade dos Repositórios (Box Plot)\n")
+                md_file.write(f"![RQ01 Box]({rq01_box_path})\n")
+
+                # RQ02
+                md_file.write("### RQ02 - Pull Requests Aceitas (Histograma)\n")
+                md_file.write(f"![RQ02 Hist]({rq02_hist_path})\n")
+                md_file.write("### RQ02 - Pull Requests Aceitas (Box Plot)\n")
+                md_file.write(f"![RQ02 Box]({rq02_box_path})\n")
+
+                # RQ03
+                md_file.write("### RQ03 - Releases (Histograma)\n")
+                md_file.write(f"![RQ03 Hist]({rq03_hist_path})\n")
+                md_file.write("### RQ03 - Releases (Box Plot)\n")
+                md_file.write(f"![RQ03 Box]({rq03_box_path})\n")
+
+                # RQ04
+                md_file.write("### RQ04 - Dias Desde a Última Atualização (Histograma)\n")
+                md_file.write(f"![RQ04 Hist]({rq04_hist_path})\n")
+                md_file.write("### RQ04 - Dias Desde a Última Atualização (Box Plot)\n")
+                md_file.write(f"![RQ04 Box]({rq04_box_path})\n")
+
+                # RQ05
+                md_file.write("### RQ05 - Linguagens Mais Populares (Barras)\n")
+                md_file.write(f"![RQ05 Barras]({rq05_bar_path})\n")
+                md_file.write("### RQ05 - Linguagens Mais Populares (Pizza)\n")
+                md_file.write(f"![RQ05 Pizza]({rq05_pie_path})\n")
+
+                # RQ06
+                md_file.write("### RQ06 - Percentual de Issues Fechadas (Histograma)\n")
+                md_file.write(f"![RQ06 Hist]({rq06_hist_path})\n")
+                md_file.write("### RQ06 - Percentual de Issues Fechadas (Box Plot)\n")
+                md_file.write(f"![RQ06 Box]({rq06_box_path})\n")
 
 def main():
     """
@@ -258,11 +466,14 @@ def main():
     # Coletar repositórios
     repositories = github_service.collect_repositories(100)
 
-    # Salvar dados
-    metrics_analyzer.save_to_csv(repositories, './files/lab01s01_repositories.csv')
+    # Define o diretório base para os arquivos
+    base_dir = './lab01/files'
 
-    # Exibir análise
-    metrics_analyzer.print_summary(repositories)
+    # Salvar dados
+    metrics_analyzer.save_to_csv(repositories, os.path.join(base_dir, 'lab01s01_repositories.csv'))
+
+    # Exibir análise e salvar em markdown
+    metrics_analyzer.print_summary(repositories, os.path.join(base_dir, 'lab01s01_summary.md'))
 
 if __name__ == "__main__":
     main()
