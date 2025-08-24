@@ -1,0 +1,30 @@
+import os
+import matplotlib.pyplot as plt
+
+class RQ02PRsCharts:
+    @staticmethod
+    def generate(merged_prs, base_dir):
+        median_prs = sorted(merged_prs)[len(merged_prs) // 2]
+
+        # Histograma
+        plt.figure(figsize=(8, 6))
+        plt.hist(merged_prs, bins=20, color='lightgreen', edgecolor='black')
+        plt.axvline(median_prs, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_prs:.0f}')
+        plt.title('RQ02 - Distribuição de Pull Requests Aceitas (Histograma)')
+        plt.xlabel('Número de Pull Requests')
+        plt.ylabel('Frequência')
+        plt.legend()
+        hist_path = os.path.join(base_dir, 'rq02_prs_hist.png')
+        plt.savefig(hist_path)
+        plt.close()
+
+        # Boxplot
+        plt.figure(figsize=(8, 6))
+        plt.boxplot(merged_prs, vert=False, patch_artist=True, showfliers=False)
+        plt.title('RQ02 - Pull Requests Aceitas (Box Plot)')
+        plt.xlabel('Número de Pull Requests')
+        box_path = os.path.join(base_dir, 'rq02_prs_box.png')
+        plt.savefig(box_path)
+        plt.close()
+
+        return hist_path, box_path

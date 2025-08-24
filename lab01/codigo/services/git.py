@@ -145,7 +145,7 @@ class GitHubService:
         after_cursor = None
         collected = 0
 
-        page_size = 10
+        page_size = 40  # Tamanho da página menor para evitar timeouts
 
         print(f"Iniciando coleta de {total_repos} repositórios (páginas de {page_size})...")
 
@@ -169,7 +169,7 @@ class GitHubService:
                     if collected % 10 == 0:
                         print(f"Coletados {collected}/{total_repos} repositórios...")
 
-                time.sleep(1)
+                time.sleep(1)  
 
                 page_info = search_result['pageInfo']
                 if page_info['hasNextPage'] and collected < total_repos:
@@ -179,7 +179,7 @@ class GitHubService:
 
             except Exception as e:
                 print(f"Erro na página {collected // page_size + 1}: {e}")
-                time.sleep(5)
+                time.sleep(1) 
                 continue
 
         print(f"Coleta finalizada! {len(repositories)} repositórios coletados.")
