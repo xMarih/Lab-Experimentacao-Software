@@ -78,7 +78,7 @@ Conclusão RQ07:
 
 ## Gráficos:
 ### RQ01 - Idade dos Repositórios (Histograma)
-![RQ01 Hist](./relatorios/graficos\rq01_idade_hist.png)
+![RQ01 Hist](./graficos/rq01_idade_hist.png)
 ### RQ01 - Idade dos Repositórios (Box Plot)
 ![RQ01 Box](./relatorios/graficos\rq01_idade_box.png)
 ### RQ02 - Pull Requests Aceitas (Histograma)
