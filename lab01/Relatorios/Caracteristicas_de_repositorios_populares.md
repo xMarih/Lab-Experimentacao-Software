@@ -95,30 +95,29 @@ Linguagens mais populares:
   - C++
 
 Comparação: Linguagens Populares vs Outras
-┌─────────────────────────────┬─────────────┬─────────────┐
-│ Métrica                     │ Populares   │ Outras      │
-├─────────────────────────────┼─────────────┼─────────────┤
-│ Repositórios                │          67 │          33 │
-│ Mediana PRs Aceitas (RQ02)  │        1949 │         945 │
-│ Mediana Releases (RQ03)     │          22 │           7 │
-│ Mediana Dias Update (RQ04)  │           0 │           0 │
-└─────────────────────────────┴─────────────┴─────────────┘
+
+| Métrica                     | Populares   | Outras      |
+| --------------------------- | ----------- | ----------- |
+| Repositórios                |          67 |          33 |
+| Mediana PRs Aceitas (RQ02)  |        1949 |         945 |
+| Mediana Releases (RQ03)     |          22 |           7 |
+| Mediana Dias Update (RQ04)  |           0 |           0 |
 
 Detalhamento por linguagem (Top 10):
-┌─────────────┬─────┬─────────┬──────────┬──────────────┐
-│ Linguagem   │ Qty │ Med PRs │ Med Rels │ Med Days Upd │
-├─────────────┼─────┼─────────┼──────────┼──────────────┤
-│ TypeScript  │  18 │    7019 │      212 │            0 │
-│ Python      │  16 │    2737 │       57 │            0 │
-│ Unknown     │  14 │     368 │        0 │            0 │
-│ JavaScript  │  14 │    1000 │       83 │            0 │
-│ C++         │   5 │   23240 │      219 │            0 │
-│ Go          │   5 │    2465 │      106 │            0 │
-│ Java        │   4 │    1179 │        0 │            0 │
-│ Rust        │   4 │   13325 │      341 │            0 │
-│ Shell       │   3 │     493 │        0 │            0 │
-│ Jupyter ... │   3 │     376 │        0 │            0 │
-└─────────────┴─────┴─────────┴──────────┴──────────────┘
+
+| Linguagem   | Qty | Med PRs | Med Rels | Med Days Upd |
+| ----------- | --- | ------- | -------- | ------------ |
+| TypeScript  |  18 |    7019 |      212 |            0 |
+| Python      |  16 |    2737 |       57 |            0 |
+| Unknown     |  14 |     368 |        0 |            0 |
+| JavaScript  |  14 |    1000 |       83 |            0 |
+| C++         |   5 |   23240 |      219 |            0 |
+| Go          |   5 |    2465 |      106 |            0 |
+| Java        |   4 |    1179 |        0 |            0 |
+| Rust        |   4 |   13325 |      341 |            0 |
+| Shell       |   3 |     493 |        0 |            0 |
+| Jupyter     |   3 |     376 |        0 |            0 |
+
 
 Conclusão RQ07:
 ✓ Linguagens populares recebem MAIS contribuições externas
