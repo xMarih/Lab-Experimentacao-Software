@@ -1,7 +1,5 @@
 
-==================================================
-RESUMO DOS DADOS COLETADOS
-==================================================
+##RESUMO DOS DADOS COLETADOS
 
 Idade (RQ01):
   Mediana: 3056 dias
@@ -34,9 +32,7 @@ Linguagens mais populares (RQ05):
 Percentual de issues fechadas (RQ06):
   Mediana: 86.57%
 
-==================================================
-RQ07 - ANÁLISE POR LINGUAGEM (BÔNUS)
-==================================================
+##RQ07 - ANÁLISE POR LINGUAGEM (BÔNUS)
 
 Linguagens mais populares:
   - Python
