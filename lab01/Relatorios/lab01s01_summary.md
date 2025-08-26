@@ -46,14 +46,14 @@ Linguagens mais populares:
   - Go
 
 Comparação: Linguagens Populares vs Outras
-┌─────────────────────────────┬─────────────┬─────────────┐
+
 | Métrica                     | Populares   | Outras      |
-├─────────────────────────────┼─────────────┼─────────────┤
+| --------------------------- | ----------- | ----------- |
 | Repositórios                |         651 |         349 |
 | Mediana PRs Aceitas (RQ02)  |         715 |         681 |
 | Mediana Releases (RQ03)     |          42 |          31 |
 | Mediana Dias Update (RQ04)  |           0 |           0 |
-└─────────────────────────────┴─────────────┴─────────────┘
+
 
 Detalhamento por linguagem (Top 10):
 
