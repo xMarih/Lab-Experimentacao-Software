@@ -142,4 +142,4 @@ Cada pasta de laboratório contém uma subpasta chamada files/, onde ficam os ar
 
 ## 📁 Relatório Final
 
-![Relatório final](./relatorios/relatorio_final.md)
+[Relatório final](./relatorios/relatorio_final.md)

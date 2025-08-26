@@ -71,7 +71,7 @@ Lab_Experimentacao_Software_1.2025
 ├───── relatorios/
 ├─────── graficos/                      # Pasta dos gráficos criados pelo código
 ├─────── 📄 relatorio_final.md          # Relatório Final do Porjeto
-├─────── 📄 lab01s01_summary.md         # Relatório base criado automaticamente pelo código
+├─────── 📄 summary.md         # Relatório base criado automaticamente pelo código
 ├── 📄 README.md                        # Visão geral (este arquivo)
 ├── 📄 config_token.py                  # Carrega token GitHub (.env) para os scripts
 ├── 📄 config_token_rotator.py          # Gerencia rotação automática de tokens
