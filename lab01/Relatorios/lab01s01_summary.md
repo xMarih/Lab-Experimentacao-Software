@@ -56,9 +56,9 @@ Comparação: Linguagens Populares vs Outras
 └─────────────────────────────┴─────────────┴─────────────┘
 
 Detalhamento por linguagem (Top 10):
-┌─────────────┬─────┬─────────┬──────────┬──────────────┐
+
 │ Linguagem   │ Qty │ Med PRs │ Med Rels │ Med Days Upd │
-├─────────────┼─────┼─────────┼──────────┼──────────────┤
+│ ----------- │ --- │ ------- │ -------- │ ------------ │
 │ Python      │ 189 │     548 │       23 │            0 │
 │ TypeScript  │ 156 │    2143 │      147 │            0 │
 │ JavaScript  │ 130 │     551 │       34 │            0 │
@@ -69,7 +69,7 @@ Detalhamento por linguagem (Top 10):
 │ Rust        │  44 │    2174 │       87 │            0 │
 │ C           │  25 │     113 │       32 │            0 │
 │ Jupyter ... │  22 │     147 │        0 │            0 │
-└─────────────┴─────┴─────────┴──────────┴──────────────┘
+
 
 Conclusão RQ07:
 ✓ Linguagens populares recebem MAIS contribuições externas
