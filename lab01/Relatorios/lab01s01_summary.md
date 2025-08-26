@@ -47,28 +47,28 @@ Linguagens mais populares:
 
 Comparação: Linguagens Populares vs Outras
 ┌─────────────────────────────┬─────────────┬─────────────┐
-│ Métrica                     │ Populares   │ Outras      │
+| Métrica                     | Populares   | Outras      |
 ├─────────────────────────────┼─────────────┼─────────────┤
-│ Repositórios                │         651 │         349 │
-│ Mediana PRs Aceitas (RQ02)  │         715 │         681 │
-│ Mediana Releases (RQ03)     │          42 │          31 │
-│ Mediana Dias Update (RQ04)  │           0 │           0 │
+| Repositórios                |         651 |         349 |
+| Mediana PRs Aceitas (RQ02)  |         715 |         681 |
+| Mediana Releases (RQ03)     |          42 |          31 |
+| Mediana Dias Update (RQ04)  |           0 |           0 |
 └─────────────────────────────┴─────────────┴─────────────┘
 
 Detalhamento por linguagem (Top 10):
 
-│ Linguagem   │ Qty │ Med PRs │ Med Rels │ Med Days Upd │
-│ ----------- │ --- │ ------- │ -------- │ ------------ │
-│ Python      │ 189 │     548 │       23 │            0 │
-│ TypeScript  │ 156 │    2143 │      147 │            0 │
-│ JavaScript  │ 130 │     551 │       34 │            0 │
-│ Unknown     │ 103 │     129 │        0 │            0 │
-│ Go          │  73 │    1690 │      124 │            0 │
-│ Java        │  50 │     713 │       44 │            0 │
-│ C++         │  48 │     934 │       60 │            0 │
-│ Rust        │  44 │    2174 │       87 │            0 │
-│ C           │  25 │     113 │       32 │            0 │
-│ Jupyter ... │  22 │     147 │        0 │            0 │
+| Linguagem   | Qty | Med PRs | Med Rels | Med Days Upd |
+| ----------- | --- | ------- | -------- | ------------ |
+| Python      | 189 |     548 |       23 |            0 |
+| TypeScript  | 156 |    2143 |      147 |            0 |
+| JavaScript  | 130 |     551 |       34 |            0 |
+| Unknown     | 103 |     129 |        0 |            0 |
+| Go          |  73 |    1690 |      124 |            0 |
+| Java        |  50 |     713 |       44 |            0 |
+| C++         |  48 |     934 |       60 |            0 |
+| Rust        |  44 |    2174 |       87 |            0 |
+| C           |  25 |     113 |       32 |            0 |
+| Jupyter     |  22 |     147 |        0 |            0 |
 
 
 Conclusão RQ07:
