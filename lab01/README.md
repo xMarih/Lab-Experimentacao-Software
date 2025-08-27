@@ -86,26 +86,6 @@ pip freeze > requirements.txt
 
 ---
 
-## 🧪 4. Estrutura dos Laboratórios
-
-No diretório raiz do projeto existem várias pastas, uma para cada laboratório.
-
-Exemplo de estrutura:
- ```bash
-.
-├── services/    # Serviços em comum
-├── lab01/
-│   ├── main.py
-│   └── files/   # Contém saídas em formato .csv
-├── lab02/
-│   ├── main.py
-│   └── files/
-├── requirements.txt
-└── README.md
-```
-
----
-
 ## ▶️ 5. Executar um Laboratório
 
 Para rodar um laboratório específico, utilize o comando:
@@ -160,5 +140,6 @@ Cada pasta de laboratório contém uma subpasta chamada files/, onde ficam os ar
 
 ---
 
-## 📁 Estrutura do Projeto
+## 📁 Relatório Final
 
+[Relatório final](./Relatorios/relatorio_final.md)

@@ -66,7 +66,12 @@ Cada pasta contém:
 
 ```
 Lab_Experimentacao_Software_1.2025
-├── Lab1_RepoPop/                       # Lab 1: Repositórios Populares (GraphQL/REST)
+├── lab01/                              # Lab 1: Repositórios Populares (GraphQL/REST)
+├───── codigo/
+├───── relatorios/
+├─────── graficos/                      # Pasta dos gráficos criados pelo código
+├─────── 📄 relatorio_final.md          # Relatório Final do Porjeto
+├─────── 📄 summary.md         # Relatório base criado automaticamente pelo código
 ├── 📄 README.md                        # Visão geral (este arquivo)
 ├── 📄 config_token.py                  # Carrega token GitHub (.env) para os scripts
 ├── 📄 config_token_rotator.py          # Gerencia rotação automática de tokens
