@@ -42,7 +42,7 @@ Métrica: idade do repositório (calculado a partir da data de sua criação)
 Idade (RQ01):
   Mediana: 3320 dias
   Mín: 211 dias, Máx: 5835 dias
-  ![RQ01 Hist](./Relatorios/graficos/rq01_idade_hist.png)
+  ![RQ01 - Idade dos Repositórios](./graficos/rq01_idade_hist.png)
 
 ### RQ 02. Sistemas populares recebem muita contribuição externa?
 
@@ -50,6 +50,8 @@ Métrica: total de pull requests aceitas
 Pull Requests Aceitas (RQ02):
   Mediana: 1872
   Mín: 0, Máx: 65576
+  ![RQ02 - Pull Request Aceitas](./graficos/rq02_prs_box.png)
+  
 
 ### RQ 03. Sistemas populares lançam releases com frequência?
 
@@ -57,6 +59,7 @@ Métrica: total de releases
 Releases (RQ03):
   Mediana: 17
   Mín: 0, Máx: 1000
+  ![RQ02 - Pull Request Aceitas](./graficos/rq02_prs_box.png)
 
 ### RQ 04. Sistemas populares são atualizados com frequência?
 
@@ -64,6 +67,7 @@ Métrica: tempo até a última atualização
 Dias desde última atualização (RQ04):
   Mediana: 0 dias
   Mín: 0 dias, Máx: 0 dias
+  ![RQ02 - Pull Request Aceitas](./graficos/rq02_prs_box.png)
 
 ### RQ 05. Sistemas populares são escritos nas linguagens mais populares?
 
@@ -79,12 +83,14 @@ Linguagens mais populares (RQ05):
   Rust: 4 repositórios
   Shell: 3 repositórios
   Jupyter Notebook: 3 repositórios
+  ![RQ02 - Pull Request Aceitas](./graficos/rq02_prs_box.png)
 
 ### RQ 06. Sistemas populares possuem um alto percentual de issues fechadas?
 
 Métrica: razão entre número de issues fechadas pelo total de issues Relatório Final:
 Percentual de issues fechadas (RQ06):
   Mediana: 91.98%
+  ![RQ02 - Pull Request Aceitas](./graficos/rq02_prs_box.png)
 
 ### RQ 07: Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência?
 Linguagens mais populares:
