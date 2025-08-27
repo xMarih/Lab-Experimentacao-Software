@@ -42,7 +42,7 @@ Métrica: idade do repositório (calculado a partir da data de sua criação)
 Idade (RQ01):
   Mediana: 3320 dias
   Mín: 211 dias, Máx: 5835 dias
-  ![RQ01 Hist](./relatorios/graficos/rq01_idade_hist.png)
+  ![RQ01 Hist](./Relatorios/graficos/rq01_idade_hist.png)
 
 ### RQ 02. Sistemas populares recebem muita contribuição externa?
 
