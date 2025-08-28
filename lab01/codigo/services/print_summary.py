@@ -6,16 +6,16 @@ import os
 import matplotlib.pyplot as plt
 
 # Import das classes de gráficos
-from charts.rq01_age_charts import RQ01AgeCharts
-from charts.rq02_prs_charts import RQ02PRsCharts
-from charts.rq03_releases_charts import RQ03ReleasesCharts
-from charts.rq04_updates_charts import RQ04UpdatesCharts
-from charts.rq05_languages_charts import RQ05LanguagesCharts
-from charts.rq06_issues_charts import RQ06IssuesCharts
+from plots.rq01_age_charts import RQ01AgeCharts
+from plots.rq02_prs_charts import RQ02PRsCharts
+from plots.rq03_releases_charts import RQ03ReleasesCharts
+from plots.rq04_updates_charts import RQ04UpdatesCharts
+from plots.rq05_languages_charts import RQ05LanguagesCharts
+from plots.rq06_issues_charts import RQ06IssuesCharts
 
 class CalculateMetrics:
     @staticmethod
-    def print_summary(self, repositories: List[Dict], output_md_filename: str = None):
+    def print_summary(repositories: List[Dict], output_md_filename: str = None):
         """
         Imprime um resumo dos dados coletados e salva em um arquivo .md
 
@@ -32,6 +32,7 @@ class CalculateMetrics:
             print(line)
             output_lines.append(line + "\n")
 
+        print([repo['age_days'] for repo in repositories])
         # Dados básicos
         ages = [repo['age_days'] for repo in repositories]
         merged_prs = [repo['merged_pull_requests'] for repo in repositories]
@@ -132,7 +133,7 @@ class CalculateMetrics:
         add_line("### RQ06 - Percentual de Issues Fechadas (Box Plot)\n")
         add_line(f"![RQ06 Box]({rq06_box_path})\n")
 
-        rq07_analysis = self.analyze_rq07(repositories)
+        rq07_analysis = CalculateMetrics.analyze_rq07(repositories)
 
         add_line(f"\nLinguagens mais populares:")
         for lang in rq07_analysis['popular_languages']:
@@ -196,7 +197,8 @@ class CalculateMetrics:
 
                 
 
-    def analyze_by_language(self, repositories: List[Dict]) -> Dict:
+    @staticmethod
+    def analyze_by_language(repositories: List[Dict]) -> Dict:
             """
             Analisa dados agrupados por linguagem para RQ07 (BÔNUS)
             Args:
@@ -228,7 +230,8 @@ class CalculateMetrics:
                 }
             return language_stats
         
-    def get_popular_languages(self, repositories: List[Dict], top_n: int = 5) -> List[str]:
+    @staticmethod
+    def get_popular_languages(repositories: List[Dict], top_n: int = 5) -> List[str]:
             """
             Identifica as linguagens mais populares
 
@@ -247,7 +250,8 @@ class CalculateMetrics:
             sorted_languages = sorted(language_count.items(), key=lambda x: x[1], reverse=True)
             return [lang for lang, count in sorted_languages[:top_n]]
 
-    def analyze_rq07(self, repositories: List[Dict]) -> Dict:
+    @staticmethod
+    def analyze_rq07(repositories: List[Dict]) -> Dict:
             """
             Análise específica para RQ07 (BÔNUS)
             Compara linguagens populares vs outras linguagens
@@ -258,7 +262,7 @@ class CalculateMetrics:
             Returns:
                 Dicionário com análise comparativa
             """
-            popular_languages = self.get_popular_languages(repositories, 5)
+            popular_languages = CalculateMetrics.get_popular_languages(repositories, 5)
 
             popular_repos = []
             other_repos = []
@@ -291,8 +295,5 @@ class CalculateMetrics:
                 'popular_languages': popular_languages,
                 'popular_stats': popular_stats,
                 'other_stats': other_stats,
-                'by_language': self.analyze_by_language(repositories)
+                'by_language': CalculateMetrics.analyze_by_language(repositories)
             }
-        
-        
-        

@@ -33,10 +33,11 @@ def main():
 
     # Salva CSV em relatorios/
     # SaveToCSV.save_to_csv(data, csv_path)
-    df = pd.read_csv(csv_path)
-    repositories: List[Dict] = df.to_dict(orient='records')
+    df = pd.read_csv(csv_path, encoding='utf-8') # Ajuste o encoding se necessário
+    repositories = df.to_dict(orient='records')
 
-    print(f"Total repositories loaded: {len(repositories)}")
+    # print(f"Total repositories loaded: {len(repositories)}")
+    # print(f"Example repository: {repositories[0]}") # Verifique o formato do primeiro elemento
     # Salva resumo em Markdown em relatorios/
     CalculateMetrics.print_summary(repositories, os.path.join(base_dir, 'lab01s01_summary.md'))
 
