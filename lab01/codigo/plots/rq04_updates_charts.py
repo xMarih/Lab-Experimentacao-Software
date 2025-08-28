@@ -11,7 +11,7 @@ class BaseChart:
 class RQ04UpdatesCharts:
     @staticmethod
     def generate(days_since_updates, base_dir):
-        print("RQ04UpdatesCharts.generate foi chamado")
+        # print("RQ04UpdatesCharts.generate foi chamado")
         median_days = sorted(days_since_updates)[len(days_since_updates) // 2]
 
         # Histograma

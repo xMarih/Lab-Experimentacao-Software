@@ -11,7 +11,7 @@ class BaseChart:
 class RQ02PRsCharts:
     @staticmethod
     def generate(merged_prs, base_dir):
-        print("RQ02PRsCharts.generate foi chamado")
+        # print("RQ02PRsCharts.generate foi chamado")
         median_prs = sorted(merged_prs)[len(merged_prs) // 2]
 
         # Histograma

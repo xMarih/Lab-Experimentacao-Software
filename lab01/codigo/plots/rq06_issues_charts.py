@@ -11,7 +11,7 @@ class BaseChart:
 class RQ06IssuesCharts:
     @staticmethod
     def generate(closed_ratios, base_dir):
-        print("RQ06IssuesCharts.generate foi chamado")
+        # print("RQ06IssuesCharts.generate foi chamado")
         median_ratio = sorted(closed_ratios)[len(closed_ratios) // 2]
 
         # Histograma

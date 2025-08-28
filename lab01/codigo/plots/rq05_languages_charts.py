@@ -11,7 +11,7 @@ class BaseChart:
 class RQ05LanguagesCharts:
     @staticmethod
     def generate(top_languages, base_dir):
-        print("RQ05LanguagesCharts.generate foi chamado")
+        # print("RQ05LanguagesCharts.generate foi chamado")
         langs, counts = zip(*top_languages)
 
         # Barras

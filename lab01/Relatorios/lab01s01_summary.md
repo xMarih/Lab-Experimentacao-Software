@@ -8,11 +8,11 @@ Idade (RQ01):
   Mín: 63 dias, Máx: 6344 dias
 ### RQ01 - Idade dos Repositórios (Histograma)
 
-![RQ01 Hist](./relatorios/graficos\rq01_idade_hist.png)
+![RQ01 Hist](./lab01/relatorios/graficos\rq01_idade_hist.png)
 
 ### RQ01 - Idade dos Repositórios (Box Plot)
 
-![RQ01 Box](./relatorios/graficos\rq01_idade_box.png)
+![RQ01 Box](./lab01/relatorios/graficos\rq01_idade_box.png)
 
 
 Pull Requests Aceitas (RQ02):
@@ -20,11 +20,11 @@ Pull Requests Aceitas (RQ02):
   Mín: 0, Máx: 86225
 ### RQ02 - Pull Requests Aceitas (Histograma)
 
-![RQ02 Hist](./relatorios/graficos\rq02_prs_hist.png)
+![RQ02 Hist](./lab01/relatorios/graficos\rq02_prs_hist.png)
 
 ### RQ02 - Pull Requests Aceitas (Box Plot)
 
-![RQ02 Box](./relatorios/graficos\rq02_prs_box.png)
+![RQ02 Box](./lab01/relatorios/graficos\rq02_prs_box.png)
 
 
 Releases (RQ03):
@@ -32,11 +32,11 @@ Releases (RQ03):
   Mín: 0, Máx: 1000
 ### RQ03 - Releases (Histograma)
 
-![RQ03 Hist](./relatorios/graficos\rq03_releases_hist.png)
+![RQ03 Hist](./lab01/relatorios/graficos\rq03_releases_hist.png)
 
 ### RQ03 - Releases (Box Plot)
 
-![RQ03 Box](./relatorios/graficos\rq03_releases_box.png)
+![RQ03 Box](./lab01/relatorios/graficos\rq03_releases_box.png)
 
 
 Dias desde última atualização (RQ04):
@@ -44,11 +44,11 @@ Dias desde última atualização (RQ04):
   Mín: 0 dias, Máx: 4 dias
 ### RQ04 - Dias Desde a Última Atualização (Histograma)
 
-![RQ04 Hist](./relatorios/graficos\rq04_dias_hist.png)
+![RQ04 Hist](./lab01/relatorios/graficos\rq04_dias_hist.png)
 
 ### RQ04 - Dias Desde a Última Atualização (Box Plot)
 
-![RQ04 Box](./relatorios/graficos\rq04_dias_box.png)
+![RQ04 Box](./lab01/relatorios/graficos\rq04_dias_box.png)
 
 
 Linguagens mais populares (RQ05):
@@ -64,11 +64,11 @@ Linguagens mais populares (RQ05):
   Jupyter Notebook: 22 repositórios
 ### RQ05 - Linguagens Mais Populares (Barras)
 
-![RQ05 Barras](./relatorios/graficos\rq05_linguagens_bar.png)
+![RQ05 Barras](./lab01/relatorios/graficos\rq05_linguagens_bar.png)
 
 ### RQ05 - Linguagens Mais Populares (Pizza)
 
-![RQ05 Pizza](./relatorios/graficos\rq05_linguagens_pie.png)
+![RQ05 Pizza](./lab01/relatorios/graficos\rq05_linguagens_pie.png)
 
 
 Percentual de issues fechadas (RQ06):
@@ -79,11 +79,11 @@ RQ07 - ANÁLISE POR LINGUAGEM (BÔNUS)
 ==================================================
 ### RQ06 - Percentual de Issues Fechadas (Histograma)
 
-![RQ06 Hist](./relatorios/graficos\rq06_issues_hist.png)
+![RQ06 Hist](./lab01/relatorios/graficos\rq06_issues_hist.png)
 
 ### RQ06 - Percentual de Issues Fechadas (Box Plot)
 
-![RQ06 Box](./relatorios/graficos\rq06_issues_box.png)
+![RQ06 Box](./lab01/relatorios/graficos\rq06_issues_box.png)
 
 
 Linguagens mais populares:

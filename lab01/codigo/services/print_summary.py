@@ -41,7 +41,7 @@ class CalculateMetrics:
         closed_ratios = [repo['closed_issues_ratio'] for repo in repositories if repo['total_issues'] > 0]
 
         # Diretório de saída dos gráficos
-        base_dir = './relatorios/graficos'
+        base_dir = './lab01/relatorios/graficos'
         if not os.path.exists(base_dir):
             os.makedirs(base_dir)
 

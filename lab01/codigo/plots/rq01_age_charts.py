@@ -11,7 +11,7 @@ class BaseChart:
 class RQ01AgeCharts:
     @staticmethod
     def generate(ages, base_dir):
-        print("RQ01AgeCharts.generate foi chamado")
+        # print("RQ01AgeCharts.generate foi chamado")
         median_age = sorted(ages)[len(ages) // 2]
 
         # Histograma

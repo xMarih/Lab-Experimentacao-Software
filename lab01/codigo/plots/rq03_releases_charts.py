@@ -11,7 +11,7 @@ class BaseChart:
 class RQ03ReleasesCharts:
     @staticmethod
     def generate(releases, base_dir):
-        print("RQ03ReleasesCharts.generate foi chamado")
+        # print("RQ03ReleasesCharts.generate foi chamado")
         median_releases = sorted(releases)[len(releases) // 2]
 
         # Histograma

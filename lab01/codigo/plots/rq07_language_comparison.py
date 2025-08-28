@@ -14,7 +14,7 @@ class RQ07LanguageComparisonCharts:
         """
         Gera gráficos comparando linguagens populares com outras linguagens (RQ07).
         """
-        print("RQ07LanguageComparisonCharts.generate foi chamado")
+        # print("RQ07LanguageComparisonCharts.generate foi chamado")
 
         # Preparar dados para o gráfico de barras
         metrics = ['Mediana PRs Aceitas', 'Mediana Releases', 'Mediana Dias Update']
