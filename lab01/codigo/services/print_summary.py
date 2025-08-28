@@ -32,7 +32,7 @@ class CalculateMetrics:
             print(line)
             output_lines.append(line + "\n")
 
-        print([repo['age_days'] for repo in repositories])
+        
         # Dados básicos
         ages = [repo['age_days'] for repo in repositories]
         merged_prs = [repo['merged_pull_requests'] for repo in repositories]
@@ -57,6 +57,7 @@ class CalculateMetrics:
             languages[lang] = languages.get(lang, 0) + 1
         sorted_languages = sorted(languages.items(), key=lambda x: x[1], reverse=True)
         top_languages = sorted_languages[:10]
+        
         rq05_bar_path, rq05_pie_path = RQ05LanguagesCharts.generate(top_languages, base_dir)
 
         if closed_ratios:

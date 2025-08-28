@@ -1,9 +1,17 @@
 import os
 import matplotlib.pyplot as plt
 
+class BaseChart:
+    @staticmethod
+    def save_chart(plt, filename):
+        """Salva o gráfico em um arquivo."""
+        plt.savefig(filename)
+        plt.close()
+
 class RQ02PRsCharts:
     @staticmethod
     def generate(merged_prs, base_dir):
+        print("RQ02PRsCharts.generate foi chamado")
         median_prs = sorted(merged_prs)[len(merged_prs) // 2]
 
         # Histograma
@@ -15,8 +23,8 @@ class RQ02PRsCharts:
         plt.ylabel('Frequência')
         plt.legend()
         hist_path = os.path.join(base_dir, 'rq02_prs_hist.png')
-        plt.savefig(hist_path)
-        plt.close()
+        print(f"Salvando histograma em: {hist_path}")
+        BaseChart.save_chart(plt, hist_path)
 
         # Boxplot
         plt.figure(figsize=(8, 6))
@@ -24,7 +32,7 @@ class RQ02PRsCharts:
         plt.title('RQ02 - Pull Requests Aceitas (Box Plot)')
         plt.xlabel('Número de Pull Requests')
         box_path = os.path.join(base_dir, 'rq02_prs_box.png')
-        plt.savefig(box_path)
-        plt.close()
+        print(f"Salvando boxplot em: {box_path}")
+        BaseChart.save_chart(plt, box_path)
 
         return hist_path, box_path
