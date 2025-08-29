@@ -29,27 +29,24 @@ class CalculateMetrics:
 
         output_lines = []
         def add_line(line: str):
-            print(line)
+            # print(line)
             output_lines.append(line + "\n")
 
         
-        # Dados básicos
+        # Dados básicos para todos os repositórios
         ages = [repo['age_days'] for repo in repositories]
         merged_prs = [repo['merged_pull_requests'] for repo in repositories]
         releases = [repo['total_releases'] for repo in repositories]
         days_since_updates = [repo['days_since_update'] for repo in repositories]
         closed_ratios = [repo['closed_issues_ratio'] for repo in repositories if repo['total_issues'] > 0]
 
-        # Diretório de saída dos gráficos
-        base_dir = './lab01/relatorios/graficos'
-        if not os.path.exists(base_dir):
-            os.makedirs(base_dir)
-
-        # Geração dos gráficos com as classes
-        rq01_hist_path, rq01_box_path = RQ01AgeCharts.generate(ages, base_dir)
-        rq02_hist_path, rq02_box_path = RQ02PRsCharts.generate(merged_prs, base_dir)
-        rq03_hist_path, rq03_box_path = RQ03ReleasesCharts.generate(releases, base_dir)
-        rq04_hist_path, rq04_box_path = RQ04UpdatesCharts.generate(days_since_updates, base_dir)
+        # Dados básicos para os 10 primeiros repositórios
+        top_10_repos = repositories[:10]  # Pega os 10 primeiros repositórios
+        top_10_ages = [repo['age_days'] for repo in top_10_repos]
+        top_10_merged_prs = [repo['merged_pull_requests'] for repo in top_10_repos]
+        top_10_releases = [repo['total_releases'] for repo in top_10_repos]
+        top_10_days_since_updates = [repo['days_since_update'] for repo in top_10_repos]
+        top_10_closed_ratios = [repo['closed_issues_ratio'] for repo in top_10_repos if repo['total_issues'] > 0]
 
         languages = {}
         for repo in repositories:
@@ -58,24 +55,47 @@ class CalculateMetrics:
         sorted_languages = sorted(languages.items(), key=lambda x: x[1], reverse=True)
         top_languages = sorted_languages[:10]
         
+        # Diretório de saída dos gráficos
+        base_dir = './lab01/relatorios/graficos'
+        if not os.path.exists(base_dir):
+            os.makedirs(base_dir)
+
+        # Geração dos gráficos para todos os repos
+        rq01_hist_path, rq01_box_path = RQ01AgeCharts.generate(ages, base_dir)
+        rq02_hist_path, rq02_box_path = RQ02PRsCharts.generate(merged_prs, base_dir)
+        rq03_hist_path, rq03_box_path = RQ03ReleasesCharts.generate(releases, base_dir)
+        rq04_hist_path, rq04_box_path = RQ04UpdatesCharts.generate(days_since_updates, base_dir)
         rq05_bar_path, rq05_pie_path = RQ05LanguagesCharts.generate(top_languages, base_dir)
+        
+        # Geração dos gráficos para top10 os repos
+        rq01_hist_top10, rq01_box_top10 = RQ01AgeCharts.generate(top_10_ages, base_dir)
+        rq02_hist_top10, rq02_box_top10 = RQ02PRsCharts.generate(top_10_merged_prs, base_dir)
+        rq03_hist_top10, rq03_box_top10 = RQ03ReleasesCharts.generate(top_10_releases, base_dir)
+        rq04_hist_top10, rq04_box_top10 = RQ04UpdatesCharts.generate(top_10_days_since_updates, base_dir)
+        rq05_bar_top10, rq05_pie_top10 = RQ05LanguagesCharts.generate(top_languages, base_dir)
 
         if closed_ratios:
             rq06_hist_path, rq06_box_path = RQ06IssuesCharts.generate(closed_ratios, base_dir)
+            rq06_hist_top10, rq06_box_top10 = RQ06IssuesCharts.generate(top_10_closed_ratios, base_dir)
         else:
             rq06_hist_path = rq06_box_path = None
+            rq06_hist_top10 = rq06_box_top10 = None
+            
+        rq07_analysis = CalculateMetrics.analyze_rq07(repositories)
         
         # Início da impressão do resumo
         add_line("\n" + "=" * 50)
-        add_line("RESUMO DOS DADOS COLETADOS")
+        add_line("# RESUMO DOS DADOS COLETADOS")
         add_line("=" * 50)
 
         # RQ01: Idade dos repositórios
-        add_line(f"\nIdade (RQ01):")
+        add_line(f"\n## RQ 01. Sistemas populares são maduros/antigos?")
+        add_line(f"\n### Métrica: idade do repositório")
         median_age = sorted(ages)[len(ages) // 2]
+        add_line(f"\n**Para todos os repositórios:**")
         add_line(f"  Mediana: {median_age} dias")
         add_line(f"  Mín: {min(ages)} dias, Máx: {max(ages)} dias")
-        add_line("### RQ01 - Idade dos Repositórios (Histograma)\n")
+        add_line(" RQ01 - Idade dos Repositórios (Histograma)\n")
         add_line(f"![RQ01 Hist]({rq01_hist_path})\n")
         add_line("### RQ01 - Idade dos Repositórios (Box Plot)\n")
         add_line(f"![RQ01 Box]({rq01_box_path})\n")
@@ -134,7 +154,7 @@ class CalculateMetrics:
         add_line("### RQ06 - Percentual de Issues Fechadas (Box Plot)\n")
         add_line(f"![RQ06 Box]({rq06_box_path})\n")
 
-        rq07_analysis = CalculateMetrics.analyze_rq07(repositories)
+        
 
         add_line(f"\nLinguagens mais populares:")
         for lang in rq07_analysis['popular_languages']:
@@ -192,6 +212,7 @@ class CalculateMetrics:
             with open(output_md_filename, "w", encoding="utf-8") as md_file:
                 md_file.writelines(output_lines)
             print(f"\nResumo salvo em {output_md_filename}")
+            print(f"top_languages: {top_languages}")
 
                 
                
@@ -252,23 +273,27 @@ class CalculateMetrics:
             return [lang for lang, count in sorted_languages[:top_n]]
 
     @staticmethod
-    def analyze_rq07(repositories: List[Dict]) -> Dict:
-            """
-            Análise específica para RQ07 (BÔNUS)
-            Compara linguagens populares vs outras linguagens
+    def analyze_rq07(repositories: List[Dict], top_10_repos: List[Dict] = None) -> Dict:
+        """
+        Análise específica para RQ07 (BÔNUS)
+        Compara linguagens populares vs outras linguagens para todos os repositórios e, opcionalmente, para os top 10.
 
-            Args:
-                repositories: Lista de repositórios
+        Args:
+            repositories: Lista de repositórios (todos).
+            top_10_repos: Lista dos 10 primeiros repositórios (opcional).
 
-            Returns:
-                Dicionário com análise comparativa
-            """
-            popular_languages = CalculateMetrics.get_popular_languages(repositories, 5)
+        Returns:
+            Dicionário com análise comparativa para todos e, se fornecido, para os top 10.
+        """
+
+        def analyze(repos: List[Dict]) -> Dict:
+            """Função auxiliar para realizar a análise em uma lista de repositórios."""
+            popular_languages = CalculateMetrics.get_popular_languages(repos, 5)
 
             popular_repos = []
             other_repos = []
 
-            for repo in repositories:
+            for repo in repos:
                 if repo['primary_language'] in popular_languages:
                     popular_repos.append(repo)
                 else:
@@ -296,5 +321,14 @@ class CalculateMetrics:
                 'popular_languages': popular_languages,
                 'popular_stats': popular_stats,
                 'other_stats': other_stats,
-                'by_language': CalculateMetrics.analyze_by_language(repositories)
+                'by_language': CalculateMetrics.analyze_by_language(repos)
             }
+
+        analysis_results = {
+            'all': analyze(repositories)
+        }
+
+        if top_10_repos:
+            analysis_results['top_10'] = analyze(top_10_repos)
+
+        return analysis_results
