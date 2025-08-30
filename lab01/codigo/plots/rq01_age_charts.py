@@ -23,6 +23,7 @@ class RQ01AgeCharts:
         plt.legend()
         hist_path = os.path.join(base_dir, 'rq01_idade_hist.png')
         BaseChart.save_chart(plt, hist_path)
+        hist_path =  './graficos/rq01_idade_hist.png' 
 
         # Boxplot
         plt.figure(figsize=(8, 6))
@@ -32,5 +33,7 @@ class RQ01AgeCharts:
         plt.ylabel(' ')
         box_path = os.path.join(base_dir, 'rq01_idade_box.png')
         BaseChart.save_chart(plt, box_path)
+        box_path =  './graficos/rq01_idade_box.png'
+
 
         return hist_path, box_path

@@ -32,4 +32,7 @@ class RQ06IssuesCharts:
         box_path = os.path.join(base_dir, 'rq06_issues_box.png')
         BaseChart.save_chart(plt, box_path)
 
+        hist_path =  './graficos/rq06_issues_hist.png'
+        box_path =  './graficos/rq06_issues_box.png'
+
         return hist_path, box_path

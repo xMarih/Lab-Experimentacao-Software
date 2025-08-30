@@ -38,4 +38,5 @@ class RQ07LanguageComparisonCharts:
         bar_path = os.path.join(base_dir, 'rq07_comparacao_bar.png')
         BaseChart.save_chart(plt, bar_path)
 
-        return
+        bar_path =  './graficos/rq07_comparacao_bar.png'
+        return bar_path

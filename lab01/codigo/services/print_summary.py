@@ -29,9 +29,8 @@ class CalculateMetrics:
 
         output_lines = []
         def add_line(line: str):
-            # print(line)
+            print(line)
             output_lines.append(line + "\n")
-
         
         # Dados básicos para todos os repositórios
         ages = [repo['age_days'] for repo in repositories]
@@ -72,89 +71,129 @@ class CalculateMetrics:
         rq02_hist_top10, rq02_box_top10 = RQ02PRsCharts.generate(top_10_merged_prs, base_dir)
         rq03_hist_top10, rq03_box_top10 = RQ03ReleasesCharts.generate(top_10_releases, base_dir)
         rq04_hist_top10, rq04_box_top10 = RQ04UpdatesCharts.generate(top_10_days_since_updates, base_dir)
-        rq05_bar_top10, rq05_pie_top10 = RQ05LanguagesCharts.generate(top_languages, base_dir)
 
-        if closed_ratios:
-            rq06_hist_path, rq06_box_path = RQ06IssuesCharts.generate(closed_ratios, base_dir)
-            rq06_hist_top10, rq06_box_top10 = RQ06IssuesCharts.generate(top_10_closed_ratios, base_dir)
-        else:
-            rq06_hist_path = rq06_box_path = None
-            rq06_hist_top10 = rq06_box_top10 = None
+        
+        rq06_hist_path, rq06_box_path = RQ06IssuesCharts.generate(closed_ratios, base_dir)
+        rq06_hist_top10, rq06_box_top10 = RQ06IssuesCharts.generate(top_10_closed_ratios, base_dir)
+        
             
         rq07_analysis = CalculateMetrics.analyze_rq07(repositories)
+        
         
         # Início da impressão do resumo
         add_line("\n" + "=" * 50)
         add_line("# RESUMO DOS DADOS COLETADOS")
         add_line("=" * 50)
-
+        
+    #####################################################################################
         # RQ01: Idade dos repositórios
         add_line(f"\n## RQ 01. Sistemas populares são maduros/antigos?")
         add_line(f"\n### Métrica: idade do repositório")
-        median_age = sorted(ages)[len(ages) // 2]
+        
         add_line(f"\n**Para todos os repositórios:**")
+        median_age = sorted(ages)[len(ages) // 2]
         add_line(f"  Mediana: {median_age} dias")
         add_line(f"  Mín: {min(ages)} dias, Máx: {max(ages)} dias")
-        add_line(" RQ01 - Idade dos Repositórios (Histograma)\n")
         add_line(f"![RQ01 Hist]({rq01_hist_path})\n")
-        add_line("### RQ01 - Idade dos Repositórios (Box Plot)\n")
         add_line(f"![RQ01 Box]({rq01_box_path})\n")
-                
+        
+        add_line(f"\n**Para top10 repositórios:**")
+        top10_median_age = sorted(top_10_ages)[len(top_10_ages) // 2]
+        add_line(f"  Mediana: {top10_median_age} dias")
+        add_line(f"  Mín: {min(top_10_ages)} dias, Máx: {max(top_10_ages)} dias")
+        add_line(f"![RQ01 Hist]({rq01_hist_top10})\n")
+        add_line(f"![RQ01 Box]({rq01_box_top10})\n")
+
+    #####################################################################################      
         # RQ02: Pull Requests Aceitas
-        add_line(f"\nPull Requests Aceitas (RQ02):")
+        add_line(f"\n## RQ 02. Sistemas populares recebem muita contribuição externa?")
+        add_line(f"\n### Métrica: Pull Requests Aceitas")
+
+        add_line(f"\n**Para todos os repositórios:**")
         median_prs = sorted(merged_prs)[len(merged_prs) // 2]
         add_line(f"  Mediana: {median_prs}")
         add_line(f"  Mín: {min(merged_prs)}, Máx: {max(merged_prs)}")
-        add_line("### RQ02 - Pull Requests Aceitas (Histograma)\n")
         add_line(f"![RQ02 Hist]({rq02_hist_path})\n")
-        add_line("### RQ02 - Pull Requests Aceitas (Box Plot)\n")
         add_line(f"![RQ02 Box]({rq02_box_path})\n")
         
+        add_line(f"\n**Para top10 repositórios:**")
+        top10_median_prs = sorted(top_10_merged_prs)[len(top_10_merged_prs) // 2]
+        add_line(f"  Mediana: {top10_median_prs}")
+        add_line(f"  Mín: {min(top_10_merged_prs)}, Máx: {max(top_10_merged_prs)}")
+        add_line(f"![RQ02 Hist]({rq02_hist_top10})\n")
+        add_line(f"![RQ02 Box]({rq02_box_top10})\n")
+        
+    #####################################################################################
         # RQ03: Releases
-        add_line(f"\nReleases (RQ03):")
+        add_line(f"\n## RQ 03. Sistemas populares lançam releases com frequência? ")
+        add_line(f"\n### Métrica: Releases")
+
+        add_line(f"\n**Para todos os repositórios:**")
         median_releases = sorted(releases)[len(releases) // 2]
         add_line(f"  Mediana: {median_releases}")
         add_line(f"  Mín: {min(releases)}, Máx: {max(releases)}")
-        add_line("### RQ03 - Releases (Histograma)\n")
         add_line(f"![RQ03 Hist]({rq03_hist_path})\n")
-        add_line("### RQ03 - Releases (Box Plot)\n")
         add_line(f"![RQ03 Box]({rq03_box_path})\n")
         
+        add_line(f"\n**Para top10 repositórios:**")
+        top10_median_releases = sorted(top_10_releases)[len(top_10_releases) // 2]
+        add_line(f"  Mediana: {top10_median_releases}")
+        add_line(f"  Mín: {min(top_10_releases)}, Máx: {max(top_10_releases)}")
+        add_line(f"![RQ03 Hist]({rq03_hist_top10})\n")
+        add_line(f"![RQ03 Box]({rq03_box_top10})\n")
+
+    #####################################################################################
         # RQ04: Dias desde a última atualização
-        add_line(f"\nDias desde última atualização (RQ04):")
+        add_line(f"\n## RQ 04. Sistemas populares são atualizados com frequência")
+        add_line(f"\n### Métrica: Dias desde a última atualização")
+        
+        add_line(f"\n**Para todos os repositórios:**")
         median_days_since_updates = sorted(days_since_updates)[len(days_since_updates) // 2]
         add_line(f"  Mediana: {median_days_since_updates} dias")
         add_line(f"  Mín: {min(days_since_updates)} dias, Máx: {max(days_since_updates)} dias")
-        add_line("### RQ04 - Dias Desde a Última Atualização (Histograma)\n")
         add_line(f"![RQ04 Hist]({rq04_hist_path})\n")
-        add_line("### RQ04 - Dias Desde a Última Atualização (Box Plot)\n")
         add_line(f"![RQ04 Box]({rq04_box_path})\n")
-            
+        
+        add_line(f"\n**Para top10 repositórios:**")
+        top10_median_days_since_updates = sorted(top_10_days_since_updates)[len(top_10_days_since_updates) // 2]
+        add_line(f"  Mediana: {top10_median_days_since_updates} dias")
+        add_line(f"  Mín: {min(top_10_days_since_updates)} dias, Máx: {max(top_10_days_since_updates)} dias")
+        add_line(f"![RQ04 Hist]({rq04_hist_top10})\n")
+        add_line(f"![RQ04 Box]({rq04_box_top10})\n")
+
+    #####################################################################################
         # RQ05: Linguagens mais populares
-        add_line(f"\nLinguagens mais populares (RQ05):")
+        add_line(f"\n## RQ 05. Sistemas populares são escritos nas linguagens mais populares?")
+        add_line(f"\n### linguagem primária de cada um desses repositórios")
+        
         top_languages = sorted_languages[:10]
         for lang, count in top_languages:
             add_line(f"  {lang}: {count} repositórios")   
-        add_line("### RQ05 - Linguagens Mais Populares (Barras)\n")
         add_line(f"![RQ05 Barras]({rq05_bar_path})\n")
-        add_line("### RQ05 - Linguagens Mais Populares (Pizza)\n")
         add_line(f"![RQ05 Pizza]({rq05_pie_path})\n")  
             
-        if closed_ratios:
-            # RQ06: Percentual de issues fechadas
-            add_line(f"\nPercentual de issues fechadas (RQ06):")
-            median_closed_ratios = sorted(closed_ratios)[len(closed_ratios) // 2]
-            add_line(f"  Mediana: {median_closed_ratios:.2f}%")
+    #####################################################################################
+        # RQ06: Percentual de issues fechadas       
+        add_line(f"\n## RQ 06. Sistemas populares possuem um alto percentual de issues fechadas? ")
+        add_line(f"\n### Razão entre número de issues fechadas pelo total de issues")
+        median_closed_ratios = sorted(closed_ratios)[len(closed_ratios) // 2]
 
-        add_line("\n" + "=" * 50)
-        add_line("RQ07 - ANÁLISE POR LINGUAGEM (BÔNUS)")
-        add_line("=" * 50)
-        add_line("### RQ06 - Percentual de Issues Fechadas (Histograma)\n")
+        add_line(f"\n**Para todos os repositórios:**")
+        add_line(f"  Mediana: {median_closed_ratios:.2f}%")
+        add_line(f"  Mín: {min(closed_ratios):.2f}%, Máx: {max(closed_ratios):.2f}%")
         add_line(f"![RQ06 Hist]({rq06_hist_path})\n")
-        add_line("### RQ06 - Percentual de Issues Fechadas (Box Plot)\n")
         add_line(f"![RQ06 Box]({rq06_box_path})\n")
 
-        
+        add_line(f"\n**Para top10 repositórios:**")
+        top10_median_closed_ratios = sorted(top_10_closed_ratios)[len(top_10_closed_ratios) // 2]
+        add_line(f"  Mediana: {top10_median_closed_ratios:.2f}%")
+        add_line(f"  Mín: {min(top_10_closed_ratios):.2f}%, Máx: {max(top_10_closed_ratios):.2f}%")
+        add_line(f"![RQ06 Hist]({rq06_hist_top10})\n")
+        add_line(f"![RQ06 Box]({rq06_box_top10})\n")
+
+    #####################################################################################
+        add_line(f"\n## RQ07 - ANÁLISE POR LINGUAGEM")
+        add_line(f"\n### Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência? ")
 
         add_line(f"\nLinguagens mais populares:")
         for lang in rq07_analysis['popular_languages']:
@@ -164,34 +203,28 @@ class CalculateMetrics:
         other_stats = rq07_analysis['other_stats']
 
         add_line(f"\nComparação: Linguagens Populares vs Outras")
-        add_line(f"┌─────────────────────────────┬─────────────┬─────────────┐")
-        add_line(f"│ Métrica                     │ Populares   │ Outras      │")
-        add_line(f"├─────────────────────────────┼─────────────┼─────────────┤")
-        add_line(f"│ Repositórios                │ {popular_stats['count']:11d} │ {other_stats['count']:11d} │")
-        add_line(f"│ Mediana PRs Aceitas (RQ02)  │ {popular_stats['median_prs']:11d} │ {other_stats['median_prs']:11d} │")
-        add_line(
-            f"│ Mediana Releases (RQ03)     │ {popular_stats['median_releases']:11d} │ {other_stats['median_releases']:11d} │")
-        add_line(
-            f"│ Mediana Dias Update (RQ04)  │ {popular_stats['median_days_update']:11d} │ {other_stats['median_days_update']:11d} │")
-        add_line(f"└─────────────────────────────┴─────────────┴─────────────┘")
+        add_line(f"| Métrica                    | Populares   | Outras      |")
+        add_line(f"| -------------------------- | ----------- | ----------- |")
+        add_line(f"| Repositórios               | {popular_stats['count']:11d} | {other_stats['count']:11d} |")
+        add_line(f"| Mediana PRs Aceitas (RQ02) | {popular_stats['median_prs']:11d} | {other_stats['median_prs']:11d} |")
+        add_line(f"| Mediana Releases (RQ03)    | {popular_stats['median_releases']:11d} | {other_stats['median_releases']:11d} |")
+        add_line(f"| Mediana Dias Update (RQ04) | {popular_stats['median_days_update']:11d} | {other_stats['median_days_update']:11d} |")
 
-        add_line(f"\nDetalhamento por linguagem (Top 10):")
         by_language = rq07_analysis['by_language']
-
         sorted_langs = sorted(by_language.items(), key=lambda x: x[1]['count'], reverse=True)
 
-        add_line(f"┌─────────────┬─────┬─────────┬──────────┬──────────────┐")
-        add_line(f"│ Linguagem   │ Qty │ Med PRs │ Med Rels │ Med Days Upd │")
-        add_line(f"├─────────────┼─────┼─────────┼──────────┼──────────────┤")
+        add_line("\nDetalhamento por linguagem (Top 10):")
+        add_line("| Linguagem   | Qty | Med PRs | Med Rels | Med Days Upd |")
+        add_line("| ----------- | --- | ------- | -------- | ------------ |")
+
+
 
         for lang, stats in sorted_langs[:10]:
             lang_short = lang[:11] if len(lang) <= 11 else lang[:8] + "..."
             add_line(
-                f"│ {lang_short:<11} │ {stats['count']:3d} │ {stats['median_merged_prs']:7d} │ {stats['median_releases']:8d} │ {stats['median_days_since_update']:12d} │")
+                f"| {lang_short:<11} | {stats['count']:3d} | {stats['median_merged_prs']:7d} | {stats['median_releases']:8d} | {stats['median_days_since_update']:12d} |")
 
-        add_line(f"└─────────────┴─────┴─────────┴──────────┴──────────────┘")
-
-        add_line(f"\nConclusão RQ07:")
+        add_line(f"\nConclusão")
         if popular_stats['median_prs'] > other_stats['median_prs']:
             add_line("✓ Linguagens populares recebem MAIS contribuições externas")
         else:
@@ -211,12 +244,8 @@ class CalculateMetrics:
             # Salvar o conteúdo em um arquivo .md
             with open(output_md_filename, "w", encoding="utf-8") as md_file:
                 md_file.writelines(output_lines)
-
-                
-               
-
-                
-
+            print(f"\nResumo salvo em {output_md_filename}")
+            
     @staticmethod
     def analyze_by_language(repositories: List[Dict]) -> Dict:
             """
@@ -271,27 +300,23 @@ class CalculateMetrics:
             return [lang for lang, count in sorted_languages[:top_n]]
 
     @staticmethod
-    def analyze_rq07(repositories: List[Dict], top_10_repos: List[Dict] = None) -> Dict:
-        """
-        Análise específica para RQ07 (BÔNUS)
-        Compara linguagens populares vs outras linguagens para todos os repositórios e, opcionalmente, para os top 10.
+    def analyze_rq07(repositories: List[Dict]) -> Dict:
+            """
+            Análise específica para RQ07 (BÔNUS)
+            Compara linguagens populares vs outras linguagens
 
-        Args:
-            repositories: Lista de repositórios (todos).
-            top_10_repos: Lista dos 10 primeiros repositórios (opcional).
+            Args:
+                repositories: Lista de repositórios
 
-        Returns:
-            Dicionário com análise comparativa para todos e, se fornecido, para os top 10.
-        """
-
-        def analyze(repos: List[Dict]) -> Dict:
-            """Função auxiliar para realizar a análise em uma lista de repositórios."""
-            popular_languages = CalculateMetrics.get_popular_languages(repos, 5)
+            Returns:
+                Dicionário com análise comparativa
+            """
+            popular_languages = CalculateMetrics.get_popular_languages(repositories, 5)
 
             popular_repos = []
             other_repos = []
 
-            for repo in repos:
+            for repo in repositories:
                 if repo['primary_language'] in popular_languages:
                     popular_repos.append(repo)
                 else:
@@ -319,14 +344,5 @@ class CalculateMetrics:
                 'popular_languages': popular_languages,
                 'popular_stats': popular_stats,
                 'other_stats': other_stats,
-                'by_language': CalculateMetrics.analyze_by_language(repos)
+                'by_language': CalculateMetrics.analyze_by_language(repositories)
             }
-
-        analysis_results = {
-            'all': analyze(repositories)
-        }
-
-        if top_10_repos:
-            analysis_results['top_10'] = analyze(top_10_repos)
-
-        return analysis_results

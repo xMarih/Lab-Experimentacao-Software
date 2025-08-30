@@ -16,7 +16,7 @@ class RQ05LanguagesCharts:
         # Barras
         plt.figure(figsize=(10, 6))
         plt.bar(langs, counts, color='skyblue')
-        plt.title('RQ05 - Linguagens Mais Populares (Barras)')
+        plt.title('RQ05 - Linguagens Mais Populares')
         plt.xlabel('Linguagens')
         plt.ylabel('Número de Repositórios')
         plt.xticks(rotation=45, ha='right')
@@ -27,9 +27,11 @@ class RQ05LanguagesCharts:
         # Pizza
         plt.figure(figsize=(8, 6))
         plt.pie(counts, labels=langs, autopct='%1.1f%%', startangle=140)
-        plt.title('RQ05 - Linguagens Mais Populares (Pizza)')
+        plt.title('RQ05 - Linguagens Mais Populares')
         plt.tight_layout()
         pie_path = os.path.join(base_dir, 'rq05_linguagens_pie.png')
         BaseChart.save_chart(plt, pie_path)
+        bar_path =  './graficos/rq05_linguagens_bar.png'
+        pie_path =  './graficos/rq05_linguagens_pie.png'
 
         return bar_path, pie_path

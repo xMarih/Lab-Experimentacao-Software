@@ -27,9 +27,12 @@ class RQ04UpdatesCharts:
         # Boxplot
         plt.figure(figsize=(8, 6))
         plt.boxplot(days_since_updates, vert=False, patch_artist=True, showfliers=False)
-        plt.title('RQ04 - Dias Desde a Última Atualização (Box Plot)')
+        plt.title('RQ04 - Dias Desde a Última Atualização')
         plt.xlabel('Dias Desde a Última Atualização')
         box_path = os.path.join(base_dir, 'rq04_dias_box.png')
         BaseChart.save_chart(plt, box_path)
+        
+        hist_path =  './graficos/rq04_dias_hist.png'
+        box_path =  './graficos/rq04_dias_box.png'
 
         return hist_path, box_path

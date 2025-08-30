@@ -31,5 +31,7 @@ class RQ03ReleasesCharts:
         plt.xlabel('Número de Releases')
         box_path = os.path.join(base_dir, 'rq03_releases_box.png')
         BaseChart.save_chart(plt, box_path)
+        hist_path =  './graficos/rq03_releases_hist.png'
+        box_path =  './graficos/rq03_releases_box.png'
 
         return hist_path, box_path
