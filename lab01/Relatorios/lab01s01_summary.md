@@ -85,7 +85,7 @@
 
 ## RQ 05. Sistemas populares são escritos nas linguagens mais populares?
 
-### linguagem primária de cada um desses repositórios
+### Linguagem primária de cada um desses repositórios
   Python: 189 repositórios
   TypeScript: 156 repositórios
   JavaScript: 130 repositórios
@@ -133,8 +133,8 @@ Linguagens mais populares:
   - Go
 
 Comparação: Linguagens Populares vs Outras
-| Métrica                     | Populares   | Outras      |
-| --------------------------- | ----------- | ----------- |
+| Métrica                    | Populares   | Outras      |
+| -------------------------- | ----------- | ----------- |
 | Repositórios               |         651 |         349 |
 | Mediana PRs Aceitas (RQ02) |         715 |         681 |
 | Mediana Releases (RQ03)    |          42 |          31 |

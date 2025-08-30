@@ -164,7 +164,7 @@ class CalculateMetrics:
     #####################################################################################
         # RQ05: Linguagens mais populares
         add_line(f"\n## RQ 05. Sistemas populares são escritos nas linguagens mais populares?")
-        add_line(f"\n### linguagem primária de cada um desses repositórios")
+        add_line(f"\n### Linguagem primária de cada um desses repositórios")
         
         top_languages = sorted_languages[:10]
         for lang, count in top_languages:
