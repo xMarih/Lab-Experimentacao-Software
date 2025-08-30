@@ -9,11 +9,11 @@ O cenário atual de desenvolvimento de software demanda evidências empíricas p
 ## HIPÓTESES INFORMAIS
 ### RQ 01. Sistemas populares são maduros/antigos?
 Métrica: idade do repositório (calculado a partir da data de sua criação)
-Hipótese Informal: A maturidade é um fator crucial para a popularidade. Acredita-se que repositórios populares são, em média, mais antigos. Eles tiveram tempo para evoluir, construir uma comunidade, e acumular estrelas ao longo dos anos. Portanto, a idade mediana dos repositórios na amostra será significativamente alta (por exemplo, mais de 3 anos).
+Hipótese Informal: Acredita-se que repositórios populares são, em média, mais antigos. Eles tiveram tempo para evoluir, construir uma comunidade, e acumular estrelas ao longo dos anos. Portanto, a idade mediana dos repositórios populares na amostra deve ser mais ALTA que a média. 
 
 ### RQ 02. Sistemas populares recebem muita contribuição externa?
 Métrica: total de pull requests aceitas
-Hipótese Informal: Repositórios populares com uma comunidade ativa e que recebem muitas pull requests aceitas (contribuições externas) possuem mais estrelas. A alta visibilidade e o grande número de estrelas atraem novos contribuidores, resultando em um alto número de pull requests aceitas por repositório.
+Hipótese Informal: Repositórios populares com uma comunidade ativa e que recebem muitas pull requests aceitas (contribuições externas) possuem mais estrelas que a média. A alta visibilidade e o grande número de estrelas atraem novos contribuidores, resultando em um alto número de pull requests por repositório.
 
 ### RQ 03. Sistemas populares lançam releases com frequência?
 Métrica: total de releases
