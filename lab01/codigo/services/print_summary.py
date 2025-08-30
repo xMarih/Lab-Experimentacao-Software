@@ -211,8 +211,6 @@ class CalculateMetrics:
             # Salvar o conteúdo em um arquivo .md
             with open(output_md_filename, "w", encoding="utf-8") as md_file:
                 md_file.writelines(output_lines)
-            print(f"\nResumo salvo em {output_md_filename}")
-            print(f"top_languages: {top_languages}")
 
                 
                

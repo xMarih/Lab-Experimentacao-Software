@@ -11,7 +11,6 @@ class BaseChart:
 class RQ05LanguagesCharts:
     @staticmethod
     def generate(top_languages, base_dir):
-        # print("RQ05LanguagesCharts.generate foi chamado")
         langs, counts = zip(*top_languages)
 
         # Barras
@@ -23,7 +22,6 @@ class RQ05LanguagesCharts:
         plt.xticks(rotation=45, ha='right')
         plt.tight_layout()
         bar_path = os.path.join(base_dir, 'rq05_linguagens_bar.png')
-        print(f"Salvando gráfico de barras em: {bar_path}")
         BaseChart.save_chart(plt, bar_path)
 
         # Pizza
@@ -32,7 +30,6 @@ class RQ05LanguagesCharts:
         plt.title('RQ05 - Linguagens Mais Populares (Pizza)')
         plt.tight_layout()
         pie_path = os.path.join(base_dir, 'rq05_linguagens_pie.png')
-        print(f"Salvando gráfico de pizza em: {pie_path}")
         BaseChart.save_chart(plt, pie_path)
 
         return bar_path, pie_path

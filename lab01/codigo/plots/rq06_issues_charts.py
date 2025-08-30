@@ -11,7 +11,6 @@ class BaseChart:
 class RQ06IssuesCharts:
     @staticmethod
     def generate(closed_ratios, base_dir):
-        # print("RQ06IssuesCharts.generate foi chamado")
         median_ratio = sorted(closed_ratios)[len(closed_ratios) // 2]
 
         # Histograma
@@ -23,7 +22,6 @@ class RQ06IssuesCharts:
         plt.ylabel('Frequência')
         plt.legend()
         hist_path = os.path.join(base_dir, 'rq06_issues_hist.png')
-        print(f"Salvando histograma em: {hist_path}")
         BaseChart.save_chart(plt, hist_path)
 
         # Boxplot
@@ -32,7 +30,6 @@ class RQ06IssuesCharts:
         plt.title('RQ06 - Percentual de Issues Fechadas (Box Plot)')
         plt.xlabel('Percentual de Issues Fechadas')
         box_path = os.path.join(base_dir, 'rq06_issues_box.png')
-        print(f"Salvando boxplot em: {box_path}")
         BaseChart.save_chart(plt, box_path)
 
         return hist_path, box_path

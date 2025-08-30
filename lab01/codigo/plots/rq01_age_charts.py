@@ -11,7 +11,6 @@ class BaseChart:
 class RQ01AgeCharts:
     @staticmethod
     def generate(ages, base_dir):
-        # print("RQ01AgeCharts.generate foi chamado")
         median_age = sorted(ages)[len(ages) // 2]
 
         # Histograma
@@ -23,7 +22,6 @@ class RQ01AgeCharts:
         plt.ylabel('Frequência')
         plt.legend()
         hist_path = os.path.join(base_dir, 'rq01_idade_hist.png')
-        print(f"Salvando histograma em: {hist_path}")
         BaseChart.save_chart(plt, hist_path)
 
         # Boxplot
@@ -33,7 +31,6 @@ class RQ01AgeCharts:
         plt.xlabel('Idade (dias)')
         plt.ylabel(' ')
         box_path = os.path.join(base_dir, 'rq01_idade_box.png')
-        print(f"Salvando boxplot em: {box_path}")
         BaseChart.save_chart(plt, box_path)
 
         return hist_path, box_path

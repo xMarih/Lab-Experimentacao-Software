@@ -14,8 +14,6 @@ class RQ07LanguageComparisonCharts:
         """
         Gera gráficos comparando linguagens populares com outras linguagens (RQ07).
         """
-        # print("RQ07LanguageComparisonCharts.generate foi chamado")
-
         # Preparar dados para o gráfico de barras
         metrics = ['Mediana PRs Aceitas', 'Mediana Releases', 'Mediana Dias Update']
         popular_values = [popular_stats['median_prs'], popular_stats['median_releases'], popular_stats['median_days_update']]
@@ -38,7 +36,6 @@ class RQ07LanguageComparisonCharts:
 
         # Salvar gráfico de barras
         bar_path = os.path.join(base_dir, 'rq07_comparacao_bar.png')
-        print(f"Salvando gráfico de barras em: {bar_path}")
         BaseChart.save_chart(plt, bar_path)
 
         return
