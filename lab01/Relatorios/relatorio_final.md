@@ -55,7 +55,10 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 ![RQ01 Box](./graficos/rq01_idade_box_Top10Repos.png)
 
 **Comparativo:**
-![RQ01 Comparativo](./graficos/rq01_comparacao_idade.png)
+![RQ01 Comparativo](./graficos/rq01_comparacao_com_desvio.jpeg)
+
+**Conclusão:**
+Como observado pelos gráficos, os sistemas populares possuem uma média superior quando comparados com todos os repositórios, saindo de 2951 dias para 3437 dias. Além disso teve uma redução no desvio padrão, indicando que há uma menor variação dos dados com a média sendo de 654.3 de desvio padrão para os top 10 e de 1426 para os demais.
 
 ### RQ 02. Sistemas populares recebem muita contribuição externa?
 
@@ -80,6 +83,7 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 ![RQ02 Comparativo](./graficos/rq02_comparacao_prs_boxplot.png)
 
 **Conclusão:**
+Quando comparado, existe uma diferença no valor de pull request (PR) aceitas, sendo que os populares possuem maior aceite das PRs, ou seja, há um aumento na contribuição externa. Também há um menor número de outliers com mediana sendo de 1071 para os top 10 e de 710 para os demais.
 
 ### RQ 03. Sistemas populares lançam releases com frequência? 
 
@@ -101,7 +105,10 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 ![RQ03 Box](./graficos/rq03_releases_box_Top10Repos.png)
 
 **Comparativo:**
-![RQ04 Comparativo](./graficos/rq04_comparacao_updates_boxplot.png)
+![RQ03 Comparativo](./graficos/rq03_comparacao_com_desvio.jpeg)
+
+**Conclusão:**
+Em média há uma quantidade bem menor de releases para sistemas mais populares. sendo uma média de 0.1 para os repositórios populares e de 109 para repositórios gerais.
 
 ### RQ 04. Sistemas populares são atualizados com frequência
 
@@ -125,6 +132,7 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 ![RQ04 Comparativo](./graficos/rq04_comparacao_updates_boxplot.png)
 
 **Conclusão:**
+As atualizações no git ocorrem de forma bem concisa e diária, não possuindo uma relação evidente entre a dias desde a última atualização com a popularidade dos repositórios.
 
 ### RQ 05. Sistemas populares são escritos nas linguagens mais populares?
 
@@ -142,6 +150,12 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 ![RQ05 Barras](./graficos/rq05_linguagens_bar_AllRepos.png)
 
 ![RQ05 Pizza](./graficos/rq05_linguagens_pie_AllRepos.png)
+
+**Comparativo:**
+![RQ05 Comparativo](./graficos/rq05_linguagens_top10.jpeg)
+
+**Conclusão:**
+O Python e o TypeScript estão entre as linguagens mais utilizadas tanto nos repositórios mais populares como nos mais utilizados de forma geral. Entretanto, os outros possuem uma diferenciação.
 
 ### RQ 06. Sistemas populares possuem um alto percentual de issues fechadas? 
 
@@ -163,6 +177,9 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 **Comparativo:**
 ![RQ06 Comparativo](./graficos/rq06_comparacao_issues_boxplot.png)
+
+**Conclusão:**
+Ao utilizar a mediana, é possível observar que os repositórios mias populários possuem 96% de issues fechadas, enquanto de forma geral, com outliers que possuem percentual abaixo de 40% possui apenas 86% de mediana de issues fechadas
 
 ### RQ07 - ANÁLISE POR LINGUAGEM
 
@@ -197,7 +214,7 @@ Detalhamento por linguagem (Top 10):
 | C           |  25 |     113 |       32 |            0 |
 | Jupyter ... |  22 |     147 |        0 |            0 |
 
-Conclusão
+**Conclusão:**
 ✓ Linguagens populares recebem MAIS contribuições externas
 ✓ Linguagens populares lançam MAIS releases
 ✗ Linguagens populares são atualizadas com MENOS frequência
