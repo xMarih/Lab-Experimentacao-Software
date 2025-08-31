@@ -223,7 +223,7 @@ Detalhamento por linguagem (Top 10):
 | Jupyter ... |  22 |     147 |        0 |            0 |
 
 **Conclusão:**
-
-✓ Linguagens populares recebem MAIS contribuições externas
-✓ Linguagens populares lançam MAIS releases
-✗ Linguagens populares são atualizadas com MENOS frequência
+<br>
+✓ Linguagens populares recebem MAIS contribuições externas<br>
+✓ Linguagens populares lançam MAIS releases<br>
+✗ Linguagens populares são atualizadas com MENOS frequência<br>
