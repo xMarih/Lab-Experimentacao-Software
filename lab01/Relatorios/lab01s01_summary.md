@@ -94,8 +94,10 @@
 
 ![RQ04 Box](./graficos/rq04_dias_box_Top10Repos.png)
 
+
 **Comparativo:**
 ![RQ04 Comparativo](./graficos/rq04_comparacao_updates_boxplot.png)
+
 
 ## RQ 05. Sistemas populares são escritos nas linguagens mais populares?
 
@@ -134,8 +136,10 @@
 
 ![RQ06 Box](./graficos/rq06_issues_box_Top10Repos.png)
 
+
 **Comparativo:**
 ![RQ06 Comparativo](./graficos/rq06_comparacao_issues_boxplot.png)
+
 
 ## RQ07 - ANÁLISE POR LINGUAGEM
 

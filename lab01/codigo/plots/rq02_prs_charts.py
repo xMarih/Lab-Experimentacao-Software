@@ -17,7 +17,7 @@ class RQ02PRsCharts:
         plt.figure(figsize=(8, 6))
         plt.hist(merged_prs, bins=20, color='lightgreen', edgecolor='black')
         plt.axvline(median_prs, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_prs:.0f}')
-        plt.title('RQ02 - Distribuição de Pull Requests Aceitas (Histograma)')
+        plt.title(f'RQ02 - Distribuição de Pull Requests Aceitas (Histograma)\nMediana: {median_prs:.0f}')  # Adicionado ao título
         plt.xlabel('Número de Pull Requests')
         plt.ylabel('Frequência')
         plt.legend()
@@ -27,7 +27,7 @@ class RQ02PRsCharts:
         # Boxplot
         plt.figure(figsize=(8, 6))
         plt.boxplot(merged_prs, vert=False, patch_artist=True, showfliers=False)
-        plt.title('RQ02 - Pull Requests Aceitas (Box Plot)')
+        plt.title(f'RQ02 - Pull Requests Aceitas (Box Plot)\nMediana: {median_prs:.0f}') # Adicionado ao título
         plt.xlabel('Número de Pull Requests')
         box_path = os.path.join(base_dir, f'rq02_prs_box_{top_n}.png')
         BaseChart.save_chart(plt, box_path)

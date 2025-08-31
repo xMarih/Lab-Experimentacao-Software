@@ -17,7 +17,7 @@ class RQ01AgeCharts:
         plt.figure(figsize=(8, 6))
         plt.hist(ages, bins=20, color='skyblue', edgecolor='black')
         plt.axvline(median_age, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_age:.0f}')
-        plt.title('RQ01 - Distribuição da Idade dos Repositórios (Histograma)')
+        plt.title(f'RQ01 - Distribuição da Idade dos Repositórios (Histograma)\nMediana: {median_age:.0f} dias')  # Adicionado ao título
         plt.xlabel('Idade (dias)')
         plt.ylabel('Repositórios')
         plt.legend()
@@ -28,7 +28,7 @@ class RQ01AgeCharts:
         # Boxplot
         plt.figure(figsize=(8, 6))
         plt.boxplot(ages, vert=False, patch_artist=True, showfliers=False)
-        plt.title('RQ01 - Idade dos Repositórios (Box Plot)')
+        plt.title(f'RQ01 - Idade dos Repositórios (Box Plot)\nMediana: {median_age:.0f} dias')  # Adicionado ao título
         plt.xlabel('Idade (dias)')
         plt.ylabel(' ')
         box_path = os.path.join(base_dir, f'rq01_idade_box_{top_n}.png' )

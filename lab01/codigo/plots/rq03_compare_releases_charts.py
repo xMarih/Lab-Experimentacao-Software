@@ -16,11 +16,15 @@ class RQ03CompareReleasesCharts:
         """
         plt.figure(figsize=(8, 6))
 
+        # Calcula as medianas
+        median_releases_all = sorted(all_releases)[len(all_releases) // 2]
+        median_releases_top10 = sorted(top10_releases)[len(top10_releases) // 2]
+
         # Cria o boxplot
         plt.boxplot([all_releases, top10_releases], labels=['Todos os Repositórios', 'Top 10 Repositórios'], patch_artist=True)
 
         # Configurações do gráfico
-        plt.title('RQ03 - Comparação do Número de Releases (Boxplot)')
+        plt.title(f'RQ03 - Comparação do Número de Releases (Boxplot)\nMediana (Todos): {median_releases_all:.0f}, Mediana (Top 10): {median_releases_top10:.0f}')
         plt.ylabel('Número de Releases')
 
         # Salva o gráfico

@@ -16,11 +16,15 @@ class RQ04CompareUpdatesCharts:
         """
         plt.figure(figsize=(8, 6))
 
+        # Calcula as medianas
+        median_updates_all = sorted(all_updates)[len(all_updates) // 2]
+        median_updates_top10 = sorted(top10_updates)[len(top10_updates) // 2]
+
         # Cria o boxplot
         plt.boxplot([all_updates, top10_updates], labels=['Todos os Repositórios', 'Top 10 Repositórios'], patch_artist=True)
 
         # Configurações do gráfico
-        plt.title('RQ04 - Comparação dos Dias Desde a Última Atualização (Boxplot)')
+        plt.title(f'RQ04 - Comparação dos Dias Desde a Última Atualização (Boxplot)\nMediana (Todos): {median_updates_all:.0f}, Mediana (Top 10): {median_updates_top10:.0f}')
         plt.ylabel('Dias Desde a Última Atualização')
 
         # Salva o gráfico

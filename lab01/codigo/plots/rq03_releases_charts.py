@@ -17,7 +17,7 @@ class RQ03ReleasesCharts:
         plt.figure(figsize=(8, 6))
         plt.hist(releases, bins=20, color='lightcoral', edgecolor='black')
         plt.axvline(median_releases, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_releases:.0f}')
-        plt.title('RQ03 - Distribuição de Releases (Histograma)')
+        plt.title(f'RQ03 - Distribuição de Releases (Histograma)\nMediana: {median_releases:.0f}')
         plt.xlabel('Número de Releases')
         plt.ylabel('Frequência')
         plt.legend()
@@ -27,7 +27,7 @@ class RQ03ReleasesCharts:
         # Boxplot
         plt.figure(figsize=(8, 6))
         plt.boxplot(releases, vert=False, patch_artist=True, showfliers=False)
-        plt.title('RQ03 - Releases (Box Plot)')
+        plt.title(f'RQ03 - Releases (Box Plot)\nMediana: {median_releases:.0f}')
         plt.xlabel('Número de Releases')
         box_path = os.path.join(base_dir, f'rq03_releases_box_{top_n}.png')
         BaseChart.save_chart(plt, box_path)

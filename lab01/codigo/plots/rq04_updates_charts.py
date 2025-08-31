@@ -17,7 +17,7 @@ class RQ04UpdatesCharts:
         plt.figure(figsize=(8, 6))
         plt.hist(days_since_updates, bins=20, color='lightyellow', edgecolor='black')
         plt.axvline(median_days, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_days:.0f}')
-        plt.title('RQ04 - Distribuição de Dias Desde a Última Atualização (Histograma)')
+        plt.title(f'RQ04 - Distribuição de Dias Desde a Última Atualização (Histograma)\nMediana: {median_days:.0f}')
         plt.xlabel('Dias Desde a Última Atualização')
         plt.ylabel('Frequência')
         plt.legend()
@@ -27,7 +27,7 @@ class RQ04UpdatesCharts:
         # Boxplot
         plt.figure(figsize=(8, 6))
         plt.boxplot(days_since_updates, vert=False, patch_artist=True, showfliers=False)
-        plt.title('RQ04 - Dias Desde a Última Atualização (Box Plot)')
+        plt.title(f'RQ04 - Dias Desde a Última Atualização (Box Plot)\nMediana: {median_days:.0f}')
         plt.xlabel('Dias Desde a Última Atualização')
         box_path = os.path.join(base_dir, f'rq04_dias_box_{top_n}.png')
         BaseChart.save_chart(plt, box_path)

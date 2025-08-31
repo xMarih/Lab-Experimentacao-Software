@@ -16,11 +16,15 @@ class RQ06CompareIssuesCharts:
         """
         plt.figure(figsize=(8, 6))
 
+        # Calcula as medianas
+        median_ratios_all = sorted(all_ratios)[len(all_ratios) // 2]
+        median_ratios_top10 = sorted(top10_ratios)[len(top10_ratios) // 2]
+
         # Cria o boxplot
         plt.boxplot([all_ratios, top10_ratios], labels=['Todos os Repositórios', 'Top 10 Repositórios'], patch_artist=True)
 
         # Configurações do gráfico
-        plt.title('RQ06 - Comparação do Percentual de Issues Fechadas (Boxplot)')
+        plt.title(f'RQ06 - Comparação do Percentual de Issues Fechadas (Boxplot)\nMediana (Todos): {median_ratios_all:.2f}%, Mediana (Top 10): {median_ratios_top10:.2f}%')
         plt.ylabel('Percentual de Issues Fechadas')
 
         # Salva o gráfico
