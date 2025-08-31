@@ -79,6 +79,8 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 **Comparativo:**
 ![RQ02 Comparativo](./graficos/rq02_comparacao_prs_boxplot.png)
 
+**Conclusão:**
+
 ### RQ 03. Sistemas populares lançam releases com frequência? 
 
 #### Métrica: Releases
@@ -90,8 +92,6 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ03 Box](./graficos/rq03_releases_box_AllRepos.png)
 
-**Comparativo:**
-![RQ03 Comparativo](./graficos/rq03_comparacao_releases_boxplot.png)
 
 **Para top10 repositórios:**
   Mediana: 0
@@ -121,6 +121,10 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ04 Box](./graficos/rq04_dias_box_Top10Repos.png)
 
+**Comparativo:**
+![RQ04 Comparativo](./graficos/rq04_comparacao_updates_boxplot.png)
+
+**Conclusão:**
 
 ### RQ 05. Sistemas populares são escritos nas linguagens mais populares?
 
