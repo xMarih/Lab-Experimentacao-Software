@@ -54,6 +54,8 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ01 Box](./graficos/rq01_idade_box_Top10Repos.png)
 
+**Comparativo:**
+![RQ01 Comparativo](./graficos/rq01_comparacao_idade.png)
 
 ### RQ 02. Sistemas populares recebem muita contribuição externa?
 
@@ -74,6 +76,8 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ02 Box](./graficos/rq02_prs_box_Top10Repos.png)
 
+**Comparativo:**
+![RQ02 Comparativo](./graficos/rq02_comparacao_prs_boxplot.png)
 
 ### RQ 03. Sistemas populares lançam releases com frequência? 
 
@@ -86,6 +90,8 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ03 Box](./graficos/rq03_releases_box_AllRepos.png)
 
+**Comparativo:**
+![RQ03 Comparativo](./graficos/rq03_comparacao_releases_boxplot.png)
 
 **Para top10 repositórios:**
   Mediana: 0
@@ -94,7 +100,8 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ03 Box](./graficos/rq03_releases_box_Top10Repos.png)
 
-
+**Comparativo:**
+![RQ04 Comparativo](./graficos/rq04_comparacao_updates_boxplot.png)
 
 ### RQ 04. Sistemas populares são atualizados com frequência
 
@@ -132,7 +139,6 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ05 Pizza](./graficos/rq05_linguagens_pie_AllRepos.png)
 
-
 ### RQ 06. Sistemas populares possuem um alto percentual de issues fechadas? 
 
 #### Razão entre número de issues fechadas pelo total de issues
@@ -144,7 +150,6 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ06 Box](./graficos/rq06_issues_box_AllRepos.png)
 
-
 **Para top10 repositórios:**
   Mediana: 96.05%
   Mín: 26.69%, Máx: 99.02%
@@ -152,6 +157,8 @@ Hipótese Informal: Projetos desenvolvidos em linguagens de programação mais p
 
 ![RQ06 Box](./graficos/rq06_issues_box_Top10Repos.png)
 
+**Comparativo:**
+![RQ06 Comparativo](./graficos/rq06_comparacao_issues_boxplot.png)
 
 ### RQ07 - ANÁLISE POR LINGUAGEM
 

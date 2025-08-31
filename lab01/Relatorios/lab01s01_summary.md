@@ -24,7 +24,7 @@
 
 
 **Comparativo:**
-![RQ01 Compare](./graficos/rq01_compare_idade.png)
+![RQ01 Comparativo](./graficos/rq01_comparacao_idade.png)
 
 
 ## RQ 02. Sistemas populares recebem muita contribuição externa?
@@ -47,6 +47,10 @@
 ![RQ02 Box](./graficos/rq02_prs_box_Top10Repos.png)
 
 
+**Comparativo:**
+![RQ02 Comparativo](./graficos/rq02_comparacao_prs_boxplot.png)
+
+
 ## RQ 03. Sistemas populares lançam releases com frequência? 
 
 ### Métrica: Releases
@@ -65,6 +69,10 @@
 ![RQ03 Hist](./graficos/rq03_releases_hist_Top10Repos.png)
 
 ![RQ03 Box](./graficos/rq03_releases_box_Top10Repos.png)
+
+
+**Comparativo:**
+![RQ03 Comparativo](./graficos/rq03_comparacao_releases_boxplot.png)
 
 
 ## RQ 04. Sistemas populares são atualizados com frequência
@@ -86,6 +94,8 @@
 
 ![RQ04 Box](./graficos/rq04_dias_box_Top10Repos.png)
 
+**Comparativo:**
+![RQ04 Comparativo](./graficos/rq04_comparacao_updates_boxplot.png)
 
 ## RQ 05. Sistemas populares são escritos nas linguagens mais populares?
 
@@ -124,6 +134,8 @@
 
 ![RQ06 Box](./graficos/rq06_issues_box_Top10Repos.png)
 
+**Comparativo:**
+![RQ06 Comparativo](./graficos/rq06_comparacao_issues_boxplot.png)
 
 ## RQ07 - ANÁLISE POR LINGUAGEM
 

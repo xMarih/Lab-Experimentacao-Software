@@ -14,6 +14,12 @@ from plots.rq05_languages_charts import RQ05LanguagesCharts
 from plots.rq06_issues_charts import RQ06IssuesCharts
 
 from plots.rq01_compare_idade import RQ01CompareAgeCharts
+from plots.rq02_compare_prs_charts import RQ02ComparePRsCharts 
+from plots.rq03_compare_releases_charts import RQ03CompareReleasesCharts
+from plots.rq04_compare_updates_charts import RQ04CompareUpdatesCharts
+from plots.rq06_compare_issues_charts import RQ06CompareIssuesCharts
+
+
 
 class CalculateMetrics:
     @staticmethod
@@ -81,6 +87,10 @@ class CalculateMetrics:
 
 
         rq01_compare_idade = RQ01CompareAgeCharts.generate(ages, top_10_ages, base_dir)
+        rq02_compare_prs = RQ02ComparePRsCharts.generate(merged_prs, top_10_merged_prs, base_dir)
+        rq03_compare_releases = RQ03CompareReleasesCharts.generate(releases, top_10_releases, base_dir)
+        rq04_compare_updates = RQ04CompareUpdatesCharts.generate(days_since_updates, top_10_days_since_updates, base_dir)
+        rq06_compare_issues = RQ06CompareIssuesCharts.generate(closed_ratios, top_10_closed_ratios, base_dir)
 
         # Início da impressão do resumo
         add_line("\n" + "=" * 50)
@@ -108,7 +118,7 @@ class CalculateMetrics:
         
                 
         add_line(f"\n**Comparativo:**")
-        add_line(f"![RQ01 Compare]({rq01_compare_idade})\n")
+        add_line(f"![RQ01 Comparativo]({rq01_compare_idade})\n")
 
     #####################################################################################      
         # RQ02: Pull Requests Aceitas
@@ -129,6 +139,9 @@ class CalculateMetrics:
         add_line(f"![RQ02 Hist]({rq02_hist_top10})\n")
         add_line(f"![RQ02 Box]({rq02_box_top10})\n")
         
+        add_line(f"\n**Comparativo:**")
+        add_line(f"![RQ02 Comparativo]({rq02_compare_prs})\n")
+
     #####################################################################################
         # RQ03: Releases
         add_line(f"\n## RQ 03. Sistemas populares lançam releases com frequência? ")
@@ -148,6 +161,9 @@ class CalculateMetrics:
         add_line(f"![RQ03 Hist]({rq03_hist_top10})\n")
         add_line(f"![RQ03 Box]({rq03_box_top10})\n")
 
+        add_line(f"\n**Comparativo:**")
+        add_line(f"![RQ03 Comparativo]({rq03_compare_releases})\n")
+        
     #####################################################################################
         # RQ04: Dias desde a última atualização
         add_line(f"\n## RQ 04. Sistemas populares são atualizados com frequência")
@@ -166,6 +182,9 @@ class CalculateMetrics:
         add_line(f"  Mín: {min(top_10_days_since_updates)} dias, Máx: {max(top_10_days_since_updates)} dias")
         add_line(f"![RQ04 Hist]({rq04_hist_top10})\n")
         add_line(f"![RQ04 Box]({rq04_box_top10})\n")
+
+        add_line(f"\n**Comparativo:**")
+        add_line(f"![RQ04 Comparativo]({rq04_compare_updates})\n")
 
     #####################################################################################
         # RQ05: Linguagens mais populares
@@ -197,7 +216,8 @@ class CalculateMetrics:
         add_line(f"![RQ06 Hist]({rq06_hist_top10})\n")
         add_line(f"![RQ06 Box]({rq06_box_top10})\n")
 
-
+        add_line(f"\n**Comparativo:**")
+        add_line(f"![RQ06 Comparativo]({rq06_compare_issues})\n")
     #####################################################################################
         add_line(f"\n## RQ07 - ANÁLISE POR LINGUAGEM")
         add_line(f"\n### Sistemas escritos em linguagens mais populares recebem mais contribuição externa, lançam mais releases e são atualizados com mais frequência? ")

@@ -19,7 +19,7 @@ class RQ01AgeCharts:
         plt.axvline(median_age, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_age:.0f}')
         plt.title('RQ01 - Distribuição da Idade dos Repositórios (Histograma)')
         plt.xlabel('Idade (dias)')
-        plt.ylabel('Frequência')
+        plt.ylabel('Repositórios')
         plt.legend()
         hist_path = os.path.join(base_dir, f'rq01_idade_hist_{top_n}.png')
         BaseChart.save_chart(plt, hist_path)
