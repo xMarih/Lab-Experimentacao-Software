@@ -13,6 +13,8 @@ from plots.rq04_updates_charts import RQ04UpdatesCharts
 from plots.rq05_languages_charts import RQ05LanguagesCharts
 from plots.rq06_issues_charts import RQ06IssuesCharts
 
+from plots.rq01_compare_idade import RQ01CompareAgeCharts
+
 class CalculateMetrics:
     @staticmethod
     def print_summary(repositories: List[Dict], output_md_filename: str = None):
@@ -60,26 +62,26 @@ class CalculateMetrics:
             os.makedirs(base_dir)
 
         # Geração dos gráficos para todos os repos
-        rq01_hist_path, rq01_box_path = RQ01AgeCharts.generate(ages, base_dir)
-        rq02_hist_path, rq02_box_path = RQ02PRsCharts.generate(merged_prs, base_dir)
-        rq03_hist_path, rq03_box_path = RQ03ReleasesCharts.generate(releases, base_dir)
-        rq04_hist_path, rq04_box_path = RQ04UpdatesCharts.generate(days_since_updates, base_dir)
-        rq05_bar_path, rq05_pie_path = RQ05LanguagesCharts.generate(top_languages, base_dir)
+        rq01_hist_path, rq01_box_path = RQ01AgeCharts.generate(ages, base_dir, 'AllRepos')
+        rq02_hist_path, rq02_box_path = RQ02PRsCharts.generate(merged_prs, base_dir, 'AllRepos')
+        rq03_hist_path, rq03_box_path = RQ03ReleasesCharts.generate(releases, base_dir, 'AllRepos')
+        rq04_hist_path, rq04_box_path = RQ04UpdatesCharts.generate(days_since_updates, base_dir, 'AllRepos')
+        rq05_bar_path, rq05_pie_path = RQ05LanguagesCharts.generate(top_languages, base_dir, 'AllRepos')
         
         # Geração dos gráficos para top10 os repos
-        rq01_hist_top10, rq01_box_top10 = RQ01AgeCharts.generate(top_10_ages, base_dir)
-        rq02_hist_top10, rq02_box_top10 = RQ02PRsCharts.generate(top_10_merged_prs, base_dir)
-        rq03_hist_top10, rq03_box_top10 = RQ03ReleasesCharts.generate(top_10_releases, base_dir)
-        rq04_hist_top10, rq04_box_top10 = RQ04UpdatesCharts.generate(top_10_days_since_updates, base_dir)
+        rq01_hist_top10, rq01_box_top10 = RQ01AgeCharts.generate(top_10_ages, base_dir, 'Top10Repos')
+        rq02_hist_top10, rq02_box_top10 = RQ02PRsCharts.generate(top_10_merged_prs, base_dir, 'Top10Repos')
+        rq03_hist_top10, rq03_box_top10 = RQ03ReleasesCharts.generate(top_10_releases, base_dir, 'Top10Repos')
+        rq04_hist_top10, rq04_box_top10 = RQ04UpdatesCharts.generate(top_10_days_since_updates, base_dir, 'Top10Repos')
 
-        
-        rq06_hist_path, rq06_box_path = RQ06IssuesCharts.generate(closed_ratios, base_dir)
-        rq06_hist_top10, rq06_box_top10 = RQ06IssuesCharts.generate(top_10_closed_ratios, base_dir)
-        
+        rq06_hist_path, rq06_box_path = RQ06IssuesCharts.generate(closed_ratios, base_dir, 'AllRepos')
+        rq06_hist_top10, rq06_box_top10 = RQ06IssuesCharts.generate(top_10_closed_ratios, base_dir, 'Top10Repos')
             
         rq07_analysis = CalculateMetrics.analyze_rq07(repositories)
-        
-        
+
+
+        rq01_compare_idade = RQ01CompareAgeCharts.generate(ages, top_10_ages, base_dir)
+
         # Início da impressão do resumo
         add_line("\n" + "=" * 50)
         add_line("# RESUMO DOS DADOS COLETADOS")
@@ -103,6 +105,10 @@ class CalculateMetrics:
         add_line(f"  Mín: {min(top_10_ages)} dias, Máx: {max(top_10_ages)} dias")
         add_line(f"![RQ01 Hist]({rq01_hist_top10})\n")
         add_line(f"![RQ01 Box]({rq01_box_top10})\n")
+        
+                
+        add_line(f"\n**Comparativo:**")
+        add_line(f"![RQ01 Compare]({rq01_compare_idade})\n")
 
     #####################################################################################      
         # RQ02: Pull Requests Aceitas
@@ -190,6 +196,7 @@ class CalculateMetrics:
         add_line(f"  Mín: {min(top_10_closed_ratios):.2f}%, Máx: {max(top_10_closed_ratios):.2f}%")
         add_line(f"![RQ06 Hist]({rq06_hist_top10})\n")
         add_line(f"![RQ06 Box]({rq06_box_top10})\n")
+
 
     #####################################################################################
         add_line(f"\n## RQ07 - ANÁLISE POR LINGUAGEM")

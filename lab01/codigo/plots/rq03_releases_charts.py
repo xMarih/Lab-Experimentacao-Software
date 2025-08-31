@@ -10,7 +10,7 @@ class BaseChart:
 
 class RQ03ReleasesCharts:
     @staticmethod
-    def generate(releases, base_dir):
+    def generate(releases, base_dir, top_n):
         median_releases = sorted(releases)[len(releases) // 2]
 
         # Histograma
@@ -21,7 +21,7 @@ class RQ03ReleasesCharts:
         plt.xlabel('Número de Releases')
         plt.ylabel('Frequência')
         plt.legend()
-        hist_path = os.path.join(base_dir, 'rq03_releases_hist.png')
+        hist_path = os.path.join(base_dir, f'rq03_releases_hist_{top_n}.png')
         BaseChart.save_chart(plt, hist_path)
 
         # Boxplot
@@ -29,9 +29,9 @@ class RQ03ReleasesCharts:
         plt.boxplot(releases, vert=False, patch_artist=True, showfliers=False)
         plt.title('RQ03 - Releases (Box Plot)')
         plt.xlabel('Número de Releases')
-        box_path = os.path.join(base_dir, 'rq03_releases_box.png')
+        box_path = os.path.join(base_dir, f'rq03_releases_box_{top_n}.png')
         BaseChart.save_chart(plt, box_path)
-        hist_path =  './graficos/rq03_releases_hist.png'
-        box_path =  './graficos/rq03_releases_box.png'
+        hist_path =  f'./graficos/rq03_releases_hist_{top_n}.png'
+        box_path =  f'./graficos/rq03_releases_box_{top_n}.png'
 
         return hist_path, box_path

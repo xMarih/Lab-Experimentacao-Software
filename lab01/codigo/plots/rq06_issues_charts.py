@@ -10,7 +10,7 @@ class BaseChart:
 
 class RQ06IssuesCharts:
     @staticmethod
-    def generate(closed_ratios, base_dir):
+    def generate(closed_ratios, base_dir, top_n):
         median_ratio = sorted(closed_ratios)[len(closed_ratios) // 2]
 
         # Histograma
@@ -21,7 +21,7 @@ class RQ06IssuesCharts:
         plt.xlabel('Percentual de Issues Fechadas')
         plt.ylabel('Frequência')
         plt.legend()
-        hist_path = os.path.join(base_dir, 'rq06_issues_hist.png')
+        hist_path = os.path.join(base_dir, f'rq06_issues_hist_{top_n}.png')
         BaseChart.save_chart(plt, hist_path)
 
         # Boxplot
@@ -29,10 +29,10 @@ class RQ06IssuesCharts:
         plt.boxplot(closed_ratios, vert=False, patch_artist=True, showfliers=False)
         plt.title('RQ06 - Percentual de Issues Fechadas (Box Plot)')
         plt.xlabel('Percentual de Issues Fechadas')
-        box_path = os.path.join(base_dir, 'rq06_issues_box.png')
+        box_path = os.path.join(base_dir, f'rq06_issues_box_{top_n}.png')
         BaseChart.save_chart(plt, box_path)
 
-        hist_path =  './graficos/rq06_issues_hist.png'
-        box_path =  './graficos/rq06_issues_box.png'
+        hist_path =  f'./graficos/rq06_issues_hist_{top_n}.png'
+        box_path =  f'./graficos/rq06_issues_box_{top_n}.png'
 
         return hist_path, box_path
