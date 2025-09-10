@@ -172,7 +172,6 @@ secrets.py
 credentials.json
 
 # Arquivos de dados grandes (se aplicável)
-*.csv
 *.json
 *.xlsx
 *.h5

@@ -1,0 +1,1001 @@
+name_with_owner,url,stargazer_count,primary_language,created_at,age,last_push,time_since_last_push,disk_usage_kb,size_formatted,name
+PhilJay/MPAndroidChart,https://github.com/PhilJay/MPAndroidChart,38109,Java,2014-04-25T14:29:47Z,"11 anos, 4 meses",2025-06-05T07:06:39Z,"3 meses, 7 dias",21593,21.1 MB,MPAndroidChart
+xkcoding/spring-boot-demo,https://github.com/xkcoding/spring-boot-demo,33897,Java,2017-11-10T06:27:29Z,"7 anos, 10 meses",2024-07-24T02:02:52Z,"1 anos, 1 meses",14194,13.9 MB,spring-boot-demo
+chinabugotech/hutool,https://github.com/chinabugotech/hutool,30062,Java,2014-04-13T07:23:51Z,"11 anos, 5 meses",2025-09-10T12:03:13Z,0 dias,70410,68.8 MB,hutool
+alibaba/spring-cloud-alibaba,https://github.com/alibaba/spring-cloud-alibaba,28750,Java,2017-12-01T20:49:15Z,"7 anos, 9 meses",2025-08-28T11:03:58Z,13 dias,55812,54.5 MB,spring-cloud-alibaba
+Netflix/Hystrix,https://github.com/Netflix/Hystrix,24398,Java,2012-11-19T20:14:46Z,"12 anos, 9 meses",2023-10-17T13:04:47Z,"1 anos, 10 meses",9799,9.6 MB,Hystrix
+alibaba/Sentinel,https://github.com/alibaba/Sentinel,22898,Java,2018-04-04T06:37:33Z,"7 anos, 5 meses",2025-08-26T18:22:29Z,15 dias,8393,8.2 MB,Sentinel
+yudaocode/SpringBoot-Labs,https://github.com/yudaocode/SpringBoot-Labs,19856,Java,2018-09-12T14:51:46Z,"7 anos, 0 meses",2024-04-28T06:20:25Z,"1 anos, 4 meses",1813,1.8 MB,SpringBoot-Labs
+shuzheng/zheng,https://github.com/shuzheng/zheng,16731,Java,2016-10-04T10:07:06Z,"8 anos, 11 meses",2022-12-16T09:53:00Z,"2 anos, 8 meses",41267,40.3 MB,zheng
+prestodb/presto,https://github.com/prestodb/presto,16493,Java,2012-08-09T01:03:37Z,"13 anos, 1 meses",2025-09-10T23:15:00Z,0 dias,251437,245.5 MB,presto
+Konloch/bytecode-viewer,https://github.com/Konloch/bytecode-viewer,15205,Java,2014-10-14T10:26:46Z,"10 anos, 11 meses",2025-08-13T00:05:36Z,28 dias,648651,633.4 MB,bytecode-viewer
+deeplearning4j/deeplearning4j,https://github.com/deeplearning4j/deeplearning4j,14097,Java,2013-11-27T02:03:28Z,"11 anos, 9 meses",2025-08-29T12:58:32Z,12 dias,764664,746.7 MB,deeplearning4j
+Bigkoo/Android-PickerView,https://github.com/Bigkoo/Android-PickerView,13481,Java,2014-12-28T01:46:38Z,"10 anos, 8 meses",2022-12-30T03:36:03Z,"2 anos, 8 meses",6389,6.2 MB,Android-PickerView
+pagehelper/Mybatis-PageHelper,https://github.com/pagehelper/Mybatis-PageHelper,12338,Java,2014-06-09T15:32:30Z,"11 anos, 3 meses",2025-06-19T23:54:53Z,"2 meses, 22 dias",5333,5.2 MB,Mybatis-PageHelper
+trinodb/trino,https://github.com/trinodb/trino,11849,Java,2019-01-19T06:38:14Z,"6 anos, 7 meses",2025-09-10T16:07:02Z,0 dias,279123,272.6 MB,trino
+grpc/grpc-java,https://github.com/grpc/grpc-java,11837,Java,2014-12-08T19:00:00Z,"10 anos, 9 meses",2025-09-10T12:09:33Z,0 dias,111047,108.4 MB,grpc-java
+alibaba/vlayout,https://github.com/alibaba/vlayout,10775,Java,2017-02-27T08:11:47Z,"8 anos, 6 meses",2021-07-14T04:40:34Z,"4 anos, 1 meses",1726,1.7 MB,vlayout
+TooTallNate/Java-WebSocket,https://github.com/TooTallNate/Java-WebSocket,10737,Java,2010-01-20T23:33:04Z,"15 anos, 7 meses",2025-04-22T14:50:33Z,"4 meses, 21 dias",4250,4.2 MB,Java-WebSocket
+OpenFeign/feign,https://github.com/OpenFeign/feign,9734,Java,2013-06-26T23:28:16Z,"12 anos, 2 meses",2025-09-10T05:03:15Z,0 dias,10038,9.8 MB,feign
+liaohuqiu/android-Ultra-Pull-To-Refresh,https://github.com/liaohuqiu/android-Ultra-Pull-To-Refresh,9567,Java,2014-11-13T03:13:10Z,"10 anos, 10 meses",2023-05-28T15:12:24Z,"2 anos, 3 meses",3474,3.4 MB,android-Ultra-Pull-To-Refresh
+json-path/JsonPath,https://github.com/json-path/JsonPath,9288,Java,2011-01-24T13:19:19Z,"14 anos, 7 meses",2024-07-30T13:29:30Z,"1 anos, 1 meses",2694,2.6 MB,JsonPath
+karatelabs/karate,https://github.com/karatelabs/karate,8659,Java,2017-02-07T15:59:17Z,"8 anos, 7 meses",2025-08-29T02:42:11Z,12 dias,26565,25.9 MB,karate
+roughike/BottomBar,https://github.com/roughike/BottomBar,8393,Java,2016-03-16T01:31:05Z,"9 anos, 6 meses",2021-09-16T11:19:06Z,"3 anos, 12 meses",40819,39.9 MB,BottomBar
+bytedeco/javacv,https://github.com/bytedeco/javacv,8111,Java,2014-04-21T13:50:26Z,"11 anos, 4 meses",2025-08-27T06:55:02Z,14 dias,7815,7.6 MB,javacv
+mapstruct/mapstruct,https://github.com/mapstruct/mapstruct,7496,Java,2012-05-28T12:42:42Z,"13 anos, 3 meses",2025-08-30T09:08:17Z,11 dias,11146,10.9 MB,mapstruct
+square/dagger,https://github.com/square/dagger,7302,Java,2012-08-02T23:25:32Z,"13 anos, 1 meses",2021-08-26T11:07:52Z,"4 anos, 0 meses",6861,6.7 MB,dagger
+crazycodeboy/TakePhoto,https://github.com/crazycodeboy/TakePhoto,7243,Java,2015-08-04T02:05:32Z,"10 anos, 1 meses",2019-08-26T09:42:27Z,"6 anos, 0 meses",11513,11.2 MB,TakePhoto
+Exrick/xmall,https://github.com/Exrick/xmall,7231,Java,2017-07-28T01:49:49Z,"8 anos, 1 meses",2022-12-16T08:55:14Z,"2 anos, 8 meses",110866,108.3 MB,xmall
+dependency-check/DependencyCheck,https://github.com/dependency-check/DependencyCheck,7176,Java,2012-09-03T20:43:30Z,"13 anos, 0 meses",2025-09-08T01:09:44Z,2 dias,296507,289.6 MB,DependencyCheck
+NanoHttpd/nanohttpd,https://github.com/NanoHttpd/nanohttpd,7162,Java,2012-08-10T21:52:42Z,"13 anos, 1 meses",2023-07-25T06:59:07Z,"2 anos, 1 meses",1375,1.3 MB,nanohttpd
+alibaba/jvm-sandbox,https://github.com/alibaba/jvm-sandbox,6920,Java,2017-08-03T02:55:31Z,"8 anos, 1 meses",2025-08-27T09:57:23Z,14 dias,1874,1.8 MB,jvm-sandbox
+raphw/byte-buddy,https://github.com/raphw/byte-buddy,6607,Java,2013-11-25T19:38:03Z,"11 anos, 9 meses",2025-09-08T21:11:46Z,2 dias,1006594,983.0 MB,byte-buddy
+haifengl/smile,https://github.com/haifengl/smile,6255,Java,2014-11-20T16:28:12Z,"10 anos, 9 meses",2025-09-07T15:43:50Z,3 dias,257829,251.8 MB,smile
+obsidiandynamics/kafdrop,https://github.com/obsidiandynamics/kafdrop,5962,Java,2019-05-27T08:46:56Z,"6 anos, 3 meses",2025-09-08T16:23:42Z,2 dias,2940,2.9 MB,kafdrop
+google/google-java-format,https://github.com/google/google-java-format,5917,Java,2015-05-11T20:38:28Z,"10 anos, 4 meses",2025-07-18T19:06:31Z,"1 meses, 24 dias",2177,2.1 MB,google-java-format
+weibocom/motan,https://github.com/weibocom/motan,5896,Java,2016-04-20T10:56:17Z,"9 anos, 4 meses",2025-07-21T03:46:20Z,"1 meses, 21 dias",4641,4.5 MB,motan
+apache/pinot,https://github.com/apache/pinot,5893,Java,2014-05-19T23:27:48Z,"11 anos, 3 meses",2025-09-10T14:27:36Z,0 dias,339273,331.3 MB,pinot
+Nightonke/BoomMenu,https://github.com/Nightonke/BoomMenu,5804,Java,2016-03-19T12:04:12Z,"9 anos, 5 meses",2023-03-12T07:41:43Z,"2 anos, 6 meses",103934,101.5 MB,BoomMenu
+alibaba/spring-ai-alibaba,https://github.com/alibaba/spring-ai-alibaba,5752,Java,2024-09-09T01:35:50Z,"1 anos, 0 meses",2025-09-10T05:21:44Z,0 dias,197386,192.8 MB,spring-ai-alibaba
+Devlight/InfiniteCycleViewPager,https://github.com/Devlight/InfiniteCycleViewPager,5724,Java,2016-08-22T08:04:39Z,"9 anos, 0 meses",2022-08-09T20:20:47Z,"3 anos, 1 meses",279,279 KB,InfiniteCycleViewPager
+scribejava/scribejava,https://github.com/scribejava/scribejava,5466,Java,2010-09-05T19:11:40Z,"15 anos, 0 meses",2025-02-01T12:49:11Z,"7 meses, 11 dias",2624,2.6 MB,scribejava
+apache/dubbo-spring-boot-project,https://github.com/apache/dubbo-spring-boot-project,5405,Java,2018-01-18T12:10:50Z,"7 anos, 7 meses",2023-01-25T00:11:57Z,"2 anos, 7 meses",1557,1.5 MB,dubbo-spring-boot-project
+pmd/pmd,https://github.com/pmd/pmd,5207,Java,2012-07-11T18:03:00Z,"13 anos, 2 meses",2025-09-10T03:02:58Z,0 dias,536721,524.1 MB,pmd
+hneemann/Digital,https://github.com/hneemann/Digital,5093,Java,2016-06-28T17:40:16Z,"9 anos, 2 meses",2025-08-14T14:34:07Z,27 dias,39655,38.7 MB,Digital
+fast-excel/fastexcel,https://github.com/fast-excel/fastexcel,5087,Java,2024-10-05T11:42:50Z,"11 meses, 10 dias",2025-09-10T11:48:03Z,0 dias,30047,29.3 MB,fastexcel
+diffplug/spotless,https://github.com/diffplug/spotless,5074,Java,2015-04-27T19:10:58Z,"10 anos, 4 meses",2025-09-10T22:09:40Z,0 dias,21184,20.7 MB,spotless
+alibaba/UltraViewPager,https://github.com/alibaba/UltraViewPager,4979,Java,2017-03-29T13:31:53Z,"8 anos, 5 meses",2021-07-14T04:48:51Z,"4 anos, 1 meses",8873,8.7 MB,UltraViewPager
+JodaOrg/joda-time,https://github.com/JodaOrg/joda-time,4976,Java,2011-05-16T16:49:57Z,"14 anos, 4 meses",2025-08-27T23:37:39Z,13 dias,12937,12.6 MB,joda-time
+Devlight/NavigationTabBar,https://github.com/Devlight/NavigationTabBar,4950,Java,2016-03-29T08:59:27Z,"9 anos, 5 meses",2024-06-09T18:55:50Z,"1 anos, 3 meses",389,389 KB,NavigationTabBar
+spring-cloud/spring-cloud-netflix,https://github.com/spring-cloud/spring-cloud-netflix,4932,Java,2014-07-11T15:46:12Z,"11 anos, 2 meses",2025-09-10T13:12:47Z,0 dias,20886,20.4 MB,spring-cloud-netflix
+apache/maven,https://github.com/apache/maven,4764,Java,2009-05-21T03:22:03Z,"16 anos, 3 meses",2025-09-09T08:41:23Z,1 dias,88361,86.3 MB,maven
+spring-cloud/spring-cloud-gateway,https://github.com/spring-cloud/spring-cloud-gateway,4738,Java,2016-11-16T21:42:51Z,"8 anos, 10 meses",2025-09-10T19:12:49Z,0 dias,14854,14.5 MB,spring-cloud-gateway
+spring-attic/spring-security-oauth,https://github.com/spring-attic/spring-security-oauth,4702,Java,2011-07-26T18:08:49Z,"14 anos, 1 meses",2022-05-30T20:10:19Z,"3 anos, 3 meses",7273,7.1 MB,spring-security-oauth
+saysky/ForestBlog,https://github.com/saysky/ForestBlog,4667,Java,2017-10-08T15:27:47Z,"7 anos, 11 meses",2024-07-03T04:38:32Z,"1 anos, 2 meses",52149,50.9 MB,ForestBlog
+bytedeco/javacpp,https://github.com/bytedeco/javacpp,4638,Java,2014-04-21T12:47:21Z,"11 anos, 4 meses",2025-09-02T10:33:58Z,8 dias,11494,11.2 MB,javacpp
+yasserg/crawler4j,https://github.com/yasserg/crawler4j,4605,Java,2011-12-31T22:49:18Z,"13 anos, 8 meses",2021-11-04T08:31:46Z,"3 anos, 10 meses",1186,1.2 MB,crawler4j
+chewiebug/GCViewer,https://github.com/chewiebug/GCViewer,4585,Java,2011-10-23T09:01:04Z,"13 anos, 10 meses",2025-02-02T15:38:37Z,"7 meses, 10 dias",6761,6.6 MB,GCViewer
+Ashok-Varma/BottomNavigation,https://github.com/Ashok-Varma/BottomNavigation,4365,Java,2016-03-19T19:19:30Z,"9 anos, 5 meses",2020-12-14T10:06:25Z,"4 anos, 9 meses",3928,3.8 MB,BottomNavigation
+eirslett/frontend-maven-plugin,https://github.com/eirslett/frontend-maven-plugin,4323,Java,2013-08-30T14:44:38Z,"12 anos, 0 meses",2025-01-17T12:54:44Z,"7 meses, 26 dias",2198,2.1 MB,frontend-maven-plugin
+aws/aws-sdk-java,https://github.com/aws/aws-sdk-java,4178,Java,2010-03-22T23:34:58Z,"15 anos, 5 meses",2025-09-05T22:13:20Z,5 dias,6761486,6.4 GB,aws-sdk-java
+DTStack/chunjun,https://github.com/DTStack/chunjun,4081,Java,2018-04-03T12:44:58Z,"7 anos, 5 meses",2025-03-05T06:54:34Z,"6 meses, 9 dias",132442,129.3 MB,chunjun
+knowm/XChange,https://github.com/knowm/XChange,3999,Java,2012-02-02T10:48:28Z,"13 anos, 7 meses",2025-09-09T14:54:57Z,1 dias,51755,50.5 MB,XChange
+LibrePDF/OpenPDF,https://github.com/LibrePDF/OpenPDF,3996,Java,2016-07-11T15:50:34Z,"9 anos, 2 meses",2025-09-01T12:39:58Z,9 dias,43986,43.0 MB,OpenPDF
+iterate-ch/cyberduck,https://github.com/iterate-ch/cyberduck,3909,Java,2017-01-20T14:16:34Z,"8 anos, 7 meses",2025-09-10T16:03:58Z,0 dias,644252,629.2 MB,cyberduck
+RoaringBitmap/RoaringBitmap,https://github.com/RoaringBitmap/RoaringBitmap,3735,Java,2013-06-17T20:29:23Z,"12 anos, 2 meses",2025-09-09T19:26:01Z,1 dias,90651,88.5 MB,RoaringBitmap
+Atmosphere/atmosphere,https://github.com/Atmosphere/atmosphere,3720,Java,2010-06-30T14:26:23Z,"15 anos, 2 meses",2025-06-20T20:44:59Z,"2 meses, 22 dias",113436,110.8 MB,atmosphere
+coderbruis/JavaSourceCodeLearning,https://github.com/coderbruis/JavaSourceCodeLearning,3662,Java,2020-06-02T13:34:20Z,"5 anos, 3 meses",2022-05-31T10:26:51Z,"3 anos, 3 meses",8297,8.1 MB,JavaSourceCodeLearning
+FasterXML/jackson-databind,https://github.com/FasterXML/jackson-databind,3620,Java,2011-12-23T07:17:41Z,"13 anos, 8 meses",2025-09-10T03:47:30Z,0 dias,83479,81.5 MB,jackson-databind
+alibaba/Alink,https://github.com/alibaba/Alink,3608,Java,2018-09-30T06:36:11Z,"6 anos, 11 meses",2024-06-07T14:56:29Z,"1 anos, 3 meses",18863,18.4 MB,Alink
+spring-io/initializr,https://github.com/spring-io/initializr,3593,Java,2013-06-07T16:02:22Z,"12 anos, 3 meses",2025-09-08T07:22:18Z,2 dias,11507,11.2 MB,initializr
+OpenHFT/Chronicle-Queue,https://github.com/OpenHFT/Chronicle-Queue,3571,Java,2013-06-02T15:11:33Z,"12 anos, 3 meses",2025-09-10T10:33:02Z,0 dias,29836,29.1 MB,Chronicle-Queue
+luontola/retrolambda,https://github.com/luontola/retrolambda,3531,Java,2013-07-20T07:25:22Z,"12 anos, 1 meses",2023-09-26T15:12:04Z,"1 anos, 11 meses",1063,1.0 MB,retrolambda
+phodal/migration,https://github.com/phodal/migration,3465,Java,2020-01-08T02:11:38Z,"5 anos, 8 meses",2021-08-12T08:05:53Z,"4 anos, 1 meses",6167,6.0 MB,migration
+crossoverJie/SSM,https://github.com/crossoverJie/SSM,3441,Java,2016-06-21T10:09:02Z,"9 anos, 2 meses",2018-07-02T14:32:39Z,"7 anos, 2 meses",4404,4.3 MB,SSM
+apache/incubator-kie-optaplanner,https://github.com/apache/incubator-kie-optaplanner,3412,Java,2011-02-15T19:38:23Z,"14 anos, 7 meses",2025-08-19T18:09:30Z,22 dias,244105,238.4 MB,incubator-kie-optaplanner
+Tencent/spring-cloud-tencent,https://github.com/Tencent/spring-cloud-tencent,3284,Java,2021-07-29T05:12:42Z,"4 anos, 1 meses",2025-09-08T07:32:36Z,2 dias,9092,8.9 MB,spring-cloud-tencent
+bastillion-io/Bastillion,https://github.com/bastillion-io/Bastillion,3264,Java,2013-02-07T23:11:49Z,"12 anos, 7 meses",2025-08-28T13:20:37Z,13 dias,4125,4.0 MB,Bastillion
+apache/tika,https://github.com/apache/tika,3207,Java,2009-05-21T02:12:11Z,"16 anos, 3 meses",2025-09-10T17:42:17Z,0 dias,249690,243.8 MB,tika
+bauerca/drag-sort-listview,https://github.com/bauerca/drag-sort-listview,3205,Java,2012-06-01T06:32:13Z,"13 anos, 3 meses",2019-08-02T05:11:18Z,"6 anos, 1 meses",2461,2.4 MB,drag-sort-listview
+bilibili/boxing,https://github.com/bilibili/boxing,3192,Java,2017-01-22T07:04:34Z,"8 anos, 7 meses",2019-05-15T05:56:48Z,"6 anos, 4 meses",1603,1.6 MB,boxing
+wildfly/wildfly,https://github.com/wildfly/wildfly,3120,Java,2010-07-08T20:46:07Z,"15 anos, 2 meses",2025-09-10T21:00:54Z,0 dias,296869,289.9 MB,wildfly
+mplushnikov/lombok-intellij-plugin,https://github.com/mplushnikov/lombok-intellij-plugin,3095,Java,2013-10-09T21:49:01Z,"11 anos, 11 meses",2024-11-02T21:13:18Z,"10 meses, 12 dias",28195,27.5 MB,lombok-intellij-plugin
+eclipse-paho/paho.mqtt.android,https://github.com/eclipse-paho/paho.mqtt.android,3039,Java,2016-02-19T15:44:50Z,"9 anos, 6 meses",2024-08-10T07:56:41Z,"1 anos, 1 meses",2097,2.0 MB,paho.mqtt.android
+ltsopensource/light-task-scheduler,https://github.com/ltsopensource/light-task-scheduler,3020,Java,2014-10-24T12:53:14Z,"10 anos, 10 meses",2022-10-20T07:34:03Z,"2 anos, 10 meses",99960,97.6 MB,light-task-scheduler
+osmdroid/osmdroid,https://github.com/osmdroid/osmdroid,3017,Java,2014-03-06T19:03:48Z,"11 anos, 6 meses",2024-11-20T06:40:38Z,"9 meses, 24 dias",111337,108.7 MB,osmdroid
+ulisesbocchio/jasypt-spring-boot,https://github.com/ulisesbocchio/jasypt-spring-boot,3012,Java,2015-05-27T14:00:55Z,"10 anos, 3 meses",2025-09-06T22:39:33Z,4 dias,653,653 KB,jasypt-spring-boot
+keyboardsurfer/Crouton,https://github.com/keyboardsurfer/Crouton,3000,Java,2012-08-03T11:04:36Z,"13 anos, 1 meses",2015-09-28T15:29:58Z,"9 anos, 11 meses",3934,3.8 MB,Crouton
+pedrovgs/DraggablePanel,https://github.com/pedrovgs/DraggablePanel,2974,Java,2014-04-13T11:40:54Z,"11 anos, 5 meses",2017-06-12T17:16:25Z,"8 anos, 3 meses",107837,105.3 MB,DraggablePanel
+jenkinsci/blueocean-plugin,https://github.com/jenkinsci/blueocean-plugin,2891,Java,2016-01-23T18:02:45Z,"9 anos, 7 meses",2025-09-08T03:01:04Z,2 dias,33290,32.5 MB,blueocean-plugin
+arcadefire/nice-spinner,https://github.com/arcadefire/nice-spinner,2856,Java,2015-08-02T17:16:45Z,"10 anos, 1 meses",2024-07-28T20:08:59Z,"1 anos, 1 meses",412,412 KB,nice-spinner
+apache/commons-lang,https://github.com/apache/commons-lang,2848,Java,2009-05-21T01:24:46Z,"16 anos, 3 meses",2025-09-09T23:37:30Z,0 dias,28373,27.7 MB,commons-lang
+AbrahamCaiJin/CommonUtilLibrary,https://github.com/AbrahamCaiJin/CommonUtilLibrary,2846,Java,2017-04-28T06:06:58Z,"8 anos, 4 meses",2025-08-18T06:38:41Z,23 dias,824,824 KB,CommonUtilLibrary
+Twitter4J/Twitter4J,https://github.com/Twitter4J/Twitter4J,2805,Java,2009-04-24T15:25:00Z,"16 anos, 4 meses",2024-08-17T18:04:54Z,"1 anos, 0 meses",12395,12.1 MB,Twitter4J
+gcacace/android-signaturepad,https://github.com/gcacace/android-signaturepad,2788,Java,2014-03-20T12:54:22Z,"11 anos, 5 meses",2024-03-29T07:30:18Z,"1 anos, 5 meses",403,403 KB,android-signaturepad
+bytedeco/javacpp-presets,https://github.com/bytedeco/javacpp-presets,2783,Java,2014-04-21T13:19:55Z,"11 anos, 4 meses",2025-09-09T11:14:06Z,1 dias,770477,752.4 MB,javacpp-presets
+codedrinker/community,https://github.com/codedrinker/community,2775,Java,2019-04-23T15:11:24Z,"6 anos, 4 meses",2023-07-07T21:44:58Z,"2 anos, 2 meses",4671,4.6 MB,community
+spotify/dockerfile-maven,https://github.com/spotify/dockerfile-maven,2755,Java,2016-03-16T12:42:37Z,"9 anos, 6 meses",2022-02-01T13:43:18Z,"3 anos, 7 meses",257,257 KB,dockerfile-maven
+chanjarster/weixin-java-tools,https://github.com/chanjarster/weixin-java-tools,2751,Java,2014-08-18T08:11:26Z,"11 anos, 0 meses",2018-01-15T09:51:09Z,"7 anos, 8 meses",1727,1.7 MB,weixin-java-tools
+Tencent/MSEC,https://github.com/Tencent/MSEC,2747,Java,2016-11-28T01:50:35Z,"8 anos, 9 meses",2019-10-24T03:48:10Z,"5 anos, 10 meses",40131,39.2 MB,MSEC
+Nightonke/WoWoViewPager,https://github.com/Nightonke/WoWoViewPager,2744,Java,2016-03-03T04:29:28Z,"9 anos, 6 meses",2017-04-06T14:07:25Z,"8 anos, 5 meses",55505,54.2 MB,WoWoViewPager
+vector4wang/spring-boot-quick,https://github.com/vector4wang/spring-boot-quick,2708,Java,2017-03-13T12:32:30Z,"8 anos, 6 meses",2025-03-07T14:50:48Z,"6 meses, 7 dias",5399,5.3 MB,spring-boot-quick
+spotify/docker-maven-plugin,https://github.com/spotify/docker-maven-plugin,2657,Java,2014-06-23T22:33:07Z,"11 anos, 2 meses",2021-09-14T14:31:28Z,"3 anos, 12 meses",803,803 KB,docker-maven-plugin
+VerbalExpressions/JavaVerbalExpressions,https://github.com/VerbalExpressions/JavaVerbalExpressions,2632,Java,2013-07-25T16:15:26Z,"12 anos, 1 meses",2025-09-01T08:04:31Z,9 dias,196,196 KB,JavaVerbalExpressions
+square/keywhiz,https://github.com/square/keywhiz,2623,Java,2015-03-25T13:31:39Z,"10 anos, 5 meses",2023-09-18T18:01:03Z,"1 anos, 11 meses",5957,5.8 MB,keywhiz
+hierynomus/sshj,https://github.com/hierynomus/sshj,2598,Java,2010-02-27T14:34:40Z,"15 anos, 6 meses",2025-05-14T14:05:06Z,"3 meses, 29 dias",8985,8.8 MB,sshj
+vladmihalcea/hypersistence-utils,https://github.com/vladmihalcea/hypersistence-utils,2569,Java,2017-09-25T05:10:02Z,"7 anos, 11 meses",2025-09-09T14:01:46Z,1 dias,2702,2.6 MB,hypersistence-utils
+marytts/marytts,https://github.com/marytts/marytts,2533,Java,2011-12-20T16:44:48Z,"13 anos, 8 meses",2025-01-17T18:26:22Z,"7 meses, 26 dias",149964,146.4 MB,marytts
+javaee-samples/javaee7-samples,https://github.com/javaee-samples/javaee7-samples,2514,Java,2013-08-27T18:47:51Z,"12 anos, 0 meses",2022-09-01T22:46:28Z,"3 anos, 0 meses",4333,4.2 MB,javaee7-samples
+deeplearning4j/deeplearning4j-examples,https://github.com/deeplearning4j/deeplearning4j-examples,2513,Java,2015-08-24T15:17:43Z,"10 anos, 0 meses",2023-05-16T15:01:06Z,"2 anos, 3 meses",355459,347.1 MB,deeplearning4j-examples
+Antabot/White-Jotter,https://github.com/Antabot/White-Jotter,2512,Java,2019-03-09T03:06:40Z,"6 anos, 6 meses",2022-12-10T12:47:56Z,"2 anos, 9 meses",228727,223.4 MB,White-Jotter
+HotswapProjects/HotswapAgent,https://github.com/HotswapProjects/HotswapAgent,2503,Java,2013-11-20T16:15:13Z,"11 anos, 9 meses",2025-08-28T18:01:30Z,13 dias,5335,5.2 MB,HotswapAgent
+logfellow/logstash-logback-encoder,https://github.com/logfellow/logstash-logback-encoder,2489,Java,2013-03-04T16:19:08Z,"12 anos, 6 meses",2025-07-23T00:32:50Z,"1 meses, 19 dias",3628,3.5 MB,logstash-logback-encoder
+openjdk/jmh,https://github.com/openjdk/jmh,2486,Java,2019-05-15T06:47:19Z,"6 anos, 4 meses",2025-06-30T13:27:34Z,"2 meses, 12 dias",4190,4.1 MB,jmh
+atomashpolskiy/bt,https://github.com/atomashpolskiy/bt,2459,Java,2016-05-15T19:56:23Z,"9 anos, 4 meses",2025-04-14T07:24:27Z,"4 meses, 29 dias",89382,87.3 MB,bt
+aws/aws-sdk-java-v2,https://github.com/aws/aws-sdk-java-v2,2453,Java,2017-06-23T18:56:01Z,"8 anos, 2 meses",2025-09-10T22:53:30Z,0 dias,659912,644.4 MB,aws-sdk-java-v2
+huanzi-qch/base-admin,https://github.com/huanzi-qch/base-admin,2444,Java,2019-09-17T07:46:16Z,"5 anos, 12 meses",2025-08-01T00:58:15Z,"1 meses, 10 dias",3336,3.3 MB,base-admin
+zeromq/jeromq,https://github.com/zeromq/jeromq,2425,Java,2012-08-01T09:28:37Z,"13 anos, 1 meses",2025-03-02T22:46:28Z,"6 meses, 12 dias",4122,4.0 MB,jeromq
+firebase/firebase-android-sdk,https://github.com/firebase/firebase-android-sdk,2425,Java,2018-08-31T20:50:43Z,"7 anos, 0 meses",2025-09-10T20:11:17Z,0 dias,51284,50.1 MB,firebase-android-sdk
+openzipkin/brave,https://github.com/openzipkin/brave,2390,Java,2013-04-07T15:48:18Z,"12 anos, 5 meses",2025-06-01T13:04:11Z,"3 meses, 11 dias",32387,31.6 MB,brave
+exchange-core/exchange-core,https://github.com/exchange-core/exchange-core,2306,Java,2018-08-05T18:25:16Z,"7 anos, 1 meses",2023-10-08T18:06:59Z,"1 anos, 11 meses",1612,1.6 MB,exchange-core
+lamster2018/EasyProtector,https://github.com/lamster2018/EasyProtector,2279,Java,2018-05-14T13:33:42Z,"7 anos, 4 meses",2023-08-31T06:30:08Z,"2 anos, 0 meses",1050,1.0 MB,EasyProtector
+sonatype/nexus-public,https://github.com/sonatype/nexus-public,2264,Java,2015-07-31T23:42:41Z,"10 anos, 1 meses",2025-09-09T17:05:13Z,1 dias,166851,162.9 MB,nexus-public
+amaembo/streamex,https://github.com/amaembo/streamex,2264,Java,2015-04-10T17:02:32Z,"10 anos, 5 meses",2025-08-30T10:58:34Z,11 dias,4888,4.8 MB,streamex
+ta4j/ta4j,https://github.com/ta4j/ta4j,2258,Java,2017-09-14T17:14:32Z,"7 anos, 12 meses",2025-09-04T23:26:24Z,5 dias,11428,11.2 MB,ta4j
+open-telemetry/opentelemetry-java,https://github.com/open-telemetry/opentelemetry-java,2257,Java,2019-02-26T16:43:36Z,"6 anos, 6 meses",2025-09-10T17:56:31Z,0 dias,27647,27.0 MB,opentelemetry-java
+bz51/SpringBoot-Dubbo-Docker-Jenkins,https://github.com/bz51/SpringBoot-Dubbo-Docker-Jenkins,2247,Java,2018-01-18T01:38:08Z,"7 anos, 7 meses",2022-11-16T03:27:54Z,"2 anos, 9 meses",457,457 KB,SpringBoot-Dubbo-Docker-Jenkins
+eclipse-paho/paho.mqtt.java,https://github.com/eclipse-paho/paho.mqtt.java,2237,Java,2015-12-16T19:13:48Z,"9 anos, 9 meses",2024-08-14T05:58:05Z,"1 anos, 0 meses",6193,6.0 MB,paho.mqtt.java
+hekailiang/squirrel,https://github.com/hekailiang/squirrel,2234,Java,2013-03-31T02:24:18Z,"12 anos, 5 meses",2024-06-04T09:56:25Z,"1 anos, 3 meses",3151,3.1 MB,squirrel
+apache/rocketmq-spring,https://github.com/apache/rocketmq-spring,2223,Java,2018-10-15T06:07:53Z,"6 anos, 11 meses",2025-06-23T08:59:08Z,"2 meses, 19 dias",711,711 KB,rocketmq-spring
+codingXiaxw/seckill,https://github.com/codingXiaxw/seckill,2183,Java,2016-11-28T13:56:39Z,"8 anos, 9 meses",2022-12-16T05:51:18Z,"2 anos, 8 meses",21544,21.0 MB,seckill
+864381832/xJavaFxTool,https://github.com/864381832/xJavaFxTool,2181,Java,2017-08-27T04:38:06Z,"8 anos, 0 meses",2025-08-21T15:12:55Z,20 dias,317572,310.1 MB,xJavaFxTool
+zhangkaitao/es,https://github.com/zhangkaitao/es,2160,Java,2013-01-12T12:57:51Z,"12 anos, 8 meses",2018-04-05T06:48:38Z,"7 anos, 5 meses",8753,8.5 MB,es
+itext/itext-java,https://github.com/itext/itext-java,2155,Java,2016-05-03T07:45:39Z,"9 anos, 4 meses",2025-09-08T19:00:15Z,2 dias,684240,668.2 MB,itext-java
+youseries/ureport,https://github.com/youseries/ureport,2134,Java,2017-06-05T07:48:31Z,"8 anos, 3 meses",2023-02-10T08:04:59Z,"2 anos, 7 meses",99439,97.1 MB,ureport
+yaphone/itchat4j,https://github.com/yaphone/itchat4j,2122,Java,2017-04-05T15:04:57Z,"8 anos, 5 meses",2024-04-11T01:52:53Z,"1 anos, 5 meses",755,755 KB,itchat4j
+jonashackt/spring-boot-vuejs,https://github.com/jonashackt/spring-boot-vuejs,2108,Java,2017-09-11T09:42:52Z,"8 anos, 0 meses",2025-09-08T22:35:42Z,2 dias,27404,26.8 MB,spring-boot-vuejs
+JorenSix/TarsosDSP,https://github.com/JorenSix/TarsosDSP,2094,Java,2011-03-25T15:34:28Z,"14 anos, 5 meses",2025-06-13T09:35:50Z,"2 meses, 29 dias",19201,18.8 MB,TarsosDSP
+dromara/x-file-storage,https://github.com/dromara/x-file-storage,2066,Java,2020-12-16T06:38:58Z,"4 anos, 8 meses",2025-06-27T08:02:43Z,"2 meses, 15 dias",2379,2.3 MB,x-file-storage
+haraldk/TwelveMonkeys,https://github.com/haraldk/TwelveMonkeys,2044,Java,2009-09-03T17:44:28Z,"16 anos, 0 meses",2025-09-10T08:08:33Z,0 dias,299801,292.8 MB,TwelveMonkeys
+eclipse-jdtls/eclipse.jdt.ls,https://github.com/eclipse-jdtls/eclipse.jdt.ls,2042,Java,2016-06-27T13:06:53Z,"9 anos, 2 meses",2025-09-10T19:26:12Z,0 dias,19467,19.0 MB,eclipse.jdt.ls
+spring-cloud/spring-cloud-config,https://github.com/spring-cloud/spring-cloud-config,2005,Java,2014-06-13T16:59:44Z,"11 anos, 3 meses",2025-09-09T16:39:35Z,1 dias,40820,39.9 MB,spring-cloud-config
+plantuml/plantuml-server,https://github.com/plantuml/plantuml-server,1997,Java,2011-01-28T22:07:53Z,"14 anos, 7 meses",2025-09-10T15:11:53Z,0 dias,12756,12.5 MB,plantuml-server
+zhegexiaohuozi/SeimiCrawler,https://github.com/zhegexiaohuozi/SeimiCrawler,1992,Java,2015-11-06T16:06:36Z,"9 anos, 10 meses",2024-11-25T08:37:36Z,"9 meses, 19 dias",553,553 KB,SeimiCrawler
+armcha/Space-Navigation-View,https://github.com/armcha/Space-Navigation-View,1992,Java,2016-08-10T19:07:41Z,"9 anos, 1 meses",2021-04-29T10:21:15Z,"4 anos, 4 meses",8680,8.5 MB,Space-Navigation-View
+JorgeCastilloPrz/AndroidFillableLoaders,https://github.com/JorgeCastilloPrz/AndroidFillableLoaders,1989,Java,2015-08-13T13:34:29Z,"10 anos, 1 meses",2022-07-20T16:54:02Z,"3 anos, 1 meses",1521,1.5 MB,AndroidFillableLoaders
+zalando/logbook,https://github.com/zalando/logbook,1969,Java,2015-09-14T15:29:12Z,"9 anos, 12 meses",2025-09-10T07:41:04Z,0 dias,6870,6.7 MB,logbook
+NanowarOfSteel/HelloWorld,https://github.com/NanowarOfSteel/HelloWorld,1946,Java,2024-10-29T09:25:30Z,"10 meses, 16 dias",2025-02-08T14:39:36Z,"7 meses, 4 dias",1295,1.3 MB,HelloWorld
+liaoinstan/SpringView,https://github.com/liaoinstan/SpringView,1931,Java,2016-03-28T09:07:07Z,"9 anos, 5 meses",2020-09-27T11:33:55Z,"4 anos, 11 meses",30048,29.3 MB,SpringView
+linkedin/dexmaker,https://github.com/linkedin/dexmaker,1930,Java,2014-12-17T07:22:19Z,"10 anos, 9 meses",2025-08-05T07:16:38Z,"1 meses, 6 dias",5768,5.6 MB,dexmaker
+spring-petclinic/spring-petclinic-microservices,https://github.com/spring-petclinic/spring-petclinic-microservices,1929,Java,2016-11-12T14:57:30Z,"8 anos, 10 meses",2025-08-31T19:15:48Z,10 dias,8020,7.8 MB,spring-petclinic-microservices
+dunwu/java-tutorial,https://github.com/dunwu/java-tutorial,1925,Java,2017-11-29T06:39:45Z,"7 anos, 9 meses",2024-12-31T00:09:46Z,"8 meses, 13 dias",18074,17.7 MB,java-tutorial
+alibaba/compileflow,https://github.com/alibaba/compileflow,1922,Java,2020-07-14T09:38:10Z,"5 anos, 1 meses",2025-08-02T03:01:52Z,"1 meses, 9 dias",5268,5.1 MB,compileflow
+apache/servicecomb-pack,https://github.com/apache/servicecomb-pack,1920,Java,2017-07-18T08:27:38Z,"8 anos, 1 meses",2024-10-03T18:46:26Z,"11 meses, 12 dias",15517,15.2 MB,servicecomb-pack
+detro/ghostdriver,https://github.com/detro/ghostdriver,1912,Java,2012-03-21T19:09:32Z,"13 anos, 5 meses",2019-02-08T16:23:10Z,"6 anos, 7 meses",7008,6.8 MB,ghostdriver
+SpringCloud/spring-cloud-code,https://github.com/SpringCloud/spring-cloud-code,1900,Java,2018-03-07T11:57:24Z,"7 anos, 6 meses",2023-01-02T22:13:22Z,"2 anos, 8 meses",15497,15.1 MB,spring-cloud-code
+jchambers/pushy,https://github.com/jchambers/pushy,1868,Java,2013-08-02T19:38:31Z,"12 anos, 1 meses",2025-04-14T03:08:41Z,"4 meses, 29 dias",8979,8.8 MB,pushy
+in28minutes/spring-microservices,https://github.com/in28minutes/spring-microservices,1858,Java,2017-09-07T13:24:37Z,"8 anos, 0 meses",2024-03-16T19:40:02Z,"1 anos, 5 meses",93130,90.9 MB,spring-microservices
+alibaba/testable-mock,https://github.com/alibaba/testable-mock,1842,Java,2020-11-10T03:06:47Z,"4 anos, 10 meses",2023-05-17T11:09:55Z,"2 anos, 3 meses",1567,1.5 MB,testable-mock
+JosephZhu1983/java-common-mistakes,https://github.com/JosephZhu1983/java-common-mistakes,1835,Java,2020-02-03T09:45:58Z,"5 anos, 7 meses",2024-01-05T14:26:46Z,"1 anos, 8 meses",10334,10.1 MB,java-common-mistakes
+dromara/Jpom,https://github.com/dromara/Jpom,1828,Java,2019-01-04T05:38:56Z,"6 anos, 8 meses",2025-08-20T10:00:44Z,21 dias,103514,101.1 MB,Jpom
+ysc/word,https://github.com/ysc/word,1820,Java,2014-03-18T03:22:55Z,"11 anos, 5 meses",2021-03-31T09:27:08Z,"4 anos, 5 meses",518924,506.8 MB,word
+Karumi/Rosie,https://github.com/Karumi/Rosie,1814,Java,2015-11-20T10:22:54Z,"9 anos, 9 meses",2019-09-17T14:29:29Z,"5 anos, 12 meses",13853,13.5 MB,Rosie
+stfalcon-studio/FrescoImageViewer,https://github.com/stfalcon-studio/FrescoImageViewer,1810,Java,2016-08-29T15:05:41Z,"9 anos, 0 meses",2022-09-21T09:37:40Z,"2 anos, 11 meses",5466,5.3 MB,FrescoImageViewer
+uber-common/jvm-profiler,https://github.com/uber-common/jvm-profiler,1798,Java,2018-01-05T22:19:29Z,"7 anos, 8 meses",2025-07-12T01:50:00Z,"2 meses, 0 dias",262,262 KB,jvm-profiler
+baichengzhou/SpringMVC-Mybatis-Shiro-redis-0.2,https://github.com/baichengzhou/SpringMVC-Mybatis-Shiro-redis-0.2,1791,Java,2016-11-25T10:12:46Z,"8 anos, 9 meses",2022-12-16T07:20:31Z,"2 anos, 8 meses",26380,25.8 MB,SpringMVC-Mybatis-Shiro-redis-0.2
+codenameone/CodenameOne,https://github.com/codenameone/CodenameOne,1788,Java,2015-03-27T07:37:42Z,"10 anos, 5 meses",2025-09-06T23:36:00Z,3 dias,226012,220.7 MB,CodenameOne
+kilim/kilim,https://github.com/kilim/kilim,1786,Java,2010-04-09T12:02:18Z,"15 anos, 5 meses",2022-03-25T23:47:44Z,"3 anos, 5 meses",3261,3.2 MB,kilim
+spring-cloud/spring-cloud-sleuth,https://github.com/spring-cloud/spring-cloud-sleuth,1784,Java,2015-03-06T20:51:47Z,"10 anos, 6 meses",2025-02-24T16:54:13Z,"6 meses, 18 dias",89851,87.7 MB,spring-cloud-sleuth
+pmiaowu/BurpShiroPassiveScan,https://github.com/pmiaowu/BurpShiroPassiveScan,1771,Java,2020-07-15T07:12:16Z,"5 anos, 1 meses",2022-12-14T20:55:01Z,"2 anos, 9 meses",9109,8.9 MB,BurpShiroPassiveScan
+4thline/cling,https://github.com/4thline/cling,1770,Java,2011-09-14T14:09:24Z,"14 anos, 0 meses",2020-02-11T16:56:54Z,"5 anos, 7 meses",6132,6.0 MB,cling
+samlss/Broccoli,https://github.com/samlss/Broccoli,1765,Java,2018-12-14T15:28:05Z,"6 anos, 9 meses",2023-03-22T01:34:10Z,"2 anos, 5 meses",4647,4.5 MB,Broccoli
+leochuan/ViewPagerLayoutManager,https://github.com/leochuan/ViewPagerLayoutManager,1756,Java,2016-08-08T14:34:56Z,"9 anos, 1 meses",2019-11-12T02:12:22Z,"5 anos, 10 meses",46640,45.5 MB,ViewPagerLayoutManager
+core-lib/xjar,https://github.com/core-lib/xjar,1754,Java,2018-11-22T09:56:53Z,"6 anos, 9 meses",2024-04-25T01:35:41Z,"1 anos, 4 meses",365,365 KB,xjar
+onthegomap/planetiler,https://github.com/onthegomap/planetiler,1745,Java,2021-10-20T01:59:38Z,"3 anos, 10 meses",2025-09-06T01:14:31Z,4 dias,63708,62.2 MB,planetiler
+jar-analyzer/jar-analyzer,https://github.com/jar-analyzer/jar-analyzer,1722,Java,2023-10-07T15:42:35Z,"1 anos, 11 meses",2025-09-05T14:24:57Z,5 dias,89620,87.5 MB,jar-analyzer
+guchengwuyue/yshopmall,https://github.com/guchengwuyue/yshopmall,1708,Java,2019-11-07T13:53:52Z,"5 anos, 10 meses",2025-07-29T03:29:45Z,"1 meses, 13 dias",46531,45.4 MB,yshopmall
+88250/solo,https://github.com/88250/solo,1705,Java,2019-12-01T10:29:18Z,"5 anos, 9 meses",2025-07-15T03:20:38Z,"1 meses, 27 dias",157836,154.1 MB,solo
+Sunzxyong/Recovery,https://github.com/Sunzxyong/Recovery,1704,Java,2016-09-04T08:13:19Z,"9 anos, 0 meses",2019-02-17T07:17:38Z,"6 anos, 6 meses",894,894 KB,Recovery
+git-commit-id/git-commit-id-maven-plugin,https://github.com/git-commit-id/git-commit-id-maven-plugin,1688,Java,2011-02-13T13:55:14Z,"14 anos, 7 meses",2025-09-01T16:14:11Z,9 dias,3826,3.7 MB,git-commit-id-maven-plugin
+in28minutes/master-spring-and-spring-boot,https://github.com/in28minutes/master-spring-and-spring-boot,1665,Java,2022-10-27T08:18:07Z,"2 anos, 10 meses",2025-06-16T10:21:09Z,"2 meses, 26 dias",83768,81.8 MB,master-spring-and-spring-boot
+Smith-Cruise/Spring-Boot-Shiro,https://github.com/Smith-Cruise/Spring-Boot-Shiro,1646,Java,2017-10-23T13:03:15Z,"7 anos, 10 meses",2022-03-31T18:38:15Z,"3 anos, 5 meses",46,46 KB,Spring-Boot-Shiro
+SmartBear/soapui,https://github.com/SmartBear/soapui,1643,Java,2012-07-08T14:27:41Z,"13 anos, 2 meses",2025-09-10T12:01:01Z,0 dias,99369,97.0 MB,soapui
+ImmortalZ/TransitionHelper,https://github.com/ImmortalZ/TransitionHelper,1637,Java,2016-10-30T14:53:50Z,"8 anos, 10 meses",2018-02-28T05:46:05Z,"7 anos, 6 meses",12136,11.9 MB,TransitionHelper
+murraco/spring-boot-jwt,https://github.com/murraco/spring-boot-jwt,1635,Java,2017-10-12T02:28:48Z,"7 anos, 11 meses",2024-08-26T16:31:13Z,"1 anos, 0 meses",80,80 KB,spring-boot-jwt
+openmrs/openmrs-core,https://github.com/openmrs/openmrs-core,1634,Java,2012-07-26T04:54:29Z,"13 anos, 1 meses",2025-09-10T18:07:25Z,0 dias,240017,234.4 MB,openmrs-core
+mayubao/Android-Pay,https://github.com/mayubao/Android-Pay,1632,Java,2017-03-01T07:08:19Z,"8 anos, 6 meses",2017-07-08T02:18:00Z,"8 anos, 2 meses",547,547 KB,Android-Pay
+ofdrw/ofdrw,https://github.com/ofdrw/ofdrw,1627,Java,2019-09-27T13:54:43Z,"5 anos, 11 meses",2025-08-19T02:29:33Z,22 dias,367895,359.3 MB,ofdrw
+pgjdbc/pgjdbc,https://github.com/pgjdbc/pgjdbc,1626,Java,2012-02-06T19:30:35Z,"13 anos, 7 meses",2025-09-10T08:46:23Z,0 dias,46245,45.2 MB,pgjdbc
+happyfish100/fastdfs-client-java,https://github.com/happyfish100/fastdfs-client-java,1616,Java,2014-12-07T03:19:50Z,"10 anos, 9 meses",2025-09-04T11:39:34Z,6 dias,328,328 KB,fastdfs-client-java
+Xiaofei-it/HermesEventBus,https://github.com/Xiaofei-it/HermesEventBus,1612,Java,2016-07-11T13:52:10Z,"9 anos, 2 meses",2017-05-18T16:57:35Z,"8 anos, 3 meses",304,304 KB,HermesEventBus
+pagehelper/pagehelper-spring-boot,https://github.com/pagehelper/pagehelper-spring-boot,1598,Java,2017-01-01T15:04:19Z,"8 anos, 8 meses",2025-06-20T00:37:05Z,"2 meses, 22 dias",134,134 KB,pagehelper-spring-boot
+spring-projects/spring-integration,https://github.com/spring-projects/spring-integration,1592,Java,2011-07-22T21:47:27Z,"14 anos, 1 meses",2025-09-10T23:09:36Z,0 dias,78222,76.4 MB,spring-integration
+continew-org/continew-admin,https://github.com/continew-org/continew-admin,1583,Java,2022-12-08T15:26:44Z,"2 anos, 9 meses",2025-09-10T12:44:49Z,0 dias,27531,26.9 MB,continew-admin
+knowm/XChart,https://github.com/knowm/XChart,1569,Java,2011-07-20T15:56:44Z,"14 anos, 1 meses",2024-08-28T12:35:12Z,"1 anos, 0 meses",14929,14.6 MB,XChart
+EsotericSoftware/reflectasm,https://github.com/EsotericSoftware/reflectasm,1538,Java,2013-11-06T13:22:17Z,"11 anos, 10 meses",2025-06-05T00:35:07Z,"3 meses, 7 dias",897,897 KB,reflectasm
+tobato/FastDFS_Client,https://github.com/tobato/FastDFS_Client,1497,Java,2015-12-29T15:29:07Z,"9 anos, 8 meses",2024-05-17T08:50:40Z,"1 anos, 3 meses",1077,1.1 MB,FastDFS_Client
+mitre/HTTP-Proxy-Servlet,https://github.com/mitre/HTTP-Proxy-Servlet,1485,Java,2012-04-27T17:43:25Z,"13 anos, 4 meses",2024-07-05T12:55:33Z,"1 anos, 2 meses",366,366 KB,HTTP-Proxy-Servlet
+AutohomeCorp/frostmourne,https://github.com/AutohomeCorp/frostmourne,1474,Java,2019-12-16T03:22:03Z,"5 anos, 9 meses",2024-10-22T08:59:01Z,"10 meses, 23 dias",65623,64.1 MB,frostmourne
+alibaba/Virtualview-Android,https://github.com/alibaba/Virtualview-Android,1456,Java,2017-12-05T03:25:05Z,"7 anos, 9 meses",2021-07-14T04:45:23Z,"4 anos, 1 meses",866,866 KB,Virtualview-Android
+chengdazhi/StyleImageView,https://github.com/chengdazhi/StyleImageView,1448,Java,2016-08-17T10:49:18Z,"9 anos, 0 meses",2017-01-17T04:48:26Z,"8 anos, 7 meses",8917,8.7 MB,StyleImageView
+SpinyTech/ModularizationArchitecture,https://github.com/SpinyTech/ModularizationArchitecture,1447,Java,2016-11-25T03:29:54Z,"8 anos, 9 meses",2020-12-14T10:02:21Z,"4 anos, 9 meses",6319,6.2 MB,ModularizationArchitecture
+yahoo/mysql_perf_analyzer,https://github.com/yahoo/mysql_perf_analyzer,1442,Java,2015-05-20T16:27:27Z,"10 anos, 3 meses",2023-03-21T04:05:35Z,"2 anos, 5 meses",6979,6.8 MB,mysql_perf_analyzer
+spotify/docker-client,https://github.com/spotify/docker-client,1440,Java,2014-06-04T13:22:10Z,"11 anos, 3 meses",2022-01-24T12:57:44Z,"3 anos, 7 meses",3609,3.5 MB,docker-client
+bootique/bootique,https://github.com/bootique/bootique,1423,Java,2015-12-10T14:45:15Z,"9 anos, 9 meses",2025-08-30T19:10:21Z,11 dias,3387,3.3 MB,bootique
+aliyun/aliyun-openapi-java-sdk,https://github.com/aliyun/aliyun-openapi-java-sdk,1420,Java,2015-07-23T08:41:13Z,"10 anos, 1 meses",2025-09-10T02:22:21Z,0 dias,80646,78.8 MB,aliyun-openapi-java-sdk
+googleapis/google-api-java-client,https://github.com/googleapis/google-api-java-client,1414,Java,2014-10-28T17:31:34Z,"10 anos, 10 meses",2025-09-05T19:25:30Z,5 dias,14841,14.5 MB,google-api-java-client
+Tourenathan-G5organisation/SiliCompressor,https://github.com/Tourenathan-G5organisation/SiliCompressor,1402,Java,2016-04-04T07:13:51Z,"9 anos, 5 meses",2022-11-04T08:23:07Z,"2 anos, 10 meses",4370,4.3 MB,SiliCompressor
+aritraroy/PinLockView,https://github.com/aritraroy/PinLockView,1402,Java,2016-06-12T09:02:44Z,"9 anos, 3 meses",2020-02-12T04:05:28Z,"5 anos, 7 meses",357,357 KB,PinLockView
+MultiPaper/MultiPaper,https://github.com/MultiPaper/MultiPaper,1371,Java,2021-01-17T04:36:02Z,"4 anos, 7 meses",2025-05-21T18:19:57Z,"3 meses, 22 dias",3828,3.7 MB,MultiPaper
+oracle/tribuo,https://github.com/oracle/tribuo,1365,Java,2020-06-16T09:59:48Z,"5 anos, 2 meses",2025-08-19T14:40:13Z,22 dias,10052,9.8 MB,tribuo
+GrailStack/Moss,https://github.com/GrailStack/Moss,1364,Java,2019-04-10T07:26:25Z,"6 anos, 5 meses",2023-09-15T07:13:01Z,"1 anos, 12 meses",8145,8.0 MB,Moss
+in28minutes/spring-boot-examples,https://github.com/in28minutes/spring-boot-examples,1363,Java,2017-11-27T04:31:20Z,"7 anos, 9 meses",2025-08-15T02:41:59Z,26 dias,2179,2.1 MB,spring-boot-examples
+AnghelLeonard/Hibernate-SpringBoot,https://github.com/AnghelLeonard/Hibernate-SpringBoot,1357,Java,2018-10-13T07:55:05Z,"6 anos, 11 meses",2023-02-14T14:30:07Z,"2 anos, 6 meses",33375,32.6 MB,Hibernate-SpringBoot
+greenrobot/essentials,https://github.com/greenrobot/essentials,1353,Java,2014-11-04T16:22:18Z,"10 anos, 10 meses",2021-03-22T07:44:57Z,"4 anos, 5 meses",1041,1.0 MB,essentials
+a-schild/jave2,https://github.com/a-schild/jave2,1350,Java,2013-03-04T08:50:30Z,"12 anos, 6 meses",2024-12-27T09:52:08Z,"8 meses, 17 dias",812039,793.0 MB,jave2
+shekhargulati/strman-java,https://github.com/shekhargulati/strman-java,1345,Java,2016-05-03T14:32:20Z,"9 anos, 4 meses",2020-02-07T11:18:34Z,"5 anos, 7 meses",251,251 KB,strman-java
+mapstruct/mapstruct-examples,https://github.com/mapstruct/mapstruct-examples,1339,Java,2013-07-07T15:38:42Z,"12 anos, 2 meses",2025-05-11T14:05:41Z,"4 meses, 2 dias",856,856 KB,mapstruct-examples
+shaohui10086/AdvancedLuban,https://github.com/shaohui10086/AdvancedLuban,1328,Java,2016-10-10T15:24:51Z,"8 anos, 11 meses",2019-09-27T08:28:33Z,"5 anos, 11 meses",352,352 KB,AdvancedLuban
+beehive-lab/TornadoVM,https://github.com/beehive-lab/TornadoVM,1309,Java,2018-09-07T09:37:44Z,"7 anos, 0 meses",2025-09-05T13:47:21Z,5 dias,164537,160.7 MB,TornadoVM
+JannsenYang/dingdong-helper,https://github.com/JannsenYang/dingdong-helper,1301,Java,2022-04-09T12:34:29Z,"3 anos, 5 meses",2022-05-14T23:45:31Z,"3 anos, 3 meses",1778,1.7 MB,dingdong-helper
+spring-attic/greenhouse,https://github.com/spring-attic/greenhouse,1298,Java,2011-02-21T19:13:55Z,"14 anos, 6 meses",2019-03-21T18:50:11Z,"6 anos, 5 meses",4865,4.8 MB,greenhouse
+menacher/java-game-server,https://github.com/menacher/java-game-server,1294,Java,2012-02-04T09:25:16Z,"13 anos, 7 meses",2022-05-03T05:19:38Z,"3 anos, 4 meses",40804,39.8 MB,java-game-server
+odrotbohm/spring-restbucks,https://github.com/odrotbohm/spring-restbucks,1293,Java,2012-10-29T14:37:05Z,"12 anos, 10 meses",2025-09-05T15:37:35Z,5 dias,1480,1.4 MB,spring-restbucks
+Netflix/hollow,https://github.com/Netflix/hollow,1290,Java,2016-12-02T18:56:43Z,"8 anos, 9 meses",2025-09-08T17:38:39Z,2 dias,25637,25.0 MB,hollow
+rabbitmq/rabbitmq-java-client,https://github.com/rabbitmq/rabbitmq-java-client,1289,Java,2010-09-20T10:43:18Z,"14 anos, 11 meses",2025-09-09T05:53:35Z,1 dias,72953,71.2 MB,rabbitmq-java-client
+andremion/Floating-Navigation-View,https://github.com/andremion/Floating-Navigation-View,1287,Java,2016-08-11T13:34:14Z,"9 anos, 1 meses",2022-08-30T07:07:42Z,"3 anos, 0 meses",308,308 KB,Floating-Navigation-View
+imagej/imagej2,https://github.com/imagej/imagej2,1285,Java,2012-01-26T18:32:43Z,"13 anos, 7 meses",2025-08-12T02:03:34Z,29 dias,112091,109.5 MB,imagej2
+eclipse-milo/milo,https://github.com/eclipse-milo/milo,1283,Java,2016-05-06T13:20:04Z,"9 anos, 4 meses",2025-09-08T12:11:23Z,2 dias,22122,21.6 MB,milo
+fusesource/mqtt-client,https://github.com/fusesource/mqtt-client,1283,Java,2011-12-17T05:12:58Z,"13 anos, 9 meses",2021-09-15T02:33:11Z,"3 anos, 12 meses",407,407 KB,mqtt-client
+spring-cloud/spring-cloud-openfeign,https://github.com/spring-cloud/spring-cloud-openfeign,1273,Java,2018-02-05T21:26:12Z,"7 anos, 7 meses",2025-09-10T15:21:25Z,0 dias,13000,12.7 MB,spring-cloud-openfeign
+Xiaofei-it/Hermes,https://github.com/Xiaofei-it/Hermes,1272,Java,2016-04-26T12:25:35Z,"9 anos, 4 meses",2022-06-21T07:29:41Z,"3 anos, 2 meses",323,323 KB,Hermes
+shaohui10086/BottomDialog,https://github.com/shaohui10086/BottomDialog,1271,Java,2016-10-11T09:04:21Z,"8 anos, 11 meses",2017-04-10T14:41:00Z,"8 anos, 5 meses",1011,1011 KB,BottomDialog
+jcodec/jcodec,https://github.com/jcodec/jcodec,1270,Java,2012-09-30T21:47:38Z,"12 anos, 11 meses",2025-05-14T14:53:15Z,"3 meses, 29 dias",132204,129.1 MB,jcodec
+Devlight/ArcProgressStackView,https://github.com/Devlight/ArcProgressStackView,1268,Java,2016-03-17T10:02:24Z,"9 anos, 5 meses",2018-05-21T21:30:11Z,"7 anos, 3 meses",223,223 KB,ArcProgressStackView
+29jitender/Spotlight,https://github.com/29jitender/Spotlight,1267,Java,2016-06-14T11:34:35Z,"9 anos, 3 meses",2020-07-11T04:15:06Z,"5 anos, 2 meses",436,436 KB,Spotlight
+stephanenicolas/Quality-Tools-for-Android,https://github.com/stephanenicolas/Quality-Tools-for-Android,1264,Java,2013-01-03T12:24:30Z,"12 anos, 8 meses",2021-10-05T03:03:14Z,"3 anos, 11 meses",4430,4.3 MB,Quality-Tools-for-Android
+yuqirong/CardSwipeLayout,https://github.com/yuqirong/CardSwipeLayout,1264,Java,2017-03-02T07:35:56Z,"8 anos, 6 meses",2020-01-19T07:38:51Z,"5 anos, 7 meses",10015,9.8 MB,CardSwipeLayout
+bbottema/simple-java-mail,https://github.com/bbottema/simple-java-mail,1263,Java,2015-04-17T06:28:59Z,"10 anos, 4 meses",2025-06-02T09:55:10Z,"3 meses, 10 dias",29364,28.7 MB,simple-java-mail
+braisdom/ObjectiveSql,https://github.com/braisdom/ObjectiveSql,1257,Java,2020-07-09T05:19:03Z,"5 anos, 2 meses",2024-05-06T07:03:37Z,"1 anos, 4 meses",2600,2.5 MB,ObjectiveSql
+appium/java-client,https://github.com/appium/java-client,1256,Java,2014-04-04T22:05:23Z,"11 anos, 5 meses",2025-09-08T11:33:11Z,2 dias,86002,84.0 MB,java-client
+kongzue/DialogV3,https://github.com/kongzue/DialogV3,1254,Java,2019-03-22T11:35:03Z,"6 anos, 5 meses",2021-06-25T05:59:29Z,"4 anos, 2 meses",1517,1.5 MB,DialogV3
+ahmetaa/zemberek-nlp,https://github.com/ahmetaa/zemberek-nlp,1247,Java,2013-06-03T06:04:14Z,"12 anos, 3 meses",2025-02-26T19:32:37Z,"6 meses, 16 dias",54504,53.2 MB,zemberek-nlp
+Dreampie/Resty,https://github.com/Dreampie/Resty,1246,Java,2014-12-29T10:45:13Z,"10 anos, 8 meses",2021-11-05T02:19:42Z,"3 anos, 10 meses",1953,1.9 MB,Resty
+javacc/javacc,https://github.com/javacc/javacc,1244,Java,2016-07-20T03:23:59Z,"9 anos, 1 meses",2025-06-24T17:44:05Z,"2 meses, 18 dias",8175,8.0 MB,javacc
+JorgeCastilloPrz/FABProgressCircle,https://github.com/JorgeCastilloPrz/FABProgressCircle,1241,Java,2015-06-01T08:07:36Z,"10 anos, 3 meses",2020-04-20T05:26:57Z,"5 anos, 4 meses",5293,5.2 MB,FABProgressCircle
+kaitoy/pcap4j,https://github.com/kaitoy/pcap4j,1224,Java,2011-12-18T07:47:00Z,"13 anos, 9 meses",2022-09-05T12:47:30Z,"3 anos, 0 meses",15231,14.9 MB,pcap4j
+google/re2j,https://github.com/google/re2j,1222,Java,2015-02-18T00:20:25Z,"10 anos, 6 meses",2025-01-09T03:49:51Z,"8 meses, 4 dias",2512,2.5 MB,re2j
+pmiaowu/BurpFastJsonScan,https://github.com/pmiaowu/BurpFastJsonScan,1218,Java,2020-12-15T02:22:42Z,"4 anos, 9 meses",2022-10-01T05:17:07Z,"2 anos, 11 meses",11175,10.9 MB,BurpFastJsonScan
+caprica/vlcj,https://github.com/caprica/vlcj,1197,Java,2012-01-28T07:42:49Z,"13 anos, 7 meses",2025-08-11T16:51:28Z,"1 meses, 0 dias",71359,69.7 MB,vlcj
+yahoo/egads,https://github.com/yahoo/egads,1186,Java,2015-05-06T17:47:52Z,"10 anos, 4 meses",2023-11-14T22:41:19Z,"1 anos, 10 meses",1369,1.3 MB,egads
+liaohuqiu/cube-sdk,https://github.com/liaohuqiu/cube-sdk,1184,Java,2014-01-08T10:14:29Z,"11 anos, 8 meses",2016-10-03T10:44:11Z,"8 anos, 11 meses",13719,13.4 MB,cube-sdk
+sayyam/carouselview,https://github.com/sayyam/carouselview,1179,Java,2016-03-15T11:22:18Z,"9 anos, 6 meses",2020-02-18T12:24:46Z,"5 anos, 6 meses",9514,9.3 MB,carouselview
+in28minutes/spring-master-class,https://github.com/in28minutes/spring-master-class,1177,Java,2017-08-07T06:56:45Z,"8 anos, 1 meses",2024-04-12T16:27:28Z,"1 anos, 5 meses",3461,3.4 MB,spring-master-class
+wayn111/waynboot-mall,https://github.com/wayn111/waynboot-mall,1163,Java,2020-04-25T08:34:27Z,"5 anos, 4 meses",2025-08-30T03:53:50Z,11 dias,49221,48.1 MB,waynboot-mall
+secure-software-engineering/FlowDroid,https://github.com/secure-software-engineering/FlowDroid,1162,Java,2018-01-08T16:11:45Z,"7 anos, 8 meses",2025-09-09T09:59:44Z,1 dias,64254,62.7 MB,FlowDroid
+KOHGYLW/kiftd-source,https://github.com/KOHGYLW/kiftd-source,1160,Java,2018-07-30T02:14:38Z,"7 anos, 1 meses",2024-11-03T06:56:59Z,"10 meses, 11 dias",52255,51.0 MB,kiftd-source
+javapackager/JavaPackager,https://github.com/javapackager/JavaPackager,1159,Java,2019-02-24T12:17:03Z,"6 anos, 6 meses",2025-09-02T14:47:31Z,8 dias,6717,6.6 MB,JavaPackager
+hivemq/hivemq-community-edition,https://github.com/hivemq/hivemq-community-edition,1149,Java,2019-04-01T15:29:54Z,"6 anos, 5 meses",2025-09-06T04:54:59Z,4 dias,12648,12.4 MB,hivemq-community-edition
+intuit/wasabi,https://github.com/intuit/wasabi,1138,Java,2016-06-21T21:21:06Z,"9 anos, 2 meses",2023-05-26T10:25:00Z,"2 anos, 3 meses",19421,19.0 MB,wasabi
+marcosbarbero/spring-cloud-zuul-ratelimit,https://github.com/marcosbarbero/spring-cloud-zuul-ratelimit,1135,Java,2016-04-14T17:49:19Z,"9 anos, 5 meses",2025-09-05T02:03:12Z,5 dias,1344,1.3 MB,spring-cloud-zuul-ratelimit
+davidmoten/rtree,https://github.com/davidmoten/rtree,1123,Java,2014-08-26T12:29:14Z,"11 anos, 0 meses",2025-08-19T19:32:40Z,22 dias,1843,1.8 MB,rtree
+hyperledger/fabric-sdk-java,https://github.com/hyperledger/fabric-sdk-java,1118,Java,2016-10-10T17:10:25Z,"8 anos, 11 meses",2025-04-22T16:17:01Z,"4 meses, 21 dias",6223,6.1 MB,fabric-sdk-java
+gitlab4j/gitlab4j-api,https://github.com/gitlab4j/gitlab4j-api,1116,Java,2014-02-18T05:09:14Z,"11 anos, 6 meses",2025-09-10T04:11:17Z,0 dias,4886,4.8 MB,gitlab4j-api
+yewei02538/HiPermission,https://github.com/yewei02538/HiPermission,1102,Java,2017-05-11T08:04:29Z,"8 anos, 4 meses",2019-09-22T14:58:57Z,"5 anos, 11 meses",5493,5.4 MB,HiPermission
+asdsolutions-os/duo-navigation-drawer,https://github.com/asdsolutions-os/duo-navigation-drawer,1096,Java,2017-04-24T07:35:19Z,"8 anos, 4 meses",2019-03-01T09:08:45Z,"6 anos, 6 meses",22127,21.6 MB,duo-navigation-drawer
+briandilley/jsonrpc4j,https://github.com/briandilley/jsonrpc4j,1094,Java,2013-10-18T23:15:55Z,"11 anos, 11 meses",2025-08-25T22:59:21Z,16 dias,1583,1.5 MB,jsonrpc4j
+microsoft/mssql-jdbc,https://github.com/microsoft/mssql-jdbc,1092,Java,2016-08-22T21:58:47Z,"9 anos, 0 meses",2025-09-10T10:45:15Z,0 dias,18903,18.5 MB,mssql-jdbc
+in28minutes/spring-boot-master-class,https://github.com/in28minutes/spring-boot-master-class,1091,Java,2017-08-02T09:02:25Z,"8 anos, 1 meses",2024-10-15T03:54:49Z,"11 meses, 0 dias",1022,1022 KB,spring-boot-master-class
+roughike/SwipeSelector,https://github.com/roughike/SwipeSelector,1089,Java,2016-02-22T21:08:29Z,"9 anos, 6 meses",2019-06-10T23:27:47Z,"6 anos, 3 meses",9710,9.5 MB,SwipeSelector
+datumbox/datumbox-framework,https://github.com/datumbox/datumbox-framework,1088,Java,2014-10-18T18:10:08Z,"10 anos, 11 meses",2023-11-30T09:26:29Z,"1 anos, 9 meses",4977,4.9 MB,datumbox-framework
+ezylang/EvalEx,https://github.com/ezylang/EvalEx,1070,Java,2012-12-15T17:08:00Z,"12 anos, 9 meses",2025-08-31T11:26:18Z,10 dias,873,873 KB,EvalEx
+xerial/snappy-java,https://github.com/xerial/snappy-java,1070,Java,2012-09-06T01:30:21Z,"13 anos, 0 meses",2025-09-10T08:06:50Z,0 dias,38910,38.0 MB,snappy-java
+momosecurity/rhizobia_J,https://github.com/momosecurity/rhizobia_J,1065,Java,2019-05-10T10:10:48Z,"6 anos, 4 meses",2020-10-13T13:12:09Z,"4 anos, 11 meses",73,73 KB,rhizobia_J
+mcMMO-Dev/mcMMO,https://github.com/mcMMO-Dev/mcMMO,1061,Java,2012-01-05T18:54:08Z,"13 anos, 8 meses",2025-08-30T19:08:18Z,11 dias,30585,29.9 MB,mcMMO
+quickfix-j/quickfixj,https://github.com/quickfix-j/quickfixj,1060,Java,2014-05-19T10:04:08Z,"11 anos, 3 meses",2025-09-09T10:52:46Z,1 dias,44317,43.3 MB,quickfixj
+yidao620c/SpringBootBucket,https://github.com/yidao620c/SpringBootBucket,1059,Java,2018-03-04T09:46:49Z,"7 anos, 6 meses",2021-10-04T16:24:14Z,"3 anos, 11 meses",2230,2.2 MB,SpringBootBucket
+spring-cloud/spring-cloud-function,https://github.com/spring-cloud/spring-cloud-function,1057,Java,2016-09-22T02:34:34Z,"8 anos, 11 meses",2025-09-10T20:40:25Z,0 dias,14328,14.0 MB,spring-cloud-function
+zaihuishou/ExpandableRecyclerview,https://github.com/zaihuishou/ExpandableRecyclerview,1054,Java,2016-07-11T02:05:39Z,"9 anos, 2 meses",2016-11-21T03:32:51Z,"8 anos, 9 meses",7711,7.5 MB,ExpandableRecyclerview
+linkedin/test-butler,https://github.com/linkedin/test-butler,1048,Java,2016-07-28T19:07:01Z,"9 anos, 1 meses",2022-08-01T19:44:17Z,"3 anos, 1 meses",344,344 KB,test-butler
+kolorobot/spring-mvc-quickstart-archetype,https://github.com/kolorobot/spring-mvc-quickstart-archetype,1043,Java,2012-01-07T21:53:23Z,"13 anos, 8 meses",2022-12-29T07:41:46Z,"2 anos, 8 meses",1178,1.2 MB,spring-mvc-quickstart-archetype
+spring-cloud/spring-cloud-stream,https://github.com/spring-cloud/spring-cloud-stream,1038,Java,2015-07-08T15:51:38Z,"10 anos, 2 meses",2025-09-10T22:10:10Z,0 dias,19590,19.1 MB,spring-cloud-stream
+apache/commons-io,https://github.com/apache/commons-io,1037,Java,2009-05-21T01:38:37Z,"16 anos, 3 meses",2025-09-10T20:27:16Z,0 dias,12964,12.7 MB,commons-io
+AppiumTestDistribution/AppiumTestDistribution,https://github.com/AppiumTestDistribution/AppiumTestDistribution,1029,Java,2015-08-18T16:22:15Z,"10 anos, 0 meses",2024-12-19T05:18:18Z,"8 meses, 25 dias",115003,112.3 MB,AppiumTestDistribution
+yomorun/hashids-java,https://github.com/yomorun/hashids-java,1027,Java,2014-04-18T01:45:57Z,"11 anos, 4 meses",2023-10-20T03:26:01Z,"1 anos, 10 meses",117,117 KB,hashids-java
+kingston-csj/jforgame,https://github.com/kingston-csj/jforgame,1026,Java,2017-06-18T06:41:13Z,"8 anos, 2 meses",2025-09-10T12:36:21Z,0 dias,3243,3.2 MB,jforgame
+rule-engine/rule-engine-open,https://github.com/rule-engine/rule-engine-open,1022,Java,2023-03-29T15:00:27Z,"2 anos, 5 meses",2025-09-01T15:05:33Z,9 dias,532,532 KB,rule-engine-open
+neoremind/fluent-validator,https://github.com/neoremind/fluent-validator,1021,Java,2015-08-01T14:45:24Z,"10 anos, 1 meses",2022-12-16T06:01:14Z,"2 anos, 8 meses",277,277 KB,fluent-validator
+qqxx6661/log-record,https://github.com/qqxx6661/log-record,1020,Java,2021-11-06T06:35:33Z,"3 anos, 10 meses",2025-07-26T03:55:05Z,"1 meses, 16 dias",4080,4.0 MB,log-record
+leventov/Koloboke,https://github.com/leventov/Koloboke,1018,Java,2013-11-13T21:21:40Z,"11 anos, 10 meses",2017-02-01T10:43:20Z,"8 anos, 7 meses",39039,38.1 MB,Koloboke
+kordamp/bootstrapfx,https://github.com/kordamp/bootstrapfx,1017,Java,2015-09-08T22:04:56Z,"10 anos, 0 meses",2021-05-06T21:43:19Z,"4 anos, 4 meses",866,866 KB,bootstrapfx
+zhangxd1989/springboot-dubbox,https://github.com/zhangxd1989/springboot-dubbox,1016,Java,2017-02-10T10:28:20Z,"8 anos, 7 meses",2022-06-29T19:31:59Z,"3 anos, 2 meses",129,129 KB,springboot-dubbox
+armcha/LuseenBottomNavigation,https://github.com/armcha/LuseenBottomNavigation,1016,Java,2016-03-19T12:23:24Z,"9 anos, 5 meses",2018-03-22T11:39:39Z,"7 anos, 5 meses",1283,1.3 MB,LuseenBottomNavigation
+serso/android-checkout,https://github.com/serso/android-checkout,1009,Java,2014-07-28T09:48:40Z,"11 anos, 1 meses",2024-01-26T14:32:56Z,"1 anos, 7 meses",2196,2.1 MB,android-checkout
+antlr/stringtemplate4,https://github.com/antlr/stringtemplate4,1004,Java,2010-02-04T01:37:35Z,"15 anos, 7 meses",2025-05-14T20:52:32Z,"3 meses, 29 dias",3094,3.0 MB,stringtemplate4
+booncol/Pulsator4Droid,https://github.com/booncol/Pulsator4Droid,1001,Java,2016-07-06T23:47:52Z,"9 anos, 2 meses",2023-11-24T05:24:58Z,"1 anos, 9 meses",214,214 KB,Pulsator4Droid
+hankcs/AhoCorasickDoubleArrayTrie,https://github.com/hankcs/AhoCorasickDoubleArrayTrie,997,Java,2015-04-08T13:40:30Z,"10 anos, 5 meses",2021-11-24T17:09:04Z,"3 anos, 9 meses",3210,3.1 MB,AhoCorasickDoubleArrayTrie
+Krupen/AutoplayVideos,https://github.com/Krupen/AutoplayVideos,996,Java,2016-12-16T06:34:23Z,"8 anos, 9 meses",2023-09-07T10:30:31Z,"2 anos, 0 meses",13404,13.1 MB,AutoplayVideos
+atilika/kuromoji,https://github.com/atilika/kuromoji,994,Java,2011-01-20T06:23:21Z,"14 anos, 7 meses",2023-01-23T08:45:18Z,"2 anos, 7 meses",5771,5.6 MB,kuromoji
+luaj/luaj,https://github.com/luaj/luaj,986,Java,2015-08-27T13:51:27Z,"10 anos, 0 meses",2023-04-24T08:10:39Z,"2 anos, 4 meses",3537,3.5 MB,luaj
+openkoda/openkoda,https://github.com/openkoda/openkoda,986,Java,2023-04-18T09:43:28Z,"2 anos, 4 meses",2025-02-19T12:59:22Z,"6 meses, 23 dias",9756,9.5 MB,openkoda
+smltq/spring-boot-demo,https://github.com/smltq/spring-boot-demo,980,Java,2019-06-04T09:30:22Z,"6 anos, 3 meses",2023-09-18T19:21:46Z,"1 anos, 11 meses",4901,4.8 MB,spring-boot-demo
+hivemq/hivemq-mqtt-client,https://github.com/hivemq/hivemq-mqtt-client,979,Java,2018-01-02T21:15:55Z,"7 anos, 8 meses",2025-09-09T12:14:21Z,1 dias,8494,8.3 MB,hivemq-mqtt-client
+OpenAPITools/openapi-diff,https://github.com/OpenAPITools/openapi-diff,978,Java,2017-12-12T00:39:30Z,"7 anos, 9 meses",2025-09-04T12:32:02Z,6 dias,1496,1.5 MB,openapi-diff
+mysql/mysql-connector-j,https://github.com/mysql/mysql-connector-j,977,Java,2015-03-23T15:45:23Z,"10 anos, 5 meses",2025-07-22T12:42:46Z,"1 meses, 20 dias",38245,37.3 MB,mysql-connector-j
+GenshenWang/SSM_HRMS,https://github.com/GenshenWang/SSM_HRMS,976,Java,2018-03-10T16:06:18Z,"7 anos, 6 meses",2022-12-16T08:05:12Z,"2 anos, 8 meses",12150,11.9 MB,SSM_HRMS
+monitorjbl/excel-streaming-reader,https://github.com/monitorjbl/excel-streaming-reader,969,Java,2014-04-20T21:08:25Z,"11 anos, 4 meses",2023-09-28T23:29:40Z,"1 anos, 11 meses",22680,22.1 MB,excel-streaming-reader
+vaadin/hilla,https://github.com/vaadin/hilla,963,Java,2021-04-27T13:25:07Z,"4 anos, 4 meses",2025-09-10T15:24:17Z,0 dias,79655,77.8 MB,hilla
+nidi3/graphviz-java,https://github.com/nidi3/graphviz-java,962,Java,2015-10-02T12:46:51Z,"9 anos, 11 meses",2023-05-25T04:52:52Z,"2 anos, 3 meses",10036,9.8 MB,graphviz-java
+twitter/hbc,https://github.com/twitter/hbc,961,Java,2013-02-07T01:40:57Z,"12 anos, 7 meses",2022-04-06T19:20:25Z,"3 anos, 5 meses",365,365 KB,hbc
+MangoAutomation/modbus4j,https://github.com/MangoAutomation/modbus4j,959,Java,2014-06-10T23:10:27Z,"11 anos, 3 meses",2025-07-12T01:53:06Z,"2 meses, 0 dias",6886,6.7 MB,modbus4j
+ufo22940268/android-justifiedtextview,https://github.com/ufo22940268/android-justifiedtextview,952,Java,2014-03-21T07:42:30Z,"11 anos, 5 meses",2024-12-03T07:40:54Z,"9 meses, 11 dias",2653,2.6 MB,android-justifiedtextview
+TestFX/TestFX,https://github.com/TestFX/TestFX,948,Java,2013-07-15T13:49:09Z,"12 anos, 2 meses",2024-02-12T00:09:38Z,"1 anos, 7 meses",10593,10.3 MB,TestFX
+locationtech/spatial4j,https://github.com/locationtech/spatial4j,948,Java,2012-02-27T21:22:30Z,"13 anos, 6 meses",2025-05-31T19:34:48Z,"3 meses, 12 dias",14044,13.7 MB,spatial4j
+robert-bor/aho-corasick,https://github.com/robert-bor/aho-corasick,948,Java,2014-01-29T20:17:12Z,"11 anos, 7 meses",2025-05-21T06:18:51Z,"3 meses, 22 dias",671,671 KB,aho-corasick
+spring-guides/gs-spring-boot,https://github.com/spring-guides/gs-spring-boot,945,Java,2013-07-30T18:25:34Z,"12 anos, 1 meses",2025-03-01T12:38:54Z,"6 meses, 13 dias",1092,1.1 MB,gs-spring-boot
+he2121/MyRPCFromZero,https://github.com/he2121/MyRPCFromZero,937,Java,2020-08-05T04:20:54Z,"5 anos, 1 meses",2024-08-04T07:42:16Z,"1 anos, 1 meses",330,330 KB,MyRPCFromZero
+apache/stormcrawler,https://github.com/apache/stormcrawler,932,Java,2013-04-12T14:13:30Z,"12 anos, 5 meses",2025-09-08T17:40:14Z,2 dias,7682,7.5 MB,stormcrawler
+getrebuild/rebuild,https://github.com/getrebuild/rebuild,932,Java,2018-05-18T03:44:32Z,"7 anos, 3 meses",2025-09-10T15:29:57Z,0 dias,44301,43.3 MB,rebuild
+Carson-Ho/Search_Layout,https://github.com/Carson-Ho/Search_Layout,927,Java,2016-11-19T09:00:00Z,"8 anos, 9 meses",2017-08-23T01:42:58Z,"8 anos, 0 meses",140,140 KB,Search_Layout
+openjdk/jmc,https://github.com/openjdk/jmc,923,Java,2019-05-15T06:39:48Z,"6 anos, 4 meses",2025-09-06T18:13:14Z,4 dias,80120,78.2 MB,jmc
+apache/datasketches-java,https://github.com/apache/datasketches-java,923,Java,2015-06-30T01:05:21Z,"10 anos, 2 meses",2025-09-09T23:24:18Z,0 dias,34977,34.2 MB,datasketches-java
+superblaubeere27/obfuscator,https://github.com/superblaubeere27/obfuscator,913,Java,2018-05-10T08:43:28Z,"7 anos, 4 meses",2024-07-13T13:07:49Z,"1 anos, 1 meses",837,837 KB,obfuscator
+takari/polyglot-maven,https://github.com/takari/polyglot-maven,910,Java,2012-07-12T13:51:37Z,"13 anos, 2 meses",2025-09-08T19:36:21Z,2 dias,2752,2.7 MB,polyglot-maven
+beanshell/beanshell,https://github.com/beanshell/beanshell,909,Java,2015-09-23T15:36:06Z,"9 anos, 11 meses",2024-08-17T22:28:41Z,"1 anos, 0 meses",16099,15.7 MB,beanshell
+Impetus/kundera,https://github.com/Impetus/kundera,902,Java,2011-05-06T13:57:57Z,"14 anos, 4 meses",2020-02-11T05:50:27Z,"5 anos, 7 meses",30689,30.0 MB,kundera
+esig/dss,https://github.com/esig/dss,902,Java,2015-01-30T18:05:50Z,"10 anos, 7 meses",2025-09-04T06:11:32Z,6 dias,266770,260.5 MB,dss
+stripe/stripe-java,https://github.com/stripe/stripe-java,898,Java,2011-08-09T00:06:31Z,"14 anos, 1 meses",2025-09-10T21:01:32Z,0 dias,910519,889.2 MB,stripe-java
+tensorflow/java,https://github.com/tensorflow/java,894,Java,2019-09-09T19:07:20Z,"6 anos, 0 meses",2025-06-29T03:24:45Z,"2 meses, 13 dias",20537,20.1 MB,java
+everit-org/json-schema,https://github.com/everit-org/json-schema,893,Java,2015-09-12T19:14:35Z,"10 anos, 0 meses",2025-08-01T12:10:35Z,"1 meses, 10 dias",2550,2.5 MB,json-schema
+spring-io/spring-javaformat,https://github.com/spring-io/spring-javaformat,887,Java,2018-04-02T19:48:16Z,"7 anos, 5 meses",2025-08-14T22:17:55Z,27 dias,9115,8.9 MB,spring-javaformat
+MariaDB4j/MariaDB4j,https://github.com/MariaDB4j/MariaDB4j,884,Java,2012-02-04T21:48:54Z,"13 anos, 7 meses",2025-09-01T10:19:34Z,9 dias,276823,270.3 MB,MariaDB4j
+EvoSuite/evosuite,https://github.com/EvoSuite/evosuite,882,Java,2015-09-09T19:53:09Z,"10 anos, 0 meses",2025-02-14T19:44:27Z,"6 meses, 28 dias",262111,256.0 MB,evosuite
+palatable/lambda,https://github.com/palatable/lambda,875,Java,2014-01-26T22:09:10Z,"11 anos, 7 meses",2023-05-01T22:12:47Z,"2 anos, 4 meses",5844,5.7 MB,lambda
+PlaytikaOSS/testcontainers-spring-boot,https://github.com/PlaytikaOSS/testcontainers-spring-boot,871,Java,2017-10-22T19:17:46Z,"7 anos, 10 meses",2025-09-10T08:28:21Z,0 dias,6328,6.2 MB,testcontainers-spring-boot
+nitrite/nitrite-java,https://github.com/nitrite/nitrite-java,871,Java,2017-04-19T18:26:54Z,"8 anos, 4 meses",2025-09-09T04:55:37Z,1 dias,5537,5.4 MB,nitrite-java
+owlcs/owlapi,https://github.com/owlcs/owlapi,864,Java,2013-02-17T11:51:14Z,"12 anos, 6 meses",2024-09-08T13:31:00Z,"1 anos, 0 meses",146664,143.2 MB,owlapi
+logpresso/CVE-2021-44228-Scanner,https://github.com/logpresso/CVE-2021-44228-Scanner,863,Java,2021-12-11T11:18:46Z,"3 anos, 9 meses",2022-04-07T14:47:03Z,"3 anos, 5 meses",5310,5.2 MB,CVE-2021-44228-Scanner
+yegor256/takes,https://github.com/yegor256/takes,859,Java,2015-01-07T16:57:47Z,"10 anos, 8 meses",2025-09-07T21:07:20Z,3 dias,33344,32.6 MB,takes
+langgraph4j/langgraph4j,https://github.com/langgraph4j/langgraph4j,858,Java,2024-03-18T19:38:47Z,"1 anos, 5 meses",2025-09-10T10:41:11Z,0 dias,34001,33.2 MB,langgraph4j
+gazbert/bxbot,https://github.com/gazbert/bxbot,855,Java,2015-09-04T19:17:56Z,"10 anos, 0 meses",2024-11-30T23:30:51Z,"9 meses, 13 dias",6405,6.3 MB,bxbot
+ByoxCode/DrawView,https://github.com/ByoxCode/DrawView,854,Java,2016-11-10T06:32:54Z,"8 anos, 10 meses",2023-07-09T14:23:44Z,"2 anos, 2 meses",28195,27.5 MB,DrawView
+tls-attacker/TLS-Attacker,https://github.com/tls-attacker/TLS-Attacker,853,Java,2016-04-20T13:40:59Z,"9 anos, 4 meses",2025-08-08T17:52:35Z,"1 meses, 3 dias",35683,34.8 MB,TLS-Attacker
+chengdazhi/DecentBanner,https://github.com/chengdazhi/DecentBanner,850,Java,2016-07-24T05:48:42Z,"9 anos, 1 meses",2016-08-31T10:05:41Z,"9 anos, 0 meses",6899,6.7 MB,DecentBanner
+in28minutes/SpringMvcStepByStep,https://github.com/in28minutes/SpringMvcStepByStep,839,Java,2015-12-23T13:09:44Z,"9 anos, 8 meses",2023-10-25T21:49:23Z,"1 anos, 10 meses",482,482 KB,SpringMvcStepByStep
+javafx-maven-plugin/javafx-maven-plugin,https://github.com/javafx-maven-plugin/javafx-maven-plugin,835,Java,2012-10-21T02:03:59Z,"12 anos, 10 meses",2021-08-17T02:27:02Z,"4 anos, 0 meses",982,982 KB,javafx-maven-plugin
+inferred/FreeBuilder,https://github.com/inferred/FreeBuilder,834,Java,2015-01-05T18:11:27Z,"10 anos, 8 meses",2024-10-16T08:44:55Z,"10 meses, 29 dias",4728,4.6 MB,FreeBuilder
+maxmind/GeoIP2-java,https://github.com/maxmind/GeoIP2-java,833,Java,2013-04-01T21:40:11Z,"12 anos, 5 meses",2025-09-05T16:24:00Z,5 dias,6491,6.3 MB,GeoIP2-java
+chrisbanes/Android-BitmapCache,https://github.com/chrisbanes/Android-BitmapCache,832,Java,2012-07-01T07:27:31Z,"13 anos, 2 meses",2013-11-22T16:08:21Z,"11 anos, 9 meses",1302,1.3 MB,Android-BitmapCache
+bootsrc/jseckill,https://github.com/bootsrc/jseckill,823,Java,2017-12-22T05:40:01Z,"7 anos, 8 meses",2022-06-21T00:54:57Z,"3 anos, 2 meses",1798,1.8 MB,jseckill
+bfwg/springboot-jwt-starter,https://github.com/bfwg/springboot-jwt-starter,822,Java,2016-10-30T00:00:47Z,"8 anos, 10 meses",2024-08-01T21:26:34Z,"1 anos, 1 meses",245,245 KB,springboot-jwt-starter
+aarsy/GoogleMapsAnimations,https://github.com/aarsy/GoogleMapsAnimations,822,Java,2016-08-10T18:55:01Z,"9 anos, 1 meses",2019-12-31T05:27:20Z,"5 anos, 8 meses",14680,14.3 MB,GoogleMapsAnimations
+making/yavi,https://github.com/making/yavi,821,Java,2018-08-21T10:39:38Z,"7 anos, 0 meses",2025-09-10T20:08:28Z,0 dias,2868,2.8 MB,yavi
+simplenlg/simplenlg,https://github.com/simplenlg/simplenlg,818,Java,2014-08-20T21:37:08Z,"11 anos, 0 meses",2024-12-06T12:07:07Z,"9 meses, 8 dias",129545,126.5 MB,simplenlg
+jaygajera17/E-commerce-project-springBoot,https://github.com/jaygajera17/E-commerce-project-springBoot,817,Java,2022-03-12T10:42:29Z,"3 anos, 6 meses",2025-08-24T17:19:58Z,17 dias,17754,17.3 MB,E-commerce-project-springBoot
+hollingsworthd/jBrowserDriver,https://github.com/hollingsworthd/jBrowserDriver,817,Java,2015-01-15T21:12:32Z,"10 anos, 8 meses",2024-07-29T19:06:55Z,"1 anos, 1 meses",9665,9.4 MB,jBrowserDriver
+anlingyi/xechat-idea,https://github.com/anlingyi/xechat-idea,815,Java,2021-04-15T08:09:25Z,"4 anos, 4 meses",2024-04-22T09:19:19Z,"1 anos, 4 meses",20915,20.4 MB,xechat-idea
+Blazebit/blaze-persistence,https://github.com/Blazebit/blaze-persistence,811,Java,2014-07-12T11:08:47Z,"11 anos, 2 meses",2025-09-03T12:20:01Z,7 dias,37558,36.7 MB,blaze-persistence
+xunlu129/teriteri-backend,https://github.com/xunlu129/teriteri-backend,810,Java,2023-09-02T20:45:17Z,"2 anos, 0 meses",2025-02-18T03:51:52Z,"6 meses, 24 dias",17094,16.7 MB,teriteri-backend
+hujingshuang/MTrans,https://github.com/hujingshuang/MTrans,807,Java,2018-05-08T14:38:39Z,"7 anos, 4 meses",2019-06-09T14:26:52Z,"6 anos, 3 meses",645,645 KB,MTrans
+RaiMan/SikuliX-2014,https://github.com/RaiMan/SikuliX-2014,806,Java,2013-12-22T16:51:56Z,"11 anos, 8 meses",2018-03-08T09:02:08Z,"7 anos, 6 meses",169878,165.9 MB,SikuliX-2014
+davidmoten/rxjava-jdbc,https://github.com/davidmoten/rxjava-jdbc,803,Java,2014-02-09T08:07:31Z,"11 anos, 7 meses",2025-08-18T00:29:11Z,23 dias,1268,1.2 MB,rxjava-jdbc
+EdwardRaff/JSAT,https://github.com/EdwardRaff/JSAT,799,Java,2015-03-24T02:53:51Z,"10 anos, 5 meses",2022-12-16T21:50:57Z,"2 anos, 8 meses",4093,4.0 MB,JSAT
+dhatim/fastexcel,https://github.com/dhatim/fastexcel,799,Java,2016-02-17T09:46:33Z,"9 anos, 6 meses",2025-08-21T12:51:32Z,20 dias,3167,3.1 MB,fastexcel
+rakam-io/rakam-api,https://github.com/rakam-io/rakam-api,798,Java,2014-01-16T15:17:09Z,"11 anos, 8 meses",2021-11-13T01:21:45Z,"3 anos, 10 meses",27933,27.3 MB,rakam-api
+mingyang66/spring-parent,https://github.com/mingyang66/spring-parent,795,Java,2019-07-04T08:52:09Z,"6 anos, 2 meses",2025-09-10T11:43:38Z,0 dias,39288,38.4 MB,spring-parent
+hierynomus/smbj,https://github.com/hierynomus/smbj,793,Java,2016-01-25T13:23:01Z,"9 anos, 7 meses",2025-01-24T12:53:28Z,"7 meses, 19 dias",9864,9.6 MB,smbj
+fanyong920/jvppeteer,https://github.com/fanyong920/jvppeteer,784,Java,2020-03-11T09:45:16Z,"5 anos, 6 meses",2025-08-05T01:24:23Z,"1 meses, 6 dias",2601,2.5 MB,jvppeteer
+xiaou61/U-space,https://github.com/xiaou61/U-space,784,Java,2023-07-20T01:17:51Z,"2 anos, 1 meses",2025-09-10T03:42:54Z,0 dias,816,816 KB,U-space
+pippo-java/pippo,https://github.com/pippo-java/pippo,783,Java,2014-10-30T16:23:30Z,"10 anos, 10 meses",2023-03-22T18:46:33Z,"2 anos, 5 meses",3896,3.8 MB,pippo
+AlloyTools/org.alloytools.alloy,https://github.com/AlloyTools/org.alloytools.alloy,782,Java,2017-07-19T16:33:02Z,"8 anos, 1 meses",2025-06-13T15:15:08Z,"2 meses, 29 dias",131072,128.0 MB,org.alloytools.alloy
+fizzed/rocker,https://github.com/fizzed/rocker,774,Java,2015-03-17T23:52:08Z,"10 anos, 5 meses",2025-07-12T01:34:41Z,"2 meses, 0 dias",5741,5.6 MB,rocker
+Javacord/Javacord,https://github.com/Javacord/Javacord,769,Java,2015-12-31T10:26:18Z,"9 anos, 8 meses",2025-02-07T17:36:10Z,"7 meses, 5 dias",7295,7.1 MB,Javacord
+apache/wicket,https://github.com/apache/wicket,768,Java,2009-05-21T01:51:51Z,"16 anos, 3 meses",2025-09-07T02:01:55Z,3 dias,131101,128.0 MB,wicket
+republique-et-canton-de-geneve/chvote-1-0,https://github.com/republique-et-canton-de-geneve/chvote-1-0,768,Java,2016-11-25T08:39:52Z,"8 anos, 9 meses",2023-02-07T10:49:28Z,"2 anos, 7 meses",2336,2.3 MB,chvote-1-0
+adobe/aem-core-wcm-components,https://github.com/adobe/aem-core-wcm-components,767,Java,2015-12-01T11:25:24Z,"9 anos, 9 meses",2025-09-09T10:45:27Z,1 dias,30479,29.8 MB,aem-core-wcm-components
+kongchen/swagger-maven-plugin,https://github.com/kongchen/swagger-maven-plugin,765,Java,2013-03-17T15:38:21Z,"12 anos, 6 meses",2024-01-06T00:15:01Z,"1 anos, 8 meses",2136,2.1 MB,swagger-maven-plugin
+afollestad/ason,https://github.com/afollestad/ason,757,Java,2017-02-04T04:39:03Z,"8 anos, 7 meses",2018-05-02T20:26:59Z,"7 anos, 4 meses",316,316 KB,ason
+eclipse-californium/californium,https://github.com/eclipse-californium/californium,752,Java,2015-09-24T15:27:15Z,"9 anos, 11 meses",2025-08-26T13:45:51Z,15 dias,29020,28.3 MB,californium
+x-stream/xstream,https://github.com/x-stream/xstream,749,Java,2015-03-14T15:57:12Z,"10 anos, 6 meses",2025-09-10T21:35:30Z,0 dias,21689,21.2 MB,xstream
+actframework/actframework,https://github.com/actframework/actframework,748,Java,2014-12-13T03:05:03Z,"10 anos, 9 meses",2023-04-13T17:19:42Z,"2 anos, 5 meses",16399,16.0 MB,actframework
+dudu90/FreshDownloadView,https://github.com/dudu90/FreshDownloadView,743,Java,2016-10-05T02:44:03Z,"8 anos, 11 meses",2016-10-06T11:33:27Z,"8 anos, 11 meses",775,775 KB,FreshDownloadView
+pig-mesh/deepseek4j,https://github.com/pig-mesh/deepseek4j,741,Java,2025-02-07T03:25:13Z,"7 meses, 5 dias",2025-04-12T11:17:43Z,"5 meses, 1 dias",175,175 KB,deepseek4j
+BCsl/CursorWheelLayout,https://github.com/BCsl/CursorWheelLayout,739,Java,2016-04-24T06:21:14Z,"9 anos, 4 meses",2020-11-20T12:40:29Z,"4 anos, 9 meses",2862,2.8 MB,CursorWheelLayout
+ralfstx/minimal-json,https://github.com/ralfstx/minimal-json,736,Java,2013-02-20T12:09:31Z,"12 anos, 6 meses",2023-11-15T04:37:21Z,"1 anos, 10 meses",750,750 KB,minimal-json
+deliveredtechnologies/rulebook,https://github.com/deliveredtechnologies/rulebook,736,Java,2017-02-06T05:57:24Z,"8 anos, 7 meses",2020-10-20T02:44:27Z,"4 anos, 10 meses",1565,1.5 MB,rulebook
+kongzue/Dialog,https://github.com/kongzue/Dialog,736,Java,2017-06-01T13:20:33Z,"8 anos, 3 meses",2022-12-28T10:33:03Z,"2 anos, 8 meses",2286,2.2 MB,Dialog
+spring-cloud/spring-cloud-commons,https://github.com/spring-cloud/spring-cloud-commons,735,Java,2014-12-01T21:52:43Z,"10 anos, 9 meses",2025-09-10T22:57:01Z,0 dias,16087,15.7 MB,spring-cloud-commons
+georgewfraser/java-language-server,https://github.com/georgewfraser/java-language-server,732,Java,2016-03-13T03:08:19Z,"9 anos, 6 meses",2025-06-03T06:16:24Z,"3 meses, 9 dias",47731,46.6 MB,java-language-server
+jpush/jpush-api-java-client,https://github.com/jpush/jpush-api-java-client,731,Java,2013-10-15T09:01:25Z,"11 anos, 11 meses",2024-11-12T03:56:58Z,"10 meses, 2 dias",16993,16.6 MB,jpush-api-java-client
+chocoteam/choco-solver,https://github.com/chocoteam/choco-solver,727,Java,2011-11-04T09:09:18Z,"13 anos, 10 meses",2025-09-05T12:17:52Z,5 dias,87698,85.6 MB,choco-solver
+edvin/fxlauncher,https://github.com/edvin/fxlauncher,727,Java,2016-01-30T22:31:39Z,"9 anos, 7 meses",2021-01-10T19:07:12Z,"4 anos, 8 meses",225,225 KB,fxlauncher
+spring-cloud/spring-cloud-contract,https://github.com/spring-cloud/spring-cloud-contract,723,Java,2016-06-12T17:11:44Z,"9 anos, 3 meses",2025-09-10T13:40:35Z,0 dias,137837,134.6 MB,spring-cloud-contract
+gabrie-allaigre/sonar-gitlab-plugin,https://github.com/gabrie-allaigre/sonar-gitlab-plugin,723,Java,2016-05-07T07:34:34Z,"9 anos, 4 meses",2022-06-28T23:26:45Z,"3 anos, 2 meses",981,981 KB,sonar-gitlab-plugin
+abel533/guns,https://github.com/abel533/guns,722,Java,2017-07-26T14:28:56Z,"8 anos, 1 meses",2022-10-18T02:19:43Z,"2 anos, 10 meses",7359,7.2 MB,guns
+khoubyari/spring-boot-rest-example,https://github.com/khoubyari/spring-boot-rest-example,720,Java,2014-10-05T21:59:40Z,"10 anos, 11 meses",2023-10-31T01:54:44Z,"1 anos, 10 meses",62,62 KB,spring-boot-rest-example
+spring-gradle-plugins/dependency-management-plugin,https://github.com/spring-gradle-plugins/dependency-management-plugin,717,Java,2014-07-14T14:32:59Z,"11 anos, 2 meses",2025-06-26T07:51:40Z,"2 meses, 16 dias",1116,1.1 MB,dependency-management-plugin
+SpaiR/imgui-java,https://github.com/SpaiR/imgui-java,714,Java,2019-12-29T21:01:06Z,"5 anos, 8 meses",2025-09-08T09:11:55Z,2 dias,281525,274.9 MB,imgui-java
+spring-attic/spring-cloud-gcp,https://github.com/spring-attic/spring-cloud-gcp,709,Java,2017-03-24T19:58:20Z,"8 anos, 5 meses",2022-01-18T20:15:46Z,"3 anos, 7 meses",17889,17.5 MB,spring-cloud-gcp
+apache/commons-collections,https://github.com/apache/commons-collections,709,Java,2009-05-21T01:12:20Z,"16 anos, 3 meses",2025-09-05T13:43:23Z,5 dias,24214,23.6 MB,commons-collections
+rohanpadhye/JQF,https://github.com/rohanpadhye/JQF,708,Java,2017-02-23T01:27:45Z,"8 anos, 6 meses",2025-05-22T14:37:07Z,"3 meses, 21 dias",5526,5.4 MB,JQF
+neuland/jade4j,https://github.com/neuland/jade4j,706,Java,2012-04-17T13:11:56Z,"13 anos, 4 meses",2022-05-20T20:52:34Z,"3 anos, 3 meses",2478,2.4 MB,jade4j
+dynamitechetan/Flowing-Gradient,https://github.com/dynamitechetan/Flowing-Gradient,705,Java,2016-07-17T10:36:12Z,"9 anos, 1 meses",2019-05-23T14:40:16Z,"6 anos, 3 meses",225,225 KB,Flowing-Gradient
+thomasdarimont/keycloak-extension-playground,https://github.com/thomasdarimont/keycloak-extension-playground,704,Java,2019-02-10T21:51:33Z,"6 anos, 7 meses",2025-01-15T17:27:07Z,"7 meses, 28 dias",16228,15.8 MB,keycloak-extension-playground
+uavorg/uavstack,https://github.com/uavorg/uavstack,702,Java,2017-09-04T10:27:15Z,"8 anos, 0 meses",2022-12-16T11:16:11Z,"2 anos, 8 meses",17080,16.7 MB,uavstack
+WuKongOpenSource/WukongCRM-9.0-JAVA,https://github.com/WuKongOpenSource/WukongCRM-9.0-JAVA,702,Java,2019-05-11T13:11:48Z,"6 anos, 4 meses",2022-06-21T01:07:27Z,"3 anos, 2 meses",21548,21.0 MB,WukongCRM-9.0-JAVA
+joshlong/cloud-native-workshop,https://github.com/joshlong/cloud-native-workshop,701,Java,2015-09-19T01:46:40Z,"9 anos, 11 meses",2017-10-17T22:38:36Z,"7 anos, 11 meses",49542,48.4 MB,cloud-native-workshop
+microprofile/microprofile,https://github.com/microprofile/microprofile,692,Java,2016-12-21T11:14:13Z,"8 anos, 8 meses",2025-07-01T10:23:13Z,"2 meses, 11 dias",385,385 KB,microprofile
+in28minutes/jpa-with-hibernate,https://github.com/in28minutes/jpa-with-hibernate,690,Java,2017-08-21T05:17:23Z,"8 anos, 0 meses",2025-06-05T03:39:13Z,"3 meses, 7 dias",598,598 KB,jpa-with-hibernate
+Karumi/ExpandableSelector,https://github.com/Karumi/ExpandableSelector,690,Java,2015-06-16T13:23:50Z,"10 anos, 2 meses",2018-07-20T12:02:28Z,"7 anos, 1 meses",1382,1.3 MB,ExpandableSelector
+spring-projects-experimental/spring-boot-thin-launcher,https://github.com/spring-projects-experimental/spring-boot-thin-launcher,689,Java,2016-10-18T09:13:45Z,"8 anos, 10 meses",2025-01-15T13:57:09Z,"7 meses, 28 dias",2140,2.1 MB,spring-boot-thin-launcher
+dolyw/ShiroJwt,https://github.com/dolyw/ShiroJwt,687,Java,2018-08-31T06:57:56Z,"7 anos, 0 meses",2022-06-21T00:47:32Z,"3 anos, 2 meses",199,199 KB,ShiroJwt
+dlsc-software-consulting-gmbh/FormsFX,https://github.com/dlsc-software-consulting-gmbh/FormsFX,685,Java,2017-09-12T15:11:31Z,"8 anos, 0 meses",2023-09-05T11:11:21Z,"2 anos, 0 meses",4007,3.9 MB,FormsFX
+database-rider/database-rider,https://github.com/database-rider/database-rider,680,Java,2016-09-16T12:47:36Z,"8 anos, 12 meses",2024-10-27T20:10:00Z,"10 meses, 18 dias",18203,17.8 MB,database-rider
+Urunov/SpringBoot-Projects-FullStack,https://github.com/Urunov/SpringBoot-Projects-FullStack,679,Java,2020-02-15T14:05:46Z,"5 anos, 6 meses",2024-06-18T16:15:43Z,"1 anos, 2 meses",43192,42.2 MB,SpringBoot-Projects-FullStack
+tkaczmarzyk/specification-arg-resolver,https://github.com/tkaczmarzyk/specification-arg-resolver,678,Java,2014-03-23T09:04:58Z,"11 anos, 5 meses",2025-09-08T11:34:07Z,2 dias,2638,2.6 MB,specification-arg-resolver
+schibsted/jslt,https://github.com/schibsted/jslt,674,Java,2018-06-11T13:11:37Z,"7 anos, 3 meses",2025-06-29T18:32:36Z,"2 meses, 13 dias",1191,1.2 MB,jslt
+Alovoa/alovoa,https://github.com/Alovoa/alovoa,671,Java,2020-01-06T17:26:55Z,"5 anos, 8 meses",2025-08-19T17:56:29Z,22 dias,27432,26.8 MB,alovoa
+firebase/geofire-java,https://github.com/firebase/geofire-java,671,Java,2014-07-13T11:52:36Z,"11 anos, 2 meses",2020-10-13T06:39:19Z,"4 anos, 11 meses",694,694 KB,geofire-java
+census-instrumentation/opencensus-java,https://github.com/census-instrumentation/opencensus-java,670,Java,2016-07-28T22:10:03Z,"9 anos, 1 meses",2023-07-05T20:50:24Z,"2 anos, 2 meses",7569,7.4 MB,opencensus-java
+facebookarchive/jcommon,https://github.com/facebookarchive/jcommon,669,Java,2012-07-20T10:38:33Z,"13 anos, 1 meses",2020-11-09T22:17:34Z,"4 anos, 10 meses",2108,2.1 MB,jcommon
+wks/ik-analyzer,https://github.com/wks/ik-analyzer,666,Java,2011-04-14T08:47:45Z,"14 anos, 5 meses",2018-05-04T10:55:53Z,"7 anos, 4 meses",1382,1.3 MB,ik-analyzer
+dependency-check/dependency-check-sonar-plugin,https://github.com/dependency-check/dependency-check-sonar-plugin,663,Java,2015-01-12T15:56:34Z,"10 anos, 8 meses",2025-09-04T12:31:31Z,6 dias,7305,7.1 MB,dependency-check-sonar-plugin
+ccj659/PopsTabView,https://github.com/ccj659/PopsTabView,662,Java,2017-06-28T02:46:46Z,"8 anos, 2 meses",2018-12-16T13:50:47Z,"6 anos, 9 meses",23555,23.0 MB,PopsTabView
+in28minutes/MockitoTutorialForBeginners,https://github.com/in28minutes/MockitoTutorialForBeginners,661,Java,2016-08-07T14:13:23Z,"9 anos, 1 meses",2024-08-06T10:41:24Z,"1 anos, 1 meses",779,779 KB,MockitoTutorialForBeginners
+vidstige/jadb,https://github.com/vidstige/jadb,661,Java,2013-07-25T18:45:02Z,"12 anos, 1 meses",2022-05-27T15:00:30Z,"3 anos, 3 meses",690,690 KB,jadb
+smart-cloud/smart-cloud,https://github.com/smart-cloud/smart-cloud,661,Java,2019-04-28T15:57:57Z,"6 anos, 4 meses",2025-08-01T02:48:04Z,"1 meses, 10 dias",3326,3.2 MB,smart-cloud
+asciidoctor/asciidoctorj,https://github.com/asciidoctor/asciidoctorj,660,Java,2013-03-18T19:36:27Z,"12 anos, 5 meses",2025-09-10T17:07:35Z,0 dias,4858,4.7 MB,asciidoctorj
+la-team/light-admin,https://github.com/la-team/light-admin,659,Java,2012-07-29T21:21:10Z,"13 anos, 1 meses",2020-06-15T20:53:45Z,"5 anos, 2 meses",23829,23.3 MB,light-admin
+lewky/seckill,https://github.com/lewky/seckill,652,Java,2017-10-07T04:31:29Z,"7 anos, 11 meses",2022-12-16T05:51:20Z,"2 anos, 8 meses",76,76 KB,seckill
+akshay2211/Oblique,https://github.com/akshay2211/Oblique,648,Java,2017-03-21T15:05:08Z,"8 anos, 5 meses",2023-01-17T16:58:13Z,"2 anos, 7 meses",39942,39.0 MB,Oblique
+SAML-Toolkits/java-saml,https://github.com/SAML-Toolkits/java-saml,648,Java,2011-03-22T20:26:02Z,"14 anos, 5 meses",2024-06-20T09:17:32Z,"1 anos, 2 meses",2093,2.0 MB,java-saml
+danielwegener/logback-kafka-appender,https://github.com/danielwegener/logback-kafka-appender,648,Java,2015-02-11T19:10:14Z,"10 anos, 7 meses",2022-05-27T06:53:02Z,"3 anos, 3 meses",255,255 KB,logback-kafka-appender
+redis/redis-om-spring,https://github.com/redis/redis-om-spring,641,Java,2021-10-29T04:36:55Z,"3 anos, 10 meses",2025-09-10T23:17:50Z,0 dias,15022,14.7 MB,redis-om-spring
+ESAPI/esapi-java-legacy,https://github.com/ESAPI/esapi-java-legacy,641,Java,2014-09-10T02:12:29Z,"11 anos, 0 meses",2025-07-03T03:15:53Z,"2 meses, 9 dias",56688,55.4 MB,esapi-java-legacy
+in28minutes/full-stack-with-react-and-spring-boot,https://github.com/in28minutes/full-stack-with-react-and-spring-boot,640,Java,2019-03-07T16:11:10Z,"6 anos, 6 meses",2023-03-03T10:03:31Z,"2 anos, 6 meses",27499,26.9 MB,full-stack-with-react-and-spring-boot
+pmiaowu/HostCollision,https://github.com/pmiaowu/HostCollision,640,Java,2021-10-15T16:14:57Z,"3 anos, 11 meses",2024-06-13T03:13:45Z,"1 anos, 2 meses",2391,2.3 MB,HostCollision
+spring-guides/gs-spring-boot-docker,https://github.com/spring-guides/gs-spring-boot-docker,637,Java,2015-04-01T08:57:10Z,"10 anos, 5 meses",2025-02-24T21:41:39Z,"6 meses, 18 dias",738,738 KB,gs-spring-boot-docker
+dibbhatt/kafka-spark-consumer,https://github.com/dibbhatt/kafka-spark-consumer,633,Java,2014-08-02T11:16:45Z,"11 anos, 1 meses",2022-02-26T15:07:39Z,"3 anos, 6 meses",350,350 KB,kafka-spark-consumer
+stateIs0/exp,https://github.com/stateIs0/exp,633,Java,2023-08-09T10:44:41Z,"2 anos, 1 meses",2024-11-27T06:43:38Z,"9 meses, 17 dias",1409,1.4 MB,exp
+verhas/License3j,https://github.com/verhas/License3j,631,Java,2012-08-30T15:53:02Z,"13 anos, 0 meses",2025-01-24T13:56:29Z,"7 meses, 19 dias",1857,1.8 MB,License3j
+dynamitechetan/FogView_Library,https://github.com/dynamitechetan/FogView_Library,630,Java,2016-07-01T13:20:42Z,"9 anos, 2 meses",2016-08-09T05:44:20Z,"9 anos, 1 meses",1820,1.8 MB,FogView_Library
+yeecode/ObjectLogger,https://github.com/yeecode/ObjectLogger,627,Java,2019-04-08T09:12:22Z,"6 anos, 5 meses",2023-04-17T19:45:21Z,"2 anos, 4 meses",109956,107.4 MB,ObjectLogger
+larsga/Duke,https://github.com/larsga/Duke,624,Java,2014-02-02T17:17:38Z,"11 anos, 7 meses",2023-10-11T07:12:54Z,"1 anos, 11 meses",3546,3.5 MB,Duke
+nats-io/nats.java,https://github.com/nats-io/nats.java,620,Java,2015-10-23T22:09:38Z,"9 anos, 10 meses",2025-09-10T23:18:39Z,0 dias,10807,10.6 MB,nats.java
+apache/giraph,https://github.com/apache/giraph,619,Java,2011-08-28T07:00:33Z,"14 anos, 0 meses",2023-04-14T18:34:58Z,"2 anos, 5 meses",26962,26.3 MB,giraph
+bit4woo/burp-api-drops,https://github.com/bit4woo/burp-api-drops,619,Java,2016-08-08T10:03:47Z,"9 anos, 1 meses",2021-08-08T15:52:49Z,"4 anos, 1 meses",4350,4.2 MB,burp-api-drops
+easymock/objenesis,https://github.com/easymock/objenesis,616,Java,2013-07-16T16:08:53Z,"12 anos, 1 meses",2025-09-08T02:19:30Z,2 dias,4175,4.1 MB,objenesis
+dropbox/dropbox-sdk-java,https://github.com/dropbox/dropbox-sdk-java,615,Java,2013-06-27T00:32:18Z,"12 anos, 2 meses",2025-04-18T19:06:14Z,"4 meses, 25 dias",112940,110.3 MB,dropbox-sdk-java
+jflex-de/jflex,https://github.com/jflex-de/jflex,614,Java,2015-02-15T05:33:03Z,"10 anos, 7 meses",2025-01-01T22:25:36Z,"8 meses, 12 dias",23214,22.7 MB,jflex
+wimdeblauwe/htmx-spring-boot,https://github.com/wimdeblauwe/htmx-spring-boot,614,Java,2022-05-02T19:02:52Z,"3 anos, 4 meses",2025-07-08T08:45:00Z,"2 meses, 4 dias",506,506 KB,htmx-spring-boot
+biojava/biojava,https://github.com/biojava/biojava,613,Java,2013-04-03T16:27:17Z,"12 anos, 5 meses",2025-07-18T15:18:38Z,"1 meses, 24 dias",51126,49.9 MB,biojava
+pig-mesh/excel-spring-boot-starter,https://github.com/pig-mesh/excel-spring-boot-starter,613,Java,2020-03-29T02:46:58Z,"5 anos, 5 meses",2025-08-08T06:13:20Z,"1 meses, 3 dias",347,347 KB,excel-spring-boot-starter
+mohamed-taman/Springy-Store-Microservices,https://github.com/mohamed-taman/Springy-Store-Microservices,612,Java,2020-03-29T00:34:49Z,"5 anos, 5 meses",2024-03-08T13:01:31Z,"1 anos, 6 meses",1946,1.9 MB,Springy-Store-Microservices
+yeokm1/docs-to-pdf-converter,https://github.com/yeokm1/docs-to-pdf-converter,606,Java,2013-11-27T12:46:40Z,"11 anos, 9 meses",2023-03-27T22:21:25Z,"2 anos, 5 meses",45491,44.4 MB,docs-to-pdf-converter
+FasterXML/jackson-dataformat-xml,https://github.com/FasterXML/jackson-dataformat-xml,606,Java,2010-12-31T05:00:50Z,"14 anos, 8 meses",2025-09-09T00:22:24Z,1 dias,5604,5.5 MB,jackson-dataformat-xml
+paoding-code/paoding-rose,https://github.com/paoding-code/paoding-rose,603,Java,2012-02-22T06:47:00Z,"13 anos, 6 meses",2019-03-22T04:55:14Z,"6 anos, 5 meses",1373,1.3 MB,paoding-rose
+ArcadeData/arcadedb,https://github.com/ArcadeData/arcadedb,602,Java,2021-08-16T16:01:29Z,"4 anos, 0 meses",2025-09-10T22:27:53Z,0 dias,30462,29.7 MB,arcadedb
+zaaach/TopRightMenu,https://github.com/zaaach/TopRightMenu,601,Java,2016-12-28T03:54:48Z,"8 anos, 8 meses",2021-11-17T09:03:00Z,"3 anos, 9 meses",2017,2.0 MB,TopRightMenu
+dlsc-software-consulting-gmbh/PreferencesFX,https://github.com/dlsc-software-consulting-gmbh/PreferencesFX,594,Java,2018-04-04T08:19:16Z,"7 anos, 5 meses",2024-01-08T10:17:06Z,"1 anos, 8 meses",4719,4.6 MB,PreferencesFX
+ywl5320/wlmusic,https://github.com/ywl5320/wlmusic,594,Java,2018-03-05T07:26:05Z,"7 anos, 6 meses",2020-01-13T02:20:39Z,"5 anos, 8 meses",92816,90.6 MB,wlmusic
+spring-attic/spring-cloud-aws,https://github.com/spring-attic/spring-cloud-aws,590,Java,2014-10-27T14:30:09Z,"10 anos, 10 meses",2022-01-18T20:17:15Z,"3 anos, 7 meses",46934,45.8 MB,spring-cloud-aws
+github/maven-plugins,https://github.com/github/maven-plugins,588,Java,2011-08-02T18:39:39Z,"14 anos, 1 meses",2023-09-26T19:42:45Z,"1 anos, 11 meses",1033,1.0 MB,maven-plugins
+wucao/JDeploy,https://github.com/wucao/JDeploy,585,Java,2015-08-20T08:03:52Z,"10 anos, 0 meses",2022-12-16T07:25:14Z,"2 anos, 8 meses",145,145 KB,JDeploy
+jeremyh/jBCrypt,https://github.com/jeremyh/jBCrypt,584,Java,2010-09-01T06:50:53Z,"15 anos, 0 meses",2020-11-23T16:04:37Z,"4 anos, 9 meses",18,18 KB,jBCrypt
+TownyAdvanced/Towny,https://github.com/TownyAdvanced/Towny,582,Java,2014-12-04T05:21:02Z,"10 anos, 9 meses",2025-09-07T13:29:10Z,3 dias,150126,146.6 MB,Towny
+google/s2-geometry-library-java,https://github.com/google/s2-geometry-library-java,576,Java,2015-09-25T18:53:24Z,"9 anos, 11 meses",2025-08-15T02:37:29Z,26 dias,3282,3.2 MB,s2-geometry-library-java
+OCNYang/ContourView,https://github.com/OCNYang/ContourView,574,Java,2017-08-24T10:00:25Z,"8 anos, 0 meses",2023-02-21T01:48:43Z,"2 anos, 6 meses",185,185 KB,ContourView
+davidB/scala-maven-plugin,https://github.com/davidB/scala-maven-plugin,571,Java,2008-05-31T21:02:12Z,"17 anos, 3 meses",2025-08-27T07:01:46Z,14 dias,6984,6.8 MB,scala-maven-plugin
+akshay2211/MusicWave,https://github.com/akshay2211/MusicWave,570,Java,2017-05-04T02:35:42Z,"8 anos, 4 meses",2021-09-05T18:07:57Z,"4 anos, 0 meses",6492,6.3 MB,MusicWave
+Ahoo-Wang/CosId,https://github.com/Ahoo-Wang/CosId,569,Java,2021-06-23T04:40:29Z,"4 anos, 2 meses",2025-09-08T21:51:53Z,2 dias,10787,10.5 MB,CosId
+japgolly/svg-android,https://github.com/japgolly/svg-android,567,Java,2012-12-24T00:52:41Z,"12 anos, 8 meses",2016-12-02T12:38:41Z,"8 anos, 9 meses",1434,1.4 MB,svg-android
+moditect/moditect,https://github.com/moditect/moditect,567,Java,2017-03-06T15:22:29Z,"8 anos, 6 meses",2025-07-20T09:41:55Z,"1 meses, 22 dias",6166,6.0 MB,moditect
+spring-cloud/spring-cloud-zookeeper,https://github.com/spring-cloud/spring-cloud-zookeeper,565,Java,2015-01-28T21:34:09Z,"10 anos, 7 meses",2025-09-10T15:23:22Z,0 dias,31170,30.4 MB,spring-cloud-zookeeper
+linkedin/venice,https://github.com/linkedin/venice,565,Java,2021-03-18T18:04:30Z,"4 anos, 5 meses",2025-09-10T22:32:19Z,0 dias,62249,60.8 MB,venice
+sjr7/seckill,https://github.com/sjr7/seckill,565,Java,2017-05-22T10:30:32Z,"8 anos, 3 meses",2018-04-18T08:54:04Z,"7 anos, 4 meses",5609,5.5 MB,seckill
+damianszczepanik/cucumber-reporting,https://github.com/damianszczepanik/cucumber-reporting,563,Java,2012-07-05T23:20:43Z,"13 anos, 2 meses",2025-09-07T07:20:01Z,3 dias,23777,23.2 MB,cucumber-reporting
+oVirt/ovirt-engine,https://github.com/oVirt/ovirt-engine,563,Java,2012-10-26T11:48:34Z,"12 anos, 10 meses",2025-09-08T12:52:18Z,2 dias,337625,329.7 MB,ovirt-engine
+lemire/javaewah,https://github.com/lemire/javaewah,562,Java,2010-10-04T18:49:09Z,"14 anos, 11 meses",2023-08-28T18:12:47Z,"2 anos, 0 meses",2377,2.3 MB,javaewah
+iamMehedi/Secured-Preference-Store,https://github.com/iamMehedi/Secured-Preference-Store,562,Java,2016-08-21T16:39:04Z,"9 anos, 0 meses",2019-02-26T12:25:04Z,"6 anos, 6 meses",204,204 KB,Secured-Preference-Store
+in28minutes/JavaWebApplicationStepByStep,https://github.com/in28minutes/JavaWebApplicationStepByStep,561,Java,2015-12-22T08:01:10Z,"9 anos, 8 meses",2024-08-01T21:14:52Z,"1 anos, 1 meses",60,60 KB,JavaWebApplicationStepByStep
+fair-acc/chart-fx,https://github.com/fair-acc/chart-fx,561,Java,2019-05-07T12:13:31Z,"6 anos, 4 meses",2025-08-14T13:30:51Z,27 dias,24719,24.1 MB,chart-fx
+cnescatlab/sonar-cnes-report,https://github.com/cnescatlab/sonar-cnes-report,561,Java,2018-01-04T16:43:16Z,"7 anos, 8 meses",2025-09-01T07:58:55Z,9 dias,4694,4.6 MB,sonar-cnes-report
+spring-guides/getting-started-guides,https://github.com/spring-guides/getting-started-guides,560,Java,2013-10-28T20:59:08Z,"11 anos, 10 meses",2025-02-24T21:39:26Z,"6 meses, 18 dias",590,590 KB,getting-started-guides
+dlsc-software-consulting-gmbh/GemsFX,https://github.com/dlsc-software-consulting-gmbh/GemsFX,557,Java,2019-09-10T15:30:17Z,"6 anos, 0 meses",2025-09-10T09:47:00Z,0 dias,35457,34.6 MB,GemsFX
+TencentCloud/tencentcloud-sdk-java,https://github.com/TencentCloud/tencentcloud-sdk-java,557,Java,2018-04-17T02:58:16Z,"7 anos, 4 meses",2025-09-10T20:31:44Z,0 dias,167962,164.0 MB,tencentcloud-sdk-java
+in28minutes/spring-web-services,https://github.com/in28minutes/spring-web-services,555,Java,2017-07-13T12:09:28Z,"8 anos, 2 meses",2025-02-04T05:37:36Z,"7 meses, 8 dias",2828,2.8 MB,spring-web-services
+spring-guides/tut-rest,https://github.com/spring-guides/tut-rest,555,Java,2014-10-22T18:04:36Z,"10 anos, 10 meses",2025-02-24T21:42:34Z,"6 meses, 18 dias",450,450 KB,tut-rest
+Erudika/para,https://github.com/Erudika/para,554,Java,2014-03-09T22:31:26Z,"11 anos, 6 meses",2025-09-08T17:32:19Z,2 dias,6118,6.0 MB,para
+fenixsoft/monolithic_arch_springboot,https://github.com/fenixsoft/monolithic_arch_springboot,554,Java,2020-03-16T16:03:10Z,"5 anos, 5 meses",2024-07-04T07:20:37Z,"1 anos, 2 meses",6422,6.3 MB,monolithic_arch_springboot
+stefanbirkner/system-rules,https://github.com/stefanbirkner/system-rules,552,Java,2011-11-29T22:07:23Z,"13 anos, 9 meses",2023-04-14T11:08:27Z,"2 anos, 5 meses",1663,1.6 MB,system-rules
+fast-pack/JavaFastPFOR,https://github.com/fast-pack/JavaFastPFOR,552,Java,2012-07-06T21:05:45Z,"13 anos, 2 meses",2024-06-19T14:45:55Z,"1 anos, 2 meses",3157,3.1 MB,JavaFastPFOR
+ipfs-shipyard/java-ipfs-http-client,https://github.com/ipfs-shipyard/java-ipfs-http-client,551,Java,2015-08-31T15:09:30Z,"10 anos, 0 meses",2025-08-25T15:58:55Z,16 dias,1479,1.4 MB,java-ipfs-http-client
+patrickfav/bcrypt,https://github.com/patrickfav/bcrypt,550,Java,2018-07-05T20:48:48Z,"7 anos, 2 meses",2025-03-30T08:03:45Z,"5 meses, 14 dias",2405,2.3 MB,bcrypt
+eclipse-kura/kura,https://github.com/eclipse-kura/kura,547,Java,2013-12-16T21:07:20Z,"11 anos, 9 meses",2025-09-10T15:33:44Z,0 dias,433531,423.4 MB,kura
+MilkBowl/Vault,https://github.com/MilkBowl/Vault,545,Java,2011-06-24T06:53:08Z,"14 anos, 2 meses",2024-03-10T13:12:47Z,"1 anos, 6 meses",115106,112.4 MB,Vault
+minbox-projects/api-boot,https://github.com/minbox-projects/api-boot,544,Java,2019-03-19T09:17:17Z,"6 anos, 5 meses",2024-08-27T01:33:04Z,"1 anos, 0 meses",2218,2.2 MB,api-boot
+knowitall/reverb,https://github.com/knowitall/reverb,544,Java,2011-12-20T00:21:08Z,"13 anos, 8 meses",2019-03-06T15:57:35Z,"6 anos, 6 meses",11891,11.6 MB,reverb
+javadev/underscore-java,https://github.com/javadev/underscore-java,544,Java,2014-03-30T07:04:37Z,"11 anos, 5 meses",2025-09-08T03:01:07Z,2 dias,9906,9.7 MB,underscore-java
+kongzue/StackLabel,https://github.com/kongzue/StackLabel,542,Java,2018-10-24T15:05:51Z,"6 anos, 10 meses",2022-12-23T04:34:52Z,"2 anos, 8 meses",193,193 KB,StackLabel
+Harries/springboot-demo,https://github.com/Harries/springboot-demo,542,Java,2023-12-01T07:13:12Z,"1 anos, 9 meses",2025-08-14T05:32:21Z,27 dias,368419,359.8 MB,springboot-demo
+spring-petclinic/spring-petclinic-rest,https://github.com/spring-petclinic/spring-petclinic-rest,535,Java,2016-11-18T19:08:05Z,"8 anos, 9 meses",2025-08-16T08:23:27Z,25 dias,7107,6.9 MB,spring-petclinic-rest
+spring-attic/spring-cloud-security,https://github.com/spring-attic/spring-cloud-security,534,Java,2014-09-23T10:47:51Z,"10 anos, 11 meses",2022-04-04T18:56:33Z,"3 anos, 5 meses",2798,2.7 MB,spring-cloud-security
+finmath/finmath-lib,https://github.com/finmath/finmath-lib,532,Java,2013-03-17T10:00:22Z,"12 anos, 6 meses",2025-07-12T00:57:53Z,"2 meses, 0 dias",233544,228.1 MB,finmath-lib
+Hive2Hive/Hive2Hive,https://github.com/Hive2Hive/Hive2Hive,532,Java,2013-10-15T13:22:12Z,"11 anos, 11 meses",2021-08-13T15:29:24Z,"4 anos, 0 meses",10370,10.1 MB,Hive2Hive
+christophknabe/spring-ddd-bank,https://github.com/christophknabe/spring-ddd-bank,531,Java,2017-03-08T15:26:38Z,"8 anos, 6 meses",2022-07-17T08:16:03Z,"3 anos, 1 meses",420,420 KB,spring-ddd-bank
+fengdongdongwsn/PdfTool,https://github.com/fengdongdongwsn/PdfTool,530,Java,2020-06-15T14:04:27Z,"5 anos, 2 meses",2022-08-29T08:24:54Z,"3 anos, 0 meses",51230,50.0 MB,PdfTool
+wxpusher/wxpusher-sdk-java,https://github.com/wxpusher/wxpusher-sdk-java,528,Java,2020-01-19T01:06:28Z,"5 anos, 7 meses",2025-04-13T06:22:13Z,"5 meses, 0 dias",111,111 KB,wxpusher-sdk-java
+memo012/ac-blog,https://github.com/memo012/ac-blog,526,Java,2019-08-20T07:49:16Z,"6 anos, 0 meses",2025-07-12T01:42:39Z,"2 meses, 0 dias",4017,3.9 MB,ac-blog
+ifeilong/feilong-core,https://github.com/ifeilong/feilong-core,525,Java,2015-05-25T04:11:34Z,"10 anos, 3 meses",2021-08-20T05:50:31Z,"4 anos, 0 meses",5105,5.0 MB,feilong-core
+sjsdfg/dl4j-tutorials,https://github.com/sjsdfg/dl4j-tutorials,523,Java,2017-12-27T03:09:53Z,"7 anos, 8 meses",2023-12-05T22:17:21Z,"1 anos, 9 meses",30529,29.8 MB,dl4j-tutorials
+mikeroyal/AWS-Guide,https://github.com/mikeroyal/AWS-Guide,522,Java,2021-04-11T21:07:16Z,"4 anos, 5 meses",2024-01-04T22:48:32Z,"1 anos, 8 meses",1464,1.4 MB,AWS-Guide
+jjenkov/javafx-examples,https://github.com/jjenkov/javafx-examples,521,Java,2020-10-21T10:37:31Z,"4 anos, 10 meses",2024-07-22T04:41:32Z,"1 anos, 1 meses",3367,3.3 MB,javafx-examples
+TyCoding/springboot-seckill,https://github.com/TyCoding/springboot-seckill,520,Java,2018-10-11T09:56:27Z,"6 anos, 11 meses",2021-01-05T08:21:36Z,"4 anos, 8 meses",2054,2.0 MB,springboot-seckill
+Cosium/spring-data-jpa-entity-graph,https://github.com/Cosium/spring-data-jpa-entity-graph,520,Java,2016-11-22T16:27:12Z,"8 anos, 9 meses",2025-08-18T12:23:08Z,23 dias,629,629 KB,spring-data-jpa-entity-graph
+f4b6a3/tsid-creator,https://github.com/f4b6a3/tsid-creator,517,Java,2020-03-14T23:31:21Z,"5 anos, 6 meses",2025-03-30T18:52:31Z,"5 meses, 14 dias",385,385 KB,tsid-creator
+forcedotcom/dataloader,https://github.com/forcedotcom/dataloader,516,Java,2010-11-04T17:39:34Z,"14 anos, 10 meses",2025-09-02T15:33:16Z,8 dias,235606,230.1 MB,dataloader
+locationtech/geowave,https://github.com/locationtech/geowave,513,Java,2014-06-03T15:39:29Z,"11 anos, 3 meses",2025-09-10T11:58:16Z,0 dias,981626,958.6 MB,geowave
+smartyuge/SuperIndicator,https://github.com/smartyuge/SuperIndicator,511,Java,2016-08-26T02:26:06Z,"9 anos, 0 meses",2017-04-12T12:13:45Z,"8 anos, 5 meses",13665,13.3 MB,SuperIndicator
+vdmeer/asciitable,https://github.com/vdmeer/asciitable,511,Java,2014-12-10T20:03:46Z,"10 anos, 9 meses",2024-04-09T16:34:38Z,"1 anos, 5 meses",874,874 KB,asciitable
+sialcasa/mvvmFX,https://github.com/sialcasa/mvvmFX,510,Java,2013-09-17T18:16:16Z,"11 anos, 12 meses",2023-07-04T07:05:18Z,"2 anos, 2 meses",5554,5.4 MB,mvvmFX
+twilio/twilio-java,https://github.com/twilio/twilio-java,510,Java,2009-09-15T06:04:28Z,"15 anos, 12 meses",2025-09-10T13:28:07Z,0 dias,44511,43.5 MB,twilio-java
+matthiaskaiser/jmet,https://github.com/matthiaskaiser/jmet,508,Java,2016-07-22T14:51:02Z,"9 anos, 1 meses",2022-07-06T20:04:00Z,"3 anos, 2 meses",52,52 KB,jmet
+eventeum/eventeum,https://github.com/eventeum/eventeum,507,Java,2018-03-26T14:52:18Z,"7 anos, 5 meses",2024-08-19T14:08:41Z,"1 anos, 0 meses",1152,1.1 MB,eventeum
+aleksandr-m/gitflow-maven-plugin,https://github.com/aleksandr-m/gitflow-maven-plugin,504,Java,2014-04-29T18:35:29Z,"11 anos, 4 meses",2024-06-21T13:02:44Z,"1 anos, 2 meses",1753,1.7 MB,gitflow-maven-plugin
+wpcfan/spring-boot-tut,https://github.com/wpcfan/spring-boot-tut,504,Java,2017-01-24T03:56:51Z,"8 anos, 7 meses",2017-11-03T05:33:59Z,"7 anos, 10 meses",6050,5.9 MB,spring-boot-tut
+liuguangqiang/CookieBar,https://github.com/liuguangqiang/CookieBar,503,Java,2017-03-03T13:39:51Z,"8 anos, 6 meses",2020-04-08T03:02:56Z,"5 anos, 5 meses",426,426 KB,CookieBar
+mongobee/mongobee,https://github.com/mongobee/mongobee,503,Java,2014-07-26T08:05:45Z,"11 anos, 1 meses",2022-12-16T01:14:55Z,"2 anos, 8 meses",470,470 KB,mongobee
+373675032/smart-medicine,https://github.com/373675032/smart-medicine,502,Java,2023-12-16T11:16:11Z,"1 anos, 8 meses",2025-04-11T07:48:44Z,"5 meses, 2 dias",6386,6.2 MB,smart-medicine
+refactorfirst/RefactorFirst,https://github.com/refactorfirst/RefactorFirst,500,Java,2020-10-01T13:48:21Z,"4 anos, 11 meses",2025-09-09T12:37:24Z,1 dias,1372,1.3 MB,RefactorFirst
+CeON/CERMINE,https://github.com/CeON/CERMINE,500,Java,2012-10-08T10:56:14Z,"12 anos, 11 meses",2022-06-30T20:12:51Z,"3 anos, 2 meses",244653,238.9 MB,CERMINE
+Karumi/HeaderRecyclerView,https://github.com/Karumi/HeaderRecyclerView,500,Java,2015-05-19T13:09:08Z,"10 anos, 3 meses",2016-02-11T09:22:08Z,"9 anos, 7 meses",9182,9.0 MB,HeaderRecyclerView
+awslabs/amazon-dynamodb-lock-client,https://github.com/awslabs/amazon-dynamodb-lock-client,500,Java,2017-04-12T18:27:48Z,"8 anos, 5 meses",2025-07-28T09:03:50Z,"1 meses, 14 dias",249,249 KB,amazon-dynamodb-lock-client
+wayn111/newbee-mall-pro,https://github.com/wayn111/newbee-mall-pro,499,Java,2020-03-19T03:17:32Z,"5 anos, 5 meses",2024-10-03T17:07:46Z,"11 meses, 12 dias",73534,71.8 MB,newbee-mall-pro
+yandex-qatools/postgresql-embedded,https://github.com/yandex-qatools/postgresql-embedded,496,Java,2014-11-22T02:08:15Z,"10 anos, 9 meses",2020-01-07T13:18:54Z,"5 anos, 8 meses",311,311 KB,postgresql-embedded
+dlsc-software-consulting-gmbh/WorkbenchFX,https://github.com/dlsc-software-consulting-gmbh/WorkbenchFX,496,Java,2018-09-12T13:00:41Z,"7 anos, 0 meses",2023-09-05T11:25:10Z,"2 anos, 0 meses",58776,57.4 MB,WorkbenchFX
+GenshenWang/DubboDemo,https://github.com/GenshenWang/DubboDemo,494,Java,2017-04-17T10:25:21Z,"8 anos, 4 meses",2017-04-17T10:27:50Z,"8 anos, 4 meses",992,992 KB,DubboDemo
+p2-inc/keycloak-orgs,https://github.com/p2-inc/keycloak-orgs,494,Java,2022-03-21T15:46:35Z,"3 anos, 5 meses",2025-08-21T18:23:00Z,20 dias,3177,3.1 MB,keycloak-orgs
+Typhon0/AnimateFX,https://github.com/Typhon0/AnimateFX,492,Java,2017-11-07T08:15:04Z,"7 anos, 10 meses",2024-06-08T11:54:10Z,"1 anos, 3 meses",18245,17.8 MB,AnimateFX
+linux-china/chatgpt-spring-boot-starter,https://github.com/linux-china/chatgpt-spring-boot-starter,491,Java,2023-06-17T10:28:13Z,"2 anos, 2 meses",2025-02-19T07:00:25Z,"6 meses, 23 dias",434,434 KB,chatgpt-spring-boot-starter
+saeedsh92/Banner-Slider,https://github.com/saeedsh92/Banner-Slider,489,Java,2016-12-04T12:33:46Z,"8 anos, 9 meses",2021-12-11T14:06:01Z,"3 anos, 9 meses",1498,1.5 MB,Banner-Slider
+lankton/android-flowlayout,https://github.com/lankton/android-flowlayout,487,Java,2016-04-17T08:09:43Z,"9 anos, 4 meses",2017-03-30T02:53:10Z,"8 anos, 5 meses",364,364 KB,android-flowlayout
+ethjava/web3j-sample,https://github.com/ethjava/web3j-sample,486,Java,2018-03-10T09:58:38Z,"7 anos, 6 meses",2018-11-09T02:05:29Z,"6 anos, 10 meses",54,54 KB,web3j-sample
+GoogleCloudPlatform/spring-cloud-gcp,https://github.com/GoogleCloudPlatform/spring-cloud-gcp,486,Java,2020-04-22T18:19:22Z,"5 anos, 4 meses",2025-09-09T04:35:49Z,1 dias,46279,45.2 MB,spring-cloud-gcp
+dekorateio/dekorate,https://github.com/dekorateio/dekorate,485,Java,2018-11-14T15:30:03Z,"6 anos, 10 meses",2025-08-27T16:28:47Z,14 dias,18737,18.3 MB,dekorate
+anyrtcIO-Community/AR-RTMPC-Android,https://github.com/anyrtcIO-Community/AR-RTMPC-Android,483,Java,2016-08-01T10:03:41Z,"9 anos, 1 meses",2021-09-07T02:23:03Z,"4 anos, 0 meses",365527,357.0 MB,AR-RTMPC-Android
+Karumi/Dividers,https://github.com/Karumi/Dividers,480,Java,2015-09-09T16:44:14Z,"10 anos, 0 meses",2018-05-03T21:01:45Z,"7 anos, 4 meses",8292,8.1 MB,Dividers
+Multibit-Legacy/multibit,https://github.com/Multibit-Legacy/multibit,479,Java,2011-07-16T12:03:59Z,"14 anos, 2 meses",2023-06-26T04:07:40Z,"2 anos, 2 meses",148446,145.0 MB,multibit
+learning-zone/spring-boot-basics,https://github.com/learning-zone/spring-boot-basics,478,Java,2019-03-08T03:33:49Z,"6 anos, 6 meses",2024-12-27T16:23:02Z,"8 meses, 17 dias",5567,5.4 MB,spring-boot-basics
+CogComp/cogcomp-nlp,https://github.com/CogComp/cogcomp-nlp,478,Java,2015-10-18T04:11:16Z,"9 anos, 11 meses",2023-07-07T21:55:54Z,"2 anos, 2 meses",89668,87.6 MB,cogcomp-nlp
+kalvinGit/kvf-admin,https://github.com/kalvinGit/kvf-admin,478,Java,2019-06-09T05:15:30Z,"6 anos, 3 meses",2023-02-22T07:48:31Z,"2 anos, 6 meses",10346,10.1 MB,kvf-admin
+JingYeoh/VercodeEditText,https://github.com/JingYeoh/VercodeEditText,476,Java,2017-06-12T03:12:14Z,"8 anos, 3 meses",2018-11-01T03:18:14Z,"6 anos, 10 meses",1387,1.4 MB,VercodeEditText
+TencentFemas/femas,https://github.com/TencentFemas/femas,475,Java,2022-02-22T06:17:57Z,"3 anos, 6 meses",2023-11-02T10:55:47Z,"1 anos, 10 meses",624519,609.9 MB,femas
+lijiankun24/ShadowLayout,https://github.com/lijiankun24/ShadowLayout,474,Java,2017-08-11T14:29:32Z,"8 anos, 1 meses",2018-10-11T09:53:37Z,"6 anos, 11 meses",1926,1.9 MB,ShadowLayout
+BelkaLab/Android-Toggle-Switch,https://github.com/BelkaLab/Android-Toggle-Switch,474,Java,2016-02-22T15:08:49Z,"9 anos, 6 meses",2019-05-02T15:31:04Z,"6 anos, 4 meses",890,890 KB,Android-Toggle-Switch
+jmockit/jmockit1,https://github.com/jmockit/jmockit1,471,Java,2014-07-08T12:02:15Z,"11 anos, 2 meses",2025-06-20T19:24:22Z,"2 meses, 22 dias",5540,5.4 MB,jmockit1
+CognitiveJ/cognitivej,https://github.com/CognitiveJ/cognitivej,471,Java,2016-05-18T15:37:24Z,"9 anos, 3 meses",2023-04-01T20:05:45Z,"2 anos, 5 meses",674,674 KB,cognitivej
+apache/commons-codec,https://github.com/apache/commons-codec,470,Java,2009-05-21T01:20:25Z,"16 anos, 3 meses",2025-09-05T15:28:39Z,5 dias,6386,6.2 MB,commons-codec
+stefvanschie/IF,https://github.com/stefvanschie/IF,470,Java,2017-10-29T12:49:31Z,"7 anos, 10 meses",2025-09-10T05:02:32Z,0 dias,2121,2.1 MB,IF
+MenoData/Time4J,https://github.com/MenoData/Time4J,465,Java,2013-07-25T04:50:05Z,"12 anos, 1 meses",2024-02-11T11:15:08Z,"1 anos, 7 meses",17050,16.7 MB,Time4J
+spring-petclinic/spring-framework-petclinic,https://github.com/spring-petclinic/spring-framework-petclinic,464,Java,2016-11-15T07:50:57Z,"8 anos, 10 meses",2025-09-01T19:28:30Z,9 dias,1725,1.7 MB,spring-framework-petclinic
+apache/commons-imaging,https://github.com/apache/commons-imaging,464,Java,2013-07-11T07:00:17Z,"12 anos, 2 meses",2025-09-05T17:48:28Z,5 dias,44906,43.9 MB,commons-imaging
+kohlschutter/junixsocket,https://github.com/kohlschutter/junixsocket,463,Java,2014-11-24T06:41:49Z,"10 anos, 9 meses",2025-08-10T13:36:54Z,"1 meses, 1 dias",34875,34.1 MB,junixsocket
+antlr/codebuff,https://github.com/antlr/codebuff,462,Java,2016-01-06T19:49:54Z,"9 anos, 8 meses",2025-07-12T01:41:03Z,"2 meses, 0 dias",6230,6.1 MB,codebuff
+alibaba/aliyun-spring-boot,https://github.com/alibaba/aliyun-spring-boot,459,Java,2020-03-16T02:46:07Z,"5 anos, 5 meses",2023-03-08T06:58:57Z,"2 anos, 6 meses",233,233 KB,aliyun-spring-boot
+mapleqin/Android-RatioLayout,https://github.com/mapleqin/Android-RatioLayout,459,Java,2015-08-07T14:08:00Z,"10 anos, 1 meses",2023-08-30T03:27:45Z,"2 anos, 0 meses",12070,11.8 MB,Android-RatioLayout
+ricefishtech/industry4.0-mes,https://github.com/ricefishtech/industry4.0-mes,458,Java,2017-07-24T09:49:58Z,"8 anos, 1 meses",2024-08-14T06:41:10Z,"1 anos, 0 meses",107938,105.4 MB,industry4.0-mes
+oracle/coherence,https://github.com/oracle/coherence,458,Java,2020-02-24T15:51:04Z,"5 anos, 6 meses",2025-09-10T12:23:51Z,0 dias,585301,571.6 MB,coherence
+apache/camel-examples,https://github.com/apache/camel-examples,455,Java,2020-02-05T08:44:11Z,"5 anos, 7 meses",2025-08-30T14:09:27Z,11 dias,11450,11.2 MB,camel-examples
+shaogezhu/easy-rpc,https://github.com/shaogezhu/easy-rpc,454,Java,2023-02-22T14:32:24Z,"2 anos, 6 meses",2023-04-11T03:25:44Z,"2 anos, 5 meses",162,162 KB,easy-rpc
+nnngu/nguSeckill,https://github.com/nnngu/nguSeckill,453,Java,2018-01-27T01:50:47Z,"7 anos, 7 meses",2018-01-31T19:25:57Z,"7 anos, 7 meses",334,334 KB,nguSeckill
+highsource/jaxb-tools,https://github.com/highsource/jaxb-tools,451,Java,2014-04-06T21:23:45Z,"11 anos, 5 meses",2025-09-10T15:50:14Z,0 dias,22263,21.7 MB,jaxb-tools
+leonchen83/redis-rdb-cli,https://github.com/leonchen83/redis-rdb-cli,449,Java,2018-07-01T09:01:53Z,"7 anos, 2 meses",2025-09-08T09:06:05Z,2 dias,8149,8.0 MB,redis-rdb-cli
+laigeoffer/pmhub,https://github.com/laigeoffer/pmhub,449,Java,2024-03-02T17:29:16Z,"1 anos, 6 meses",2025-06-25T00:47:16Z,"2 meses, 17 dias",19039,18.6 MB,pmhub
+jbarrez/spring-boot-with-activiti-example,https://github.com/jbarrez/spring-boot-with-activiti-example,446,Java,2015-02-16T14:51:06Z,"10 anos, 6 meses",2021-11-22T09:23:55Z,"3 anos, 9 meses",82,82 KB,spring-boot-with-activiti-example
+albert-lii/ImageViewer,https://github.com/albert-lii/ImageViewer,445,Java,2017-09-22T10:15:08Z,"7 anos, 11 meses",2021-03-24T07:25:23Z,"4 anos, 5 meses",79595,77.7 MB,ImageViewer
+adoptium/emt4j,https://github.com/adoptium/emt4j,444,Java,2022-04-18T17:48:27Z,"3 anos, 4 meses",2025-07-12T01:50:14Z,"2 meses, 0 dias",2273,2.2 MB,emt4j
+apache/maven-surefire,https://github.com/apache/maven-surefire,443,Java,2010-08-12T03:32:41Z,"15 anos, 1 meses",2025-09-10T02:02:35Z,0 dias,16779,16.4 MB,maven-surefire
+anjia0532/unidbg-boot-server,https://github.com/anjia0532/unidbg-boot-server,442,Java,2021-08-26T10:50:57Z,"4 anos, 0 meses",2024-11-25T01:15:31Z,"9 meses, 19 dias",2772,2.7 MB,unidbg-boot-server
+tsantalis/RefactoringMiner,https://github.com/tsantalis/RefactoringMiner,442,Java,2015-09-29T13:13:11Z,"9 anos, 11 meses",2025-09-10T21:09:40Z,0 dias,350969,342.7 MB,RefactoringMiner
+zonkyio/embedded-database-spring-test,https://github.com/zonkyio/embedded-database-spring-test,441,Java,2017-12-15T19:29:33Z,"7 anos, 9 meses",2025-08-18T16:46:05Z,23 dias,1006,1006 KB,embedded-database-spring-test
+cloudsimplus/cloudsimplus,https://github.com/cloudsimplus/cloudsimplus,440,Java,2015-03-18T17:11:29Z,"10 anos, 5 meses",2025-07-17T19:26:32Z,"1 meses, 25 dias",46500,45.4 MB,cloudsimplus
+ptrd/kwik,https://github.com/ptrd/kwik,440,Java,2019-12-18T20:46:54Z,"5 anos, 8 meses",2025-09-06T11:14:47Z,4 dias,5319,5.2 MB,kwik
+techatspree/android-archetypes,https://github.com/techatspree/android-archetypes,439,Java,2010-11-30T16:46:15Z,"14 anos, 9 meses",2020-10-13T10:01:58Z,"4 anos, 11 meses",342,342 KB,android-archetypes
+ChessLuo/TextBannerView,https://github.com/ChessLuo/TextBannerView,439,Java,2018-03-28T12:44:05Z,"7 anos, 5 meses",2019-04-30T02:03:25Z,"6 anos, 4 meses",5193,5.1 MB,TextBannerView
+facebook/facebook-java-business-sdk,https://github.com/facebook/facebook-java-business-sdk,437,Java,2015-12-01T18:48:36Z,"9 anos, 9 meses",2025-09-09T06:35:46Z,1 dias,34051,33.3 MB,facebook-java-business-sdk
+aws-samples/aws-sam-java-rest,https://github.com/aws-samples/aws-sam-java-rest,437,Java,2018-08-17T19:39:39Z,"7 anos, 0 meses",2024-04-16T05:32:32Z,"1 anos, 4 meses",46,46 KB,aws-sam-java-rest
+Justson/AgentWebX5,https://github.com/Justson/AgentWebX5,437,Java,2017-07-02T10:17:51Z,"8 anos, 2 meses",2018-05-05T15:25:42Z,"7 anos, 4 meses",1517,1.5 MB,AgentWebX5
+apache/servicecomb-toolkit,https://github.com/apache/servicecomb-toolkit,437,Java,2019-06-21T06:54:48Z,"6 anos, 2 meses",2024-09-10T08:35:23Z,"1 anos, 0 meses",2257,2.2 MB,servicecomb-toolkit
+eclipse-collections/eclipse-collections-kata,https://github.com/eclipse-collections/eclipse-collections-kata,436,Java,2016-01-05T18:57:57Z,"9 anos, 8 meses",2025-07-10T13:18:36Z,"2 meses, 2 dias",2833,2.8 MB,eclipse-collections-kata
+jmeter-maven-plugin/jmeter-maven-plugin,https://github.com/jmeter-maven-plugin/jmeter-maven-plugin,435,Java,2010-10-08T02:24:31Z,"14 anos, 11 meses",2025-01-03T19:17:10Z,"8 meses, 10 dias",1971,1.9 MB,jmeter-maven-plugin
+googleapis/google-auth-library-java,https://github.com/googleapis/google-auth-library-java,435,Java,2015-02-12T00:06:15Z,"10 anos, 7 meses",2025-09-05T03:23:29Z,5 dias,4805,4.7 MB,google-auth-library-java
+ollama4j/ollama4j,https://github.com/ollama4j/ollama4j,434,Java,2023-10-26T19:12:14Z,"1 anos, 10 meses",2025-09-10T15:45:21Z,0 dias,5204,5.1 MB,ollama4j
+kiegroup/optaplanner,https://github.com/kiegroup/optaplanner,434,Java,2023-09-08T14:14:13Z,"2 anos, 0 meses",2025-09-10T23:13:28Z,0 dias,245290,239.5 MB,optaplanner
+microsoftgraph/msgraph-sdk-java,https://github.com/microsoftgraph/msgraph-sdk-java,434,Java,2017-09-12T17:20:15Z,"8 anos, 0 meses",2025-09-10T22:13:27Z,0 dias,165250,161.4 MB,msgraph-sdk-java
+hugeterry/UpdateFun,https://github.com/hugeterry/UpdateFun,433,Java,2016-07-13T10:41:24Z,"9 anos, 2 meses",2018-05-24T13:08:23Z,"7 anos, 3 meses",365,365 KB,UpdateFun
+spring-cloud/spring-cloud-bus,https://github.com/spring-cloud/spring-cloud-bus,431,Java,2014-08-22T20:17:27Z,"11 anos, 0 meses",2025-09-10T23:02:53Z,0 dias,3226,3.2 MB,spring-cloud-bus
+r2dbc/r2dbc-spi,https://github.com/r2dbc/r2dbc-spi,431,Java,2018-06-11T17:34:36Z,"7 anos, 3 meses",2025-09-01T07:25:15Z,9 dias,789,789 KB,r2dbc-spi
+majido/clipper,https://github.com/majido/clipper,430,Java,2012-08-24T15:00:05Z,"13 anos, 0 meses",2024-06-06T21:48:00Z,"1 anos, 3 meses",33,33 KB,clipper
+818000/bus,https://github.com/818000/bus,428,Java,2024-04-19T02:00:47Z,"1 anos, 4 meses",2025-09-10T07:35:42Z,0 dias,374412,365.6 MB,bus
+bastillion-io/Bastillion-EC2,https://github.com/bastillion-io/Bastillion-EC2,427,Java,2013-05-10T01:48:41Z,"12 anos, 4 meses",2024-03-19T06:43:45Z,"1 anos, 5 meses",3551,3.5 MB,Bastillion-EC2
+davidmoten/geo,https://github.com/davidmoten/geo,427,Java,2013-06-19T23:52:17Z,"12 anos, 2 meses",2025-09-08T17:15:48Z,2 dias,508,508 KB,geo
+minetsh/PopupMenuView,https://github.com/minetsh/PopupMenuView,426,Java,2016-11-22T08:26:07Z,"8 anos, 9 meses",2019-06-17T11:18:57Z,"6 anos, 2 meses",1364,1.3 MB,PopupMenuView
+LianjiaTech/kob,https://github.com/LianjiaTech/kob,426,Java,2018-12-24T09:51:35Z,"6 anos, 8 meses",2022-06-21T00:54:11Z,"3 anos, 2 meses",1361,1.3 MB,kob
+spring-guides/gs-securing-web,https://github.com/spring-guides/gs-securing-web,425,Java,2013-05-19T09:34:23Z,"12 anos, 3 meses",2025-03-01T09:21:01Z,"6 meses, 13 dias",1498,1.5 MB,gs-securing-web
+iamxpy/SimpleDB,https://github.com/iamxpy/SimpleDB,425,Java,2017-05-28T01:01:57Z,"8 anos, 3 meses",2024-12-26T16:01:45Z,"8 meses, 18 dias",7848,7.7 MB,SimpleDB
+mauricioaniche/ck,https://github.com/mauricioaniche/ck,422,Java,2015-10-05T11:13:34Z,"9 anos, 11 meses",2024-08-20T13:30:52Z,"1 anos, 0 meses",878,878 KB,ck
+Humsen/highdsa,https://github.com/Humsen/highdsa,421,Java,2018-02-02T12:16:28Z,"7 anos, 7 meses",2018-06-20T09:59:25Z,"7 anos, 2 meses",5149,5.0 MB,highdsa
+CloudNetService/CloudNet,https://github.com/CloudNetService/CloudNet,420,Java,2019-05-21T16:12:57Z,"6 anos, 3 meses",2025-09-10T21:28:16Z,0 dias,107643,105.1 MB,CloudNet
+eclipse-ee4j/glassfish,https://github.com/eclipse-ee4j/glassfish,420,Java,2018-09-15T08:59:52Z,"6 anos, 12 meses",2025-09-10T14:49:24Z,0 dias,4018818,3.8 GB,glassfish
+gluonhq/substrate,https://github.com/gluonhq/substrate,420,Java,2019-10-12T18:13:58Z,"5 anos, 11 meses",2025-07-17T04:08:34Z,"1 meses, 25 dias",3409,3.3 MB,substrate
+spring-attic/spring-security-saml,https://github.com/spring-attic/spring-security-saml,419,Java,2012-01-10T23:05:35Z,"13 anos, 8 meses",2022-11-29T21:12:15Z,"2 anos, 9 meses",7278,7.1 MB,spring-security-saml
+Rabtman/WsManager,https://github.com/Rabtman/WsManager,419,Java,2017-01-17T07:46:41Z,"8 anos, 7 meses",2019-03-17T04:22:10Z,"6 anos, 5 meses",4000,3.9 MB,WsManager
+yahoo/storm-yarn,https://github.com/yahoo/storm-yarn,418,Java,2013-03-22T06:21:02Z,"12 anos, 5 meses",2023-07-21T06:09:50Z,"2 anos, 1 meses",91780,89.6 MB,storm-yarn
+mangstadt/ez-vcard,https://github.com/mangstadt/ez-vcard,417,Java,2015-03-21T12:39:27Z,"10 anos, 5 meses",2025-02-02T14:23:38Z,"7 meses, 10 dias",80086,78.2 MB,ez-vcard
+bitrich-info/xchange-stream,https://github.com/bitrich-info/xchange-stream,416,Java,2017-01-16T14:05:54Z,"8 anos, 7 meses",2020-06-08T09:00:10Z,"5 anos, 3 meses",2117,2.1 MB,xchange-stream
+lufficc/StateLayout,https://github.com/lufficc/StateLayout,415,Java,2016-08-25T12:23:19Z,"9 anos, 0 meses",2016-11-21T00:47:41Z,"8 anos, 9 meses",2781,2.7 MB,StateLayout
+graphstream/gs-core,https://github.com/graphstream/gs-core,414,Java,2010-04-29T10:25:21Z,"15 anos, 4 meses",2023-07-06T14:38:40Z,"2 anos, 2 meses",11893,11.6 MB,gs-core
+FasterXML/jackson-modules-java8,https://github.com/FasterXML/jackson-modules-java8,414,Java,2016-11-03T02:26:02Z,"8 anos, 10 meses",2025-08-30T00:39:03Z,11 dias,2860,2.8 MB,jackson-modules-java8
+google/TestParameterInjector,https://github.com/google/TestParameterInjector,414,Java,2021-02-16T21:34:24Z,"4 anos, 6 meses",2025-09-10T17:50:58Z,0 dias,2578,2.5 MB,TestParameterInjector
+PingPlusPlus/pingpp-android,https://github.com/PingPlusPlus/pingpp-android,414,Java,2014-09-30T07:04:04Z,"10 anos, 11 meses",2024-03-04T02:34:04Z,"1 anos, 6 meses",37837,37.0 MB,pingpp-android
+TarsCloud/TarsJava,https://github.com/TarsCloud/TarsJava,412,Java,2018-09-10T08:50:36Z,"7 anos, 0 meses",2024-11-01T07:23:11Z,"10 meses, 13 dias",6094,6.0 MB,TarsJava
+dasniko/testcontainers-keycloak,https://github.com/dasniko/testcontainers-keycloak,412,Java,2019-12-13T06:43:58Z,"5 anos, 9 meses",2025-09-08T17:43:46Z,2 dias,497,497 KB,testcontainers-keycloak
+smooks/smooks,https://github.com/smooks/smooks,412,Java,2010-12-23T21:24:49Z,"14 anos, 8 meses",2025-08-26T10:49:12Z,15 dias,30608,29.9 MB,smooks
+usethesource/capsule,https://github.com/usethesource/capsule,411,Java,2015-10-21T13:13:26Z,"9 anos, 10 meses",2023-10-02T12:57:10Z,"1 anos, 11 meses",4694,4.6 MB,capsule
+hisenyuan/SSM_BookSystem,https://github.com/hisenyuan/SSM_BookSystem,411,Java,2017-04-24T17:11:05Z,"8 anos, 4 meses",2019-04-30T03:44:46Z,"6 anos, 4 meses",227,227 KB,SSM_BookSystem
+irshu355/Android-WYSIWYG-Editor,https://github.com/irshu355/Android-WYSIWYG-Editor,411,Java,2016-04-30T07:30:18Z,"9 anos, 4 meses",2021-02-06T19:33:34Z,"4 anos, 7 meses",30352,29.6 MB,Android-WYSIWYG-Editor
+google/mug,https://github.com/google/mug,410,Java,2017-02-14T17:01:43Z,"8 anos, 7 meses",2025-09-09T22:50:18Z,1 dias,68538,66.9 MB,mug
+frost373/KitDB,https://github.com/frost373/KitDB,410,Java,2018-05-22T04:58:26Z,"7 anos, 3 meses",2023-06-07T04:08:48Z,"2 anos, 3 meses",355,355 KB,KitDB
+fenixsoft/microservice_arch_springcloud,https://github.com/fenixsoft/microservice_arch_springcloud,410,Java,2020-03-16T15:56:59Z,"5 anos, 5 meses",2022-10-04T07:37:08Z,"2 anos, 11 meses",6587,6.4 MB,microservice_arch_springcloud
+sunweiguo/MMall,https://github.com/sunweiguo/MMall,410,Java,2018-12-31T08:14:24Z,"6 anos, 8 meses",2020-04-11T16:22:43Z,"5 anos, 5 meses",80074,78.2 MB,MMall
+fuzui/StudentInfo,https://github.com/fuzui/StudentInfo,408,Java,2019-04-14T13:51:23Z,"6 anos, 5 meses",2023-09-10T14:25:32Z,"2 anos, 0 meses",2759,2.7 MB,StudentInfo
+wso2/msf4j,https://github.com/wso2/msf4j,406,Java,2015-09-21T06:19:29Z,"9 anos, 11 meses",2025-07-22T11:25:15Z,"1 meses, 20 dias",33825,33.0 MB,msf4j
+f4b6a3/ulid-creator,https://github.com/f4b6a3/ulid-creator,406,Java,2020-02-17T03:29:47Z,"5 anos, 6 meses",2025-03-30T18:35:34Z,"5 meses, 14 dias",265,265 KB,ulid-creator
+roseboy/classfinal,https://github.com/roseboy/classfinal,405,Java,2019-09-04T09:15:10Z,"6 anos, 0 meses",2020-04-29T13:22:08Z,"5 anos, 4 meses",330,330 KB,classfinal
+Nepxion/Aquarius,https://github.com/Nepxion/Aquarius,404,Java,2017-11-11T12:06:53Z,"7 anos, 10 meses",2024-08-11T11:06:15Z,"1 anos, 1 meses",1217,1.2 MB,Aquarius
+spotify/completable-futures,https://github.com/spotify/completable-futures,403,Java,2016-02-26T09:56:53Z,"9 anos, 6 meses",2023-12-12T12:48:34Z,"1 anos, 9 meses",1346,1.3 MB,completable-futures
+apache/jackrabbit-oak,https://github.com/apache/jackrabbit-oak,400,Java,2012-03-08T08:00:14Z,"13 anos, 6 meses",2025-09-10T20:06:27Z,0 dias,97804,95.5 MB,jackrabbit-oak
+xabaras/RecyclerViewSwipeDecorator,https://github.com/xabaras/RecyclerViewSwipeDecorator,400,Java,2017-06-12T12:43:22Z,"8 anos, 3 meses",2023-01-24T07:36:15Z,"2 anos, 7 meses",1372,1.3 MB,RecyclerViewSwipeDecorator
+agiledon/eas-ddd,https://github.com/agiledon/eas-ddd,399,Java,2019-11-25T13:38:57Z,"5 anos, 9 meses",2023-07-15T05:48:48Z,"2 anos, 1 meses",380,380 KB,eas-ddd
+gudaoxuri/dew,https://github.com/gudaoxuri/dew,398,Java,2017-03-27T01:38:07Z,"8 anos, 5 meses",2024-07-02T06:19:15Z,"1 anos, 2 meses",93168,91.0 MB,dew
+MrZhousf/OkHttp3,https://github.com/MrZhousf/OkHttp3,398,Java,2016-06-29T01:17:35Z,"9 anos, 2 meses",2019-11-22T05:23:20Z,"5 anos, 9 meses",2083,2.0 MB,OkHttp3
+pf4j/pf4j-spring,https://github.com/pf4j/pf4j-spring,396,Java,2014-06-16T13:38:58Z,"11 anos, 2 meses",2025-05-24T18:53:12Z,"3 meses, 19 dias",142,142 KB,pf4j-spring
+opentracing-contrib/java-spring-cloud,https://github.com/opentracing-contrib/java-spring-cloud,395,Java,2017-07-11T14:56:50Z,"8 anos, 2 meses",2025-03-15T19:48:43Z,"5 meses, 29 dias",826,826 KB,java-spring-cloud
+davidmoten/rxjava2-jdbc,https://github.com/davidmoten/rxjava2-jdbc,395,Java,2016-10-31T05:07:38Z,"8 anos, 10 meses",2025-09-10T17:09:46Z,0 dias,1455,1.4 MB,rxjava2-jdbc
+apache/commons-csv,https://github.com/apache/commons-csv,394,Java,2013-06-12T07:00:17Z,"12 anos, 3 meses",2025-09-05T13:43:08Z,5 dias,39974,39.0 MB,commons-csv
+RIPE-NCC/whois,https://github.com/RIPE-NCC/whois,393,Java,2013-05-07T10:38:10Z,"12 anos, 4 meses",2025-09-10T15:42:34Z,0 dias,28592,27.9 MB,whois
+kangarko/Foundation,https://github.com/kangarko/Foundation,392,Java,2019-06-19T04:22:02Z,"6 anos, 2 meses",2025-09-02T18:16:45Z,8 dias,6918,6.8 MB,Foundation
+NoCheatPlus/NoCheatPlus,https://github.com/NoCheatPlus/NoCheatPlus,392,Java,2012-08-18T20:31:32Z,"13 anos, 0 meses",2021-06-04T00:52:12Z,"4 anos, 3 meses",14801,14.5 MB,NoCheatPlus
+shannah/jdeploy,https://github.com/shannah/jdeploy,392,Java,2016-12-18T07:52:56Z,"8 anos, 8 meses",2025-09-07T22:27:52Z,3 dias,453204,442.6 MB,jdeploy
+Wikidata-Toolkit/Wikidata-Toolkit,https://github.com/Wikidata-Toolkit/Wikidata-Toolkit,391,Java,2014-01-22T16:15:09Z,"11 anos, 7 meses",2025-09-10T13:56:56Z,0 dias,18469,18.0 MB,Wikidata-Toolkit
+ECharts-Java/ECharts-Java,https://github.com/ECharts-Java/ECharts-Java,391,Java,2021-11-23T19:39:21Z,"3 anos, 9 meses",2025-05-05T04:25:03Z,"4 meses, 8 dias",14981,14.6 MB,ECharts-Java
+thorntail/thorntail,https://github.com/thorntail/thorntail,390,Java,2016-02-18T21:32:47Z,"9 anos, 6 meses",2020-12-02T16:49:38Z,"4 anos, 9 meses",21556,21.1 MB,thorntail
+c-guntur/java-katas,https://github.com/c-guntur/java-katas,390,Java,2019-04-13T01:20:29Z,"6 anos, 5 meses",2022-11-27T17:24:59Z,"2 anos, 9 meses",7321,7.1 MB,java-katas
+sachin-handiekar/jInstagram,https://github.com/sachin-handiekar/jInstagram,387,Java,2011-07-02T13:41:24Z,"14 anos, 2 meses",2019-03-20T17:35:55Z,"6 anos, 5 meses",6940,6.8 MB,jInstagram
+Password4j/password4j,https://github.com/Password4j/password4j,386,Java,2020-03-09T20:40:50Z,"5 anos, 6 meses",2025-09-06T09:26:14Z,4 dias,821,821 KB,password4j
+caelum/vraptor,https://github.com/caelum/vraptor,385,Java,2009-03-19T20:02:31Z,"16 anos, 5 meses",2023-01-02T21:57:24Z,"2 anos, 8 meses",182595,178.3 MB,vraptor
+paulc4/mvc-exceptions,https://github.com/paulc4/mvc-exceptions,385,Java,2013-10-22T12:54:06Z,"11 anos, 10 meses",2024-07-26T17:30:06Z,"1 anos, 1 meses",731,731 KB,mvc-exceptions
+wix-incubator/wix-embedded-mysql,https://github.com/wix-incubator/wix-embedded-mysql,385,Java,2014-09-24T11:07:38Z,"10 anos, 11 meses",2022-02-22T15:42:46Z,"3 anos, 6 meses",946,946 KB,wix-embedded-mysql
+apache/commons-dbutils,https://github.com/apache/commons-dbutils,384,Java,2013-07-12T07:00:18Z,"12 anos, 2 meses",2025-09-05T13:37:50Z,5 dias,2282,2.2 MB,commons-dbutils
+lordofthejars/nosql-unit,https://github.com/lordofthejars/nosql-unit,384,Java,2012-05-15T17:25:43Z,"13 anos, 4 meses",2022-12-14T20:32:52Z,"2 anos, 9 meses",1983,1.9 MB,nosql-unit
+jsonld-java/jsonld-java,https://github.com/jsonld-java/jsonld-java,383,Java,2011-12-15T16:04:37Z,"13 anos, 9 meses",2024-01-10T13:44:29Z,"1 anos, 8 meses",3072,3.0 MB,jsonld-java
+pmerienne/trident-ml,https://github.com/pmerienne/trident-ml,383,Java,2013-03-22T17:01:40Z,"12 anos, 5 meses",2023-12-16T17:19:15Z,"1 anos, 8 meses",13815,13.5 MB,trident-ml
+gaul/modernizer-maven-plugin,https://github.com/gaul/modernizer-maven-plugin,382,Java,2014-09-18T00:06:51Z,"10 anos, 12 meses",2025-09-01T16:38:19Z,9 dias,907,907 KB,modernizer-maven-plugin
+boyter/searchcode-server,https://github.com/boyter/searchcode-server,382,Java,2016-08-09T01:16:11Z,"9 anos, 1 meses",2025-07-14T06:12:42Z,"1 meses, 28 dias",60370,59.0 MB,searchcode-server
+graphaware/neo4j-reco,https://github.com/graphaware/neo4j-reco,382,Java,2014-10-02T17:41:36Z,"10 anos, 11 meses",2021-05-05T19:26:05Z,"4 anos, 4 meses",919,919 KB,neo4j-reco
+cucumber-attic/gherkin2,https://github.com/cucumber-attic/gherkin2,379,Java,2009-09-01T00:42:05Z,"16 anos, 0 meses",2016-05-26T04:55:57Z,"9 anos, 3 meses",8847,8.6 MB,gherkin2
+webianks/PopupBubble,https://github.com/webianks/PopupBubble,378,Java,2016-04-21T19:23:22Z,"9 anos, 4 meses",2022-08-05T15:52:49Z,"3 anos, 1 meses",280,280 KB,PopupBubble
+mdeverdelhan/ta4j-origins,https://github.com/mdeverdelhan/ta4j-origins,377,Java,2013-12-22T09:53:55Z,"11 anos, 8 meses",2025-05-16T19:16:58Z,"3 meses, 27 dias",2994,2.9 MB,ta4j-origins
+OpenOLAT/OpenOLAT,https://github.com/OpenOLAT/OpenOLAT,377,Java,2018-03-29T09:46:34Z,"7 anos, 5 meses",2025-09-10T14:46:41Z,0 dias,597590,583.6 MB,OpenOLAT
+wiverson/maven-jpackage-template,https://github.com/wiverson/maven-jpackage-template,376,Java,2020-10-25T02:33:34Z,"4 anos, 10 meses",2022-10-11T17:46:09Z,"2 anos, 11 meses",146219,142.8 MB,maven-jpackage-template
+ManuelPeinado/QuickReturnHeader,https://github.com/ManuelPeinado/QuickReturnHeader,376,Java,2013-06-02T12:35:09Z,"12 anos, 3 meses",2013-06-15T07:49:15Z,"12 anos, 3 meses",939,939 KB,QuickReturnHeader
+oktayayr/advancedtextview,https://github.com/oktayayr/advancedtextview,376,Java,2016-05-20T12:40:45Z,"9 anos, 3 meses",2018-04-03T11:41:08Z,"7 anos, 5 meses",3343,3.3 MB,advancedtextview
+apache/commons-compress,https://github.com/apache/commons-compress,375,Java,2011-10-15T07:00:08Z,"13 anos, 11 meses",2025-09-09T23:35:19Z,0 dias,74123,72.4 MB,commons-compress
+apache/commons-cli,https://github.com/apache/commons-cli,374,Java,2009-05-28T08:00:15Z,"16 anos, 3 meses",2025-09-05T13:35:00Z,5 dias,4114,4.0 MB,commons-cli
+chrisvest/stormpot,https://github.com/chrisvest/stormpot,374,Java,2011-03-22T12:27:06Z,"14 anos, 5 meses",2025-05-22T23:10:46Z,"3 meses, 21 dias",29685,29.0 MB,stormpot
+zhangxuyang321/StepView,https://github.com/zhangxuyang321/StepView,374,Java,2017-02-10T09:43:27Z,"8 anos, 7 meses",2018-01-10T11:26:36Z,"7 anos, 8 meses",2872,2.8 MB,StepView
+ShaftHQ/SHAFT_ENGINE,https://github.com/ShaftHQ/SHAFT_ENGINE,371,Java,2018-07-15T07:02:02Z,"7 anos, 1 meses",2025-09-10T08:00:57Z,0 dias,319534,312.0 MB,SHAFT_ENGINE
+TyCoding/ssm,https://github.com/TyCoding/ssm,370,Java,2018-04-25T14:05:24Z,"7 anos, 4 meses",2022-12-16T07:02:06Z,"2 anos, 8 meses",1596,1.6 MB,ssm
+socketio/engine.io-client-java,https://github.com/socketio/engine.io-client-java,368,Java,2013-04-21T18:29:32Z,"12 anos, 4 meses",2025-08-11T07:24:48Z,"1 meses, 0 dias",2369,2.3 MB,engine.io-client-java
+approvals/ApprovalTests.Java,https://github.com/approvals/ApprovalTests.Java,368,Java,2013-03-03T08:44:41Z,"12 anos, 6 meses",2025-09-10T17:00:38Z,0 dias,23699,23.1 MB,ApprovalTests.Java
+antkaynak/Keyist-Ecommerce,https://github.com/antkaynak/Keyist-Ecommerce,368,Java,2018-05-18T18:23:17Z,"7 anos, 3 meses",2024-06-09T22:11:23Z,"1 anos, 3 meses",6789,6.6 MB,Keyist-Ecommerce
+speedment/jpa-streamer,https://github.com/speedment/jpa-streamer,365,Java,2020-06-11T09:53:35Z,"5 anos, 3 meses",2024-01-17T23:17:24Z,"1 anos, 7 meses",9324,9.1 MB,jpa-streamer
+programmeres/excel-boot,https://github.com/programmeres/excel-boot,364,Java,2019-01-06T07:03:34Z,"6 anos, 8 meses",2022-01-27T16:19:11Z,"3 anos, 7 meses",67,67 KB,excel-boot
+OPCFoundation/UA-Java-Legacy,https://github.com/OPCFoundation/UA-Java-Legacy,363,Java,2015-11-11T15:38:48Z,"9 anos, 10 meses",2025-08-13T22:53:25Z,28 dias,14096,13.8 MB,UA-Java-Legacy
+AutoParams/AutoParams,https://github.com/AutoParams/AutoParams,363,Java,2021-03-06T12:48:00Z,"4 anos, 6 meses",2025-07-18T08:30:32Z,"1 meses, 24 dias",1634,1.6 MB,AutoParams
+apache/commons-text,https://github.com/apache/commons-text,362,Java,2014-11-10T08:00:07Z,"10 anos, 10 meses",2025-09-05T20:34:57Z,5 dias,4926,4.8 MB,commons-text
+hanuor/onyx,https://github.com/hanuor/onyx,362,Java,2016-08-07T14:13:59Z,"9 anos, 1 meses",2018-03-22T18:03:47Z,"7 anos, 5 meses",5124,5.0 MB,onyx
+albfernandez/juniversalchardet,https://github.com/albfernandez/juniversalchardet,362,Java,2016-03-01T19:39:43Z,"9 anos, 6 meses",2025-06-29T22:47:12Z,"2 meses, 13 dias",774,774 KB,juniversalchardet
+simdjson/simdjson-java,https://github.com/simdjson/simdjson-java,362,Java,2023-07-11T03:36:13Z,"2 anos, 2 meses",2025-08-15T19:01:53Z,26 dias,3017,2.9 MB,simdjson-java
+spotify/fmt-maven-plugin,https://github.com/spotify/fmt-maven-plugin,360,Java,2016-03-17T16:56:30Z,"9 anos, 5 meses",2025-09-10T08:57:46Z,0 dias,298,298 KB,fmt-maven-plugin
+youngkaaa/YViewPagerDemo,https://github.com/youngkaaa/YViewPagerDemo,359,Java,2017-02-22T13:12:06Z,"8 anos, 6 meses",2019-01-29T05:38:31Z,"6 anos, 7 meses",6212,6.1 MB,YViewPagerDemo
+holidaycheck/Permissify,https://github.com/holidaycheck/Permissify,359,Java,2016-09-27T10:51:49Z,"8 anos, 11 meses",2016-09-27T13:09:28Z,"8 anos, 11 meses",2647,2.6 MB,Permissify
+HeidelTime/heideltime,https://github.com/HeidelTime/heideltime,357,Java,2015-05-20T16:04:44Z,"10 anos, 3 meses",2023-04-16T14:11:34Z,"2 anos, 4 meses",18665,18.2 MB,heideltime
+JavaMoney/jsr354-ri,https://github.com/JavaMoney/jsr354-ri,356,Java,2013-10-08T20:22:06Z,"11 anos, 11 meses",2025-05-30T19:00:01Z,"3 meses, 13 dias",6265,6.1 MB,jsr354-ri
+apache/commons-dbcp,https://github.com/apache/commons-dbcp,356,Java,2013-07-10T07:00:11Z,"12 anos, 2 meses",2025-09-05T12:01:36Z,5 dias,8212,8.0 MB,commons-dbcp
+caixunshi/mybatis-datalimit,https://github.com/caixunshi/mybatis-datalimit,356,Java,2020-06-10T13:12:49Z,"5 anos, 3 meses",2024-12-02T21:25:18Z,"9 meses, 12 dias",24,24 KB,mybatis-datalimit
+Ekryd/sortpom,https://github.com/Ekryd/sortpom,353,Java,2015-03-14T14:32:22Z,"10 anos, 6 meses",2025-09-05T03:10:53Z,5 dias,3079,3.0 MB,sortpom
+spring-guides/gs-multi-module,https://github.com/spring-guides/gs-multi-module,353,Java,2017-01-25T15:02:44Z,"8 anos, 7 meses",2025-02-24T21:41:03Z,"6 meses, 18 dias",1430,1.4 MB,gs-multi-module
+BrightStarry/zx-bt,https://github.com/BrightStarry/zx-bt,353,Java,2018-02-13T12:31:33Z,"7 anos, 7 meses",2018-05-16T05:08:29Z,"7 anos, 3 meses",820,820 KB,zx-bt
+justauth/justauth-spring-boot-starter,https://github.com/justauth/justauth-spring-boot-starter,353,Java,2019-07-22T06:54:45Z,"6 anos, 1 meses",2025-01-13T08:17:20Z,"8 meses, 0 dias",96,96 KB,justauth-spring-boot-starter
+caelum/vraptor4,https://github.com/caelum/vraptor4,352,Java,2013-05-02T20:22:14Z,"12 anos, 4 meses",2024-05-30T22:18:52Z,"1 anos, 3 meses",14093,13.8 MB,vraptor4
+dominion-dev/dominion-ecs-java,https://github.com/dominion-dev/dominion-ecs-java,352,Java,2021-11-27T08:00:08Z,"3 anos, 9 meses",2024-03-12T05:33:29Z,"1 anos, 6 meses",1267,1.2 MB,dominion-ecs-java
+CloudifySource/cloudify,https://github.com/CloudifySource/cloudify,351,Java,2012-01-26T12:49:39Z,"13 anos, 7 meses",2016-03-23T13:41:13Z,"9 anos, 5 meses",141067,137.8 MB,cloudify
+softwaremill/jox,https://github.com/softwaremill/jox,350,Java,2023-11-08T12:58:16Z,"1 anos, 10 meses",2025-09-10T13:40:58Z,0 dias,936,936 KB,jox
+offbynull/coroutines,https://github.com/offbynull/coroutines,350,Java,2015-03-10T05:29:32Z,"10 anos, 6 meses",2023-10-03T08:25:46Z,"1 anos, 11 meses",856,856 KB,coroutines
+dustinkredmond/FXTrayIcon,https://github.com/dustinkredmond/FXTrayIcon,350,Java,2020-08-21T21:40:50Z,"5 anos, 0 meses",2025-06-10T13:28:58Z,"3 meses, 2 dias",14807,14.5 MB,FXTrayIcon
+okta/okta-spring-boot,https://github.com/okta/okta-spring-boot,349,Java,2017-07-21T17:15:55Z,"8 anos, 1 meses",2025-09-09T09:11:44Z,1 dias,4422,4.3 MB,okta-spring-boot
+graycreate/Fruit,https://github.com/graycreate/Fruit,348,Java,2017-05-05T16:06:24Z,"8 anos, 4 meses",2019-10-20T05:19:37Z,"5 anos, 10 meses",354,354 KB,Fruit
+spring-cloud/spring-cloud-circuitbreaker,https://github.com/spring-cloud/spring-cloud-circuitbreaker,345,Java,2018-11-14T15:50:21Z,"6 anos, 10 meses",2025-09-08T14:08:03Z,2 dias,1322,1.3 MB,spring-cloud-circuitbreaker
+moditect/layrry,https://github.com/moditect/layrry,345,Java,2020-03-07T10:34:46Z,"5 anos, 6 meses",2023-07-17T11:54:18Z,"2 anos, 1 meses",3072,3.0 MB,layrry
+dromara/disjob,https://github.com/dromara/disjob,345,Java,2022-10-06T08:44:24Z,"2 anos, 11 meses",2025-09-06T04:45:13Z,4 dias,18174,17.7 MB,disjob
+httl/httl,https://github.com/httl/httl,344,Java,2012-10-23T15:06:46Z,"12 anos, 10 meses",2023-12-17T23:29:50Z,"1 anos, 8 meses",2844,2.8 MB,httl
+web-push-libs/webpush-java,https://github.com/web-push-libs/webpush-java,344,Java,2016-03-11T22:23:02Z,"9 anos, 6 meses",2025-09-07T20:45:11Z,3 dias,3451,3.4 MB,webpush-java
+lsieun/learn-java-asm,https://github.com/lsieun/learn-java-asm,344,Java,2020-12-01T05:26:22Z,"4 anos, 9 meses",2025-02-24T07:52:11Z,"6 meses, 18 dias",254,254 KB,learn-java-asm
+MOEAFramework/MOEAFramework,https://github.com/MOEAFramework/MOEAFramework,343,Java,2015-09-01T02:50:33Z,"10 anos, 0 meses",2025-07-30T12:40:46Z,"1 meses, 12 dias",97993,95.7 MB,MOEAFramework
+bbeck/token-bucket,https://github.com/bbeck/token-bucket,339,Java,2012-01-07T03:02:53Z,"13 anos, 8 meses",2021-08-18T14:09:47Z,"4 anos, 0 meses",52,52 KB,token-bucket
+wendy512/stream,https://github.com/wendy512/stream,339,Java,2023-05-18T03:08:44Z,"2 anos, 3 meses",2024-10-12T05:48:19Z,"11 meses, 3 dias",212,212 KB,stream
+yahoo/FEL,https://github.com/yahoo/FEL,339,Java,2016-04-19T23:37:17Z,"9 anos, 4 meses",2021-02-12T20:52:38Z,"4 anos, 7 meses",305,305 KB,FEL
+neo4j/neo4j-java-driver,https://github.com/neo4j/neo4j-java-driver,338,Java,2015-04-15T17:08:15Z,"10 anos, 5 meses",2025-09-09T11:36:37Z,1 dias,15751,15.4 MB,neo4j-java-driver
+fabric8io/fabric8-maven-plugin,https://github.com/fabric8io/fabric8-maven-plugin,335,Java,2016-04-05T12:05:45Z,"9 anos, 5 meses",2024-06-19T04:52:55Z,"1 anos, 2 meses",38503,37.6 MB,fabric8-maven-plugin
+NichtStudioCode/InvUI,https://github.com/NichtStudioCode/InvUI,334,Java,2021-01-20T21:27:19Z,"4 anos, 7 meses",2025-08-29T12:18:42Z,12 dias,6278,6.1 MB,InvUI
+mkarneim/pojobuilder,https://github.com/mkarneim/pojobuilder,334,Java,2011-09-27T18:58:30Z,"13 anos, 11 meses",2025-08-18T16:35:49Z,23 dias,7405,7.2 MB,pojobuilder
+apache/camel-spring-boot-examples,https://github.com/apache/camel-spring-boot-examples,333,Java,2020-05-14T06:31:29Z,"5 anos, 4 meses",2025-09-10T15:46:42Z,0 dias,5615,5.5 MB,camel-spring-boot-examples
+rgladwell/m2e-android,https://github.com/rgladwell/m2e-android,332,Java,2011-07-22T09:53:21Z,"14 anos, 1 meses",2016-02-03T16:12:55Z,"9 anos, 7 meses",15469,15.1 MB,m2e-android
+CycloneDX/cyclonedx-maven-plugin,https://github.com/CycloneDX/cyclonedx-maven-plugin,331,Java,2017-06-04T04:33:47Z,"8 anos, 3 meses",2025-07-05T17:22:46Z,"2 meses, 7 dias",2454,2.4 MB,cyclonedx-maven-plugin
+spring-attic/spring-cloud-stream-binder-kafka,https://github.com/spring-attic/spring-cloud-stream-binder-kafka,331,Java,2016-06-07T21:39:59Z,"9 anos, 3 meses",2024-11-19T18:08:16Z,"9 meses, 25 dias",6163,6.0 MB,spring-cloud-stream-binder-kafka
+minetsh/IntensifyImageView,https://github.com/minetsh/IntensifyImageView,330,Java,2015-12-24T16:05:00Z,"9 anos, 8 meses",2017-03-17T02:51:02Z,"8 anos, 5 meses",49119,48.0 MB,IntensifyImageView
+kochedykov/jlibmodbus,https://github.com/kochedykov/jlibmodbus,330,Java,2016-02-05T19:12:50Z,"9 anos, 7 meses",2024-09-19T16:21:34Z,"11 meses, 26 dias",2304,2.2 MB,jlibmodbus
+amazon-archives/amazon-kinesis-connectors,https://github.com/amazon-archives/amazon-kinesis-connectors,328,Java,2013-11-25T20:10:14Z,"11 anos, 9 meses",2021-03-18T19:42:33Z,"4 anos, 5 meses",513,513 KB,amazon-kinesis-connectors
+citiususc/hipster,https://github.com/citiususc/hipster,327,Java,2013-04-01T08:42:29Z,"12 anos, 5 meses",2023-06-14T22:29:37Z,"2 anos, 2 meses",5735,5.6 MB,hipster
+jhonnymertz/java-wkhtmltopdf-wrapper,https://github.com/jhonnymertz/java-wkhtmltopdf-wrapper,327,Java,2014-03-20T01:21:19Z,"11 anos, 5 meses",2025-08-18T13:57:37Z,23 dias,277,277 KB,java-wkhtmltopdf-wrapper
+qoomon/maven-git-versioning-extension,https://github.com/qoomon/maven-git-versioning-extension,326,Java,2016-11-04T18:57:51Z,"8 anos, 10 meses",2025-09-05T12:02:06Z,5 dias,1486,1.5 MB,maven-git-versioning-extension
+vladmihalcea/hypersistence-optimizer,https://github.com/vladmihalcea/hypersistence-optimizer,326,Java,2019-03-16T16:46:14Z,"6 anos, 6 meses",2025-08-15T08:53:20Z,26 dias,283,283 KB,hypersistence-optimizer
+864381832/xJavaFxTool-spring,https://github.com/864381832/xJavaFxTool-spring,326,Java,2017-12-08T14:42:54Z,"7 anos, 9 meses",2020-12-26T02:40:45Z,"4 anos, 8 meses",62151,60.7 MB,xJavaFxTool-spring
+wiverson/htmx-demo,https://github.com/wiverson/htmx-demo,326,Java,2021-04-14T00:18:45Z,"4 anos, 5 meses",2025-02-02T16:55:33Z,"7 meses, 10 dias",1312,1.3 MB,htmx-demo
+jfrog/artifactory-client-java,https://github.com/jfrog/artifactory-client-java,324,Java,2012-07-25T08:37:56Z,"13 anos, 1 meses",2025-09-03T07:10:20Z,7 dias,1864,1.8 MB,artifactory-client-java
+asciidoctor/asciidoctor-maven-plugin,https://github.com/asciidoctor/asciidoctor-maven-plugin,323,Java,2013-01-25T04:14:27Z,"12 anos, 7 meses",2025-09-08T11:29:12Z,2 dias,3807,3.7 MB,asciidoctor-maven-plugin
+hibernate/hibernate-ogm,https://github.com/hibernate/hibernate-ogm,322,Java,2011-04-13T11:40:56Z,"14 anos, 5 meses",2025-01-14T08:33:20Z,"7 meses, 29 dias",17312,16.9 MB,hibernate-ogm
+timboudreau/netty-http-client,https://github.com/timboudreau/netty-http-client,322,Java,2013-05-06T08:14:17Z,"12 anos, 4 meses",2023-07-19T18:52:04Z,"2 anos, 1 meses",588,588 KB,netty-http-client
+mpgn/Spring-Boot-Actuator-Exploit,https://github.com/mpgn/Spring-Boot-Actuator-Exploit,321,Java,2019-03-07T20:50:18Z,"6 anos, 6 meses",2020-06-16T21:24:06Z,"5 anos, 2 meses",14,14 KB,Spring-Boot-Actuator-Exploit
+helicalinsight/helicalinsight,https://github.com/helicalinsight/helicalinsight,321,Java,2016-09-12T10:31:22Z,"9 anos, 0 meses",2023-02-22T06:10:09Z,"2 anos, 6 meses",190297,185.8 MB,helicalinsight
+ehrbase/ehrbase,https://github.com/ehrbase/ehrbase,320,Java,2019-10-08T08:54:57Z,"5 anos, 11 meses",2025-09-09T14:12:49Z,1 dias,87672,85.6 MB,ehrbase
+moditect/jfrunit,https://github.com/moditect/jfrunit,320,Java,2020-11-23T19:29:13Z,"4 anos, 9 meses",2023-04-04T17:39:56Z,"2 anos, 5 meses",971,971 KB,jfrunit
+Abnaxos/markdown-doclet,https://github.com/Abnaxos/markdown-doclet,320,Java,2013-02-22T15:07:45Z,"12 anos, 6 meses",2020-10-23T02:49:00Z,"4 anos, 10 meses",697,697 KB,markdown-doclet
+Devlight/TintLayout,https://github.com/Devlight/TintLayout,319,Java,2015-06-22T10:00:22Z,"10 anos, 2 meses",2018-05-21T21:32:15Z,"7 anos, 3 meses",315,315 KB,TintLayout
+alphazero/jredis,https://github.com/alphazero/jredis,317,Java,2009-03-27T18:58:45Z,"16 anos, 5 meses",2023-08-18T23:47:24Z,"2 anos, 0 meses",8361,8.2 MB,jredis
+smacke/jaydio,https://github.com/smacke/jaydio,317,Java,2014-03-01T23:58:33Z,"11 anos, 6 meses",2022-10-04T00:22:33Z,"2 anos, 11 meses",1553,1.5 MB,jaydio
+shiyindaxiaojie/eden-architect,https://github.com/shiyindaxiaojie/eden-architect,317,Java,2020-01-30T09:22:40Z,"5 anos, 7 meses",2025-09-04T15:35:34Z,6 dias,7796,7.6 MB,eden-architect
+MrCoderStack/SpringBootDemo,https://github.com/MrCoderStack/SpringBootDemo,316,Java,2019-03-07T08:04:04Z,"6 anos, 6 meses",2024-08-05T21:30:25Z,"1 anos, 1 meses",4983,4.9 MB,SpringBootDemo
+trautonen/coveralls-maven-plugin,https://github.com/trautonen/coveralls-maven-plugin,313,Java,2013-05-24T22:02:53Z,"12 anos, 3 meses",2023-12-04T16:33:23Z,"1 anos, 9 meses",714,714 KB,coveralls-maven-plugin
+D-clock/ScratchView,https://github.com/D-clock/ScratchView,313,Java,2016-07-20T06:07:14Z,"9 anos, 1 meses",2016-09-15T15:50:55Z,"8 anos, 12 meses",702,702 KB,ScratchView
+fhussonnois/kafkastreams-cep,https://github.com/fhussonnois/kafkastreams-cep,313,Java,2016-06-11T22:24:23Z,"9 anos, 3 meses",2023-12-16T20:24:35Z,"1 anos, 8 meses",444,444 KB,kafkastreams-cep
+TheHolyWaffle/TeamSpeak-3-Java-API,https://github.com/TheHolyWaffle/TeamSpeak-3-Java-API,311,Java,2013-11-27T16:19:16Z,"11 anos, 9 meses",2025-08-11T13:40:10Z,"1 meses, 0 dias",87870,85.8 MB,TeamSpeak-3-Java-API
+trustin/os-maven-plugin,https://github.com/trustin/os-maven-plugin,311,Java,2014-04-30T09:32:24Z,"11 anos, 4 meses",2024-04-15T07:52:29Z,"1 anos, 4 meses",171,171 KB,os-maven-plugin
+mainpropath/AI-java,https://github.com/mainpropath/AI-java,311,Java,2023-12-05T11:38:15Z,"1 anos, 9 meses",2024-03-27T04:25:57Z,"1 anos, 5 meses",8038,7.8 MB,AI-java
+hantsy/spring-microservice-sample,https://github.com/hantsy/spring-microservice-sample,310,Java,2017-05-15T10:21:21Z,"8 anos, 4 meses",2024-01-31T08:09:52Z,"1 anos, 7 meses",2218,2.2 MB,spring-microservice-sample
+eclipse-lemminx/lemminx,https://github.com/eclipse-lemminx/lemminx,309,Java,2018-06-22T15:00:18Z,"7 anos, 2 meses",2025-08-10T10:38:17Z,"1 meses, 1 dias",16032,15.7 MB,lemminx
+dhis2/dhis2-core,https://github.com/dhis2/dhis2-core,309,Java,2016-08-30T12:57:05Z,"9 anos, 0 meses",2025-09-10T20:24:32Z,0 dias,358458,350.1 MB,dhis2-core
+liuguangqiang/IPicker,https://github.com/liuguangqiang/IPicker,308,Java,2016-09-18T06:54:17Z,"8 anos, 11 meses",2020-04-08T03:03:28Z,"5 anos, 5 meses",4754,4.6 MB,IPicker
+yegor256/qulice,https://github.com/yegor256/qulice,307,Java,2013-04-21T14:01:15Z,"12 anos, 4 meses",2025-08-06T22:00:13Z,"1 meses, 5 dias",21375,20.9 MB,qulice
+mikereedell/sunrisesunsetlib-java,https://github.com/mikereedell/sunrisesunsetlib-java,307,Java,2008-12-03T00:39:29Z,"16 anos, 9 meses",2023-04-12T20:31:33Z,"2 anos, 5 meses",238,238 KB,sunrisesunsetlib-java
+wanglingsong/JsonSurfer,https://github.com/wanglingsong/JsonSurfer,306,Java,2015-03-19T15:02:44Z,"10 anos, 5 meses",2024-06-03T22:55:54Z,"1 anos, 3 meses",1103,1.1 MB,JsonSurfer
+apache/commons-beanutils,https://github.com/apache/commons-beanutils,305,Java,2013-06-12T07:00:16Z,"12 anos, 3 meses",2025-09-05T23:42:21Z,4 dias,9108,8.9 MB,commons-beanutils
+linqs/psl,https://github.com/linqs/psl,305,Java,2011-07-29T20:24:30Z,"14 anos, 1 meses",2024-06-10T15:37:44Z,"1 anos, 3 meses",9588,9.4 MB,psl
+shuigedeng/taotao-cloud-project,https://github.com/shuigedeng/taotao-cloud-project,304,Java,2020-11-02T09:24:55Z,"4 anos, 10 meses",2025-09-09T01:32:10Z,1 dias,601920,587.8 MB,taotao-cloud-project
+springwolf/springwolf-core,https://github.com/springwolf/springwolf-core,303,Java,2019-01-03T09:59:00Z,"6 anos, 8 meses",2025-09-08T22:08:02Z,2 dias,13799,13.5 MB,springwolf-core
+chxfantasy/spring-cloud-demo,https://github.com/chxfantasy/spring-cloud-demo,303,Java,2017-12-17T17:28:51Z,"7 anos, 8 meses",2019-04-01T01:51:09Z,"6 anos, 5 meses",1104,1.1 MB,spring-cloud-demo
+nmoskalenko/RxFirebase,https://github.com/nmoskalenko/RxFirebase,303,Java,2016-05-15T07:04:23Z,"9 anos, 4 meses",2018-11-18T09:18:56Z,"6 anos, 9 meses",193,193 KB,RxFirebase
+dessalines/flowchat,https://github.com/dessalines/flowchat,303,Java,2016-05-14T00:27:21Z,"9 anos, 4 meses",2021-03-16T15:24:05Z,"4 anos, 5 meses",1877,1.8 MB,flowchat
+chrisblakely01/java-spring-microservices,https://github.com/chrisblakely01/java-spring-microservices,302,Java,2025-03-05T21:03:35Z,"6 meses, 9 dias",2025-03-29T14:32:42Z,"5 meses, 15 dias",38,38 KB,java-spring-microservices
+reficio/soap-ws,https://github.com/reficio/soap-ws,301,Java,2012-06-11T08:20:39Z,"13 anos, 3 meses",2020-02-11T15:15:00Z,"5 anos, 7 meses",1867,1.8 MB,soap-ws
+iyangyuan/pay-spring-boot,https://github.com/iyangyuan/pay-spring-boot,300,Java,2019-05-09T09:43:57Z,"6 anos, 4 meses",2022-06-17T02:09:25Z,"3 anos, 2 meses",87,87 KB,pay-spring-boot
+martin-g/wicket-bootstrap,https://github.com/martin-g/wicket-bootstrap,299,Java,2012-02-13T16:04:53Z,"13 anos, 7 meses",2025-09-07T09:02:12Z,3 dias,27961,27.3 MB,wicket-bootstrap
+OpenFeign/feign-form,https://github.com/OpenFeign/feign-form,299,Java,2016-05-01T11:28:03Z,"9 anos, 4 meses",2024-09-22T22:22:46Z,"11 meses, 23 dias",479,479 KB,feign-form
+temporalio/sdk-java,https://github.com/temporalio/sdk-java,298,Java,2019-10-17T16:42:32Z,"5 anos, 11 meses",2025-09-08T11:32:05Z,2 dias,12367,12.1 MB,sdk-java
+samlss/Lighter,https://github.com/samlss/Lighter,298,Java,2018-10-26T01:42:09Z,"6 anos, 10 meses",2019-04-11T02:03:07Z,"6 anos, 5 meses",12104,11.8 MB,Lighter
+aws/aws-advanced-jdbc-wrapper,https://github.com/aws/aws-advanced-jdbc-wrapper,298,Java,2022-06-24T19:21:39Z,"3 anos, 2 meses",2025-09-10T18:10:07Z,0 dias,10555,10.3 MB,aws-advanced-jdbc-wrapper
+tdlight-team/tdlight-java,https://github.com/tdlight-team/tdlight-java,297,Java,2020-07-27T09:50:41Z,"5 anos, 1 meses",2025-09-06T19:50:29Z,4 dias,4148,4.1 MB,tdlight-java
+hypercube1024/firefly,https://github.com/hypercube1024/firefly,297,Java,2012-02-16T09:04:05Z,"13 anos, 7 meses",2024-09-02T05:31:50Z,"1 anos, 0 meses",30627,29.9 MB,firefly
+eiiches/jackson-jq,https://github.com/eiiches/jackson-jq,297,Java,2015-11-09T11:01:54Z,"9 anos, 10 meses",2025-08-31T13:52:17Z,10 dias,995,995 KB,jackson-jq
+owent/xresloader,https://github.com/owent/xresloader,296,Java,2014-09-29T10:22:09Z,"10 anos, 11 meses",2025-07-07T04:00:37Z,"2 meses, 5 dias",38156,37.3 MB,xresloader
+binarywang/java-emoji-converter,https://github.com/binarywang/java-emoji-converter,295,Java,2016-05-09T07:04:53Z,"9 anos, 4 meses",2025-07-16T06:47:00Z,"1 meses, 26 dias",150,150 KB,java-emoji-converter
+AppsFlyer/donkey,https://github.com/AppsFlyer/donkey,295,Java,2020-09-29T12:55:19Z,"4 anos, 11 meses",2023-12-05T22:39:57Z,"1 anos, 9 meses",617,617 KB,donkey
+libraryaddict/LibsDisguises,https://github.com/libraryaddict/LibsDisguises,294,Java,2013-05-17T20:56:12Z,"12 anos, 3 meses",2025-09-10T06:25:18Z,0 dias,30050,29.3 MB,LibsDisguises
+spring-projects/spring-vault,https://github.com/spring-projects/spring-vault,294,Java,2016-09-14T06:48:10Z,"8 anos, 12 meses",2025-07-18T13:14:17Z,"1 meses, 24 dias",5887,5.7 MB,spring-vault
+thrsky/ThrskyShop,https://github.com/thrsky/ThrskyShop,294,Java,2017-04-25T11:25:02Z,"8 anos, 4 meses",2020-04-02T03:03:59Z,"5 anos, 5 meses",982,982 KB,ThrskyShop
+spring-petclinic/spring-petclinic-reactjs,https://github.com/spring-petclinic/spring-petclinic-reactjs,293,Java,2016-11-16T19:31:11Z,"8 anos, 10 meses",2024-10-20T13:59:17Z,"10 meses, 25 dias",7528,7.4 MB,spring-petclinic-reactjs
+spring-projects/spring-grpc,https://github.com/spring-projects/spring-grpc,293,Java,2024-09-03T20:47:24Z,"1 anos, 0 meses",2025-09-10T18:17:15Z,0 dias,1438,1.4 MB,spring-grpc
+yixiaolunhui/AndroidCarrouselLayout,https://github.com/yixiaolunhui/AndroidCarrouselLayout,292,Java,2016-11-12T13:07:12Z,"8 anos, 10 meses",2024-04-01T09:24:48Z,"1 anos, 5 meses",6531,6.4 MB,AndroidCarrouselLayout
+kumuluz/kumuluzee,https://github.com/kumuluz/kumuluzee,293,Java,2015-05-02T09:18:40Z,"10 anos, 4 meses",2025-07-12T01:51:03Z,"2 meses, 0 dias",1958,1.9 MB,kumuluzee
+dunzung/workflow,https://github.com/dunzung/workflow,293,Java,2015-10-13T08:56:59Z,"9 anos, 11 meses",2022-12-16T05:14:37Z,"2 anos, 8 meses",1504,1.5 MB,workflow
+arturmkrtchyan/iban4j,https://github.com/arturmkrtchyan/iban4j,292,Java,2013-09-03T19:59:23Z,"12 anos, 0 meses",2025-08-31T15:30:26Z,10 dias,495,495 KB,iban4j
+Ashok-Varma/Gander,https://github.com/Ashok-Varma/Gander,292,Java,2018-06-04T05:03:46Z,"7 anos, 3 meses",2021-11-25T15:30:31Z,"3 anos, 9 meses",5763,5.6 MB,Gander
+candrews/HttpResponseCache,https://github.com/candrews/HttpResponseCache,290,Java,2012-01-20T01:09:18Z,"13 anos, 7 meses",2023-12-15T05:09:08Z,"1 anos, 9 meses",373,373 KB,HttpResponseCache
+dadoonet/spring-elasticsearch,https://github.com/dadoonet/spring-elasticsearch,289,Java,2012-02-10T20:02:15Z,"13 anos, 7 meses",2023-11-08T04:48:28Z,"1 anos, 10 meses",1174,1.1 MB,spring-elasticsearch
+johanjanssen/JavaUpgrades,https://github.com/johanjanssen/JavaUpgrades,289,Java,2021-03-28T09:37:02Z,"4 anos, 5 meses",2023-05-06T12:13:58Z,"2 anos, 4 meses",155,155 KB,JavaUpgrades
+neophob/PixelController,https://github.com/neophob/PixelController,289,Java,2011-08-10T13:01:07Z,"14 anos, 1 meses",2020-10-12T19:33:52Z,"4 anos, 11 meses",31522,30.8 MB,PixelController
+TuxCoding/LambdaAttack,https://github.com/TuxCoding/LambdaAttack,288,Java,2016-03-01T18:51:15Z,"9 anos, 6 meses",2024-07-02T05:42:22Z,"1 anos, 2 meses",114,114 KB,LambdaAttack
+LGoodDatePicker/LGoodDatePicker,https://github.com/LGoodDatePicker/LGoodDatePicker,287,Java,2016-02-19T02:49:51Z,"9 anos, 6 meses",2023-08-10T21:18:22Z,"2 anos, 1 meses",3779,3.7 MB,LGoodDatePicker
+anton-liauchuk/java-interview,https://github.com/anton-liauchuk/java-interview,287,Java,2019-05-25T18:26:55Z,"6 anos, 3 meses",2025-05-27T18:23:17Z,"3 meses, 16 dias",318,318 KB,java-interview
+ontodev/robot,https://github.com/ontodev/robot,286,Java,2015-01-31T20:16:09Z,"10 anos, 7 meses",2025-08-20T17:36:04Z,21 dias,5572,5.4 MB,robot
+habanero-rice/PCDP,https://github.com/habanero-rice/PCDP,284,Java,2016-12-30T16:05:20Z,"8 anos, 8 meses",2018-07-06T21:26:54Z,"7 anos, 2 meses",90,90 KB,PCDP
+liquibase/liquibase-hibernate,https://github.com/liquibase/liquibase-hibernate,284,Java,2011-07-09T04:48:15Z,"14 anos, 2 meses",2025-09-08T13:28:49Z,2 dias,1444,1.4 MB,liquibase-hibernate
+chenlin030922/ReSwipeCard,https://github.com/chenlin030922/ReSwipeCard,284,Java,2018-02-01T03:37:02Z,"7 anos, 7 meses",2021-02-09T02:04:05Z,"4 anos, 7 meses",42222,41.2 MB,ReSwipeCard
+spring-cloud/spring-cloud-vault,https://github.com/spring-cloud/spring-cloud-vault,284,Java,2016-02-11T00:24:55Z,"9 anos, 7 meses",2025-09-10T15:41:20Z,0 dias,54865,53.6 MB,spring-cloud-vault
+adennie/fb-android-dagger,https://github.com/adennie/fb-android-dagger,283,Java,2013-05-24T16:17:26Z,"12 anos, 3 meses",2015-10-06T12:44:56Z,"9 anos, 11 meses",465,465 KB,fb-android-dagger
+PaperMC/PaperLib,https://github.com/PaperMC/PaperLib,283,Java,2018-09-25T15:08:23Z,"6 anos, 11 meses",2024-12-21T16:48:55Z,"8 meses, 23 dias",214,214 KB,PaperLib
+cantaloupe-project/cantaloupe,https://github.com/cantaloupe-project/cantaloupe,283,Java,2015-09-08T16:21:12Z,"10 anos, 0 meses",2025-08-27T15:14:09Z,14 dias,64209,62.7 MB,cantaloupe
+castagna/jena-examples,https://github.com/castagna/jena-examples,282,Java,2011-10-10T13:02:42Z,"13 anos, 11 meses",2020-10-13T09:55:47Z,"4 anos, 11 meses",110,110 KB,jena-examples
+streamnative/pulsar-flink,https://github.com/streamnative/pulsar-flink,282,Java,2019-07-09T05:12:49Z,"6 anos, 2 meses",2022-11-10T14:29:48Z,"2 anos, 10 meses",2266,2.2 MB,pulsar-flink
+liuweiran900217/CloudCrypto,https://github.com/liuweiran900217/CloudCrypto,282,Java,2015-10-04T17:43:21Z,"9 anos, 11 meses",2025-01-04T04:28:18Z,"8 meses, 9 dias",12724,12.4 MB,CloudCrypto
+amplab/succinct,https://github.com/amplab/succinct,281,Java,2014-11-08T23:22:20Z,"10 anos, 10 meses",2023-12-16T20:30:27Z,"1 anos, 8 meses",18543,18.1 MB,succinct
+ASSERT-KTH/depclean,https://github.com/ASSERT-KTH/depclean,281,Java,2019-11-29T10:19:44Z,"5 anos, 9 meses",2025-09-07T20:10:42Z,3 dias,34104,33.3 MB,depclean
+dapr/java-sdk,https://github.com/dapr/java-sdk,281,Java,2019-10-09T17:30:19Z,"5 anos, 11 meses",2025-09-10T13:16:17Z,0 dias,104511,102.1 MB,java-sdk
+cangwang/ModuleBus,https://github.com/cangwang/ModuleBus,279,Java,2016-11-22T06:54:37Z,"8 anos, 9 meses",2021-11-03T09:51:20Z,"3 anos, 10 meses",40958,40.0 MB,ModuleBus
+oripa/oripa,https://github.com/oripa/oripa,279,Java,2013-10-08T03:20:22Z,"11 anos, 11 meses",2025-09-08T14:30:00Z,2 dias,15938,15.6 MB,oripa
+kristian/system-hook,https://github.com/kristian/system-hook,279,Java,2016-02-09T10:57:43Z,"9 anos, 7 meses",2020-10-18T17:57:51Z,"4 anos, 10 meses",15897,15.5 MB,system-hook
+ZTO-Express/zms,https://github.com/ZTO-Express/zms,279,Java,2020-05-22T07:10:14Z,"5 anos, 3 meses",2023-01-06T07:15:50Z,"2 anos, 8 meses",4597,4.5 MB,zms
+ueboot/ueboot,https://github.com/ueboot/ueboot,278,Java,2018-09-06T02:53:12Z,"7 anos, 0 meses",2022-12-06T00:04:29Z,"2 anos, 9 meses",20862,20.4 MB,ueboot
+alturkovic/distributed-lock,https://github.com/alturkovic/distributed-lock,278,Java,2017-06-04T11:50:37Z,"8 anos, 3 meses",2024-06-09T17:03:47Z,"1 anos, 3 meses",385,385 KB,distributed-lock
+apache/commons-net,https://github.com/apache/commons-net,277,Java,2012-12-11T08:00:16Z,"12 anos, 9 meses",2025-09-05T05:55:46Z,5 dias,11882,11.6 MB,commons-net
+javolution/javolution,https://github.com/javolution/javolution,276,Java,2016-03-29T22:36:08Z,"9 anos, 5 meses",2020-10-13T06:41:25Z,"4 anos, 11 meses",13402,13.1 MB,javolution
+ververica/stateful-functions,https://github.com/ververica/stateful-functions,276,Java,2019-09-19T14:23:09Z,"5 anos, 11 meses",2023-12-13T11:47:37Z,"1 anos, 9 meses",1193,1.2 MB,stateful-functions
+brndnmtthws/facebook-hive-udfs,https://github.com/brndnmtthws/facebook-hive-udfs,275,Java,2013-08-08T20:43:02Z,"12 anos, 1 meses",2025-08-30T12:09:49Z,11 dias,138,138 KB,facebook-hive-udfs
+knowm/Sundial,https://github.com/knowm/Sundial,275,Java,2011-04-25T16:11:53Z,"14 anos, 4 meses",2024-07-15T12:16:45Z,"1 anos, 1 meses",3272,3.2 MB,Sundial
+jasminb/jsonapi-converter,https://github.com/jasminb/jsonapi-converter,275,Java,2016-02-18T17:03:38Z,"9 anos, 6 meses",2024-07-31T21:12:18Z,"1 anos, 1 meses",383,383 KB,jsonapi-converter
+Elytrium/LimboAPI,https://github.com/Elytrium/LimboAPI,274,Java,2021-08-25T11:33:45Z,"4 anos, 0 meses",2025-06-30T18:23:18Z,"2 meses, 12 dias",14348,14.0 MB,LimboAPI
+sqids/sqids-java,https://github.com/sqids/sqids-java,274,Java,2023-06-24T15:29:24Z,"2 anos, 2 meses",2023-12-06T01:40:18Z,"1 anos, 9 meses",56,56 KB,sqids-java
+jmacglashan/burlap,https://github.com/jmacglashan/burlap,273,Java,2013-09-27T17:58:25Z,"11 anos, 11 meses",2022-04-17T19:28:18Z,"3 anos, 4 meses",156778,153.1 MB,burlap
+apache/incubator-kie-tools,https://github.com/apache/incubator-kie-tools,273,Java,2019-07-05T18:41:47Z,"6 anos, 2 meses",2025-09-10T18:20:38Z,0 dias,698412,682.0 MB,incubator-kie-tools
+amelentev/java-oo,https://github.com/amelentev/java-oo,273,Java,2012-05-19T12:45:30Z,"13 anos, 3 meses",2020-10-13T06:40:24Z,"4 anos, 11 meses",590,590 KB,java-oo
+SAP-archive/cloud-platform-iot-starterkit,https://github.com/SAP-archive/cloud-platform-iot-starterkit,272,Java,2015-04-22T20:45:56Z,"10 anos, 4 meses",2021-05-14T17:06:02Z,"4 anos, 4 meses",45126,44.1 MB,cloud-platform-iot-starterkit
+spring-attic/spring-batch-admin,https://github.com/spring-attic/spring-batch-admin,272,Java,2010-11-15T17:57:12Z,"14 anos, 10 meses",2019-03-26T09:13:40Z,"6 anos, 5 meses",3984,3.9 MB,spring-batch-admin
+decorators-squad/eo-yaml,https://github.com/decorators-squad/eo-yaml,272,Java,2016-12-28T10:34:25Z,"8 anos, 8 meses",2024-11-13T12:06:37Z,"10 meses, 1 dias",1884,1.8 MB,eo-yaml
+jorabin/KeePassJava2,https://github.com/jorabin/KeePassJava2,271,Java,2015-12-13T17:35:07Z,"9 anos, 9 meses",2025-06-23T12:17:10Z,"2 meses, 19 dias",2534,2.5 MB,KeePassJava2
+madvirus/ddd-start,https://github.com/madvirus/ddd-start,270,Java,2016-04-01T01:53:34Z,"9 anos, 5 meses",2022-03-23T10:19:22Z,"3 anos, 5 meses",744,744 KB,ddd-start
+SonarSource/sonarlint-eclipse,https://github.com/SonarSource/sonarlint-eclipse,270,Java,2011-02-10T09:32:22Z,"14 anos, 7 meses",2025-09-03T07:41:49Z,7 dias,19323,18.9 MB,sonarlint-eclipse
+rrd4j/rrd4j,https://github.com/rrd4j/rrd4j,269,Java,2015-04-06T13:59:53Z,"10 anos, 5 meses",2025-05-14T08:44:55Z,"3 meses, 29 dias",7507,7.3 MB,rrd4j
+chyrta/AndroidOnboarder,https://github.com/chyrta/AndroidOnboarder,269,Java,2016-04-02T16:00:05Z,"9 anos, 5 meses",2020-12-12T07:13:37Z,"4 anos, 9 meses",2668,2.6 MB,AndroidOnboarder
+davidmoten/rxjava-extras,https://github.com/davidmoten/rxjava-extras,269,Java,2014-11-28T23:25:14Z,"10 anos, 9 meses",2025-08-18T21:34:06Z,23 dias,2598,2.5 MB,rxjava-extras
+atteo/classindex,https://github.com/atteo/classindex,268,Java,2012-09-08T22:47:25Z,"13 anos, 0 meses",2023-06-14T22:46:12Z,"2 anos, 2 meses",198,198 KB,classindex
+xdevplatform/twitter-api-java-sdk,https://github.com/xdevplatform/twitter-api-java-sdk,268,Java,2021-08-31T22:46:37Z,"4 anos, 0 meses",2025-07-12T01:10:30Z,"2 meses, 0 dias",936,936 KB,twitter-api-java-sdk
+geosolutions-it/geoserver-manager,https://github.com/geosolutions-it/geoserver-manager,267,Java,2011-05-08T21:57:00Z,"14 anos, 4 meses",2024-01-31T12:48:20Z,"1 anos, 7 meses",1914,1.9 MB,geoserver-manager
+urbanairship/datacube,https://github.com/urbanairship/datacube,267,Java,2012-03-08T01:55:05Z,"13 anos, 6 meses",2024-01-13T00:30:22Z,"1 anos, 8 meses",4702,4.6 MB,datacube
+vitalidze/chromecast-java-api-v2,https://github.com/vitalidze/chromecast-java-api-v2,266,Java,2014-06-13T10:25:48Z,"11 anos, 3 meses",2024-09-19T16:18:46Z,"11 meses, 26 dias",422,422 KB,chromecast-java-api-v2
+gridgain/gridgain-old,https://github.com/gridgain/gridgain-old,265,Java,2014-02-13T05:51:05Z,"11 anos, 7 meses",2016-03-08T17:56:00Z,"9 anos, 6 meses",110387,107.8 MB,gridgain-old
+SeleniumHQ/htmlunit-driver,https://github.com/SeleniumHQ/htmlunit-driver,264,Java,2016-02-17T08:07:17Z,"9 anos, 6 meses",2025-08-18T16:24:51Z,23 dias,6862,6.7 MB,htmlunit-driver
+vandeseer/easytable,https://github.com/vandeseer/easytable,264,Java,2017-03-03T18:37:59Z,"8 anos, 6 meses",2024-07-15T16:01:24Z,"1 anos, 1 meses",1845,1.8 MB,easytable
+graphaware/neo4j-to-elasticsearch,https://github.com/graphaware/neo4j-to-elasticsearch,264,Java,2015-10-18T11:43:48Z,"9 anos, 11 meses",2021-05-05T19:30:21Z,"4 anos, 4 meses",973,973 KB,neo4j-to-elasticsearch
+Evernote/evernote-sdk-java,https://github.com/Evernote/evernote-sdk-java,263,Java,2012-04-15T22:11:44Z,"13 anos, 5 meses",2023-11-29T09:45:09Z,"1 anos, 9 meses",39217,38.3 MB,evernote-sdk-java
+apache/commons-bcel,https://github.com/apache/commons-bcel,262,Java,2013-07-13T07:00:12Z,"12 anos, 2 meses",2025-09-05T19:35:00Z,5 dias,10317,10.1 MB,commons-bcel
+talios/clojure-maven-plugin,https://github.com/talios/clojure-maven-plugin,262,Java,2009-02-01T00:55:39Z,"16 anos, 7 meses",2025-07-12T01:32:51Z,"2 meses, 0 dias",651,651 KB,clojure-maven-plugin
+avianey/androidsvgdrawable-plugin,https://github.com/avianey/androidsvgdrawable-plugin,262,Java,2013-12-18T07:06:29Z,"11 anos, 8 meses",2023-04-22T16:31:34Z,"2 anos, 4 meses",591,591 KB,androidsvgdrawable-plugin
+SelimHorri/ecommerce-microservice-backend-app,https://github.com/SelimHorri/ecommerce-microservice-backend-app,262,Java,2021-11-14T14:12:28Z,"3 anos, 10 meses",2022-01-03T18:50:12Z,"3 anos, 8 meses",2366,2.3 MB,ecommerce-microservice-backend-app
+duanhong169/PickerView,https://github.com/duanhong169/PickerView,261,Java,2017-07-16T08:15:34Z,"8 anos, 1 meses",2020-07-19T07:34:28Z,"5 anos, 1 meses",3920,3.8 MB,PickerView
+ksprojects/protobuf-jetbrains-plugin,https://github.com/ksprojects/protobuf-jetbrains-plugin,260,Java,2016-03-26T15:46:32Z,"9 anos, 5 meses",2020-06-20T10:08:07Z,"5 anos, 2 meses",746,746 KB,protobuf-jetbrains-plugin
+lemire/externalsortinginjava,https://github.com/lemire/externalsortinginjava,260,Java,2014-03-24T14:25:37Z,"11 anos, 5 meses",2023-04-04T02:03:43Z,"2 anos, 5 meses",142,142 KB,externalsortinginjava
+NetSPI/Wsdler,https://github.com/NetSPI/Wsdler,259,Java,2013-02-19T15:52:12Z,"12 anos, 6 meses",2018-06-25T21:25:36Z,"7 anos, 2 meses",29464,28.8 MB,Wsdler
+hanhailong/GridPagerSnapHelper,https://github.com/hanhailong/GridPagerSnapHelper,259,Java,2017-08-20T11:01:40Z,"8 anos, 0 meses",2017-12-14T07:35:25Z,"7 anos, 9 meses",7402,7.2 MB,GridPagerSnapHelper
+andremion/Music-Cover-View,https://github.com/andremion/Music-Cover-View,259,Java,2016-08-23T21:24:44Z,"9 anos, 0 meses",2019-05-20T18:18:44Z,"6 anos, 3 meses",1674,1.6 MB,Music-Cover-View
+Carson-Ho/Kawaii_LoadingView,https://github.com/Carson-Ho/Kawaii_LoadingView,259,Java,2017-07-29T08:37:57Z,"8 anos, 1 meses",2017-08-30T02:33:17Z,"8 anos, 0 meses",148,148 KB,Kawaii_LoadingView
+ktuukkan/marine-api,https://github.com/ktuukkan/marine-api,259,Java,2013-02-20T21:10:29Z,"12 anos, 6 meses",2025-07-29T02:46:04Z,"1 meses, 13 dias",5214,5.1 MB,marine-api
+IanDarwin/javasrc,https://github.com/IanDarwin/javasrc,258,Java,2013-10-11T14:50:06Z,"11 anos, 11 meses",2025-09-09T15:05:01Z,1 dias,55314,54.0 MB,javasrc
+ykameshrao/spring-hibernate-springdata-springmvc-maven-project-framework,https://github.com/ykameshrao/spring-hibernate-springdata-springmvc-maven-project-framework,258,Java,2012-07-07T13:56:43Z,"13 anos, 2 meses",2022-12-16T00:47:31Z,"2 anos, 8 meses",233,233 KB,spring-hibernate-springdata-springmvc-maven-project-framework
+HiveRunner/HiveRunner,https://github.com/HiveRunner/HiveRunner,258,Java,2013-11-22T09:19:09Z,"11 anos, 9 meses",2025-01-06T09:02:52Z,"8 meses, 7 dias",1402,1.4 MB,HiveRunner
+asleepyfish/chatgpt,https://github.com/asleepyfish/chatgpt,258,Java,2023-02-07T06:32:14Z,"2 anos, 7 meses",2023-12-28T09:35:39Z,"1 anos, 8 meses",177,177 KB,chatgpt
+jkrasnay/sqlbuilder,https://github.com/jkrasnay/sqlbuilder,257,Java,2011-03-25T20:38:03Z,"14 anos, 5 meses",2023-09-06T12:46:20Z,"2 anos, 0 meses",291,291 KB,sqlbuilder
+corretto/amazon-corretto-crypto-provider,https://github.com/corretto/amazon-corretto-crypto-provider,257,Java,2019-04-01T23:52:24Z,"6 anos, 5 meses",2025-09-10T23:05:00Z,0 dias,12813,12.5 MB,amazon-corretto-crypto-provider
+opentracing-contrib/java-spring-jaeger,https://github.com/opentracing-contrib/java-spring-jaeger,257,Java,2018-05-28T08:12:27Z,"7 anos, 3 meses",2023-01-13T12:22:29Z,"2 anos, 8 meses",268,268 KB,java-spring-jaeger
+piomin/spring-boot-logging,https://github.com/piomin/spring-boot-logging,256,Java,2019-04-30T14:09:23Z,"6 anos, 4 meses",2025-09-09T18:44:43Z,1 dias,313,313 KB,spring-boot-logging
+mirkonasato/graphipedia,https://github.com/mirkonasato/graphipedia,256,Java,2012-02-12T09:21:32Z,"13 anos, 7 meses",2018-02-26T22:58:29Z,"7 anos, 6 meses",25,25 KB,graphipedia
+cgbystrom/netty-tools,https://github.com/cgbystrom/netty-tools,256,Java,2010-05-09T13:21:37Z,"15 anos, 4 meses",2020-02-11T04:32:16Z,"5 anos, 7 meses",662,662 KB,netty-tools
+RichardWarburton/lambda-behave,https://github.com/RichardWarburton/lambda-behave,256,Java,2014-06-07T00:43:10Z,"11 anos, 3 meses",2022-02-22T08:44:21Z,"3 anos, 6 meses",487,487 KB,lambda-behave
+jbosstm/narayana,https://github.com/jbosstm/narayana,255,Java,2011-12-19T08:13:03Z,"13 anos, 8 meses",2025-09-10T13:43:18Z,0 dias,99285,97.0 MB,narayana
+twotoasters/clusterkraf,https://github.com/twotoasters/clusterkraf,254,Java,2013-04-03T18:59:54Z,"12 anos, 5 meses",2014-11-14T22:29:31Z,"10 anos, 10 meses",3598,3.5 MB,clusterkraf
+lokerxx/JavaVul,https://github.com/lokerxx/JavaVul,254,Java,2024-01-31T13:28:49Z,"1 anos, 7 meses",2024-09-06T14:41:05Z,"1 anos, 0 meses",102894,100.5 MB,JavaVul
+nifty-gui/nifty-gui,https://github.com/nifty-gui/nifty-gui,253,Java,2011-10-01T23:59:11Z,"13 anos, 11 meses",2021-08-27T09:44:54Z,"4 anos, 0 meses",67095,65.5 MB,nifty-gui
+cuba-platform/yarg,https://github.com/cuba-platform/yarg,253,Java,2013-10-11T11:00:25Z,"11 anos, 11 meses",2025-01-14T08:29:44Z,"7 meses, 29 dias",2246,2.2 MB,yarg
+michaelklishin/quartz-mongodb,https://github.com/michaelklishin/quartz-mongodb,253,Java,2012-03-03T01:30:59Z,"13 anos, 6 meses",2022-11-01T13:09:03Z,"2 anos, 10 meses",977,977 KB,quartz-mongodb
+antlr/antlr3,https://github.com/antlr/antlr3,253,Java,2012-02-06T18:38:17Z,"13 anos, 7 meses",2024-02-05T18:50:14Z,"1 anos, 7 meses",15849,15.5 MB,antlr3
+twelvet-projects/twelvet,https://github.com/twelvet-projects/twelvet,253,Java,2020-08-23T13:25:23Z,"5 anos, 0 meses",2025-08-20T09:55:36Z,21 dias,8714,8.5 MB,twelvet
+p2-inc/keycloak-events,https://github.com/p2-inc/keycloak-events,253,Java,2021-10-20T10:57:28Z,"3 anos, 10 meses",2025-07-30T14:19:32Z,"1 meses, 12 dias",351,351 KB,keycloak-events
+gary-rowe/hid4java,https://github.com/gary-rowe/hid4java,252,Java,2014-10-11T17:14:54Z,"10 anos, 11 meses",2024-06-07T01:41:55Z,"1 anos, 3 meses",2155,2.1 MB,hid4java
+samlss/TimoMenu,https://github.com/samlss/TimoMenu,252,Java,2018-11-05T10:14:19Z,"6 anos, 10 meses",2018-11-20T08:13:53Z,"6 anos, 9 meses",4421,4.3 MB,TimoMenu
+yujunhao8831/spring-boot-start-current,https://github.com/yujunhao8831/spring-boot-start-current,252,Java,2017-06-29T02:55:10Z,"8 anos, 2 meses",2019-03-22T09:32:43Z,"6 anos, 5 meses",1461,1.4 MB,spring-boot-start-current
+panda-lang/panda,https://github.com/panda-lang/panda,251,Java,2015-08-23T14:54:22Z,"10 anos, 0 meses",2025-02-28T11:24:56Z,"6 meses, 14 dias",10398,10.2 MB,panda
+julxxy/dtt-spring-boot-parent,https://github.com/julxxy/dtt-spring-boot-parent,251,Java,2022-07-13T11:27:58Z,"3 anos, 2 meses",2025-06-19T17:22:50Z,"2 meses, 23 dias",4800,4.7 MB,dtt-spring-boot-parent
+5A59/MockNet,https://github.com/5A59/MockNet,251,Java,2017-05-24T07:16:31Z,"8 anos, 3 meses",2017-05-26T09:23:29Z,"8 anos, 3 meses",311,311 KB,MockNet
+servertap-io/servertap,https://github.com/servertap-io/servertap,250,Java,2020-02-10T03:30:48Z,"5 anos, 7 meses",2025-08-14T21:11:52Z,27 dias,809,809 KB,servertap
+apache/commons-fileupload,https://github.com/apache/commons-fileupload,249,Java,2011-10-15T07:00:07Z,"13 anos, 11 meses",2025-09-09T22:34:15Z,1 dias,3975,3.9 MB,commons-fileupload
+Netflix/gradle-template,https://github.com/Netflix/gradle-template,248,Java,2012-03-12T23:34:43Z,"13 anos, 6 meses",2023-04-10T10:48:02Z,"2 anos, 5 meses",679,679 KB,gradle-template
+GoogleCloudPlatform/cloud-sql-jdbc-socket-factory,https://github.com/GoogleCloudPlatform/cloud-sql-jdbc-socket-factory,248,Java,2016-03-23T17:58:22Z,"9 anos, 5 meses",2025-09-10T19:47:10Z,0 dias,4190,4.1 MB,cloud-sql-jdbc-socket-factory
+JingYeoh/SlideMenuLayout,https://github.com/JingYeoh/SlideMenuLayout,248,Java,2017-06-08T00:50:34Z,"8 anos, 3 meses",2017-12-25T07:13:06Z,"7 anos, 8 meses",24135,23.6 MB,SlideMenuLayout
+jai-imageio/jai-imageio-core,https://github.com/jai-imageio/jai-imageio-core,247,Java,2010-04-30T16:43:14Z,"15 anos, 4 meses",2023-10-23T08:45:23Z,"1 anos, 10 meses",15764,15.4 MB,jai-imageio-core
+crawler-commons/crawler-commons,https://github.com/crawler-commons/crawler-commons,247,Java,2015-04-09T13:05:29Z,"10 anos, 5 meses",2025-08-19T06:14:07Z,22 dias,4314,4.2 MB,crawler-commons
+scipr-lab/dizk,https://github.com/scipr-lab/dizk,247,Java,2018-07-16T20:25:23Z,"7 anos, 1 meses",2022-04-13T19:55:42Z,"3 anos, 5 meses",179,179 KB,dizk
+aled/jsi,https://github.com/aled/jsi,246,Java,2010-06-02T21:37:53Z,"15 anos, 3 meses",2023-12-05T22:07:15Z,"1 anos, 9 meses",3110,3.0 MB,jsi
+dcaoyuan/nbscala,https://github.com/dcaoyuan/nbscala,246,Java,2011-04-06T12:14:42Z,"14 anos, 5 meses",2020-10-13T10:13:15Z,"4 anos, 11 meses",181936,177.7 MB,nbscala
+graphaware/neo4j-framework,https://github.com/graphaware/neo4j-framework,246,Java,2013-07-18T11:04:07Z,"12 anos, 1 meses",2021-05-05T19:16:21Z,"4 anos, 4 meses",8839,8.6 MB,neo4j-framework
+apache/commons-vfs,https://github.com/apache/commons-vfs,245,Java,2013-07-13T07:00:13Z,"12 anos, 2 meses",2025-09-05T21:38:56Z,5 dias,13785,13.5 MB,commons-vfs
+yewei02538/ColorTrackTabLayout,https://github.com/yewei02538/ColorTrackTabLayout,245,Java,2017-04-14T09:43:55Z,"8 anos, 5 meses",2017-04-24T01:51:12Z,"8 anos, 4 meses",553,553 KB,ColorTrackTabLayout
+JustSystems/java-100practices,https://github.com/JustSystems/java-100practices,245,Java,2016-08-24T11:08:42Z,"9 anos, 0 meses",2017-03-09T01:19:29Z,"8 anos, 6 meses",631,631 KB,java-100practices
+doanduyhai/Achilles,https://github.com/doanduyhai/Achilles,244,Java,2012-11-17T09:26:30Z,"12 anos, 10 meses",2023-12-16T06:16:42Z,"1 anos, 8 meses",104794,102.3 MB,Achilles
+cagataygurturk/lambadaframework,https://github.com/cagataygurturk/lambadaframework,243,Java,2016-03-18T09:25:03Z,"9 anos, 5 meses",2019-03-29T09:02:17Z,"6 anos, 5 meses",198,198 KB,lambadaframework
+bootsrc/star-zone,https://github.com/bootsrc/star-zone,243,Java,2018-12-29T02:42:16Z,"6 anos, 8 meses",2022-06-21T00:54:36Z,"3 anos, 2 meses",3659,3.6 MB,star-zone
+sarahtattersall/PIPE,https://github.com/sarahtattersall/PIPE,242,Java,2013-10-07T12:40:45Z,"11 anos, 11 meses",2022-06-28T15:04:05Z,"3 anos, 2 meses",31489,30.8 MB,PIPE
+yegor256/xembly,https://github.com/yegor256/xembly,242,Java,2013-07-31T17:34:53Z,"12 anos, 1 meses",2025-09-08T01:55:13Z,2 dias,5614,5.5 MB,xembly
+vipcolud/monitor,https://github.com/vipcolud/monitor,242,Java,2018-11-16T09:01:01Z,"6 anos, 10 meses",2020-02-14T02:34:07Z,"5 anos, 7 meses",65,65 KB,monitor
+bloderxd/MagicButton,https://github.com/bloderxd/MagicButton,241,Java,2016-07-28T04:21:59Z,"9 anos, 1 meses",2016-09-21T00:48:30Z,"8 anos, 11 meses",159,159 KB,MagicButton
+jonashackt/spring-boot-graalvm,https://github.com/jonashackt/spring-boot-graalvm,241,Java,2020-03-20T10:02:07Z,"5 anos, 5 meses",2025-08-21T17:13:43Z,20 dias,1752,1.7 MB,spring-boot-graalvm
+Workable/java-error-handler,https://github.com/Workable/java-error-handler,241,Java,2016-07-14T16:54:02Z,"9 anos, 2 meses",2024-04-15T14:53:43Z,"1 anos, 4 meses",242,242 KB,java-error-handler
+andyb129/BeerProgressView,https://github.com/andyb129/BeerProgressView,240,Java,2016-05-10T21:47:54Z,"9 anos, 4 meses",2018-04-03T08:57:17Z,"7 anos, 5 meses",3339,3.3 MB,BeerProgressView
+xvik/dropwizard-guicey,https://github.com/xvik/dropwizard-guicey,239,Java,2014-09-03T03:22:23Z,"11 anos, 0 meses",2025-09-10T23:01:40Z,0 dias,31464,30.7 MB,dropwizard-guicey
+haodynasty/AndroidBleManager,https://github.com/haodynasty/AndroidBleManager,239,Java,2016-08-17T03:20:54Z,"9 anos, 0 meses",2023-08-11T11:54:39Z,"2 anos, 1 meses",1438,1.4 MB,AndroidBleManager
+pentaho/big-data-plugin,https://github.com/pentaho/big-data-plugin,238,Java,2012-06-01T00:22:36Z,"13 anos, 3 meses",2025-09-10T15:49:51Z,0 dias,96300,94.0 MB,big-data-plugin
+sivaprasadreddy/generator-springboot,https://github.com/sivaprasadreddy/generator-springboot,237,Java,2019-07-25T10:03:14Z,"6 anos, 1 meses",2025-09-08T17:10:35Z,2 dias,5578,5.4 MB,generator-springboot
+AdoptOpenJDK/jdk-api-diff,https://github.com/AdoptOpenJDK/jdk-api-diff,237,Java,2018-02-17T16:41:18Z,"7 anos, 6 meses",2024-04-04T03:57:26Z,"1 anos, 5 meses",2051,2.0 MB,jdk-api-diff
+martinpaljak/ant-javacard,https://github.com/martinpaljak/ant-javacard,237,Java,2015-01-06T08:25:32Z,"10 anos, 8 meses",2025-09-03T13:29:14Z,7 dias,494,494 KB,ant-javacard
+maven-nar/nar-maven-plugin,https://github.com/maven-nar/nar-maven-plugin,236,Java,2009-09-28T20:05:31Z,"15 anos, 11 meses",2025-07-12T00:04:02Z,"2 meses, 0 dias",6626,6.5 MB,nar-maven-plugin
+lord-of-code/loc-framework,https://github.com/lord-of-code/loc-framework,235,Java,2017-11-15T12:24:13Z,"7 anos, 10 meses",2021-04-26T17:42:58Z,"4 anos, 4 meses",459,459 KB,loc-framework
+unipiazza/unipiazza-android-twostepslogin,https://github.com/unipiazza/unipiazza-android-twostepslogin,235,Java,2015-07-08T12:12:19Z,"10 anos, 2 meses",2018-05-16T12:56:25Z,"7 anos, 3 meses",7503,7.3 MB,unipiazza-android-twostepslogin
+reficio/p2-maven-plugin,https://github.com/reficio/p2-maven-plugin,234,Java,2012-02-12T14:56:01Z,"13 anos, 7 meses",2025-09-06T17:15:17Z,4 dias,793,793 KB,p2-maven-plugin
+wujun728/jun_java_plugin,https://github.com/wujun728/jun_java_plugin,234,Java,2016-06-27T10:23:58Z,"9 anos, 2 meses",2025-08-19T06:00:19Z,22 dias,76450,74.7 MB,jun_java_plugin
+albfernandez/javadbf,https://github.com/albfernandez/javadbf,234,Java,2015-08-08T09:53:36Z,"10 anos, 1 meses",2025-05-14T22:31:13Z,"3 meses, 29 dias",1157,1.1 MB,javadbf
+CS-SI/Orekit,https://github.com/CS-SI/Orekit,233,Java,2014-08-11T19:29:35Z,"11 anos, 1 meses",2025-09-10T21:13:05Z,0 dias,165121,161.3 MB,Orekit
+awslabs/aws-mysql-jdbc,https://github.com/awslabs/aws-mysql-jdbc,233,Java,2020-12-10T02:21:58Z,"4 anos, 9 meses",2025-09-08T14:09:38Z,2 dias,7953,7.8 MB,aws-mysql-jdbc
+paul-hammant/paranamer,https://github.com/paul-hammant/paranamer,232,Java,2010-06-09T05:03:24Z,"15 anos, 3 meses",2025-03-11T14:53:35Z,"6 meses, 3 dias",1234,1.2 MB,paranamer
+oracle/oci-java-sdk,https://github.com/oracle/oci-java-sdk,232,Java,2016-12-06T04:05:39Z,"8 anos, 9 meses",2025-09-09T16:27:36Z,1 dias,344376,336.3 MB,oci-java-sdk
+multilang-depends/depends,https://github.com/multilang-depends/depends,232,Java,2019-02-10T08:08:28Z,"6 anos, 7 meses",2025-02-17T04:52:48Z,"6 meses, 25 dias",31775,31.0 MB,depends
+fenixsoft/microservice_arch_kubernetes,https://github.com/fenixsoft/microservice_arch_kubernetes,232,Java,2020-05-21T02:53:20Z,"5 anos, 3 meses",2022-06-22T20:10:41Z,"3 anos, 2 meses",6607,6.5 MB,microservice_arch_kubernetes
+foldright/cffu,https://github.com/foldright/cffu,232,Java,2023-02-13T04:56:53Z,"2 anos, 7 meses",2025-09-10T15:11:17Z,0 dias,3782,3.7 MB,cffu
+alecgorge/jsonapi,https://github.com/alecgorge/jsonapi,231,Java,2010-11-24T23:34:32Z,"14 anos, 9 meses",2022-12-07T18:43:48Z,"2 anos, 9 meses",36854,36.0 MB,jsonapi
+DenizenScript/Denizen,https://github.com/DenizenScript/Denizen,231,Java,2012-03-04T01:33:07Z,"13 anos, 6 meses",2025-09-05T09:47:14Z,5 dias,49060,47.9 MB,Denizen
+codemybrainsout/place-search-dialog,https://github.com/codemybrainsout/place-search-dialog,231,Java,2016-09-08T21:00:36Z,"9 anos, 0 meses",2017-07-28T14:00:06Z,"8 anos, 1 meses",3759,3.7 MB,place-search-dialog
+nontravis/recycler-view-margin-decoration,https://github.com/nontravis/recycler-view-margin-decoration,231,Java,2017-04-13T11:23:09Z,"8 anos, 5 meses",2018-03-14T07:30:26Z,"7 anos, 6 meses",1076,1.1 MB,recycler-view-margin-decoration
+redfx-quantum/strange,https://github.com/redfx-quantum/strange,230,Java,2018-03-26T16:06:29Z,"7 anos, 5 meses",2025-08-25T13:57:16Z,16 dias,1027,1.0 MB,strange
+apache/incubator-wayang,https://github.com/apache/incubator-wayang,230,Java,2020-12-16T12:51:54Z,"4 anos, 8 meses",2025-08-28T05:46:32Z,13 dias,20140,19.7 MB,incubator-wayang
+skrstop/skrstop-components,https://github.com/skrstop/skrstop-components,230,Java,2023-11-28T05:33:50Z,"1 anos, 9 meses",2025-08-28T04:00:27Z,13 dias,3107,3.0 MB,skrstop-components
+aws/aws-encryption-sdk-java,https://github.com/aws/aws-encryption-sdk-java,230,Java,2016-03-16T01:09:51Z,"9 anos, 6 meses",2025-09-10T05:09:54Z,0 dias,40043,39.1 MB,aws-encryption-sdk-java
+julman99/gson-fire,https://github.com/julman99/gson-fire,230,Java,2013-06-09T01:16:31Z,"12 anos, 3 meses",2023-11-05T21:45:23Z,"1 anos, 10 meses",300,300 KB,gson-fire
+kongzue/BaseOkHttpV3,https://github.com/kongzue/BaseOkHttpV3,230,Java,2018-12-05T14:01:31Z,"6 anos, 9 meses",2025-06-18T07:08:06Z,"2 meses, 24 dias",2879,2.8 MB,BaseOkHttpV3
+radsz/jacop,https://github.com/radsz/jacop,229,Java,2012-11-04T07:51:27Z,"12 anos, 10 meses",2023-12-09T12:05:18Z,"1 anos, 9 meses",160802,157.0 MB,jacop
+VanRoy/spring-data-jest,https://github.com/VanRoy/spring-data-jest,229,Java,2016-06-23T14:25:14Z,"9 anos, 2 meses",2022-05-20T20:51:03Z,"3 anos, 3 meses",6434,6.3 MB,spring-data-jest
+alivebao/FreeSizeDraggableLayout,https://github.com/alivebao/FreeSizeDraggableLayout,229,Java,2016-04-10T11:07:48Z,"9 anos, 5 meses",2017-04-17T13:35:17Z,"8 anos, 4 meses",1818,1.8 MB,FreeSizeDraggableLayout
+Petersoj/alpaca-java,https://github.com/Petersoj/alpaca-java,229,Java,2019-02-07T19:19:56Z,"6 anos, 7 meses",2025-09-02T16:47:54Z,8 dias,1706,1.7 MB,alpaca-java
+hellokaton/anima,https://github.com/hellokaton/anima,229,Java,2018-03-12T11:06:33Z,"7 anos, 6 meses",2022-05-04T13:07:42Z,"3 anos, 4 meses",483,483 KB,anima
+senbox-org/s1tbx,https://github.com/senbox-org/s1tbx,228,Java,2014-08-18T16:46:12Z,"11 anos, 0 meses",2024-08-07T08:40:45Z,"1 anos, 1 meses",328460,320.8 MB,s1tbx
+awslabs/emr-dynamodb-connector,https://github.com/awslabs/emr-dynamodb-connector,228,Java,2016-08-17T22:43:06Z,"9 anos, 0 meses",2025-05-02T23:28:23Z,"4 meses, 10 dias",480,480 KB,emr-dynamodb-connector
+fuzzitdev/javafuzz,https://github.com/fuzzitdev/javafuzz,228,Java,2019-11-15T15:34:51Z,"5 anos, 10 meses",2021-04-30T03:42:39Z,"4 anos, 4 meses",371,371 KB,javafuzz
+berndruecker/camunda-7-springboot-amqp-microservice-cloud-example,https://github.com/berndruecker/camunda-7-springboot-amqp-microservice-cloud-example,228,Java,2017-08-02T19:34:44Z,"8 anos, 1 meses",2022-04-13T08:53:00Z,"3 anos, 5 meses",427,427 KB,camunda-7-springboot-amqp-microservice-cloud-example
+nackily/imglib,https://github.com/nackily/imglib,228,Java,2022-11-09T07:27:09Z,"2 anos, 10 meses",2023-11-30T02:59:34Z,"1 anos, 9 meses",7697,7.5 MB,imglib
+PicnicSupermarket/error-prone-support,https://github.com/PicnicSupermarket/error-prone-support,227,Java,2018-04-28T11:20:42Z,"7 anos, 4 meses",2025-09-10T12:21:14Z,0 dias,9771,9.5 MB,error-prone-support
+samaxes/minify-maven-plugin,https://github.com/samaxes/minify-maven-plugin,225,Java,2012-05-21T01:07:09Z,"13 anos, 3 meses",2023-02-15T08:19:28Z,"2 anos, 6 meses",2050,2.0 MB,minify-maven-plugin
+telly/groundy,https://github.com/telly/groundy,225,Java,2012-03-30T16:02:01Z,"13 anos, 5 meses",2015-03-03T21:18:35Z,"10 anos, 6 meses",1495,1.5 MB,groundy
+Jsir07/TestHub,https://github.com/Jsir07/TestHub,224,Java,2018-07-20T02:14:06Z,"7 anos, 1 meses",2022-11-16T10:45:40Z,"2 anos, 9 meses",40,40 KB,TestHub
+Raynor999/AlbumSelector,https://github.com/Raynor999/AlbumSelector,224,Java,2016-04-12T09:47:43Z,"9 anos, 5 meses",2017-05-04T07:23:50Z,"8 anos, 4 meses",9306,9.1 MB,AlbumSelector
+profesorfalken/jPowerShell,https://github.com/profesorfalken/jPowerShell,223,Java,2016-01-10T13:46:29Z,"9 anos, 8 meses",2020-12-24T02:47:37Z,"4 anos, 8 meses",196,196 KB,jPowerShell
+XiaoMi/themis,https://github.com/XiaoMi/themis,223,Java,2014-04-25T13:43:15Z,"11 anos, 4 meses",2023-04-10T13:51:44Z,"2 anos, 5 meses",1400,1.4 MB,themis
+FusionAuth/java-http,https://github.com/FusionAuth/java-http,223,Java,2022-08-29T21:12:20Z,"3 anos, 0 meses",2025-08-29T19:07:47Z,12 dias,980,980 KB,java-http
+neo4j-contrib/neoclipse,https://github.com/neo4j-contrib/neoclipse,222,Java,2011-03-01T11:30:45Z,"14 anos, 6 meses",2016-12-16T20:20:46Z,"8 anos, 9 meses",115566,112.9 MB,neoclipse
+apache/commons-jexl,https://github.com/apache/commons-jexl,222,Java,2013-07-10T07:00:14Z,"12 anos, 2 meses",2025-09-08T14:45:43Z,2 dias,8663,8.5 MB,commons-jexl
+sengeiou/smart-cloud,https://github.com/sengeiou/smart-cloud,222,Java,2022-02-09T07:29:33Z,"3 anos, 7 meses",2022-02-08T08:21:12Z,"3 anos, 7 meses",381734,372.8 MB,smart-cloud
+guoding83128/OpenDL,https://github.com/guoding83128/OpenDL,222,Java,2013-09-24T10:47:21Z,"11 anos, 11 meses",2025-05-03T21:27:39Z,"4 meses, 10 dias",134389,131.2 MB,OpenDL
+eliasnogueira/restassured-complete-basic-example,https://github.com/eliasnogueira/restassured-complete-basic-example,222,Java,2020-07-24T10:47:09Z,"5 anos, 1 meses",2025-03-31T19:32:52Z,"5 meses, 13 dias",283,283 KB,restassured-complete-basic-example
+stefanbirkner/system-lambda,https://github.com/stefanbirkner/system-lambda,222,Java,2016-03-08T20:36:00Z,"9 anos, 6 meses",2025-07-12T00:57:58Z,"2 meses, 0 dias",446,446 KB,system-lambda
+CleverTap/apns-http2,https://github.com/CleverTap/apns-http2,221,Java,2016-01-19T09:41:35Z,"9 anos, 7 meses",2024-12-02T06:12:33Z,"9 meses, 12 dias",228,228 KB,apns-http2
+j-easy/easy-states,https://github.com/j-easy/easy-states,221,Java,2017-05-18T18:15:57Z,"8 anos, 3 meses",2020-11-15T22:46:26Z,"4 anos, 10 meses",204,204 KB,easy-states
+dreignier/cg-brutaltester,https://github.com/dreignier/cg-brutaltester,221,Java,2017-03-06T12:09:18Z,"8 anos, 6 meses",2024-12-22T18:37:49Z,"8 meses, 22 dias",105,105 KB,cg-brutaltester
+Osiris-Team/1JPM,https://github.com/Osiris-Team/1JPM,220,Java,2024-07-07T22:03:27Z,"1 anos, 2 meses",2025-09-10T19:44:07Z,0 dias,240,240 KB,1JPM
+joaopsilva/binance-java-api,https://github.com/joaopsilva/binance-java-api,220,Java,2017-10-19T01:20:04Z,"7 anos, 10 meses",2021-11-07T00:40:28Z,"3 anos, 10 meses",79,79 KB,binance-java-api
+Bindambc/whatsapp-business-java-api,https://github.com/Bindambc/whatsapp-business-java-api,220,Java,2022-10-13T18:50:10Z,"2 anos, 11 meses",2024-11-15T15:44:27Z,"9 meses, 29 dias",15826,15.5 MB,whatsapp-business-java-api
+mojohaus/flatten-maven-plugin,https://github.com/mojohaus/flatten-maven-plugin,219,Java,2015-05-15T21:52:46Z,"10 anos, 4 meses",2025-08-19T17:06:26Z,22 dias,3796,3.7 MB,flatten-maven-plugin
+mesutpiskin/keycloak-2fa-email-authenticator,https://github.com/mesutpiskin/keycloak-2fa-email-authenticator,219,Java,2022-10-20T17:22:17Z,"2 anos, 10 meses",2025-08-12T05:10:54Z,29 dias,217,217 KB,keycloak-2fa-email-authenticator
+hyperledger-archives/quilt,https://github.com/hyperledger-archives/quilt,219,Java,2017-10-19T14:04:41Z,"7 anos, 10 meses",2022-05-31T18:14:30Z,"3 anos, 3 meses",2591,2.5 MB,quilt
+JDA-Applications/JDA-Utilities,https://github.com/JDA-Applications/JDA-Utilities,219,Java,2016-12-20T07:59:26Z,"8 anos, 8 meses",2025-02-04T07:47:45Z,"7 meses, 8 dias",1101,1.1 MB,JDA-Utilities
+owlike/genson,https://github.com/owlike/genson,219,Java,2013-02-02T23:24:56Z,"12 anos, 7 meses",2024-07-02T10:35:04Z,"1 anos, 2 meses",10623,10.4 MB,genson
+google/cel-java,https://github.com/google/cel-java,219,Java,2023-01-09T22:47:41Z,"2 anos, 8 meses",2025-09-10T18:05:05Z,0 dias,4213,4.1 MB,cel-java
+renaudcerrato/appengine-maven-repository,https://github.com/renaudcerrato/appengine-maven-repository,218,Java,2016-10-31T19:05:47Z,"8 anos, 10 meses",2023-12-31T17:29:24Z,"1 anos, 8 meses",154,154 KB,appengine-maven-repository
+Throyer/springboot-api-rest-example,https://github.com/Throyer/springboot-api-rest-example,218,Java,2020-03-17T00:28:32Z,"5 anos, 5 meses",2024-12-08T18:12:42Z,"9 meses, 6 dias",2686,2.6 MB,springboot-api-rest-example
+NitorCreations/nflow,https://github.com/NitorCreations/nflow,218,Java,2014-02-02T11:56:18Z,"11 anos, 7 meses",2025-05-25T18:12:03Z,"3 meses, 18 dias",32352,31.6 MB,nflow
+s3-wagon-private/s3-wagon-private,https://github.com/s3-wagon-private/s3-wagon-private,218,Java,2011-12-14T02:04:27Z,"13 anos, 9 meses",2025-06-27T15:37:04Z,"2 meses, 15 dias",101,101 KB,s3-wagon-private
+TyCoding/shiro,https://github.com/TyCoding/shiro,218,Java,2018-09-16T01:57:24Z,"6 anos, 12 meses",2022-12-16T07:01:00Z,"2 anos, 8 meses",480,480 KB,shiro
+Cosium/git-code-format-maven-plugin,https://github.com/Cosium/git-code-format-maven-plugin,217,Java,2017-11-02T00:10:38Z,"7 anos, 10 meses",2025-08-18T12:23:30Z,23 dias,405,405 KB,git-code-format-maven-plugin
+apache/commons-validator,https://github.com/apache/commons-validator,217,Java,2010-09-26T07:00:19Z,"14 anos, 11 meses",2025-09-08T00:23:01Z,2 dias,9834,9.6 MB,commons-validator
+VIPJoey/doe,https://github.com/VIPJoey/doe,217,Java,2018-07-02T12:26:25Z,"7 anos, 2 meses",2022-12-06T00:41:57Z,"2 anos, 9 meses",1718,1.7 MB,doe
+kavgan/ROUGE-2.0,https://github.com/kavgan/ROUGE-2.0,217,Java,2016-09-17T19:03:10Z,"8 anos, 12 meses",2020-04-09T23:52:46Z,"5 anos, 5 meses",161306,157.5 MB,ROUGE-2.0
+anhtester/AutomationFrameworkSelenium,https://github.com/anhtester/AutomationFrameworkSelenium,217,Java,2022-04-01T16:55:39Z,"3 anos, 5 meses",2025-07-18T21:08:39Z,"1 meses, 24 dias",2083,2.0 MB,AutomationFrameworkSelenium
+meilisearch/meilisearch-java,https://github.com/meilisearch/meilisearch-java,217,Java,2020-02-02T02:29:46Z,"5 anos, 7 meses",2025-09-01T13:24:49Z,9 dias,2528,2.5 MB,meilisearch-java
+spring-attic/aws-maven,https://github.com/spring-attic/aws-maven,216,Java,2011-12-01T05:31:29Z,"13 anos, 9 meses",2022-10-18T08:19:15Z,"2 anos, 10 meses",631,631 KB,aws-maven
+fpompermaier/onvif,https://github.com/fpompermaier/onvif,216,Java,2016-02-29T14:35:00Z,"9 anos, 6 meses",2025-07-12T01:34:58Z,"2 meses, 0 dias",3780,3.7 MB,onvif
+geekidea/spring-boot-assembly,https://github.com/geekidea/spring-boot-assembly,215,Java,2018-12-23T04:14:52Z,"6 anos, 8 meses",2023-12-16T17:23:33Z,"1 anos, 8 meses",62,62 KB,spring-boot-assembly
+allegro/grunt-maven-plugin,https://github.com/allegro/grunt-maven-plugin,215,Java,2013-08-20T11:37:17Z,"12 anos, 0 meses",2016-02-06T14:08:59Z,"9 anos, 7 meses",318,318 KB,grunt-maven-plugin
+FraunhoferIOSB/FROST-Server,https://github.com/FraunhoferIOSB/FROST-Server,215,Java,2016-07-15T10:36:12Z,"9 anos, 1 meses",2025-09-08T06:03:53Z,2 dias,13924,13.6 MB,FROST-Server
+Ninja-Squad/DbSetup,https://github.com/Ninja-Squad/DbSetup,215,Java,2012-05-08T13:13:29Z,"13 anos, 4 meses",2021-03-07T19:22:30Z,"4 anos, 6 meses",1393,1.4 MB,DbSetup
+stephanenicolas/RoboDemo,https://github.com/stephanenicolas/RoboDemo,215,Java,2012-09-22T13:40:53Z,"12 anos, 11 meses",2014-10-06T07:18:02Z,"10 anos, 11 meses",1851,1.8 MB,RoboDemo
+zerodha/javakiteconnect,https://github.com/zerodha/javakiteconnect,215,Java,2016-10-14T12:30:49Z,"8 anos, 11 meses",2025-07-15T15:54:25Z,"1 meses, 27 dias",19259,18.8 MB,javakiteconnect
+pmiaowu/log4j2Scan,https://github.com/pmiaowu/log4j2Scan,215,Java,2021-12-13T04:16:31Z,"3 anos, 9 meses",2023-04-18T14:31:28Z,"2 anos, 4 meses",3216,3.1 MB,log4j2Scan
+googleapis/java-genai,https://github.com/googleapis/java-genai,215,Java,2024-12-06T23:16:56Z,"9 meses, 8 dias",2025-09-10T23:20:31Z,0 dias,164303,160.5 MB,java-genai
+Truphone/LPAdesktop,https://github.com/Truphone/LPAdesktop,214,Java,2021-07-08T15:03:23Z,"4 anos, 2 meses",2024-01-20T14:42:30Z,"1 anos, 7 meses",1984,1.9 MB,LPAdesktop
+dengshiwei/CalendarComponent,https://github.com/dengshiwei/CalendarComponent,214,Java,2016-07-30T01:32:54Z,"9 anos, 1 meses",2021-04-19T06:55:39Z,"4 anos, 4 meses",1515,1.5 MB,CalendarComponent
+dieselpoint/norm,https://github.com/dieselpoint/norm,214,Java,2013-01-01T03:48:36Z,"12 anos, 8 meses",2024-11-15T18:04:09Z,"9 meses, 29 dias",247,247 KB,norm
