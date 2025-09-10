@@ -1,0 +1,37 @@
+import os
+import matplotlib.pyplot as plt
+
+class BaseChart:
+    @staticmethod
+    def save_chart(plt, filename):
+        """Salva o gráfico em um arquivo."""
+        plt.savefig(filename)
+        plt.close()
+
+class RQ03ReleasesCharts:
+    @staticmethod
+    def generate(releases, base_dir, top_n):
+        median_releases = sorted(releases)[len(releases) // 2]
+
+        # Histograma
+        plt.figure(figsize=(8, 6))
+        plt.hist(releases, bins=20, color='lightcoral', edgecolor='black')
+        plt.axvline(median_releases, color='red', linestyle='dashed', linewidth=1, label=f'Mediana: {median_releases:.0f}')
+        plt.title(f'RQ03 - Distribuição de Releases (Histograma)\nMediana: {median_releases:.0f}')
+        plt.xlabel('Número de Releases')
+        plt.ylabel('Frequência')
+        plt.legend()
+        hist_path = os.path.join(base_dir, f'rq03_releases_hist_{top_n}.png')
+        BaseChart.save_chart(plt, hist_path)
+
+        # Boxplot
+        plt.figure(figsize=(8, 6))
+        plt.boxplot(releases, vert=False, patch_artist=True, showfliers=False)
+        plt.title(f'RQ03 - Releases (Box Plot)\nMediana: {median_releases:.0f}')
+        plt.xlabel('Número de Releases')
+        box_path = os.path.join(base_dir, f'rq03_releases_box_{top_n}.png')
+        BaseChart.save_chart(plt, box_path)
+        hist_path =  f'./graficos/rq03_releases_hist_{top_n}.png'
+        box_path =  f'./graficos/rq03_releases_box_{top_n}.png'
+
+        return hist_path, box_path
