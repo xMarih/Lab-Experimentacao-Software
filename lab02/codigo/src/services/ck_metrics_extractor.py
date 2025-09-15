@@ -3,6 +3,7 @@ import shutil
 import subprocess
 import sys
 import pandas as pd
+import requests
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Protocol
@@ -46,6 +47,15 @@ class MetricsStorage(Protocol):
 class ProcessMetricsExtractor:
     """Extrai métricas de processo do repositório."""
     
+    def __init__(self, github_token: Optional[str] = None):
+        """
+        Inicializa o extrator com token opcional do GitHub.
+        
+        Args:
+            github_token (Optional[str]): Token de acesso pessoal do GitHub para autenticação
+        """
+        self.github_token = github_token
+    
     def extract(self, repo_path: str) -> Dict[str, Any]:
         """
         Extrai métricas de processo: popularidade, tamanho, atividade e maturidade.
@@ -64,8 +74,8 @@ class ProcessMetricsExtractor:
                 'repository_name': os.path.basename(repo_path)
             }
             
-            metrics['popularity_stars'] = self._get_github_stars(repo_path)
-            metrics['activity_releases'] = len(list(repo.tags))
+            github_metrics = self._get_github_metrics(repo_path)
+            metrics.update(github_metrics)
             
             try:
                 commits = list(repo.iter_commits())
@@ -88,17 +98,152 @@ class ProcessMetricsExtractor:
             print(f"Erro ao extrair métricas de processo: {e}")
             return self._get_default_process_metrics(repo_path)
     
-    def _get_github_stars(self, repo_path: str) -> int:
+    def _get_github_metrics(self, repo_path: str) -> Dict[str, Any]:
         """
-        Placeholder para obter stars do GitHub via API.
+        Obtém métricas reais do GitHub via API.
         
         Args:
             repo_path (str): Caminho do repositório
             
         Returns:
-            int: Número de estrelas (sempre 0 nesta implementação)
+            Dict[str, Any]: Métricas do GitHub (estrelas e releases)
         """
-        return 0
+        try:
+            remote_url = self._get_github_remote_url(repo_path)
+            owner, repo_name = self._parse_github_url(remote_url)
+            
+            stars = self._fetch_github_stars(owner, repo_name)
+            releases = self._fetch_github_releases(owner, repo_name)
+            
+            return {
+                'popularity_stars': stars,
+                'activity_releases': releases,
+                'github_owner': owner,
+                'github_repo': repo_name
+            }
+            
+        except Exception as e:
+            print(f"Aviso: Não foi possível obter métricas do GitHub: {e}")
+            return {
+                'popularity_stars': 0,
+                'activity_releases': 0,
+                'github_owner': 'unknown',
+                'github_repo': 'unknown'
+            }
+    
+    def _get_github_remote_url(self, repo_path: str) -> str:
+        """
+        Obtém a URL remota do repositório GitHub.
+        
+        Args:
+            repo_path (str): Caminho do repositório
+            
+        Returns:
+            str: URL remota do GitHub
+        """
+        repo = Repo(repo_path)
+        
+        for remote_name in ['origin', 'upstream']:
+            try:
+                remote = repo.remotes[remote_name]
+                url = list(remote.urls)[0]
+                if 'github.com' in url:
+                    return url
+            except (IndexError, KeyError):
+                continue
+        
+        if repo.remotes:
+            return list(repo.remotes[0].urls)[0]
+        
+        raise ValueError("Nenhuma URL remota do GitHub encontrada")
+    
+    def _parse_github_url(self, remote_url: str) -> tuple:
+        """
+        Extrai owner e repo name da URL do GitHub.
+        
+        Args:
+            remote_url (str): URL remota do GitHub
+            
+        Returns:
+            tuple: (owner, repo_name)
+        """
+        if remote_url.endswith('.git'):
+            remote_url = remote_url[:-4]
+        
+        if remote_url.startswith('git@github.com:'):
+            path = remote_url[len('git@github.com:'):]
+        elif remote_url.startswith('https://github.com/'):
+            path = remote_url[len('https://github.com/'):]
+        else:
+            raise ValueError(f"Formato de URL não suportado: {remote_url}")
+        
+        if '/' not in path:
+            raise ValueError(f"Caminho inválido no repositório: {path}")
+        
+        owner, repo_name = path.split('/', 1)
+        return owner, repo_name
+    
+    def _fetch_github_stars(self, owner: str, repo_name: str) -> int:
+        """
+        Busca o número de estrelas via GitHub API.
+        
+        Args:
+            owner (str): Proprietário do repositório
+            repo_name (str): Nome do repositório
+            
+        Returns:
+            int: Número de estrelas
+        """
+        headers = {'Accept': 'application/vnd.github.v3+json'}
+        if self.github_token:
+            headers['Authorization'] = f'token {self.github_token}'
+        
+        url = f'https://api.github.com/repos/{owner}/{repo_name}'
+        
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                data = response.json()
+                stars = data.get('stargazers_count', 0)
+                print(f"[GitHub API] Estrelas obtidas: {stars}")
+                return stars
+            else:
+                print(f"[GitHub API] Erro ao buscar estrelas: {response.status_code}")
+                return 0
+        except requests.RequestException as e:
+            print(f"[GitHub API] Erro de conexão ao buscar estrelas: {e}")
+            return 0
+    
+    def _fetch_github_releases(self, owner: str, repo_name: str) -> int:
+        """
+        Busca o número de releases via GitHub API.
+        
+        Args:
+            owner (str): Proprietário do repositório
+            repo_name (str): Nome do repositório
+            
+        Returns:
+            int: Número de releases
+        """
+        headers = {'Accept': 'application/vnd.github.v3+json'}
+        if self.github_token:
+            headers['Authorization'] = f'token {self.github_token}'
+        
+        url = f'https://api.github.com/repos/{owner}/{repo_name}/releases'
+        
+        try:
+            response = requests.get(url, headers=headers, timeout=10)
+            if response.status_code == 200:
+                data = response.json()
+                releases = len(data)
+                print(f"[GitHub API] Releases obtidos: {releases}")
+                return releases
+            else:
+                print(f"[GitHub API] Erro ao buscar releases: {response.status_code}")
+                return 0
+        except requests.RequestException as e:
+            print(f"[GitHub API] Erro de conexão ao buscar releases: {e}")
+            return 0
     
     def _count_lines_of_code(self, repo_path: str) -> Dict[str, int]:
         """
@@ -171,7 +316,9 @@ class ProcessMetricsExtractor:
             'activity_releases': 0,
             'maturity_years': 0,
             'size_loc': 0,
-            'size_comments_loc': 0
+            'size_comments_loc': 0,
+            'github_owner': 'unknown',
+            'github_repo': 'unknown'
         }
 
 
@@ -557,6 +704,8 @@ class CSVMetricsStorage:
             
             print(f"[+] Resumo das métricas:")
             print(f"    - LOC: {metrics.get('size_loc', 0)}")
+            print(f"    - Estrelas: {metrics.get('popularity_stars', 0)}")
+            print(f"    - Releases: {metrics.get('activity_releases', 0)}")
             print(f"    - Classes analisadas: {metrics.get('total_classes_analyzed', 0)}")
             print(f"    - CBO médio: {metrics.get('quality_cbo_mean', 0)}")
             print(f"    - DIT médio: {metrics.get('quality_dit_mean', 0)}")
@@ -712,7 +861,14 @@ def analyze_single_repository():
     ck_jar_path = setup_ck_tool()
     print(f"[+] Usando CK JAR: {ck_jar_path}")
     
-    process_extractor = ProcessMetricsExtractor()
+    github_token = os.environ.get('GITHUB_TOKEN')
+    if github_token:
+        print("[+] Usando token do GitHub para autenticação")
+    else:
+        print("[!] Token do GitHub não configurado - usando limite sem autenticação")
+        print("    Configure: export GITHUB_TOKEN=your_token_here")
+    
+    process_extractor = ProcessMetricsExtractor(github_token)
     quality_extractor = QualityMetricsExtractor(ck_jar_path)
     storage = CSVMetricsStorage(script_dir / 'ck_metrics')
     
@@ -762,7 +918,14 @@ def analyze_all_repositories():
     
     ck_jar_path = setup_ck_tool()
     
-    process_extractor = ProcessMetricsExtractor()
+    github_token = os.environ.get('GITHUB_TOKEN')
+    if github_token:
+        print("[+] Usando token do GitHub para autenticação")
+    else:
+        print("[!] Token do GitHub não configurado - usando limite sem autenticação")
+        print("    Configure: export GITHUB_TOKEN=your_token_here")
+    
+    process_extractor = ProcessMetricsExtractor(github_token)
     quality_extractor = QualityMetricsExtractor(ck_jar_path)
     storage = CSVMetricsStorage(script_dir / 'ck_metrics')
     
@@ -796,7 +959,10 @@ if __name__ == "__main__":
     print("    Baseado em métricas CK e processo de desenvolvimento")
     print("=" * 60)
     print("Dependências necessárias:")
-    print("  pip install gitpython pandas")
+    print("  pip install gitpython pandas requests")
+    print()
+    print("Para usar as métricas reais do GitHub:")
+    print("  export GITHUB_TOKEN=your_personal_access_token")
     print()
     
     print("Escolha o modo:")
