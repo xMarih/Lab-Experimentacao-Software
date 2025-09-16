@@ -29,3 +29,22 @@ O cenário atual de desenvolvimento de software demanda evidências empíricas p
 *   **Hipótese Informal:** Repositórios maiores (com mais linhas de código) tendem a apresentar piores características de qualidade. Projetos grandes podem se tornar mais complexos e difíceis de manter, levando a um aumento no acoplamento (CBO), menor coesão (LCOM) e hierarquias de herança mais complexas (NOC). No entanto, essa relação pode ser atenuada se o projeto for bem modularizado e seguir boas práticas de design.
 
 ## Resultados
+
+### RQ 01. Qual a relação entre a popularidade dos repositórios e as suas características de qualidade?
+*   **Métrica de Popularidade:** Número de estrelas
+*   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), DIT (Depth of Inheritance Tree)
+
+
+### RQ 02. Qual a relação entre a maturidade do repositórios e as suas características de qualidade?
+*   **Métrica de Maturidade:** Idade (em anos) do repositório
+*   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), WMC (Weighted Methods per Class)
+
+
+### RQ 03. Qual a relação entre a atividade dos repositórios e as suas características de qualidade?
+*   **Métrica de Atividade:** Número de releases
+*   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), Número de Commits
+
+
+### RQ 04. Qual a relação entre o tamanho dos repositórios e as suas características de qualidade?
+*   **Métrica de Tamanho:** Linhas de código (LOC)
+*   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), NOC (Number of Children)
