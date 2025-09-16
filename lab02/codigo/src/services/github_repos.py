@@ -40,6 +40,9 @@ query TopJavaMavenRepos($cursor: String) {
                     pushedAt
                     diskUsage
                     name
+                    releases(first: 100) {  # Adicionado o campo releases
+                        totalCount
+                    }
                 }
             }
         }
@@ -132,7 +135,8 @@ def fetch_github_repos():
                     'time_since_last_push': calculate_time_diff(repo['pushedAt']),
                     'disk_usage_kb': repo['diskUsage'],
                     'size_formatted': format_disk_size(repo['diskUsage']),
-                    'name': repo['name']
+                    'name': repo['name'],
+                    'releases_count': repo['releases']['totalCount']  # Adicionado o total de releases
                 })
             
             page_info = search_data['pageInfo']
@@ -181,7 +185,8 @@ def save_to_csv(repos):
         'time_since_last_push',
         'disk_usage_kb',
         'size_formatted',
-        'name'
+        'name',
+        'releases_count'  # Adicionado o campo releases_count
     ]
     
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
