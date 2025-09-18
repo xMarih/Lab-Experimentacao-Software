@@ -3,12 +3,10 @@ import shutil
 import subprocess
 import sys
 import pandas as pd
-import requests
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Protocol
 from abc import abstractmethod
-import json
 from git import Repo
 
 
@@ -43,22 +41,43 @@ class MetricsStorage(Protocol):
         """
         pass
 
-
 class ProcessMetricsExtractor:
-    """Extrai métricas de processo do repositório."""
+    """Extrai métricas de processo do repositório usando dados do CSV."""
     
-    def __init__(self, github_token: Optional[str] = None):
+    def __init__(self):
+        """Inicializa o extrator e carrega dados do CSV."""
+        self.csv_data = self._load_csv_data()
+    
+    def _load_csv_data(self) -> pd.DataFrame:
         """
-        Inicializa o extrator com token opcional do GitHub.
+        Carrega dados do CSV java_maven_repos_detailed.csv.
         
-        Args:
-            github_token (Optional[str]): Token de acesso pessoal do GitHub para autenticação
+        Returns:
+            pd.DataFrame: DataFrame com dados dos repositórios
         """
-        self.github_token = github_token
+        try:
+            # Caminho relativo do CSV (services -> root -> csvFiles)
+            script_dir = Path(__file__).parent
+            csv_path = script_dir.parent / "csvFiles" / "java_maven_repos_detailed.csv"
+            
+            print(f"[DEBUG] Carregando CSV: {csv_path}")
+            
+            if not csv_path.exists():
+                print(f"[ERRO] CSV não encontrado: {csv_path}")
+                return pd.DataFrame()
+            
+            df = pd.read_csv(csv_path)
+            print(f"[+] CSV carregado com {len(df)} repositórios")
+            
+            return df
+            
+        except Exception as e:
+            print(f"[ERRO] Falha ao carregar CSV: {e}")
+            return pd.DataFrame()
     
     def extract(self, repo_path: str) -> Dict[str, Any]:
         """
-        Extrai métricas de processo: popularidade, tamanho, atividade e maturidade.
+        Extrai métricas de processo usando dados do CSV.
         
         Args:
             repo_path (str): Caminho para o repositório Git local
@@ -68,26 +87,22 @@ class ProcessMetricsExtractor:
         """
         try:
             repo = Repo(repo_path)
+            repo_dir = os.path.basename(repo_path)   # ex: "PhilJay-MPAndroidChart"
+
+            if '-' in repo_dir:
+                owner, repo_name = repo_dir.split('-', 1)
+            else:
+                owner = None
+                repo_name = repo_dir
+
             
             metrics = {
                 'repository_path': repo_path,
-                'repository_name': os.path.basename(repo_path)
+                'repository_name': repo_name
             }
             
-            github_metrics = self._get_github_metrics(repo_path)
-            metrics.update(github_metrics)
-            
-            try:
-                commits = list(repo.iter_commits())
-                if commits:
-                    first_commit = commits[-1]
-                    creation_date = datetime.fromtimestamp(first_commit.committed_date)
-                    age_years = (datetime.now() - creation_date).days / 365.25
-                    metrics['maturity_years'] = round(age_years, 2)
-                else:
-                    metrics['maturity_years'] = 0
-            except:
-                metrics['maturity_years'] = 0
+            csv_metrics = self._get_csv_metrics(repo_name, owner, repo)
+            metrics.update(csv_metrics)
             
             loc_metrics = self._count_lines_of_code(repo_path)
             metrics.update(loc_metrics)
@@ -97,153 +112,175 @@ class ProcessMetricsExtractor:
         except Exception as e:
             print(f"Erro ao extrair métricas de processo: {e}")
             return self._get_default_process_metrics(repo_path)
-    
-    def _get_github_metrics(self, repo_path: str) -> Dict[str, Any]:
+
+    def _get_csv_metrics(self, repo_name: str, owner: str, repo: Repo) -> Dict[str, Any]:
         """
-        Obtém métricas reais do GitHub via API.
-        
+        Obtém métricas do repositório a partir do CSV.
+
         Args:
-            repo_path (str): Caminho do repositório
-            
+            repo_name (str): Nome do repositório
+            owner (str): Nome do proprietário (owner)
+            repo (Repo): Objeto GitPython do repositório
+
         Returns:
-            Dict[str, Any]: Métricas do GitHub (estrelas e releases)
+            Dict[str, Any]: Métricas extraídas do CSV
         """
         try:
-            remote_url = self._get_github_remote_url(repo_path)
-            owner, repo_name = self._parse_github_url(remote_url)
-            
-            stars = self._fetch_github_stars(owner, repo_name)
-            releases = self._fetch_github_releases(owner, repo_name)
-            
-            return {
-                'popularity_stars': stars,
-                'activity_releases': releases,
-                'github_owner': owner,
-                'github_repo': repo_name
-            }
-            
+            if self.csv_data.empty:
+                return self._get_default_csv_metrics()
+
+            df = self.csv_data
+            repo_row = None
+
+            if owner and 'name_with_owner' in df.columns:
+                expected = f"{owner}/{repo_name}"
+                match = df[df['name_with_owner'] == expected]
+                if not match.empty:
+                    repo_row = match
+                    print(f"[DEBUG] Encontrado por name_with_owner: {expected}")
+
+            if repo_row is None or repo_row.empty:
+                if 'name' in df.columns:
+                    match2 = df[df['name'] == repo_name]
+                    if not match2.empty:
+                        repo_row = match2
+                        print(f"[DEBUG] Encontrado por nome: {repo_name}")
+
+            if (repo_row is None or repo_row.empty) and hasattr(repo, 'remotes'):
+                try:
+                    remote_url = list(repo.remotes.origin.urls)[0]
+                    if remote_url.endswith('.git'):
+                        remote_url = remote_url[:-4]
+                    if 'github.com' in remote_url:
+                        if remote_url.startswith('git@github.com:'):
+                            path = remote_url.split(':', 1)[1]
+                        elif remote_url.startswith('https://github.com/'):
+                            path = remote_url.split('https://github.com/', 1)[1]
+                        else:
+                            path = ''
+                        if path and 'name_with_owner' in df.columns:
+                            match3 = df[df['name_with_owner'] == path]
+                            if not match3.empty:
+                                repo_row = match3
+                                print(f"[DEBUG] Encontrado por name_with_owner via URL: {path}")
+                        if (repo_row is None or repo_row.empty) and 'url' in df.columns:
+                            match4 = df[df['url'].str.contains(path, na=False, regex=False)]
+                            if not match4.empty:
+                                repo_row = match4
+                                print(f"[DEBUG] Encontrado por URL: {path}")
+                except Exception as e:
+                    print(f"[AVISO] Erro ao extrair URL remota: {e}")
+
+            if repo_row is not None and not repo_row.empty:
+                row = repo_row.iloc[0]
+                print(f"[+] Repositório encontrado no CSV: {repo_name}")
+
+                metrics: Dict[str, Any] = {}
+                column_mapping = {
+                    'stargazer_count': 'popularity_stars',
+                    'releases_count': 'activity_releases',
+                    'created_at': 'created_at'
+                }
+                for csv_col, metric_name in column_mapping.items():
+                    if csv_col in row.index and pd.notna(row[csv_col]):
+                        if metric_name in ['popularity_stars', 'activity_releases']:
+                            try:
+                                metrics[metric_name] = int(row[csv_col])
+                            except (ValueError, TypeError):
+                                metrics[metric_name] = 0
+                        else:
+                            metrics[metric_name] = row[csv_col]
+
+                if 'name_with_owner' in row.index and pd.notna(row['name_with_owner']):
+                    ow_repo = row['name_with_owner']
+                    if '/' in ow_repo:
+                        o, r = ow_repo.split('/', 1)
+                        metrics['github_owner'] = o
+                        metrics['github_repo'] = r
+                    else:
+                        metrics['github_owner'] = owner or 'unknown'
+                        metrics['github_repo'] = repo_name
+                else:
+                    metrics['github_owner'] = owner or 'unknown'
+                    metrics['github_repo'] = repo_name
+
+                if 'created_at' in metrics:
+                    metrics['maturity_years'] = self._calculate_age_years(metrics['created_at'])
+                else:
+                    metrics['maturity_years'] = 0
+
+                if 'popularity_stars' not in metrics:
+                    metrics.setdefault('popularity_stars', 0)
+                    print("[AVISO] popularity_stars não encontrado, usando 0")
+                if 'activity_releases' not in metrics:
+                    metrics.setdefault('activity_releases', 0)
+                    print("[AVISO] activity_releases não encontrado, usando 0")
+
+                return metrics
+
+            # Não encontrou
+            print(f"[AVISO] Repositório {repo_name} (owner={owner}) não encontrado no CSV")
+            return self._get_default_csv_metrics()
+
         except Exception as e:
-            print(f"Aviso: Não foi possível obter métricas do GitHub: {e}")
-            return {
-                'popularity_stars': 0,
-                'activity_releases': 0,
-                'github_owner': 'unknown',
-                'github_repo': 'unknown'
-            }
-    
-    def _get_github_remote_url(self, repo_path: str) -> str:
+            print(f"[ERRO] Erro ao buscar dados no CSV: {e}")
+            import traceback; traceback.print_exc()
+            return self._get_default_csv_metrics()
+
+
+    def _calculate_age_years(self, created_at: str) -> float:
         """
-        Obtém a URL remota do repositório GitHub.
+        Calcula a idade do repositório em anos.
         
         Args:
-            repo_path (str): Caminho do repositório
+            created_at (str): Data de criação em formato ISO
             
         Returns:
-            str: URL remota do GitHub
+            float: Idade em anos
         """
-        repo = Repo(repo_path)
-        
-        for remote_name in ['origin', 'upstream']:
-            try:
-                remote = repo.remotes[remote_name]
-                url = list(remote.urls)[0]
-                if 'github.com' in url:
-                    return url
-            except (IndexError, KeyError):
-                continue
-        
-        if repo.remotes:
-            return list(repo.remotes[0].urls)[0]
-        
-        raise ValueError("Nenhuma URL remota do GitHub encontrada")
-    
-    def _parse_github_url(self, remote_url: str) -> tuple:
-        """
-        Extrai owner e repo name da URL do GitHub.
-        
-        Args:
-            remote_url (str): URL remota do GitHub
-            
-        Returns:
-            tuple: (owner, repo_name)
-        """
-        if remote_url.endswith('.git'):
-            remote_url = remote_url[:-4]
-        
-        if remote_url.startswith('git@github.com:'):
-            path = remote_url[len('git@github.com:'):]
-        elif remote_url.startswith('https://github.com/'):
-            path = remote_url[len('https://github.com/'):]
-        else:
-            raise ValueError(f"Formato de URL não suportado: {remote_url}")
-        
-        if '/' not in path:
-            raise ValueError(f"Caminho inválido no repositório: {path}")
-        
-        owner, repo_name = path.split('/', 1)
-        return owner, repo_name
-    
-    def _fetch_github_stars(self, owner: str, repo_name: str) -> int:
-        """
-        Busca o número de estrelas via GitHub API.
-        
-        Args:
-            owner (str): Proprietário do repositório
-            repo_name (str): Nome do repositório
-            
-        Returns:
-            int: Número de estrelas
-        """
-        headers = {'Accept': 'application/vnd.github.v3+json'}
-        if self.github_token:
-            headers['Authorization'] = f'token {self.github_token}'
-        
-        url = f'https://api.github.com/repos/{owner}/{repo_name}'
-        
         try:
-            response = requests.get(url, headers=headers, timeout=10)
-            if response.status_code == 200:
-                data = response.json()
-                stars = data.get('stargazers_count', 0)
-                print(f"[GitHub API] Estrelas obtidas: {stars}")
-                return stars
+            date_formats = [
+                '%Y-%m-%dT%H:%M:%SZ',
+                '%Y-%m-%dT%H:%M:%S',
+                '%Y-%m-%d %H:%M:%S',
+                '%Y-%m-%d',
+                '%d/%m/%Y',
+                '%m/%d/%Y'
+            ]
+            
+            creation_date = None
+            for fmt in date_formats:
+                try:
+                    creation_date = datetime.strptime(str(created_at), fmt)
+                    break
+                except ValueError:
+                    continue
+            
+            if creation_date:
+                age_years = (datetime.now() - creation_date).days / 365.25
+                return round(age_years, 2)
             else:
-                print(f"[GitHub API] Erro ao buscar estrelas: {response.status_code}")
+                print(f"[AVISO] Formato de data não reconhecido: {created_at}")
                 return 0
-        except requests.RequestException as e:
-            print(f"[GitHub API] Erro de conexão ao buscar estrelas: {e}")
+                
+        except Exception as e:
+            print(f"[AVISO] Erro ao calcular idade: {e}")
             return 0
     
-    def _fetch_github_releases(self, owner: str, repo_name: str) -> int:
+    def _get_default_csv_metrics(self) -> Dict[str, Any]:
         """
-        Busca o número de releases via GitHub API.
+        Retorna métricas padrão quando não encontradas no CSV.
         
-        Args:
-            owner (str): Proprietário do repositório
-            repo_name (str): Nome do repositório
-            
         Returns:
-            int: Número de releases
+            Dict[str, Any]: Métricas padrão
         """
-        headers = {'Accept': 'application/vnd.github.v3+json'}
-        if self.github_token:
-            headers['Authorization'] = f'token {self.github_token}'
-        
-        url = f'https://api.github.com/repos/{owner}/{repo_name}/releases'
-        
-        try:
-            response = requests.get(url, headers=headers, timeout=10)
-            if response.status_code == 200:
-                data = response.json()
-                releases = len(data)
-                print(f"[GitHub API] Releases obtidos: {releases}")
-                return releases
-            else:
-                print(f"[GitHub API] Erro ao buscar releases: {response.status_code}")
-                return 0
-        except requests.RequestException as e:
-            print(f"[GitHub API] Erro de conexão ao buscar releases: {e}")
-            return 0
+        return {
+            'popularity_stars': 0,
+            'activity_releases': 0,
+            'maturity_years': 0,
+            'github_owner': 'unknown',
+            'github_repo': 'unknown'
+        }
     
     def _count_lines_of_code(self, repo_path: str) -> Dict[str, int]:
         """
@@ -405,10 +442,6 @@ class QualityMetricsExtractor:
                 return java_path
         
         print("[!] Java não encontrado automaticamente.")
-        print("    Soluções:")
-        print("    1. Instale Java JDK 8, 11 ou 17")
-        print("    2. Configure JAVA_HOME")
-        print("    3. Adicione Java ao PATH")
         return None
     
     def _test_java(self, java_path: str) -> bool:
@@ -542,13 +575,6 @@ class QualityMetricsExtractor:
         
         java_files = self._find_java_files(repo_path)
         print(f"[DEBUG] Arquivos .java encontrados: {len(java_files)}")
-        if len(java_files) > 0:
-            print(f"[DEBUG] Exemplos: {java_files[:3]}")
-        
-        print(f"[DEBUG] Java executável: {self.java_executable}")
-        print(f"[DEBUG] JAR path: {self.ck_jar_path}")
-        print(f"[DEBUG] Repo path: {repo_path}")
-        print(f"[DEBUG] Output dir: {ck_output_dir}")
         
         cmd = [
             self.java_executable,
@@ -561,7 +587,6 @@ class QualityMetricsExtractor:
         ]
         
         print(f"[+] Executando CK Tool...")
-        print(f"[DEBUG] Comando: {' '.join(cmd)}")
         
         try:
             result = subprocess.run(
@@ -579,7 +604,6 @@ class QualityMetricsExtractor:
                 print(f"[+] STDERR: {result.stderr}")
             
             files_generated = os.listdir(ck_output_dir) if os.path.exists(ck_output_dir) else []
-            print(f"[DEBUG] Arquivos gerados: {files_generated}")
             
             if 'class.csv' in files_generated:
                 class_csv_size = os.path.getsize(os.path.join(ck_output_dir, 'class.csv'))
@@ -627,8 +651,7 @@ class QualityMetricsExtractor:
         try:
             df_class = pd.read_csv(class_csv_path)
             print(f"[+] Carregadas {len(df_class)} classes do CSV")
-            print(f"[+] Colunas disponíveis: {list(df_class.columns)}")
-            
+
             metrics = {}
             for metric in ['cbo', 'dit', 'lcom']:
                 if metric in df_class.columns:
@@ -638,9 +661,6 @@ class QualityMetricsExtractor:
                         metrics[f'quality_{metric}_max'] = round(values.max(), 2)
                         metrics[f'quality_{metric}_min'] = round(values.min(), 2)
                         metrics[f'quality_{metric}_std'] = round(values.std(), 2)
-                        print(f"[+] {metric.upper()}: min={metrics[f'quality_{metric}_min']}, "
-                              f"mean={metrics[f'quality_{metric}_mean']}, "
-                              f"max={metrics[f'quality_{metric}_max']}")
                     else:
                         metrics[f'quality_{metric}_mean'] = 0
                         metrics[f'quality_{metric}_max'] = 0
@@ -678,39 +698,31 @@ class QualityMetricsExtractor:
 class CSVMetricsStorage:
     """Armazena métricas em formato CSV."""
     
-    def __init__(self, output_dir: str = 'ck_metrics'):
+    def __init__(self, output_dir: str = 'ck_metrics', consolidate_only: bool = False):
         """
         Inicializa o armazenador de métricas.
         
         Args:
             output_dir (str): Diretório onde salvar os arquivos CSV
+            consolidate_only (bool): Se True, não grava CSVs individuais
         """
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
+        self.consolidate_only = consolidate_only
     
     def save(self, metrics: Dict[str, Any], filename: str) -> None:
         """
         Salva métricas em arquivo CSV.
-        
-        Args:
-            metrics (Dict[str, Any]): Métricas a serem salvas
-            filename (str): Nome do arquivo CSV
+        Se consolidate_only=True, não grava aqui.
         """
+        if self.consolidate_only:
+            return  
+            
         try:
             df = pd.DataFrame([metrics])
             output_path = self.output_dir / filename
             df.to_csv(output_path, index=False, encoding='utf-8')
             print(f"[+] Métricas salvas em {output_path}")
-            
-            print(f"[+] Resumo das métricas:")
-            print(f"    - LOC: {metrics.get('size_loc', 0)}")
-            print(f"    - Estrelas: {metrics.get('popularity_stars', 0)}")
-            print(f"    - Releases: {metrics.get('activity_releases', 0)}")
-            print(f"    - Classes analisadas: {metrics.get('total_classes_analyzed', 0)}")
-            print(f"    - CBO médio: {metrics.get('quality_cbo_mean', 0)}")
-            print(f"    - DIT médio: {metrics.get('quality_dit_mean', 0)}")
-            print(f"    - LCOM médio: {metrics.get('quality_lcom_mean', 0)}")
-            
         except Exception as e:
             print(f"Erro ao salvar métricas: {e}")
 
@@ -830,14 +842,8 @@ def setup_ck_tool():
     
     return str(ck_jar_path)
 
-
 def analyze_single_repository():
-    """
-    Analisa um único repositório da pasta cloned_repos.
-    
-    Returns:
-        Dict[str, Any]: Métricas extraídas do repositório
-    """
+    """Analisa um único repositório da pasta cloned_repos."""
     script_dir = Path(__file__).parent
     cloned_repos_dir = script_dir / "cloned_repos"
     
@@ -861,16 +867,9 @@ def analyze_single_repository():
     ck_jar_path = setup_ck_tool()
     print(f"[+] Usando CK JAR: {ck_jar_path}")
     
-    github_token = os.environ.get('GITHUB_TOKEN')
-    if github_token:
-        print("[+] Usando token do GitHub para autenticação")
-    else:
-        print("[!] Token do GitHub não configurado - usando limite sem autenticação")
-        print("    Configure: export GITHUB_TOKEN=your_token_here")
-    
-    process_extractor = ProcessMetricsExtractor(github_token)
+    process_extractor = ProcessMetricsExtractor()
     quality_extractor = QualityMetricsExtractor(ck_jar_path)
-    storage = CSVMetricsStorage(script_dir / 'ck_metrics')
+    storage = CSVMetricsStorage(script_dir / 'ck_metrics', consolidate_only=False)  # ← CSV individual
     
     analyzer = RepositoryMetricsAnalyzer(
         process_extractor=process_extractor,
@@ -892,12 +891,7 @@ def analyze_single_repository():
 
 
 def analyze_all_repositories():
-    """
-    Analisa todos os repositórios da pasta cloned_repos.
-    
-    Returns:
-        List[Dict[str, Any]]: Lista de métricas de todos os repositórios processados
-    """
+    """Analisa todos os repositórios da pasta cloned_repos."""
     script_dir = Path(__file__).parent
     cloned_repos_dir = script_dir / "cloned_repos"
     
@@ -918,16 +912,9 @@ def analyze_all_repositories():
     
     ck_jar_path = setup_ck_tool()
     
-    github_token = os.environ.get('GITHUB_TOKEN')
-    if github_token:
-        print("[+] Usando token do GitHub para autenticação")
-    else:
-        print("[!] Token do GitHub não configurado - usando limite sem autenticação")
-        print("    Configure: export GITHUB_TOKEN=your_token_here")
-    
-    process_extractor = ProcessMetricsExtractor(github_token)
+    process_extractor = ProcessMetricsExtractor()
     quality_extractor = QualityMetricsExtractor(ck_jar_path)
-    storage = CSVMetricsStorage(script_dir / 'ck_metrics')
+    storage = CSVMetricsStorage(script_dir / 'ck_metrics', consolidate_only=True)  
     
     analyzer = RepositoryMetricsAnalyzer(
         process_extractor=process_extractor,
@@ -935,34 +922,49 @@ def analyze_all_repositories():
         storage=storage
     )
     
-    results = []
+    all_metrics = []
+    errors = []
+    
     for i, repo_name in enumerate(repos, 1):
         try:
             print(f"\n[{i}/{len(repos)}] Processando: {repo_name}")
             repo_path = cloned_repos_dir / repo_name
             metrics = analyzer.analyze_repository(str(repo_path))
-            results.append(metrics)
+            all_metrics.append(metrics)  # Acumula em memória
         except Exception as e:
             print(f"Erro ao processar {repo_name}: {e}")
+            errors.append({"repository": repo_name, "error": str(e)})
             continue
     
     print(f"\n{'='*60}")
-    print(f"[+] Análise de {len(results)}/{len(repos)} repositórios concluída!")
+    print(f"[+] Análise de {len(all_metrics)}/{len(repos)} repositórios concluída!")
     print(f"{'='*60}")
     
-    return results
+
+    if all_metrics:
+        df = pd.DataFrame(all_metrics)
+        consolidated_path = script_dir / "ck_metrics" / f"all_metrics_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+        df.to_csv(consolidated_path, index=False, encoding='utf-8')
+        print(f"[+] Arquivo consolidado salvo em: {consolidated_path}")
+    
+
+    if errors:
+        errors_df = pd.DataFrame(errors)
+        errors_path = script_dir / "ck_metrics" / f"errors_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+        errors_df.to_csv(errors_path, index=False, encoding='utf-8')
+        print(f"[!] Arquivo de erros salvo em: {errors_path}")
+    
+    return all_metrics
 
 
 if __name__ == "__main__":
     print("=" * 60)
     print("    REPOSITORY METRICS ANALYZER")
     print("    Baseado em métricas CK e processo de desenvolvimento")
+    print("    Usando dados do CSV local (sem GitHub API)")
     print("=" * 60)
     print("Dependências necessárias:")
-    print("  pip install gitpython pandas requests")
-    print()
-    print("Para usar as métricas reais do GitHub:")
-    print("  export GITHUB_TOKEN=your_personal_access_token")
+    print("  pip install gitpython pandas")
     print()
     
     print("Escolha o modo:")

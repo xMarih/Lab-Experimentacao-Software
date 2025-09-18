@@ -40,7 +40,7 @@ query TopJavaMavenRepos($cursor: String) {
                     pushedAt
                     diskUsage
                     name
-                    releases(first: 100) {  # Adicionado o campo releases
+                    releases(first: 100) {  
                         totalCount
                     }
                 }
@@ -79,9 +79,9 @@ def format_disk_size(kb_size):
     if not kb_size:
         return "N/A"
     
-    if kb_size >= 1024 * 1024:  # GB
+    if kb_size >= 1024 * 1024:  
         return f"{kb_size / (1024 * 1024):.1f} GB"
-    elif kb_size >= 1024:  # MB
+    elif kb_size >= 1024:  
         return f"{kb_size / 1024:.1f} MB"
     else:
         return f"{kb_size} KB"
@@ -93,71 +93,90 @@ def fetch_github_repos():
     request_count = 0
     
     while has_next_page and len(all_repos) < 1000:
-        variables = {"cursor": end_cursor}
+        retries = 0
+        max_retries = 5
         
-        payload = {
-            "query": QUERY,
-            "variables": variables
-        }
-        
-        try:
-            response = requests.post(
-                'https://api.github.com/graphql',
-                json=payload,
-                headers=HEADERS
-            )
+        while retries <= max_retries:
+            variables = {"cursor": end_cursor}
+            payload = {
+                "query": QUERY,
+                "variables": variables
+            }
             
-            request_count += 1
-            
-            if response.status_code != 200:
-                print(f"Erro na requisição: {response.status_code}")
-                print(response.text)
-                break
-            
-            data = response.json()
-            
-            if 'errors' in data:
-                print(f"Erros na resposta: {data['errors']}")
-                break
-            
-            search_data = data['data']['search']
-            
-            for edge in search_data['edges']:
-                repo = edge['node']
-                all_repos.append({
-                    'name_with_owner': repo['nameWithOwner'],
-                    'url': repo['url'],
-                    'stargazer_count': repo['stargazerCount'],
-                    'primary_language': repo['primaryLanguage']['name'] if repo['primaryLanguage'] else 'N/A',
-                    'created_at': repo['createdAt'],
-                    'age': calculate_time_diff(repo['createdAt']),
-                    'last_push': repo['pushedAt'],
-                    'time_since_last_push': calculate_time_diff(repo['pushedAt']),
-                    'disk_usage_kb': repo['diskUsage'],
-                    'size_formatted': format_disk_size(repo['diskUsage']),
-                    'name': repo['name'],
-                    'releases_count': repo['releases']['totalCount']  # Adicionado o total de releases
-                })
-            
-            page_info = search_data['pageInfo']
-            has_next_page = page_info['hasNextPage']
-            end_cursor = page_info['endCursor']
-            
-            print(f"Página {request_count}: {len(all_repos)} repositórios coletados")
-            
-            rate_limit_remaining = int(response.headers.get('X-RateLimit-Remaining', 0))
-            if rate_limit_remaining < 10:
-                reset_time = int(response.headers.get('X-RateLimit-Reset', 0))
-                wait_time = max(reset_time - time.time(), 0) + 10
-                print(f"Rate limit baixo. Esperando {wait_time:.0f} segundos...")
+            try:
+                response = requests.post(
+                    'https://api.github.com/graphql',
+                    json=payload,
+                    headers=HEADERS,
+                    timeout=30
+                )
+                
+                if response.status_code == 200:
+                    data = response.json()
+                    if 'errors' in data:
+                        print(f"Erros na resposta: {data['errors']}")
+                        return all_repos
+                    
+                    search_data = data['data']['search']
+                    
+                    for edge in search_data['edges']:
+                        repo = edge['node']
+                        all_repos.append({
+                            'name_with_owner': repo['nameWithOwner'],
+                            'url': repo['url'],
+                            'stargazer_count': repo['stargazerCount'],
+                            'primary_language': repo['primaryLanguage']['name'] if repo['primaryLanguage'] else 'N/A',
+                            'created_at': repo['createdAt'],
+                            'age': calculate_time_diff(repo['createdAt']),
+                            'last_push': repo['pushedAt'],
+                            'time_since_last_push': calculate_time_diff(repo['pushedAt']),
+                            'disk_usage_kb': repo['diskUsage'],
+                            'size_formatted': format_disk_size(repo['diskUsage']),
+                            'name': repo['name'],
+                            'releases_count': repo['releases']['totalCount']
+                        })
+                    
+                    page_info = search_data['pageInfo']
+                    has_next_page = page_info['hasNextPage']
+                    end_cursor = page_info['endCursor']
+                    
+                    request_count += 1
+                    print(f"Página {request_count}: {len(all_repos)} repositórios coletados")
+                    
+                    rate_limit_remaining = int(response.headers.get('X-RateLimit-Remaining', 0))
+                    if rate_limit_remaining < 10:
+                        reset_time = int(response.headers.get('X-RateLimit-Reset', 0))
+                        wait_time = max(reset_time - time.time(), 0) + 10
+                        print(f"Rate limit baixo. Esperando {wait_time:.0f} segundos...")
+                        time.sleep(wait_time)
+                    
+                    time.sleep(5)
+                    break 
+                
+                elif response.status_code >= 500 and response.status_code < 600:
+                    print(f"Erro na requisição: {response.status_code}")
+                    print(response.text)
+                    wait_time = 2 ** retries
+                    print(f"Erro de servidor. Tentando novamente em {wait_time} segundos... ({retries+1}/{max_retries})")
+                    time.sleep(wait_time)
+                    retries += 1
+                
+                else:
+                    print(f"Erro na requisição: {response.status_code}")
+                    print(response.text)
+                    return all_repos
+
+            except requests.exceptions.RequestException as e:
+                print(f"Erro de conexão durante a requisição: {e}")
+                wait_time = 2 ** retries
+                print(f"Erro de rede. Tentando novamente em {wait_time} segundos... ({retries+1}/{max_retries})")
                 time.sleep(wait_time)
-            
-            time.sleep(1)
-            
-        except Exception as e:
-            print(f"Erro durante a requisição: {e}")
+                retries += 1
+                
+        if retries > max_retries:
+            print("Número máximo de retentativas excedido. A coleta será encerrada.")
             break
-    
+            
     return all_repos[:1000]
 
 def save_to_csv(repos):
@@ -186,7 +205,7 @@ def save_to_csv(repos):
         'disk_usage_kb',
         'size_formatted',
         'name',
-        'releases_count'  # Adicionado o campo releases_count
+        'releases_count'  
     ]
     
     with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
