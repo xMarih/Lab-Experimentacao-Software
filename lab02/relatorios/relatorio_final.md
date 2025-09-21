@@ -34,17 +34,51 @@ O cenário atual de desenvolvimento de software demanda evidências empíricas p
 *   **Métrica de Popularidade:** Número de estrelas
 *   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), DIT (Depth of Inheritance Tree)
 
+- **Popularidade (stars) vs CBO:**  
+  ![Popularidade vs CBO](graficos/popularidade_vs_quality_cbo_mean.png)
+- **Popularidade (stars) vs DIT:**  
+  ![Popularidade vs DIT](graficos/popularidade_vs_quality_dit_mean.png)
+- **Popularidade (stars) vs LCOM:**  
+  ![Popularidade vs LCOM](graficos/popularidade_vs_quality_lcom_mean.png)
+
 
 ### RQ 02. Qual a relação entre a maturidade do repositórios e as suas características de qualidade?
 *   **Métrica de Maturidade:** Idade (em anos) do repositório
 *   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), WMC (Weighted Methods per Class)
+
+- **Maturidade (anos) vs CBO:**  
+  ![Maturidade vs CBO](graficos/maturidade_vs_quality_cbo_mean.png)
+- **Maturidade (anos) vs DIT:**  
+  ![Maturidade vs DIT](graficos/maturidade_vs_quality_dit_mean.png)
+- **Maturidade (anos) vs LCOM:**  
+  ![Maturidade vs LCOM](graficos/maturidade_vs_quality_lcom_mean.png)
 
 
 ### RQ 03. Qual a relação entre a atividade dos repositórios e as suas características de qualidade?
 *   **Métrica de Atividade:** Número de releases
 *   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), Número de Commits
 
+- **Atividade (releases) vs CBO:**  
+  ![Atividade vs CBO](graficos/atividade_vs_quality_cbo_mean.png)
+- **Atividade (releases) vs DIT:**  
+  ![Atividade vs DIT](graficos/atividade_vs_quality_dit_mean.png)
+- **Atividade (releases) vs LCOM:**  
+  ![Atividade vs LCOM](graficos/atividade_vs_quality_lcom_mean.png)
+
 
 ### RQ 04. Qual a relação entre o tamanho dos repositórios e as suas características de qualidade?
 *   **Métrica de Tamanho:** Linhas de código (LOC)
 *   **Métricas de Qualidade:** CBO (Coupling Between Objects), LCOM (Lack of Cohesion of Methods), NOC (Number of Children)
+
+- **Tamanho (LOC) vs CBO:**  
+  ![Tamanho LOC vs CBO](graficos/tamanho_loc_vs_quality_cbo_mean.png)
+- **Tamanho (LOC) vs DIT:**  
+  ![Tamanho LOC vs DIT](graficos/tamanho_loc_vs_quality_dit_mean.png)
+- **Tamanho (LOC) vs LCOM:**  
+  ![Tamanho LOC vs LCOM](graficos/tamanho_loc_vs_quality_lcom_mean.png)
+- **Tamanho (comentários) vs CBO:**  
+  ![Tamanho Comentários vs CBO](graficos/tamanho_comentarios_vs_quality_cbo_mean.png)
+- **Tamanho (comentários) vs DIT:**  
+  ![Tamanho Comentários vs DIT](graficos/tamanho_comentarios_vs_quality_dit_mean.png)
+- **Tamanho (comentários) vs LCOM:**  
+  ![Tamanho Comentários vs LCOM](graficos/tamanho_comentarios_vs_quality_lcom_mean.png)
