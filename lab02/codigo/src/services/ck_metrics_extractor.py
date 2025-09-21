@@ -7,7 +7,6 @@ from datetime import datetime
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Protocol
 from abc import abstractmethod
-from git import Repo
 
 
 class MetricsExtractor(Protocol):

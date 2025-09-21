@@ -6,10 +6,13 @@ from pathlib import Path
 from dotenv import load_dotenv
 from datetime import datetime, timezone
 
-env_path = Path('../..') / '.env'
-load_dotenv(env_path)
+# env_path = Path('../..') / '.env'
+# load_dotenv(env_path)
+# GITHUB_TOKEN = os.getenv('TOKEN')
 
-GITHUB_TOKEN = os.getenv('TOKEN')
+with open("token.txt") as f:
+    GITHUB_TOKEN = f.read().strip()
+
 if not GITHUB_TOKEN:
     raise ValueError("Token não encontrado no arquivo .env")
 
