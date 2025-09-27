@@ -214,7 +214,8 @@ def fetch_pr_details_graphql(manager, owner, repo_name, pr_number):
 def process_single_repo(manager, repo_name, collected_prs_df):
     """
     Coleta os detalhes dos PRs para um único repositório, limitado por MAX_PRS_PER_REPO.
-    Retorna o DataFrame de PRs coletados OU None em caso de falha/rate limit que exija espera.
+    Retorna uma tupla: (DataFrame de PRs coletados, bool_needs_requeue).
+    Se bool_needs_requeue for True, o repositório deve ser re-enviado para a fila após salvar o progresso.
     """
     tqdm.write(f"\n--- Iniciando coleta em: {repo_name} (Máx: {MAX_PRS_PER_REPO} PRs válidos) ---")
     owner, name = repo_name.split("/")
@@ -225,32 +226,32 @@ def process_single_repo(manager, repo_name, collected_prs_df):
     valid_pr_count = len(processed_pr_numbers)
     
     if valid_pr_count >= MAX_PRS_PER_REPO:
-         tqdm.write(f"   Limite de PRs ({MAX_PRS_PER_REPO}) já atingido em '{repo_name}'. Pulando.")
-         return pd.DataFrame() 
+        tqdm.write(f" Limite de PRs ({MAX_PRS_PER_REPO}) já atingido em '{repo_name}'. Pulando.")
+        return pd.DataFrame(), False 
     
     try:
         repo = manager.g.get_repo(repo_name)
         prs_list = repo.get_pulls(state='closed', sort='created', direction='desc')
         
-        pr_bar = tqdm(prs_list, desc=f"   {repo_name}", total=prs_list.totalCount)
+        pr_bar = tqdm(prs_list, desc=f" {repo_name}", total=prs_list.totalCount)
         
         for pr in pr_bar:
             
             if valid_pr_count >= MAX_PRS_PER_REPO:
-                tqdm.write(f"   Limite de {MAX_PRS_PER_REPO} PRs válidos atingido para '{repo_name}'. Parando.")
+                tqdm.write(f" Limite de {MAX_PRS_PER_REPO} PRs válidos atingido para '{repo_name}'. Parando.")
                 break 
 
             if pr.number in processed_pr_numbers:
-                pr_bar.set_description(f"   {repo_name} (Pulando {len(processed_pr_numbers)} já coletados)")
+                pr_bar.set_description(f" {repo_name} (Pulando {len(processed_pr_numbers)} já coletados)")
                 continue
 
             pr_data_raw = fetch_pr_details_graphql(manager, owner, name, pr.number)
             
             if pr_data_raw is None:
-                if manager.handle_rate_limit(RateLimitExceededException("GraphQL Limit")):
-                    return None 
-                continue 
-
+                manager.rotate_token()
+                tqdm.write(f" Erro GraphQL (Possível Rate Limit) em '{repo_name}'. Retornando progresso parcial e re-enviando.")
+                return pd.DataFrame(repo_prs_data), True
+            
             pr_closed_at_str = pr_data_raw.get("closedAt")
             pr_created_at_str = pr_data_raw.get("createdAt")
             
@@ -291,22 +292,23 @@ def process_single_repo(manager, repo_name, collected_prs_df):
             }
             repo_prs_data.append(pr_data)
 
-        tqdm.write(f"   Repositório '{repo_name}' concluído com {len(repo_prs_data)} PRs coletados nesta sessão.")
-        return pd.DataFrame(repo_prs_data)
+        tqdm.write(f" Repositório '{repo_name}' concluído com {len(repo_prs_data)} PRs coletados nesta sessão.")
+        return pd.DataFrame(repo_prs_data), False # SUCCESS
     
     except RateLimitExceededException as e:
         manager.handle_rate_limit(e)
-        return None 
+        return pd.DataFrame(repo_prs_data), True # PARTIAL + REQUEUE
     
     except UnknownObjectException:
-        tqdm.write(f"   Repositório '{repo_name}' não encontrado no GitHub. Pulando.")
-        return pd.DataFrame() 
+        tqdm.write(f" Repositório '{repo_name}' não encontrado no GitHub. Pulando.")
+        return pd.DataFrame(), False # SKIP
         
     except Exception as e:
-        tqdm.write(f"   Erro geral durante a coleta de PRs de '{repo_name}': {type(e).__name__} - {e}")
+        tqdm.write(f" Erro geral durante a coleta de PRs de '{repo_name}': {type(e).__name__} - {e}")
         time.sleep(random.randint(30, 90))
-        return None
+        return pd.DataFrame(repo_prs_data), True # PARTIAL + REQUEUE
 
+        
 def main():
     start_time = time.time()
     
@@ -356,12 +358,24 @@ def main():
                 repo_name = future_to_repo.pop(future)
                 
                 try:
-                    result_df = future.result() 
+                    result = future.result()
+                    
+                    if not isinstance(result, tuple) or len(result) != 2:
+                        raise ValueError("Formato de retorno inesperado da thread. Esperado: (DataFrame, bool)")
+                    
+                    result_df, needs_requeue = result
 
-                    if result_df is None:
-                        tqdm.write(f" Rate Limit/Erro na thread de '{repo_name}'. Repositório será re-enviado.")
+                    if needs_requeue:
+                        if not result_df.empty:
+                            all_prs_data.extend(result_df.to_dict(orient="records"))
+                            current_df = pd.DataFrame(all_prs_data)
+                            current_df.drop_duplicates(subset=["repo_full_name", "pr_number"], inplace=True)
+                            save_prs_to_file(current_df, OUTPUT_PRS_CSV) 
+                            tqdm.write(f"⚠️ Progresso PARCIAL de '{repo_name}' salvo: {len(result_df)} PRs novos. Repositório será re-enviado.")
+                        else:
+                            tqdm.write(f"⚠️ Rate Limit/Erro na thread de '{repo_name}'. Repositório será re-enviado.")
                         repo_queue.insert(0, repo_name) 
-                        
+
                     elif result_df.empty:
                         tqdm.write(f"Repositório '{repo_name}' não retornou PRs válidos. Marcando como concluído.")
                         repos_processed_count += 1
@@ -372,7 +386,7 @@ def main():
                         current_df.drop_duplicates(subset=["repo_full_name", "pr_number"], inplace=True)
                         save_prs_to_file(current_df, OUTPUT_PRS_CSV) 
                         
-                        tqdm.write(f"   Repositório '{repo_name}' CONCLUÍDO. Total: {len(current_df)} PRs salvos.")
+                        tqdm.write(f" Repositório '{repo_name}' CONCLUÍDO. Total: {len(current_df)} PRs salvos.")
                         repos_processed_count += 1
 
                 except Exception as exc:
@@ -385,7 +399,6 @@ def main():
     print(f"Tempo total de execução: {time.strftime('%H:%M:%S', time.gmtime(time.time() - start_time))}")
     print(f"Dados salvos em: {OUTPUT_PRS_CSV}")
     print("=" * 50)
-
 
 if __name__ == '__main__':
     main()
