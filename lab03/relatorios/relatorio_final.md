@@ -2,8 +2,8 @@
 
 **Disciplina:** Laboratório de Experimentação de Software  
 **Laboratório:** Lab03 - Caracterizando a atividade de code review no GitHub  
-**Data:** Dezembro 2024  
-**Autor:** [Seu Nome]
+**Data:** Outubro 2025 
+**Autores:** Izabela Cecilia Silva Barbosa, Lucas Machado de Oliveira Andrade, Mariana Eliza Alves Costa e Vitor Fernandes de Souza
 
 ---
 
