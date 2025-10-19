@@ -1,0 +1,12 @@
+Research Question,Correlação,p-value,Método,Significância
+RQ01,0.0566,0.000000,spearman,***
+RQ02,-0.2395,0.000000,spearman,***
+RQ03,-0.0682,0.000000,spearman,***
+RQ04_participant_count,-0.0613,0.000000,spearman,***
+RQ04_total_comments,-0.1828,0.000000,spearman,***
+RQ04_review_count,0.0386,0.000000,spearman,***
+RQ05,0.2259,0.000000,spearman,***
+RQ06,0.2075,0.000000,spearman,***
+RQ07,0.1697,0.000000,spearman,***
+RQ08_participant_count,0.4299,0.000000,spearman,***
+RQ08_total_comments,0.4906,0.000000,spearman,***
