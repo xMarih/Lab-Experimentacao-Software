@@ -19,6 +19,7 @@ npm i @nestjs/cli
 
 run the search game
 ```bash
+cd games-search
 npm run sync-games
 npm run sync-news
 ```
@@ -30,15 +31,18 @@ pip install -r requirements.txt
 
 run search reviews - Codigo\steam-review
 ```bash
+cd steam-review
 python main_review.py
 ```
 
 run reviews process and add sentiment + topic - Codigo\topics_lda_reviews
 ```bash
-python main_topics.py
+cd topics_lda_reviews
+python main_topics.py 
 ```
 
 run import metrics to MongoDB - Codigo\STEAMDB\import_all_csv_to_mongo.py
 ```bash
+
 python import_all_csv_to_mongo.py
 ```
