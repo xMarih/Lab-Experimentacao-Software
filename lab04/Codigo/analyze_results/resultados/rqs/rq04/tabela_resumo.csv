@@ -1,0 +1,13 @@
+Gênero,Tipo,Sentimento,Coerência (c_v),Releases
+Action,positivas,0.591,0.372,58
+Action,negativas,0.480,0.797,50
+Adventure,positivas,0.688,0.376,131
+Adventure,negativas,0.522,0.414,116
+Casual,positivas,0.523,0.478,42
+Casual,negativas,0.352,0.528,40
+Indie,positivas,0.789,0.382,71
+Indie,negativas,0.687,0.517,72
+Racing,positivas,0.503,0.632,71
+Racing,negativas,0.354,0.705,56
+Strategy,positivas,0.675,0.444,45
+Strategy,negativas,0.544,0.462,50

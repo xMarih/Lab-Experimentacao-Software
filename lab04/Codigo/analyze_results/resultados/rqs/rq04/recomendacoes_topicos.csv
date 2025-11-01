@@ -1,0 +1,31 @@
+Gênero,Tópicos a seguir,Tópicos a evitar
+Action,"Reconhecimento e recompensas (S:0.59, C:0.37)
+Experiências de competição (S:0.58, C:0.37)
+Suporte ao jogador (S:0.56, C:0.37)","Questões com conteúdo (S:0.36, C:0.80)
+Dificuldades em progresso (S:0.48, C:0.80)
+Problemas técnicos e bugs (S:0.48, C:0.80)"
+Adventure,"Novas experiências de jogo (S:0.69, C:0.38)
+Atualizações constantes (S:0.69, C:0.38)
+Estética e design (S:0.69, C:0.38)","Falta de inovação (S:0.52, C:0.41)
+Recursos de monetização (S:0.52, C:0.41)
+Problemas de desempenho (S:0.52, C:0.41)"
+Casual,"Melhorias no jogo (S:0.52, C:0.48)
+Conquista de wishlists (S:0.51, C:0.48)
+Desenvolvimento de DLCs (S:0.50, C:0.48)","Correções mal implementadas (S:0.27, C:0.53)
+Problemas recorrentes de modding (S:0.30, C:0.53)
+Dificuldades de design urbano (S:0.32, C:0.53)"
+Indie,"Atualizações de conteúdo (S:0.80, C:0.38)
+Experiências apaixonadas (S:0.79, C:0.38)
+Evolução e crescimento (S:0.79, C:0.38)","Falta de inovação (S:0.66, C:0.52)
+Atrasos em promessas (S:0.69, C:0.52)
+Mudanças desinspiradoras (S:0.69, C:0.52)"
+Racing,"Veículos icônicos disponíveis (S:0.53, C:0.63)
+Interação da comunidade para votações (S:0.51, C:0.63)
+Novas recompensas e eventos (S:0.51, C:0.63)","Problemas recorrentes de desempenho (S:0.35, C:0.70)
+Limitações na customização (S:0.35, C:0.70)
+Dificuldades em conquistas de eventos (S:0.35, C:0.70)"
+Strategy,"Atualizações significativas (S:0.68, C:0.44)
+Construção e Terreno (S:0.67, C:0.44)
+Novos recursos e ferramentas (S:0.67, C:0.44)","Desbalanceamento de missões (S:0.52, C:0.46)
+Erro de jogo frequente (S:0.54, C:0.46)
+Mudanças não solicitadas (S:0.55, C:0.46)"

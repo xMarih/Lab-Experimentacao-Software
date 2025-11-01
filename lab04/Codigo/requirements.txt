@@ -1,0 +1,7 @@
+pymongo
+requests
+nltk
+gensim
+vaderSentiment
+scikit-learn
+pandas
